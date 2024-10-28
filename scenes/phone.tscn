@@ -1,0 +1,98 @@
+[gd_scene load_steps=18 format=3 uid="uid://vn8ay56opuf"]
+
+[ext_resource type="Texture2D" uid="uid://beks6fnb6rl84" path="res://assets/phone/phone_border.png" id="1_j61vq"]
+[ext_resource type="Texture2D" uid="uid://bjkxa8hgkpa7k" path="res://assets/phone/back_02.png" id="2_okc1m"]
+[ext_resource type="Texture2D" uid="uid://djfoh71fik2qq" path="res://assets/phone/but_01_call_norm.png" id="3_a0jf0"]
+[ext_resource type="Texture2D" uid="uid://bn8amj4hx2ol1" path="res://assets/phone/but_01_call_press.png" id="5_taa3r"]
+[ext_resource type="Script" path="res://scripts/botón_de_llamada.gd" id="11_boami"]
+[ext_resource type="Texture2D" uid="uid://27y00r4qj5q4" path="res://assets/phone/but_02_internet_norm.png" id="11_nq73h"]
+[ext_resource type="Texture2D" uid="uid://7pbkvxxhv4f3" path="res://assets/phone/but_02_internet_press.png" id="12_3f461"]
+[ext_resource type="Texture2D" uid="uid://c2werlcop1k7x" path="res://assets/phone/but_03_message_norm.png" id="13_1ouq8"]
+[ext_resource type="Texture2D" uid="uid://b7aa6xq8c7sek" path="res://assets/phone/but_03_message_press.png" id="14_hns2t"]
+[ext_resource type="Texture2D" uid="uid://1darxjtws45r" path="res://assets/phone/but_04_music_norm.png" id="15_lol5f"]
+[ext_resource type="Texture2D" uid="uid://3g74n6watdv" path="res://assets/phone/but_04_music_press.png" id="16_kupfh"]
+[ext_resource type="Texture2D" uid="uid://qbl0nbnd3pwq" path="res://assets/phone/but_05_files_norm.png" id="17_mrrvu"]
+[ext_resource type="Texture2D" uid="uid://xvnl76fwjatj" path="res://assets/phone/but_05_files_press.png" id="18_qrhqb"]
+[ext_resource type="Texture2D" uid="uid://dlvdoy4v7urtk" path="res://assets/phone/but_06_ajustes_norm.png" id="19_eevwe"]
+[ext_resource type="Texture2D" uid="uid://b0rq77lya7v41" path="res://assets/phone/but_06_ajustes_press.png" id="20_yenpe"]
+[ext_resource type="PackedScene" uid="uid://bsfy47goajeds" path="res://scenes/phone_calls.tscn" id="21_5lrpb"]
+[ext_resource type="Script" path="res://scripts/phone_calls.gd" id="21_rtfhe"]
+
+[node name="Phone" type="Node2D"]
+position = Vector2(470, 27)
+
+[node name="PhoneBorder" type="Sprite2D" parent="."]
+z_index = 10
+position = Vector2(74, 146)
+texture = ExtResource("1_j61vq")
+
+[node name="Back02" type="Sprite2D" parent="."]
+position = Vector2(74, 146)
+texture = ExtResource("2_okc1m")
+
+[node name="Botones" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Botón de Llamada" type="TextureButton" parent="Botones"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 243.0
+offset_right = 39.0
+offset_bottom = 271.0
+texture_normal = ExtResource("3_a0jf0")
+texture_pressed = ExtResource("5_taa3r")
+script = ExtResource("11_boami")
+
+[node name="Botón de Internet" type="TextureButton" parent="Botones"]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 243.0
+offset_right = 71.0
+offset_bottom = 271.0
+texture_normal = ExtResource("11_nq73h")
+texture_pressed = ExtResource("12_3f461")
+
+[node name="Botón de Mensajes" type="TextureButton" parent="Botones"]
+layout_mode = 0
+offset_left = 74.0
+offset_top = 243.0
+offset_right = 103.0
+offset_bottom = 271.0
+texture_normal = ExtResource("13_1ouq8")
+texture_pressed = ExtResource("14_hns2t")
+
+[node name="Botón de música" type="TextureButton" parent="Botones"]
+layout_mode = 0
+offset_left = 106.0
+offset_top = 243.0
+offset_right = 135.0
+offset_bottom = 271.0
+texture_normal = ExtResource("15_lol5f")
+texture_pressed = ExtResource("16_kupfh")
+
+[node name="Botón de Files" type="TextureButton" parent="Botones"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 29.0
+offset_right = 39.0
+offset_bottom = 57.0
+texture_normal = ExtResource("17_mrrvu")
+texture_pressed = ExtResource("18_qrhqb")
+
+[node name="Botón de Ajustes" type="TextureButton" parent="Botones"]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 29.0
+offset_right = 71.0
+offset_bottom = 57.0
+texture_normal = ExtResource("19_eevwe")
+texture_pressed = ExtResource("20_yenpe")
+
+[node name="Llamadas" parent="." instance=ExtResource("21_5lrpb")]
+visible = false
+z_index = 1
+position = Vector2(0, 0)
+script = ExtResource("21_rtfhe")
+
+[connection signal="button_up" from="Botones/Botón de Llamada" to="Llamadas" method="_on_botón_de_llamada_button_up"]
