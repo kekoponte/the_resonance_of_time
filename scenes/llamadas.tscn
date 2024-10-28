@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://dojbkn1yuwaxs"]
+
+[ext_resource type="Texture2D" uid="uid://bjkxa8hgkpa7k" path="res://assets/phone/back_02.png" id="1_d5tny"]
+[ext_resource type="Texture2D" uid="uid://cxy38ml7i6var" path="res://assets/phone/home_button.png" id="2_0o3e7"]
+[ext_resource type="Texture2D" uid="uid://cbyl7p77epic7" path="res://assets/phone/home_button_pressed.png" id="3_oeqti"]
+[ext_resource type="Script" path="res://scripts/botón_de_home.gd" id="4_0vb6h"]
+
+[node name="Llamadas" type="Node2D"]
+
+[node name="Fondo" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(74, 147)
+texture = ExtResource("1_d5tny")
+
+[node name="Botón de Home" type="TextureButton" parent="Fondo"]
+offset_left = -16.0
+offset_top = 99.0
+offset_right = 8.0
+offset_bottom = 123.0
+texture_normal = ExtResource("2_0o3e7")
+texture_pressed = ExtResource("3_oeqti")
+script = ExtResource("4_0vb6h")

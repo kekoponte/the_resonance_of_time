@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://bsfy47goajeds"]
+[gd_scene load_steps=9 format=3 uid="uid://bsfy47goajeds"]
 
 [ext_resource type="Texture2D" uid="uid://beks6fnb6rl84" path="res://assets/phone/phone_border.png" id="1_qgm5j"]
 [ext_resource type="Script" path="res://scripts/botón_de_home.gd" id="5_xv1ho"]
 [ext_resource type="Theme" uid="uid://ctd2o4vigmhrn" path="res://styles/nombres_llamada_hover.tres" id="6_by500"]
 [ext_resource type="Script" path="res://scripts/lista de contactos.gd" id="6_hov1i"]
+[ext_resource type="PackedScene" uid="uid://dojbkn1yuwaxs" path="res://scenes/llamadas.tscn" id="8_j87ud"]
 [ext_resource type="Texture2D" uid="uid://dvx7johpakm6x" path="res://assets/phone/back_llamadas.png" id="17_1kckv"]
 [ext_resource type="Texture2D" uid="uid://cxy38ml7i6var" path="res://assets/phone/home_button.png" id="18_bsvk2"]
 [ext_resource type="Texture2D" uid="uid://cbyl7p77epic7" path="res://assets/phone/home_button_pressed.png" id="19_2ih00"]
@@ -49,3 +50,7 @@ layout_mode = 2
 size_flags_vertical = 0
 theme = ExtResource("6_by500")
 script = ExtResource("6_hov1i")
+
+[node name="Llamadas" parent="." instance=ExtResource("8_j87ud")]
+z_index = -1
+position = Vector2(0, -1)

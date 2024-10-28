@@ -1,16 +1,15 @@
 extends Node
 
+# Listado de Contactos en el teléfono
 var Contactos = {
-	"Alan" : "alan.tscn",
-	"Jake" : "jake.tscn"
+	"Alan" : 0,
+	"Jake" : 0
 	}
 	
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
 
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta: float) -> void:
+func cambiar_escena_telefono():
 	pass
+
+func _process(delta: float) -> void:
+	if Global.Contactos["Alan"] == 1:
+		Dialogic.start("llamada_1_con_Alan")
