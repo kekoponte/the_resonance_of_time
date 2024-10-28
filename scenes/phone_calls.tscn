@@ -1,7 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://bsfy47goajeds"]
+[gd_scene load_steps=8 format=3 uid="uid://bsfy47goajeds"]
 
 [ext_resource type="Texture2D" uid="uid://beks6fnb6rl84" path="res://assets/phone/phone_border.png" id="1_qgm5j"]
 [ext_resource type="Script" path="res://scripts/botón_de_home.gd" id="5_xv1ho"]
+[ext_resource type="Theme" uid="uid://ctd2o4vigmhrn" path="res://styles/nombres_llamada_hover.tres" id="6_by500"]
+[ext_resource type="Script" path="res://scripts/lista de contactos.gd" id="6_hov1i"]
 [ext_resource type="Texture2D" uid="uid://dvx7johpakm6x" path="res://assets/phone/back_llamadas.png" id="17_1kckv"]
 [ext_resource type="Texture2D" uid="uid://cxy38ml7i6var" path="res://assets/phone/home_button.png" id="18_bsvk2"]
 [ext_resource type="Texture2D" uid="uid://cbyl7p77epic7" path="res://assets/phone/home_button_pressed.png" id="19_2ih00"]
@@ -17,8 +19,8 @@ texture = ExtResource("1_qgm5j")
 [node name="App Llamada" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 10.0
+offset_bottom = 10.0
 
 [node name="Fondo" type="Sprite2D" parent="App Llamada"]
 z_index = -1
@@ -33,3 +35,17 @@ offset_bottom = 123.0
 texture_normal = ExtResource("18_bsvk2")
 texture_pressed = ExtResource("19_2ih00")
 script = ExtResource("5_xv1ho")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+offset_left = 11.0
+offset_top = 36.0
+offset_right = 135.0
+offset_bottom = 235.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+clip_contents = true
+layout_direction = 2
+layout_mode = 2
+size_flags_vertical = 0
+theme = ExtResource("6_by500")
+script = ExtResource("6_hov1i")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://vn8ay56opuf"]
+[gd_scene load_steps=22 format=3 uid="uid://vn8ay56opuf"]
 
 [ext_resource type="Texture2D" uid="uid://beks6fnb6rl84" path="res://assets/phone/phone_border.png" id="1_j61vq"]
 [ext_resource type="Texture2D" uid="uid://bjkxa8hgkpa7k" path="res://assets/phone/back_02.png" id="2_okc1m"]
@@ -11,8 +11,12 @@
 [ext_resource type="Texture2D" uid="uid://b7aa6xq8c7sek" path="res://assets/phone/but_03_message_press.png" id="14_hns2t"]
 [ext_resource type="Texture2D" uid="uid://1darxjtws45r" path="res://assets/phone/but_04_music_norm.png" id="15_lol5f"]
 [ext_resource type="Texture2D" uid="uid://3g74n6watdv" path="res://assets/phone/but_04_music_press.png" id="16_kupfh"]
+[ext_resource type="Texture2D" uid="uid://dtmg7e500541" path="res://assets/phone/but_07_map_norm.png" id="16_y7teg"]
+[ext_resource type="Texture2D" uid="uid://s42lsjfxahla" path="res://assets/phone/but_07_map_press.png" id="17_efyyj"]
 [ext_resource type="Texture2D" uid="uid://qbl0nbnd3pwq" path="res://assets/phone/but_05_files_norm.png" id="17_mrrvu"]
+[ext_resource type="Texture2D" uid="uid://h44w74yavdvu" path="res://assets/phone/but_08_notes_norm.png" id="18_p3tcy"]
 [ext_resource type="Texture2D" uid="uid://xvnl76fwjatj" path="res://assets/phone/but_05_files_press.png" id="18_qrhqb"]
+[ext_resource type="Texture2D" uid="uid://bu6e5rkpesmvg" path="res://assets/phone/but_08_notes_press.png" id="19_23brm"]
 [ext_resource type="Texture2D" uid="uid://dlvdoy4v7urtk" path="res://assets/phone/but_06_ajustes_norm.png" id="19_eevwe"]
 [ext_resource type="Texture2D" uid="uid://b0rq77lya7v41" path="res://assets/phone/but_06_ajustes_press.png" id="20_yenpe"]
 [ext_resource type="PackedScene" uid="uid://bsfy47goajeds" path="res://scenes/phone_calls.tscn" id="21_5lrpb"]
@@ -88,6 +92,24 @@ offset_right = 71.0
 offset_bottom = 57.0
 texture_normal = ExtResource("19_eevwe")
 texture_pressed = ExtResource("20_yenpe")
+
+[node name="Botón de Mapa" type="TextureButton" parent="Botones"]
+layout_mode = 0
+offset_left = 74.0
+offset_top = 29.0
+offset_right = 103.0
+offset_bottom = 57.0
+texture_normal = ExtResource("16_y7teg")
+texture_pressed = ExtResource("17_efyyj")
+
+[node name="Botón de Notas" type="TextureButton" parent="Botones"]
+layout_mode = 0
+offset_left = 106.0
+offset_top = 29.0
+offset_right = 135.0
+offset_bottom = 57.0
+texture_normal = ExtResource("18_p3tcy")
+texture_pressed = ExtResource("19_23brm")
 
 [node name="Llamadas" parent="." instance=ExtResource("21_5lrpb")]
 visible = false
