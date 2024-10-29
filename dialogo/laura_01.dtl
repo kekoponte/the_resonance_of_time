@@ -1,0 +1,8 @@
+[style name="personajes_en_habitacion"]
+join laura left [animation="Slide In Left"]
+laura: Hi Jake, I'm sorry to see you because of something like this
+laura: I don't know what to say
+- I don't understand...
+- I don't know what to say to you, Laura
+laura: I know, Jake, I know
+[signal arg="phone"]

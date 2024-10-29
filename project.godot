@@ -23,13 +23,15 @@ Global="*res://scripts/global.gd"
 [dialogic]
 
 directories/dch_directory={
-"jake": "res://dialogo/jake.dch"
+"jake": "res://dialogo/jake.dch",
+"laura": "res://dialogo/laura.dch"
 }
 directories/dtl_directory={
+"laura_01": "res://dialogo/laura_01.dtl",
 "llamada_1_con_Alan": "res://dialogo/llamada_1_con_Alan.dtl",
 "primer_dia": "res://dialogo/primer_dia.dtl"
 }
-layout/style_list=["res://dialogo/style.tres"]
+layout/style_list=["res://dialogo/style.tres", "res://styles/personajes_en_habitacion.tres"]
 layout/default_style="res://dialogo/style.tres"
 variables={}
 extensions_folder="res://addons/dialogic_additions"
@@ -96,3 +98,4 @@ locale/translations_pot_files=PackedStringArray("res://dialogos/primera_llamada.
 textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true

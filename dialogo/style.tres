@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cn674foxwedqu" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn" id="3_vq37q"]
 [ext_resource type="PackedScene" uid="uid://by6waso0mjpjp" path="res://dialogo/TextboxWithPortrait/custom_textbox_with_speaker_portrait.tscn" id="4_tnlfk"]
 [ext_resource type="PackedScene" uid="uid://dsbwnp5hegnu3" path="res://dialogo/PopupGlossary/custom_glossary_popup_layer.tscn" id="5_1l85a"]
-[ext_resource type="PackedScene" uid="uid://dhk6j6eb6e3q" path="res://dialogo/CenteredChoices/custom_vn_choice_layer.tscn" id="6_gb83h"]
+[ext_resource type="PackedScene" uid="uid://bstr2kfmt6gug" path="res://dialogo/CenteredChoices/Llamadas_vn_choice_layer.tscn" id="6_ac0jm"]
 [ext_resource type="PackedScene" uid="uid://cvgf4c6gg0tsy" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn" id="7_bgdvi"]
 [ext_resource type="PackedScene" uid="uid://lx24i8fl6uo" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn" id="8_yoywk"]
 [ext_resource type="Script" path="res://addons/dialogic/Resources/dialogic_style.gd" id="9_8edi1"]
@@ -57,15 +57,19 @@ overrides = {
 
 [sub_resource type="Resource" id="Resource_lgt8c"]
 script = ExtResource("1_kou60")
-scene = ExtResource("6_gb83h")
+scene = ExtResource("6_ac0jm")
 overrides = {
 "boxes_fill_width": "false",
-"boxes_stylebox_normal": "\"choice_panel_normal.tres\"",
-"boxes_v_separation": "5.0",
+"boxes_stylebox_disabled": "\"res://styles/estilo_de_respuestas.tres\"",
+"boxes_stylebox_focused": "\"res://styles/estilo_de_respuestas_focus.tres\"",
+"boxes_stylebox_hovered": "\"res://styles/estilo_de_respuestas_hover.tres\"",
+"boxes_stylebox_normal": "\"res://styles/estilo_de_respuestas.tres\"",
+"boxes_v_separation": "4.0",
 "font_custom": "\"res://assets/fonts/dogicapixel.ttf\"",
 "font_size_custom": "8.0",
 "font_size_use_global": "false",
 "font_use_global": "false",
+"sounds_volume": "-7.0",
 "text_color_use_global": "false"
 }
 
