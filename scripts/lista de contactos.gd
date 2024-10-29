@@ -5,7 +5,6 @@ extends VBoxContainer
 func _ready() -> void:
 	for i in Global.Contactos:
 		var debug = Button.new()
-		var info_previa = Global.Contactos[i]
 		debug.text = i
 		debug.name = i
 		debug.pressed.connect(_button_pressed.bind(i)) # Añade a cada botón la dirección del link guardado en el Array
@@ -14,6 +13,4 @@ func _ready() -> void:
 		
 func _button_pressed(i):
 	Global.Contactos[i] += 1
-	get_parent().get_parent().get_node("Llamadas").z_index = 2
-	print(i)
-	print(Global.Contactos[i])
+	get_parent().get_parent().get_node("Llamadas").z_index = 9

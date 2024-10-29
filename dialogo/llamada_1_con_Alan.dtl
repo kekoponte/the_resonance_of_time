@@ -1,3 +1,5 @@
 [style name="style"]
-jake: Hola sdfsd lsds posd pojeg poejg prteg 
-jake: Hay alguien ahí?
+[music path="res://assets/sounds/llamando.mp3" fade="0.0" volume="0.0" loop="false"]
+[wait time="2.5"]
+Hola Peter
+Hay alguien ahí?

@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://bjkxa8hgkpa7k" path="res://assets/phone/back_02.png" id="1_d5tny"]
 [ext_resource type="Texture2D" uid="uid://cxy38ml7i6var" path="res://assets/phone/home_button.png" id="2_0o3e7"]
 [ext_resource type="Texture2D" uid="uid://cbyl7p77epic7" path="res://assets/phone/home_button_pressed.png" id="3_oeqti"]
-[ext_resource type="Script" path="res://scripts/botón_de_home.gd" id="4_0vb6h"]
+[ext_resource type="Script" path="res://scripts/botón_de_atrás.gd" id="4_525wk"]
 
 [node name="Llamadas" type="Node2D"]
 
@@ -19,4 +19,4 @@ offset_right = 8.0
 offset_bottom = 123.0
 texture_normal = ExtResource("2_0o3e7")
 texture_pressed = ExtResource("3_oeqti")
-script = ExtResource("4_0vb6h")
+script = ExtResource("4_525wk")
