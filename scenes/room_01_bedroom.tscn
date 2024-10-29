@@ -1,8 +1,7 @@
-[gd_scene load_steps=26 format=3 uid="uid://c5stp2q7mpdhu"]
+[gd_scene load_steps=25 format=3 uid="uid://c5stp2q7mpdhu"]
 
 [ext_resource type="Texture2D" uid="uid://6wnnt355isi5" path="res://assets/locations/01_bedroom.png" id="1_d6uyu"]
 [ext_resource type="Script" path="res://scripts/room_01_bedroom.gd" id="1_x2rt7"]
-[ext_resource type="PackedScene" uid="uid://vn8ay56opuf" path="res://scenes/phone.tscn" id="2_ear5c"]
 [ext_resource type="Texture2D" uid="uid://cxi0xnat0fxdw" path="res://assets/phone/phone_restf.png" id="3_uhp85"]
 [ext_resource type="Texture2D" uid="uid://dd6jv25r48ykh" path="res://assets/phone/call.png" id="4_tjgpa"]
 [ext_resource type="Texture2D" uid="uid://cp8aawn3pqbsm" path="res://assets/phone/button_ok.png" id="5_1ikob"]
@@ -352,9 +351,6 @@ script = ExtResource("1_x2rt7")
 [node name="01Bedroom" type="Sprite2D" parent="."]
 position = Vector2(320, 180)
 texture = ExtResource("1_d6uyu")
-
-[node name="Phone" parent="." instance=ExtResource("2_ear5c")]
-position = Vector2(465, 34)
 
 [node name="Estatico" type="AnimationPlayer" parent="."]
 libraries = {

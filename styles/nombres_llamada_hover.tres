@@ -3,11 +3,13 @@
 [ext_resource type="FontFile" uid="uid://cebjma2udbg7" path="res://assets/fonts/dogicapixel.ttf" id="1_6bywm"]
 [ext_resource type="StyleBox" uid="uid://f8k045j3x3mo" path="res://styles/nombres_llamada.tres" id="2_jgfpe"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rb4jd"]
-content_margin_bottom = 4.0
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qxsp5"]
+content_margin_bottom = 2.0
+bg_color = Color(1, 1, 1, 1)
 draw_center = false
 border_width_bottom = 1
-border_color = Color(0.118581, 0.118581, 0.118581, 1)
+border_color = Color(1, 1, 1, 1)
+border_blend = true
 
 [sub_resource type="StyleBoxLine" id="StyleBoxLine_7fo57"]
 content_margin_top = 9.0
@@ -25,9 +27,10 @@ Button/styles/disabled_mirrored = ExtResource("2_jgfpe")
 Button/styles/focus = ExtResource("2_jgfpe")
 Button/styles/hover = ExtResource("2_jgfpe")
 Button/styles/hover_mirrored = ExtResource("2_jgfpe")
-Button/styles/hover_pressed = SubResource("StyleBoxFlat_rb4jd")
+Button/styles/hover_pressed = ExtResource("2_jgfpe")
 Button/styles/hover_pressed_mirrored = ExtResource("2_jgfpe")
 Button/styles/normal = ExtResource("2_jgfpe")
+Button/styles/pressed = SubResource("StyleBoxFlat_qxsp5")
 Label/colors/font_shadow_color = Color(0, 0, 0, 0.266667)
 Label/font_sizes/font_size = 8
 Label/fonts/font = ExtResource("1_6bywm")

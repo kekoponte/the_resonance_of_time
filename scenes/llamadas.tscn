@@ -1,9 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://dojbkn1yuwaxs"]
+[gd_scene load_steps=8 format=3 uid="uid://dojbkn1yuwaxs"]
 
 [ext_resource type="Texture2D" uid="uid://bjkxa8hgkpa7k" path="res://assets/phone/back_02.png" id="1_d5tny"]
 [ext_resource type="Texture2D" uid="uid://cxy38ml7i6var" path="res://assets/phone/home_button.png" id="2_0o3e7"]
 [ext_resource type="Texture2D" uid="uid://cbyl7p77epic7" path="res://assets/phone/home_button_pressed.png" id="3_oeqti"]
 [ext_resource type="Script" path="res://scripts/botón_de_atrás.gd" id="4_525wk"]
+[ext_resource type="Script" path="res://scripts/nombre_llamada.gd" id="5_eo5j0"]
+[ext_resource type="FontFile" uid="uid://cyoe0lu3ghnvg" path="res://assets/fonts/dogicapixelbold.ttf" id="6_asj8w"]
+[ext_resource type="FontFile" uid="uid://cebjma2udbg7" path="res://assets/fonts/dogicapixel.ttf" id="7_umyw3"]
 
 [node name="Llamadas" type="Node2D"]
 
@@ -11,6 +14,7 @@
 z_index = -1
 position = Vector2(74, 147)
 texture = ExtResource("1_d5tny")
+script = ExtResource("5_eo5j0")
 
 [node name="Botón de Home" type="TextureButton" parent="Fondo"]
 offset_left = -16.0
@@ -20,3 +24,23 @@ offset_bottom = 123.0
 texture_normal = ExtResource("2_0o3e7")
 texture_pressed = ExtResource("3_oeqti")
 script = ExtResource("4_525wk")
+
+[node name="Nombre_Llamada" type="Label" parent="Fondo"]
+offset_left = -66.0
+offset_top = -59.0
+offset_right = 64.0
+offset_bottom = -36.0
+theme_override_fonts/font = ExtResource("6_asj8w")
+theme_override_font_sizes/font_size = 13
+text = "Alan"
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="Fondo"]
+offset_left = -64.0
+offset_top = -77.0
+offset_right = 62.0
+offset_bottom = -54.0
+theme_override_fonts/font = ExtResource("7_umyw3")
+theme_override_font_sizes/font_size = 8
+text = "Calling..."
+horizontal_alignment = 1
