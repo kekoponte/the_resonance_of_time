@@ -1,5 +1,5 @@
 [style name="personajes_en_habitacion"]
-join laura left [animation="Slide In Left"]
+join laura left [animation="Fade In" length="0.6"]
 laura: Hi Jake, I'm sorry to see you because of something like this
 laura: I don't know what to say
 - I don't understand...

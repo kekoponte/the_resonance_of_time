@@ -1,5 +1,4 @@
-[style name="style"]
 [music path="res://assets/sounds/llamando.mp3" fade="0.0" volume="0.0" loop="false"]
 [wait time="2.5"]
-Hola Peter
-Hay alguien ahí?
+[style name="Llamada_de_teléfono"]
+The mobile phone you are calling is switched off. Please try again later.

@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="DialogicStyle" load_steps=20 format=3 uid="uid://bqqbbewvwktu4"]
+[gd_resource type="Resource" script_class="DialogicStyle" load_steps=21 format=3 uid="uid://bqqbbewvwktu4"]
 
 [ext_resource type="Script" path="res://addons/dialogic/Resources/dialogic_style_layer.gd" id="1_eyomx"]
+[ext_resource type="PackedScene" uid="uid://cqpb3ie51rwl5" path="res://addons/dialogic/Modules/DefaultLayoutParts/Base_Default/default_layout_base.tscn" id="1_inkfu"]
 [ext_resource type="PackedScene" uid="uid://c1k5m0w3r40xf" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn" id="2_uboog"]
 [ext_resource type="PackedScene" uid="uid://cy1y14inwkplb" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/vn_portrait_layer.tscn" id="3_l3jp8"]
 [ext_resource type="PackedScene" uid="uid://cn674foxwedqu" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn" id="4_c5ao1"]
@@ -13,6 +14,7 @@
 
 [sub_resource type="Resource" id="Resource_84aby"]
 script = ExtResource("1_eyomx")
+scene = ExtResource("1_inkfu")
 overrides = {}
 
 [sub_resource type="Resource" id="Resource_i3mni"]

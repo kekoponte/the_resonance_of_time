@@ -1,0 +1,112 @@
+[gd_resource type="Resource" script_class="DialogicStyle" load_steps=20 format=3 uid="uid://b7mmikdm6knbs"]
+
+[ext_resource type="Script" path="res://addons/dialogic/Resources/dialogic_style_layer.gd" id="1_nhruj"]
+[ext_resource type="PackedScene" uid="uid://c1k5m0w3r40xf" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn" id="2_ah2mn"]
+[ext_resource type="PackedScene" uid="uid://cy1y14inwkplb" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/vn_portrait_layer.tscn" id="3_ee7th"]
+[ext_resource type="PackedScene" uid="uid://cn674foxwedqu" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn" id="4_0f6h6"]
+[ext_resource type="PackedScene" uid="uid://cajttg3o4wx5x" path="res://styles/VisualNovelTextbox/llamada_de_telefono.tscn" id="5_lhgr0"]
+[ext_resource type="PackedScene" uid="uid://dsbwnp5hegnu3" path="res://dialogo/PopupGlossary/custom_glossary_popup_layer.tscn" id="6_um8yl"]
+[ext_resource type="PackedScene" uid="uid://dd2714hvi3cng" path="res://styles/respuestas en llamadas.tscn" id="7_0f1f0"]
+[ext_resource type="PackedScene" uid="uid://cvgf4c6gg0tsy" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn" id="8_ibxsd"]
+[ext_resource type="PackedScene" uid="uid://lx24i8fl6uo" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn" id="9_3qe82"]
+[ext_resource type="Script" path="res://addons/dialogic/Resources/dialogic_style.gd" id="10_e5vbq"]
+
+[sub_resource type="Resource" id="Resource_bg3je"]
+script = ExtResource("1_nhruj")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_r2etf"]
+script = ExtResource("1_nhruj")
+scene = ExtResource("2_ah2mn")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_q71y8"]
+script = ExtResource("1_nhruj")
+scene = ExtResource("3_ee7th")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_dfyfh"]
+script = ExtResource("1_nhruj")
+scene = ExtResource("4_0f6h6")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_1ljhp"]
+script = ExtResource("1_nhruj")
+scene = ExtResource("5_lhgr0")
+overrides = {
+"bold_font": "\"res://assets/fonts/dogicapixelbold.ttf\"",
+"box_animation_in": "0",
+"box_animation_out": "0",
+"box_color_custom": "Color(1, 1, 1, 1)",
+"box_color_use_global": "false",
+"box_margin_bottom": "10.0",
+"box_panel": "\"res://styles/personajes_en_habitacion_panel.tres\"",
+"box_size": "Vector2(380, 90)",
+"name_label_box_offset": "Vector2(0, 1)",
+"name_label_box_panel": "\"res://styles/personajes_en_habitacion_panel.tres\"",
+"name_label_custom_font_size": "10.0",
+"name_label_font": "\"res://assets/fonts/dogicapixelbold.ttf\"",
+"name_label_use_character_color": "false",
+"name_label_use_global_color": "false",
+"name_label_use_global_font": "false",
+"name_label_use_global_font_size": "false",
+"next_indicator_size": "Vector2(10, 10)",
+"next_indicator_texture": "\"res://assets/interface/next.png\"",
+"normal_font": "\"res://assets/fonts/dogicapixel.ttf\"",
+"text_custom_color": "Color(0, 0, 0, 1)",
+"text_size": "10.0",
+"text_use_global_color": "false",
+"text_use_global_font": "false",
+"text_use_global_size": "false"
+}
+
+[sub_resource type="Resource" id="Resource_50ig5"]
+script = ExtResource("1_nhruj")
+scene = ExtResource("6_um8yl")
+overrides = {
+"font_custom": "\"res://assets/fonts/dogicapixel.ttf\"",
+"font_use_global": "false"
+}
+
+[sub_resource type="Resource" id="Resource_h5qbh"]
+script = ExtResource("1_nhruj")
+scene = ExtResource("7_0f1f0")
+overrides = {
+"boxes_stylebox_focused": "\"res://styles/estilo_de_respuestas_focus.tres\"",
+"boxes_stylebox_hovered": "\"res://styles/estilo_de_respuestas_hover.tres\"",
+"boxes_stylebox_normal": "\"res://styles/estilo_de_respuestas.tres\"",
+"font_custom": "\"res://assets/fonts/dogicapixel.ttf\"",
+"font_size_custom": "8.0",
+"font_size_use_global": "false",
+"font_use_global": "false",
+"text_color_use_global": "false"
+}
+
+[sub_resource type="Resource" id="Resource_t672i"]
+script = ExtResource("1_nhruj")
+scene = ExtResource("8_ibxsd")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_1oo7b"]
+script = ExtResource("1_nhruj")
+scene = ExtResource("9_3qe82")
+overrides = {}
+
+[resource]
+script = ExtResource("10_e5vbq")
+name = "Llamada_de_teléfono"
+layer_list = Array[String](["10", "11", "12", "13", "14", "15", "16", "17"])
+layer_info = {
+"": SubResource("Resource_bg3je"),
+"10": SubResource("Resource_r2etf"),
+"11": SubResource("Resource_q71y8"),
+"12": SubResource("Resource_dfyfh"),
+"13": SubResource("Resource_1ljhp"),
+"14": SubResource("Resource_50ig5"),
+"15": SubResource("Resource_h5qbh"),
+"16": SubResource("Resource_t672i"),
+"17": SubResource("Resource_1oo7b")
+}
+base_overrides = {}
+layers = Array[ExtResource("1_nhruj")]([])
+metadata/_latest_layer = "15"
