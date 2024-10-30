@@ -1,0 +1,66 @@
+[gd_scene load_steps=9 format=3 uid="uid://vjcalqhdaqe4"]
+
+[ext_resource type="Texture2D" uid="uid://beks6fnb6rl84" path="res://assets/phone/phone_border.png" id="1_ufbbs"]
+[ext_resource type="Texture2D" uid="uid://dvx7johpakm6x" path="res://assets/phone/back_llamadas.png" id="2_sb37o"]
+[ext_resource type="Texture2D" uid="uid://cxy38ml7i6var" path="res://assets/phone/home_button.png" id="3_opgta"]
+[ext_resource type="Texture2D" uid="uid://cbyl7p77epic7" path="res://assets/phone/home_button_pressed.png" id="4_1oxs0"]
+[ext_resource type="Script" path="res://scripts/botón_de_home.gd" id="5_iqgom"]
+[ext_resource type="Script" path="res://scripts/posicion_en_mapa.gd" id="6_oiuj5"]
+[ext_resource type="Texture2D" uid="uid://cgg5ww772l85w" path="res://assets/interface/Map_Madrid.png" id="6_vlp22"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aydis"]
+size = Vector2(10686.3, 11300.7)
+
+[node name="Maps" type="Node2D"]
+
+[node name="PhoneBorder" type="Sprite2D" parent="."]
+z_index = 100
+position = Vector2(74, 146)
+texture = ExtResource("1_ufbbs")
+
+[node name="App Mapas" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 10.0
+offset_bottom = 10.0
+
+[node name="Fondo" type="Sprite2D" parent="App Mapas"]
+z_index = -1
+position = Vector2(74, 147)
+texture = ExtResource("2_sb37o")
+
+[node name="Botón de Home" type="TextureButton" parent="App Mapas/Fondo"]
+offset_left = -16.0
+offset_top = 99.0
+offset_right = 8.0
+offset_bottom = 123.0
+texture_normal = ExtResource("3_opgta")
+texture_pressed = ExtResource("4_1oxs0")
+script = ExtResource("5_iqgom")
+
+[node name="Mascara_Mapa" type="ScrollContainer" parent="."]
+offset_left = 4.0
+offset_top = 6.0
+offset_right = 141.0
+offset_bottom = 238.0
+mouse_filter = 2
+
+[node name="Control2" type="Control" parent="Mascara_Mapa"]
+layout_mode = 2
+
+[node name="Mapa" type="Node2D" parent="Mascara_Mapa/Control2"]
+script = ExtResource("6_oiuj5")
+
+[node name="Sprite2D" type="Sprite2D" parent="Mascara_Mapa/Control2/Mapa"]
+position = Vector2(-4, -6)
+scale = Vector2(0.571632, 0.580964)
+texture = ExtResource("6_vlp22")
+
+[node name="Area2D" type="Area2D" parent="Mascara_Mapa/Control2/Mapa"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mascara_Mapa/Control2/Mapa/Area2D"]
+position = Vector2(67.5, 112.5)
+scale = Vector2(0.195296, 0.198484)
+shape = SubResource("RectangleShape2D_aydis")
+
+[connection signal="input_event" from="Mascara_Mapa/Control2/Mapa/Area2D" to="Mascara_Mapa/Control2/Mapa" method="_on_area_2d_input_event"]
