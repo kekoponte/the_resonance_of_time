@@ -7,6 +7,6 @@ func _input(event):
 			$AudioStreamPlayer2D.play()
 			contador += 1
 		self.hide()
-	if event is InputEventMouse and event.position < Vector2(450,150):
+	if event is InputEventMouse and event.position < Vector2(350,150):
 		self.show()
 		contador = 0

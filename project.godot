@@ -27,8 +27,12 @@ directories/dch_directory={
 "laura": "res://dialogo/laura.dch"
 }
 directories/dtl_directory={
+"Llamada_1_con_Colin": "res://dialogo/Llamada_1_con_Colin.dtl",
+"Llamada_1_con_Dennis": "res://dialogo/Llamada_1_con_Dennis.dtl",
+"Llamada_1_con_clara": "res://dialogo/Llamada_1_con_clara.dtl",
+"comunicando": "res://dialogo/comunicando.dtl",
 "laura_01": "res://dialogo/laura_01.dtl",
-"llamada_1_con_Alan": "res://dialogo/llamada_1_con_Alan.dtl",
+"llamada_1_con_Clara": "res://dialogo/llamada_1_con_Clara.dtl",
 "primer_dia": "res://dialogo/primer_dia.dtl"
 }
 layout/style_list=["res://styles/personajes_en_habitacion.tres", "res://styles/Llamada_de_teléfono.tres"]

@@ -20,7 +20,7 @@ thickness = 2
 
 [resource]
 Button/colors/font_color = Color(0.875, 0.875, 0.875, 1)
-Button/font_sizes/font_size = 11
+Button/font_sizes/font_size = 8
 Button/fonts/font = ExtResource("1_6bywm")
 Button/styles/disabled = ExtResource("2_jgfpe")
 Button/styles/disabled_mirrored = ExtResource("2_jgfpe")
@@ -32,6 +32,6 @@ Button/styles/hover_pressed_mirrored = ExtResource("2_jgfpe")
 Button/styles/normal = ExtResource("2_jgfpe")
 Button/styles/pressed = SubResource("StyleBoxFlat_qxsp5")
 Label/colors/font_shadow_color = Color(0, 0, 0, 0.266667)
-Label/font_sizes/font_size = 8
+Label/font_sizes/font_size = 7
 Label/fonts/font = ExtResource("1_6bywm")
 Label/styles/normal = SubResource("StyleBoxLine_7fo57")

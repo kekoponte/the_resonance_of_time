@@ -39,7 +39,7 @@ script = ExtResource("5_xv1ho")
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
 offset_left = 11.0
-offset_top = 36.0
+offset_top = 69.0
 offset_right = 135.0
 offset_bottom = 235.0
 

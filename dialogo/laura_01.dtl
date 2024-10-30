@@ -1,8 +1,11 @@
 [style name="personajes_en_habitacion"]
-join laura left [animation="Fade In" length="0.6"]
-laura: Hi Jake, I'm sorry to see you because of something like this
-laura: I don't know what to say
-- I don't understand...
-- I don't know what to say to you, Laura
-laura: I know, Jake, I know
+join laura (Idle) left [animation="Fade In"]
+laura: Hi Jake, long time no see
+laura (Idle): How long since you left the department? One year?
+laura (sad): I'm sorry that we see each other again under these circumstances
+- I don't understand what happened, Laura...
+- I don't know what to do, Laura
+laura (sad): I know, Jake, I know, but I'm afraid your son comitted suicide this morning
+laura (Idle): I've checked the report myself. There's no foul play here.
+laura (Idle): You should go home and rest. Let me know if you need anything from me, ok?
 [signal arg="phone"]

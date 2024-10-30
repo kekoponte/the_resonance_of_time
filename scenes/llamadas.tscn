@@ -17,6 +17,7 @@ texture = ExtResource("1_d5tny")
 script = ExtResource("5_eo5j0")
 
 [node name="Botón de Home" type="TextureButton" parent="Fondo"]
+visible = false
 offset_left = -16.0
 offset_top = 99.0
 offset_right = 8.0
@@ -32,14 +33,15 @@ offset_right = 64.0
 offset_bottom = -36.0
 theme_override_fonts/font = ExtResource("6_asj8w")
 theme_override_font_sizes/font_size = 13
-text = "Alan"
+text = "sample"
 horizontal_alignment = 1
+autowrap_mode = 2
 
 [node name="Label" type="Label" parent="Fondo"]
 offset_left = -64.0
-offset_top = -77.0
+offset_top = -81.0
 offset_right = 62.0
-offset_bottom = -54.0
+offset_bottom = -58.0
 theme_override_fonts/font = ExtResource("7_umyw3")
 theme_override_font_sizes/font_size = 8
 text = "Calling..."

@@ -13,4 +13,5 @@ func _ready() -> void:
 		
 func _button_pressed(i):
 	Global.Contactos[i] += 1
+	get_parent().get_parent().get_node("Llamadas").show()
 	get_parent().get_parent().get_node("Llamadas").z_index = 9
