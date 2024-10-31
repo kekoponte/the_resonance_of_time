@@ -9,6 +9,7 @@ var Contactos = {
 	}
 var Nombre_en_llamada = "init"
 var Mobile_Time = 700
+var Direccion = Vector2()
 
 
 func _cambiar_escena_telefono():

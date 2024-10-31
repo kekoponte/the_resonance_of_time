@@ -18,3 +18,11 @@ func _on_area_2d_input_event(_viewport: Node, event: InputEvent, _shape_idx: int
 			selected = true
 		else:
 			selected = false
+
+func _on_text_submitted(new_text: String) -> void:
+	await get_tree().create_timer(0.3).timeout 
+	position = Global.Direccion
+	$marker.position -= Global.Direccion 
+	$Boton_ir.position -= Global.Direccion
+	$marker.show()
+	$Boton_ir.show()
