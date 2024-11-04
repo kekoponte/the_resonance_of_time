@@ -1,20 +1,21 @@
 [style name="Llamada_de_teléfono"]
 jake: Hi...\
-Hi Dad.\
+Hi Pete.\
 I don't know how to say this...
-jake: I think it's time, Dad\
+jake: I think it's time, Pete\
 I'm so sorry
 - What?
 - What are you talking about?
-jake: I wish that I could stop, Dad.\
-I'm dying here.\
-I can't take it anymore.
-- Jake, stop
-- Don't do this, son
-- Jake, please
-jake: I'm so sorry, Dad.\
-I didn't want you to come here and just find my body.
-jake: Call the police, please
+jake: I wish that I could stop, Pete.\
+I can't take it anymore.\
+They got me.
+label save
+- Jake, where are you? | [if {where} == "start"] [else="hide"]
+	set {where} = "in a warehouse"
+	jake: I think I'm in a warehouse
+	jump save
+- Jake, what is going on?
+	jake: They found me. Finally.
 jake: It's already done.\
 I'm so sorry. You've always been so good with me.
 jake: Just call the police, please.\
