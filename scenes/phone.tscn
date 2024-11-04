@@ -150,6 +150,7 @@ text = "7:15"
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Espera2"]
 stream = ExtResource("25_37ckp")
+volume_db = 2.5
 
 [connection signal="button_up" from="Botones/Botón de Llamada" to="Llamadas" method="_on_botón_de_llamada_button_up"]
 [connection signal="button_up" from="Botones/Botón de Mapa" to="Maps" method="_on_botón_de_mapa_button_up"]

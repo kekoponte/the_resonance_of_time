@@ -10,6 +10,8 @@ var Contactos = {
 var Nombre_en_llamada = "init"
 var Mobile_Time = 700
 var Direccion = Vector2(0,0)
+var Status_phone = 0
+
 
 
 func _process(delta: float) -> void:
