@@ -7,14 +7,14 @@ func _ready() -> void:
 	set_process_input(true)
 	set_process_unhandled_key_input(true)
 
-
-
 func _on_text_submitted(Destination) -> void:
-	if Destination == "Home" or "home":
-		Global.Direccion = Vector2(130,0)
-	elif Destination == "Police Station" or "police station" or "Police station":
+	Destination = Destination.capitalize()
+	print(Destination)
+	if Destination == "Home":
+		Global.Direccion = Vector2(135,0)
+	elif Destination == "Police Station":
 		Global.Direccion = Vector2(190,90)
-	elif Destination == "Work" or "work":
+	elif Destination == "Work":
 		Global.Direccion = Vector2(-190,10)
 	else:
 		print("No conozco ese sitio")

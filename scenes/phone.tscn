@@ -1,10 +1,9 @@
-[gd_scene load_steps=30 format=3 uid="uid://vn8ay56opuf"]
+[gd_scene load_steps=29 format=3 uid="uid://vn8ay56opuf"]
 
 [ext_resource type="Texture2D" uid="uid://beks6fnb6rl84" path="res://assets/phone/phone_border.png" id="1_j61vq"]
 [ext_resource type="Texture2D" uid="uid://bjkxa8hgkpa7k" path="res://assets/phone/back_02.png" id="2_okc1m"]
 [ext_resource type="Texture2D" uid="uid://djfoh71fik2qq" path="res://assets/phone/but_01_call_norm.png" id="3_a0jf0"]
 [ext_resource type="Texture2D" uid="uid://bn8amj4hx2ol1" path="res://assets/phone/but_01_call_press.png" id="5_taa3r"]
-[ext_resource type="Script" path="res://scripts/botón_de_llamada.gd" id="11_boami"]
 [ext_resource type="Texture2D" uid="uid://27y00r4qj5q4" path="res://assets/phone/but_02_internet_norm.png" id="11_nq73h"]
 [ext_resource type="Texture2D" uid="uid://7pbkvxxhv4f3" path="res://assets/phone/but_02_internet_press.png" id="12_3f461"]
 [ext_resource type="Texture2D" uid="uid://c2werlcop1k7x" path="res://assets/phone/but_03_message_norm.png" id="13_1ouq8"]
@@ -54,7 +53,6 @@ offset_right = 39.0
 offset_bottom = 271.0
 texture_normal = ExtResource("3_a0jf0")
 texture_pressed = ExtResource("5_taa3r")
-script = ExtResource("11_boami")
 
 [node name="Botón de Internet" type="TextureButton" parent="Botones"]
 layout_mode = 0
@@ -121,18 +119,18 @@ texture_pressed = ExtResource("19_23brm")
 
 [node name="Llamadas" parent="." instance=ExtResource("21_5lrpb")]
 visible = false
-z_index = 1
+z_index = -1
 position = Vector2(0, 0)
 script = ExtResource("21_rtfhe")
 
 [node name="Maps" parent="." instance=ExtResource("22_a2nnk")]
 visible = false
-z_index = 1
+z_index = -1
 script = ExtResource("23_puyw8")
 
 [node name="Notepad" parent="." instance=ExtResource("28_guerb")]
 visible = false
-z_index = 1
+z_index = -1
 script = ExtResource("25_02gv0")
 
 [node name="Espera2" type="Sprite2D" parent="."]

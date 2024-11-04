@@ -465,3 +465,4 @@ text = "“A thing is not necessarily true because a man dies for it.”
 
 [node name="Pasacaglie" type="AudioStreamPlayer" parent="ending"]
 stream = ExtResource("11_ysj14")
+volume_db = -2.517

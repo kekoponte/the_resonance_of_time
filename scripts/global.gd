@@ -9,11 +9,8 @@ var Contactos = {
 	}
 var Nombre_en_llamada = "init"
 var Mobile_Time = 700
-var Direccion = Vector2()
+var Direccion = Vector2(0,0)
 
-
-func _cambiar_escena_telefono():
-	pass
 
 func _process(delta: float) -> void:
 	if Global.Contactos["Alan Ferris"] == 1:
