@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://vn8ay56opuf"]
+[gd_scene load_steps=31 format=3 uid="uid://vn8ay56opuf"]
 
 [ext_resource type="Texture2D" uid="uid://beks6fnb6rl84" path="res://assets/phone/phone_border.png" id="1_j61vq"]
 [ext_resource type="Texture2D" uid="uid://bjkxa8hgkpa7k" path="res://assets/phone/back_02.png" id="2_okc1m"]
@@ -27,6 +27,8 @@
 [ext_resource type="FontFile" uid="uid://cyoe0lu3ghnvg" path="res://assets/fonts/dogicapixelbold.ttf" id="24_2chle"]
 [ext_resource type="Script" path="res://scripts/notepad.gd" id="25_02gv0"]
 [ext_resource type="AudioStream" uid="uid://d3soippf3cy5d" path="res://assets/sounds/unlock.mp3" id="25_37ckp"]
+[ext_resource type="PackedScene" uid="uid://bhrwnhblsxw2c" path="res://scenes/mensajes.tscn" id="25_n0cn1"]
+[ext_resource type="Script" path="res://scripts/but_mensajes.gd" id="26_rkoko"]
 [ext_resource type="PackedScene" uid="uid://uipquy6s7naq" path="res://scenes/notepad.tscn" id="28_guerb"]
 
 [node name="Phone" type="Node2D"]
@@ -133,6 +135,11 @@ visible = false
 z_index = -1
 script = ExtResource("25_02gv0")
 
+[node name="Mensajes" parent="." instance=ExtResource("25_n0cn1")]
+visible = false
+position = Vector2(-1, -1)
+script = ExtResource("26_rkoko")
+
 [node name="Espera2" type="Sprite2D" parent="."]
 z_index = 8
 position = Vector2(73, 146)
@@ -153,5 +160,6 @@ stream = ExtResource("25_37ckp")
 volume_db = 2.5
 
 [connection signal="button_up" from="Botones/Botón de Llamada" to="Llamadas" method="_on_botón_de_llamada_button_up"]
+[connection signal="button_up" from="Botones/Botón de Mensajes" to="Mensajes" method="_on_botón_de_mensajes_button_up"]
 [connection signal="button_up" from="Botones/Botón de Mapa" to="Maps" method="_on_botón_de_mapa_button_up"]
 [connection signal="button_up" from="Botones/Botón de Notas" to="Notepad" method="_on_botón_de_notas_button_up"]

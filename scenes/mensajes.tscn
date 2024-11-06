@@ -1,0 +1,50 @@
+[gd_scene load_steps=8 format=3 uid="uid://bhrwnhblsxw2c"]
+
+[ext_resource type="Texture2D" uid="uid://dvx7johpakm6x" path="res://assets/phone/back_llamadas.png" id="1_x7l7j"]
+[ext_resource type="Texture2D" uid="uid://cxy38ml7i6var" path="res://assets/phone/home_button.png" id="2_yj3wl"]
+[ext_resource type="Texture2D" uid="uid://cbyl7p77epic7" path="res://assets/phone/home_button_pressed.png" id="3_opghb"]
+[ext_resource type="Script" path="res://scripts/botón_de_home_mensajes.gd" id="4_5whrv"]
+[ext_resource type="Theme" uid="uid://ctd2o4vigmhrn" path="res://styles/nombres_llamada_hover.tres" id="5_i8kmd"]
+[ext_resource type="Script" path="res://scripts/Listado de mensajes.gd" id="6_5k806"]
+[ext_resource type="PackedScene" uid="uid://has2fh7mfotj" path="res://scenes/conversacion.tscn" id="7_08lm6"]
+
+[node name="Mensajes" type="Node2D"]
+
+[node name="App Mensajes" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 146.0
+offset_bottom = 289.0
+mouse_filter = 1
+
+[node name="Fondo" type="Sprite2D" parent="App Mensajes"]
+position = Vector2(74, 147)
+texture = ExtResource("1_x7l7j")
+
+[node name="Botón de Home" type="TextureButton" parent="."]
+z_index = 1
+offset_left = 58.0
+offset_top = 246.0
+offset_right = 82.0
+offset_bottom = 270.0
+texture_normal = ExtResource("2_yj3wl")
+texture_pressed = ExtResource("3_opghb")
+script = ExtResource("4_5whrv")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+z_index = 1
+offset_left = 11.0
+offset_top = 44.0
+offset_right = 135.0
+offset_bottom = 235.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+z_index = 1
+clip_contents = true
+layout_direction = 2
+layout_mode = 2
+size_flags_vertical = 0
+theme = ExtResource("5_i8kmd")
+script = ExtResource("6_5k806")
+
+[node name="Conversacion" parent="." instance=ExtResource("7_08lm6")]

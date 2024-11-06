@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://bsfy47goajeds"]
 
-[ext_resource type="Script" path="res://scripts/botón_de_home.gd" id="5_xv1ho"]
+[ext_resource type="Script" path="res://scripts/botón_de_home_Llamadas.gd" id="5_xv1ho"]
 [ext_resource type="Theme" uid="uid://ctd2o4vigmhrn" path="res://styles/nombres_llamada_hover.tres" id="6_by500"]
 [ext_resource type="Script" path="res://scripts/lista de contactos.gd" id="6_hov1i"]
 [ext_resource type="PackedScene" uid="uid://dojbkn1yuwaxs" path="res://scenes/llamadas.tscn" id="8_j87ud"]

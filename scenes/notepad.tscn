@@ -1,24 +1,20 @@
 [gd_scene load_steps=7 format=3 uid="uid://uipquy6s7naq"]
 
-[ext_resource type="Texture2D" uid="uid://beks6fnb6rl84" path="res://assets/phone/phone_border.png" id="1_jaxl5"]
 [ext_resource type="Texture2D" uid="uid://cxy38ml7i6var" path="res://assets/phone/home_button.png" id="2_knmye"]
 [ext_resource type="Texture2D" uid="uid://cbyl7p77epic7" path="res://assets/phone/home_button_pressed.png" id="3_vihki"]
-[ext_resource type="Script" path="res://scripts/botón_de_home.gd" id="4_w27mo"]
 [ext_resource type="FontFile" uid="uid://cebjma2udbg7" path="res://assets/fonts/dogicapixel.ttf" id="5_hyeih"]
+[ext_resource type="Script" path="res://scripts/botón_de_home_notepad.gd" id="5_uac22"]
 [ext_resource type="Texture2D" uid="uid://dcy2savn4otty" path="res://assets/phone/back_notes.png" id="6_bfq2m"]
+[ext_resource type="Script" path="res://scripts/bloc_de_notas.gd" id="6_i0cv6"]
 
 [node name="Maps" type="Node2D"]
-
-[node name="PhoneBorder" type="Sprite2D" parent="."]
-z_index = 100
-position = Vector2(74, 146)
-texture = ExtResource("1_jaxl5")
 
 [node name="App Notas" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 10.0
-offset_bottom = 10.0
+offset_right = 146.0
+offset_bottom = 289.0
+mouse_filter = 1
 
 [node name="Fondo" type="Sprite2D" parent="App Notas"]
 z_index = -1
@@ -33,7 +29,7 @@ offset_right = 8.0
 offset_bottom = 123.0
 texture_normal = ExtResource("2_knmye")
 texture_pressed = ExtResource("3_vihki")
-script = ExtResource("4_w27mo")
+script = ExtResource("5_uac22")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -43,7 +39,7 @@ offset_top = 29.0
 offset_right = 137.0
 offset_bottom = 239.0
 
-[node name="TextEdit" type="TextEdit" parent="Control"]
+[node name="bloc_de_notas" type="TextEdit" parent="Control"]
 layout_mode = 0
 offset_right = 129.0
 offset_bottom = 213.0
@@ -52,7 +48,11 @@ theme_override_colors/font_color = Color(0.125911, 0.125911, 0.125911, 1)
 theme_override_colors/caret_color = Color(0, 0, 0, 1)
 theme_override_constants/line_spacing = 2
 theme_override_fonts/font = ExtResource("5_hyeih")
-theme_override_font_sizes/font_size = 5
+theme_override_font_sizes/font_size = 6
 context_menu_enabled = false
 wrap_mode = 1
 scroll_smooth = true
+caret_blink = true
+script = ExtResource("6_i0cv6")
+
+[connection signal="focus_exited" from="Control/bloc_de_notas" to="Control/bloc_de_notas" method="_on_focus_exited"]

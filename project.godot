@@ -30,6 +30,7 @@ directories/dtl_directory={
 "Llamada_1_con_Colin": "res://dialogo/Llamada_1_con_Colin.dtl",
 "Llamada_1_con_Dennis": "res://dialogo/Llamada_1_con_Dennis.dtl",
 "Llamada_1_con_clara": "res://dialogo/Llamada_1_con_clara.dtl",
+"alan": "res://dialogo/alan.dtl",
 "comunicando": "res://dialogo/comunicando.dtl",
 "laura_01": "res://dialogo/laura_01.dtl",
 "llamada_1_con_Clara": "res://dialogo/llamada_1_con_Clara.dtl",
@@ -38,6 +39,7 @@ directories/dtl_directory={
 layout/style_list=["res://styles/personajes_en_habitacion.tres", "res://styles/Llamada_de_teléfono.tres"]
 layout/default_style=""
 variables={
+"alan": 1,
 "where": "start"
 }
 extensions_folder="res://addons/dialogic_additions"
@@ -75,8 +77,8 @@ data_directory="res://dialogue"
 
 window/size/viewport_width=640
 window/size/viewport_height=360
+window/size/mode=2
 window/stretch/mode="canvas_items"
-window/stretch/scale_mode="integer"
 window/canvas_textures/default_texture_filter=1
 
 [editor_plugins]
