@@ -1,0 +1,186 @@
+[gd_scene load_steps=13 format=3 uid="uid://ceoi31a7rbke5"]
+
+[ext_resource type="Script" path="res://scripts/room_00_bathroom.gd" id="1_kxa1b"]
+[ext_resource type="Texture2D" uid="uid://dxovqocadyyf" path="res://assets/locations/00_UI_Home.png" id="2_w0ior"]
+[ext_resource type="Texture2D" uid="uid://bxr5rjkuhs8f7" path="res://assets/locations/00_bathroom.png" id="2_yxdm8"]
+[ext_resource type="Texture2D" uid="uid://byjv411nwjqu1" path="res://assets/locations/00_bathroom_laura.png" id="3_gemly"]
+[ext_resource type="Texture2D" uid="uid://ct2qb6j5pnu8k" path="res://assets/locations/00_bathroom_laura_blink.png" id="3_lvrjm"]
+[ext_resource type="FontFile" uid="uid://cebjma2udbg7" path="res://assets/fonts/dogicapixel.ttf" id="4_45mro"]
+[ext_resource type="AudioStream" uid="uid://bmgankjyft2kr" path="res://assets/sounds/Pasacaglie.mp3" id="7_afk8c"]
+
+[sub_resource type="Animation" id="Animation_7ac4f"]
+resource_name = "Presentacion"
+length = 35.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Presentacion/01Bedroom/Sprite2D:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(6.98688, 10.9869, 21.9869),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Presentacion/01Bedroom/RichTextLabel:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(5.56667, 35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(25, 199), Vector2(25, -531)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Presentacion/01Bedroom/Sprite2D:texture")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(9.15355, 9.18685, 9.25355, 11.5869, 11.6202, 11.6869, 15.8869, 15.9202, 15.9869, 19.4869, 19.5202, 19.5869, 22.2536, 22.2869, 22.3536, 22.9869, 23.0202, 23.0869, 24.6869, 24.7202, 24.7869, 25.3869, 25.4202, 25.4869, 28.9869, 29.0202, 29.0869, 32.5869, 32.6202, 32.6869, 33.9536, 33.9869, 34.0536),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("3_gemly"), ExtResource("3_lvrjm"), ExtResource("3_gemly"), ExtResource("3_gemly"), ExtResource("3_lvrjm"), ExtResource("3_gemly"), ExtResource("3_gemly"), ExtResource("3_lvrjm"), ExtResource("3_gemly"), ExtResource("3_gemly"), ExtResource("3_lvrjm"), ExtResource("3_gemly"), ExtResource("3_gemly"), ExtResource("3_lvrjm"), ExtResource("3_gemly"), ExtResource("3_gemly"), ExtResource("3_lvrjm"), ExtResource("3_gemly"), ExtResource("3_gemly"), ExtResource("3_lvrjm"), ExtResource("3_gemly"), ExtResource("3_gemly"), ExtResource("3_lvrjm"), ExtResource("3_gemly"), ExtResource("3_gemly"), ExtResource("3_lvrjm"), ExtResource("3_gemly"), ExtResource("3_gemly"), ExtResource("3_lvrjm"), ExtResource("3_gemly"), ExtResource("3_gemly"), ExtResource("3_lvrjm"), ExtResource("3_gemly")]
+}
+
+[sub_resource type="Animation" id="Animation_c4ryn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Presentacion/01Bedroom/Sprite2D:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Presentacion/01Bedroom/RichTextLabel:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(69, 217)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Presentacion/01Bedroom/Sprite2D:texture")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_gemly")]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Presentacion/00UiHome:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_noedu"]
+resource_name = "fade_out"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Presentacion/00UiHome:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hsrnx"]
+_data = {
+"Presentacion": SubResource("Animation_7ac4f"),
+"RESET": SubResource("Animation_c4ryn"),
+"fade_out": SubResource("Animation_noedu")
+}
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fbuxe"]
+content_margin_left = 5.0
+content_margin_top = 5.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+bg_color = Color(0, 0, 0, 0.541176)
+
+[node name="Room_00_Bathroom" type="Node"]
+script = ExtResource("1_kxa1b")
+
+[node name="Presentacion" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_hsrnx")
+}
+
+[node name="00UiHome" type="Sprite2D" parent="Presentacion"]
+z_index = 1
+position = Vector2(320, 180)
+texture = ExtResource("2_w0ior")
+
+[node name="01Bedroom" type="Sprite2D" parent="Presentacion"]
+position = Vector2(320, 180)
+texture = ExtResource("2_yxdm8")
+
+[node name="Sprite2D" type="Sprite2D" parent="Presentacion/01Bedroom"]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(-117.25, -16.7963)
+scale = Vector2(1.01852, 1.01852)
+texture = ExtResource("3_gemly")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Presentacion/01Bedroom"]
+offset_left = 25.0
+offset_top = 199.0
+offset_right = 293.0
+offset_bottom = 539.0
+theme_override_constants/line_separation = 6
+theme_override_fonts/normal_font = ExtResource("4_45mro")
+theme_override_font_sizes/normal_font_size = 10
+theme_override_styles/normal = SubResource("StyleBoxFlat_fbuxe")
+text = "I wonder why I'm still doing this.
+
+I remember that very first job with Michael now. 35 years later.
+
+\"We're giving a voice to those who cannot speak\" he said.
+
+...
+
+What a dumbass.
+
+I'd love to go back in time and tell that asshole that this is not a bad movie
+
+Being a forensic expert is just tough.
+
+I didn't expect to be doing this 35 years later."
+fit_content = true
+scroll_active = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+
+[node name="musica" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_afk8c")
+volume_db = -19.81

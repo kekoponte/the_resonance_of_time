@@ -34,9 +34,10 @@ directories/dtl_directory={
 "comunicando": "res://dialogo/comunicando.dtl",
 "laura_01": "res://dialogo/laura_01.dtl",
 "llamada_1_con_Clara": "res://dialogo/llamada_1_con_Clara.dtl",
+"monologo_inicial": "res://dialogo/monologo_inicial.dtl",
 "primer_dia": "res://dialogo/primer_dia.dtl"
 }
-layout/style_list=["res://styles/personajes_en_habitacion.tres", "res://styles/Llamada_de_teléfono.tres"]
+layout/style_list=["res://styles/personajes_en_habitacion.tres", "res://styles/Llamada_de_teléfono.tres", "res://styles/Intro.tres"]
 layout/default_style=""
 variables={
 "alan": 1,

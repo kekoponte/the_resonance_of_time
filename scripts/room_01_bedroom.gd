@@ -4,6 +4,7 @@ func _ready() -> void:
 	Dialogic.signal_event.connect(_on_dialogic_signal)
 	$Estatico.play("Idle")
 	await $Estatico.animation_finished
+	$Vibracion/PhoneRestf.visible = true
 	$Vibracion.queue("RESET")
 	
 func _process(_delta: float) -> void:
