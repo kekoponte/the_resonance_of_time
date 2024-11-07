@@ -12,6 +12,10 @@ var Mobile_Time = 700
 var Direccion = Vector2(0,0)
 var Status_phone = 0
 var bloc_de_notas = ""
+var mano = load("res://assets/interface/mouse.png")
+var punta = load("res://assets/interface/mouse_arrow.png")
+
+
 
 # Listado de Mensajes
 var Contactos_Mensajes = {

@@ -7,8 +7,6 @@ func _ready() -> void:
 	$Vibracion/PhoneRestf.visible = true
 	$Vibracion.queue("RESET")
 	
-func _process(_delta: float) -> void:
-	pass
 
 func _on_dialogic_signal(argument:String):
 	if argument == "end":

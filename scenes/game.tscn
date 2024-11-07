@@ -20,4 +20,4 @@ theme_override_fonts/font = ExtResource("3_elqio")
 theme_override_font_sizes/font_size = 8
 text = "Start Game"
 
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]

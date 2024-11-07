@@ -6,9 +6,9 @@ func _input(event):
 		if contador == 0 and self.get_parent().visible:
 			$AudioStreamPlayer2D.play()
 			contador += 1
-			Input.set_default_cursor_shape(Input.CURSOR_POINTING_HAND)
+			Input.set_custom_mouse_cursor(Global.mano)
 		self.hide()
 	if event is InputEventMouse and event.position < Vector2(420,150):
 		self.show()
-		Input.set_default_cursor_shape(Input.CURSOR_ARROW)
+		Input.set_custom_mouse_cursor(Global.punta)
 		contador = 0
