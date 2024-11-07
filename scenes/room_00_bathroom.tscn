@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://ceoi31a7rbke5"]
+[gd_scene load_steps=30 format=3 uid="uid://ceoi31a7rbke5"]
 
 [ext_resource type="Script" path="res://scripts/room_00_bathroom.gd" id="1_kxa1b"]
 [ext_resource type="Texture2D" uid="uid://bxr5rjkuhs8f7" path="res://assets/locations/00_bathroom.png" id="2_yxdm8"]
@@ -16,15 +16,17 @@
 [ext_resource type="Texture2D" uid="uid://d246laq4484eo" path="res://assets/interface/anim_home/varias2.png" id="13_cifnl"]
 [ext_resource type="Texture2D" uid="uid://bbxp3etvpv3yd" path="res://assets/interface/anim_home/varias.png" id="14_umgxa"]
 [ext_resource type="Texture2D" uid="uid://djght47yqehbi" path="res://assets/characters/esther_03.png" id="15_a3iy4"]
+[ext_resource type="Texture2D" uid="uid://bprty2xlupha8" path="res://assets/characters/esther_05.png" id="15_kfttk"]
 [ext_resource type="Texture2D" uid="uid://c7nspijksf051" path="res://assets/characters/esther_04.png" id="15_ldeln"]
 [ext_resource type="Texture2D" uid="uid://bcnw2tjm7iglu" path="res://assets/interface/anim_home/Opequena.png" id="15_sknv3"]
 [ext_resource type="Texture2D" uid="uid://b2w6ydpq58d74" path="res://assets/characters/esther_02.png" id="16_ate3t"]
 [ext_resource type="Texture2D" uid="uid://cgrvlfdd4ji6u" path="res://assets/characters/esther_01.png" id="17_g0ss5"]
 [ext_resource type="Texture2D" uid="uid://csdbhdcycvdj2" path="res://assets/locations/00_bathroom-things.png" id="18_i3vpe"]
+[ext_resource type="Texture2D" uid="uid://bmuacoe00blqe" path="res://assets/locations/00_bathroom-overlay.png" id="23_u33uo"]
 
 [sub_resource type="Animation" id="Animation_7ac4f"]
 resource_name = "Presentacion"
-length = 36.0
+length = 60.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -32,10 +34,10 @@ tracks/0/path = NodePath("Presentacion/01Bedroom/01:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 6, 10),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0.4, 8.03333, 14.1667, 16.4333),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -44,10 +46,10 @@ tracks/1/path = NodePath("Presentacion/01Bedroom/RichTextLabel:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(5.56667, 36),
+"times": PackedFloat32Array(0.2, 59.9667),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(25, 199), Vector2(25, -560)]
+"values": [Vector2(0, 180), Vector2(0, -810)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -56,7 +58,7 @@ tracks/2/path = NodePath("Presentacion/01Bedroom/02:modulate")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 5.56667, 6, 14.0667, 18.1667),
+"times": PackedFloat32Array(5.46667, 14.2, 16.5, 24.6333, 26.5667),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
@@ -68,7 +70,7 @@ tracks/3/path = NodePath("Presentacion/01Bedroom/03:modulate")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0, 12.7333, 13.9333, 22.0333, 26.0667),
+"times": PackedFloat32Array(5.46667, 24.6, 26.5, 36.3, 37.8333),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
@@ -80,10 +82,10 @@ tracks/4/path = NodePath("Presentacion/01Bedroom/04:modulate")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(0, 19.6333, 22.1),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(5.46667, 36.2, 37.8, 47.5333),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1)]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
@@ -92,7 +94,7 @@ tracks/5/path = NodePath("Presentacion/01Bedroom/01:visible")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"times": PackedFloat32Array(0),
+"times": PackedFloat32Array(0.166667),
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [true]
@@ -104,7 +106,7 @@ tracks/6/path = NodePath("Presentacion/01Bedroom/02:visible")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
-"times": PackedFloat32Array(0),
+"times": PackedFloat32Array(5.46667),
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [true]
@@ -116,7 +118,7 @@ tracks/7/path = NodePath("Presentacion/01Bedroom/03:visible")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
-"times": PackedFloat32Array(0),
+"times": PackedFloat32Array(5.46667),
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [true]
@@ -128,10 +130,22 @@ tracks/8/path = NodePath("Presentacion/01Bedroom/04:visible")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
-"times": PackedFloat32Array(0),
+"times": PackedFloat32Array(5.46667),
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [true]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Presentacion/01Bedroom/04:texture")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(5.46667, 39.1667, 39.2333, 39.3, 40.2333, 41.9, 41.9667, 42.0333, 44.7, 44.7667, 44.8333, 46.7, 46.7667, 46.8333, 48.4333, 48.5, 48.5667, 49.0333, 49.1, 49.1667, 51.1667, 51.2333, 51.3, 52.6333, 52.7, 52.7667, 53.5333, 53.6, 53.6667, 55.3667, 55.4333, 55.5, 55.5667, 55.6333, 55.7, 56.4333, 56.5, 56.5667, 57.6, 57.6667, 57.7333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln")]
 }
 
 [sub_resource type="Animation" id="Animation_c4ryn"]
@@ -412,6 +426,18 @@ tracks/22/keys = {
 "update": 1,
 "values": [false]
 }
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("Presentacion/01Bedroom/04:texture")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("15_ldeln")]
+}
 
 [sub_resource type="Animation" id="Animation_noedu"]
 resource_name = "fade_out"
@@ -633,10 +659,40 @@ tracks/17/keys = {
 "values": [false]
 }
 
+[sub_resource type="Animation" id="Animation_ocj7n"]
+resource_name = "blink"
+length = 10.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Presentacion/01Bedroom/04:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.266668, 0.333333, 3.63333, 3.7, 3.76667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Presentacion/01Bedroom/04:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_hsrnx"]
 _data = {
 "Presentacion": SubResource("Animation_7ac4f"),
 "RESET": SubResource("Animation_c4ryn"),
+"blink": SubResource("Animation_ocj7n"),
 "fade_out": SubResource("Animation_noedu")
 }
 
@@ -645,7 +701,7 @@ content_margin_left = 5.0
 content_margin_top = 5.0
 content_margin_right = 0.0
 content_margin_bottom = 5.0
-bg_color = Color(0, 0, 0, 0.596078)
+bg_color = Color(0, 0, 0, 0.505882)
 
 [node name="Room_00_Bathroom" type="Node"]
 script = ExtResource("1_kxa1b")
@@ -656,7 +712,7 @@ libraries = {
 }
 
 [node name="00UiHome" type="Sprite2D" parent="Presentacion"]
-z_index = 8
+z_index = 11
 position = Vector2(320, 180)
 texture = ExtResource("4_dd6ym")
 
@@ -711,36 +767,36 @@ texture = ExtResource("2_yxdm8")
 [node name="04" type="Sprite2D" parent="Presentacion/01Bedroom"]
 visible = false
 modulate = Color(1, 1, 1, 0)
-z_index = 1
+z_index = 2
 position = Vector2(-119, -19)
 texture = ExtResource("15_ldeln")
 
 [node name="03" type="Sprite2D" parent="Presentacion/01Bedroom"]
 visible = false
 modulate = Color(1, 1, 1, 0)
-z_index = 2
+z_index = 3
 position = Vector2(-118, -19)
 texture = ExtResource("15_a3iy4")
 
 [node name="02" type="Sprite2D" parent="Presentacion/01Bedroom"]
 visible = false
-z_index = 3
+z_index = 4
 position = Vector2(-118, -19)
 texture = ExtResource("16_ate3t")
 
 [node name="01" type="Sprite2D" parent="Presentacion/01Bedroom"]
 visible = false
 modulate = Color(1, 1, 1, 0)
-z_index = 4
-position = Vector2(-117.25, -21)
+z_index = 5
+position = Vector2(-117, -21)
 scale = Vector2(1.01852, 1.01852)
 texture = ExtResource("17_g0ss5")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Presentacion/01Bedroom"]
 offset_left = 69.0
 offset_top = 217.0
-offset_right = 333.0
-offset_bottom = 587.0
+offset_right = 363.0
+offset_bottom = 836.0
 theme_override_constants/line_separation = 6
 theme_override_fonts/normal_font = ExtResource("4_45mro")
 theme_override_font_sizes/normal_font_size = 10
@@ -751,17 +807,25 @@ I remember that very first job with Michael. 35 years ago.
 
 \"We're giving a voice to those who cannot speak\" he said.
 
-...
-
 What a dumbass.
 
-I'd love to go back in time and tell that asshole that this job is not a bad movie.
+                          ⏹︎
 
-Being a forensic expert is just tough.
+10 years later it's the new years eve of 1999 and I'm 34 years old and I'm already tired of this.
 
-I didn't expect to be doing this 35 years later.
+My boss dies of a heart attack in front of me. He just dies, letting out a little moan, in his desk. Nobody seems shocked.
 
-Shit... it's impossible that time has passed that fast."
+                          ⏹︎
+
+It's 2009 now and I'd love to go back in time and tell Michael that this job is not a bad movie where he can just throw shitty phrases.
+
+I'm in an improvised autopsy room in an yellow field, trying to understand how the family of inmigrants in front of me died. Two children
+
+                          ⏹︎
+
+It's today now. I didn't expect to be doing this 35 years later.
+
+I just don't understand..."
 fit_content = true
 scroll_active = false
 deselect_on_focus_loss_enabled = false
@@ -775,3 +839,8 @@ texture = ExtResource("18_i3vpe")
 [node name="musica" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("7_afk8c")
 volume_db = -19.81
+
+[node name="00Bathroom-overlay" type="Sprite2D" parent="."]
+z_index = 10
+position = Vector2(320, 180)
+texture = ExtResource("23_u33uo")
