@@ -40,7 +40,9 @@ directories/dtl_directory={
 layout/style_list=["res://styles/personajes_en_habitacion.tres", "res://styles/Llamada_de_teléfono.tres", "res://styles/Intro.tres"]
 layout/default_style=""
 variables={
-"alan": 1,
+"Laura_01": "1",
+"Laura_02": "1",
+"Laura_03": "1",
 "where": "start"
 }
 extensions_folder="res://addons/dialogic_additions"

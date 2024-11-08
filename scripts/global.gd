@@ -8,7 +8,8 @@ var Contactos = {
 	"Dennis Bridge" : 0
 	}
 var Nombre_en_llamada = "init"
-var Mobile_Time = 700
+var Hora = 7
+var Minutos = 16
 var Direccion = Vector2(0,0)
 var Status_phone = 0
 var bloc_de_notas = ""
@@ -25,3 +26,6 @@ var Contactos_Mensajes = {
 	"Name 4" : 0
 	}
 var Nombre_en_mensajes = ""
+
+func add_to_notes():
+	pass

@@ -899,7 +899,7 @@ texture = ExtResource("18_i3vpe")
 
 [node name="musica" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("7_afk8c")
-volume_db = -19.81
+volume_db = -15.0
 
 [node name="00Bathroom-overlay" type="Sprite2D" parent="."]
 z_index = 10

@@ -1,10 +1,19 @@
 [style name="personajes_en_habitacion"]
 join laura (Idle) left [animation="Fade In"]
-laura: Hi Pete, long time no see
-laura (Idle): How long since you left the department? One year?
-laura (sad): I'm sorry that we see each other again under these circumstances
-- I don't understand what happened to Jake, Laura...
-- I don't know what to do, Laura
-laura (sad): I know, Pete, I know, but I'm afraid we don't know where he is
-laura (Idle): You should go home and rest. I'll get back to you as soon as we have any information
+laura (sad): Hi Esther. I'm so sorry. I hope this woman is not your sister.
+laura: I'm afraid I need to ask you to identify the body.
+label pregunta 1
+- It's been more than 12 years since I last saw her | [if {Laura_01} == "1"]
+	set {Laura_01} = "0"
+	laura: If she's your sister, I'll need to ask you to come to the [color=#1eaf18]Police Station[/color] for an interrogation.
+	[signal arg="police_station"]
+	jump pregunta 1
+- I don't know if I can do this | [if {Laura_02} == "1"]
+	set {Laura_02} = "0"
+	laura: I'm so sorry, Esther. I'm afraid I need your help here.
+	jump pregunta 1
+- Where is she? | [if {Laura_03} == "1"]
+	set {Laura_03} = "0"
+	laura: She's here. But we're moving her to the [color=#1eaf18]morgue[/color] this evening.
+laura (Idle): I don't think you need to conduct the autopsy, Esther. I just need your help to identify the body.
 [signal arg="phone"]
