@@ -35,6 +35,7 @@ directories/dtl_directory={
 "laura_01": "res://dialogo/laura_01.dtl",
 "llamada_1_con_Clara": "res://dialogo/llamada_1_con_Clara.dtl",
 "monologo_inicial": "res://dialogo/monologo_inicial.dtl",
+"morgue": "res://dialogo/morgue.dtl",
 "primer_dia": "res://dialogo/primer_dia.dtl"
 }
 layout/style_list=["res://styles/personajes_en_habitacion.tres", "res://styles/Llamada_de_teléfono.tres", "res://styles/Intro.tres"]

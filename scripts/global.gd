@@ -15,7 +15,7 @@ var Status_phone = 0
 var bloc_de_notas = ""
 var mano = load("res://assets/interface/mouse.png")
 var punta = load("res://assets/interface/mouse_arrow.png")
-
+var door = load("res://assets/interface/mouse_door.png")
 
 
 # Listado de Mensajes
@@ -26,6 +26,3 @@ var Contactos_Mensajes = {
 	"Name 4" : 0
 	}
 var Nombre_en_mensajes = ""
-
-func add_to_notes():
-	pass

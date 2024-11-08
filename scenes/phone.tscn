@@ -1,8 +1,10 @@
-[gd_scene load_steps=32 format=3 uid="uid://vn8ay56opuf"]
+[gd_scene load_steps=34 format=3 uid="uid://vn8ay56opuf"]
 
 [ext_resource type="Texture2D" uid="uid://beks6fnb6rl84" path="res://assets/phone/phone_border.png" id="1_j61vq"]
 [ext_resource type="Texture2D" uid="uid://bjkxa8hgkpa7k" path="res://assets/phone/back_02.png" id="2_okc1m"]
+[ext_resource type="Script" path="res://scripts/raton_phone.gd" id="2_ol1mx"]
 [ext_resource type="Texture2D" uid="uid://djfoh71fik2qq" path="res://assets/phone/but_01_call_norm.png" id="3_a0jf0"]
+[ext_resource type="Script" path="res://scripts/mano_en_botones.gd" id="4_k73dl"]
 [ext_resource type="Texture2D" uid="uid://bn8amj4hx2ol1" path="res://assets/phone/but_01_call_press.png" id="5_taa3r"]
 [ext_resource type="Texture2D" uid="uid://27y00r4qj5q4" path="res://assets/phone/but_02_internet_norm.png" id="11_nq73h"]
 [ext_resource type="Texture2D" uid="uid://7pbkvxxhv4f3" path="res://assets/phone/but_02_internet_press.png" id="12_3f461"]
@@ -39,6 +41,16 @@ position = Vector2(470, 27)
 z_index = 10
 position = Vector2(74, 146)
 texture = ExtResource("1_j61vq")
+script = ExtResource("2_ol1mx")
+
+[node name="Control" type="Control" parent="PhoneBorder"]
+z_index = 10
+layout_mode = 3
+anchors_preset = 0
+offset_left = -84.0
+offset_top = -157.0
+offset_right = 95.0
+offset_bottom = 155.0
 
 [node name="Back02" type="Sprite2D" parent="."]
 position = Vector2(74, 146)
@@ -47,6 +59,7 @@ texture = ExtResource("2_okc1m")
 [node name="Botones" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
+script = ExtResource("4_k73dl")
 
 [node name="Botón de Llamada" type="TextureButton" parent="Botones"]
 layout_mode = 0
@@ -160,7 +173,17 @@ script = ExtResource("30_fonlb")
 stream = ExtResource("25_37ckp")
 volume_db = 2.5
 
+[connection signal="mouse_entered" from="PhoneBorder/Control" to="PhoneBorder" method="_on_control_mouse_entered"]
+[connection signal="mouse_exited" from="PhoneBorder/Control" to="PhoneBorder" method="_on_control_mouse_exited"]
 [connection signal="button_up" from="Botones/Botón de Llamada" to="Llamadas" method="_on_botón_de_llamada_button_up"]
+[connection signal="mouse_entered" from="Botones/Botón de Llamada" to="Botones" method="_on_botón_de_llamada_mouse_entered"]
+[connection signal="mouse_entered" from="Botones/Botón de Internet" to="Botones" method="_on_botón_de_internet_mouse_entered"]
 [connection signal="button_up" from="Botones/Botón de Mensajes" to="Mensajes" method="_on_botón_de_mensajes_button_up"]
+[connection signal="mouse_entered" from="Botones/Botón de Mensajes" to="Botones" method="_on_botón_de_mensajes_mouse_entered"]
+[connection signal="mouse_entered" from="Botones/Botón de música" to="Botones" method="_on_botón_de_música_mouse_entered"]
+[connection signal="mouse_entered" from="Botones/Botón de Files" to="Botones" method="_on_botón_de_files_mouse_entered"]
+[connection signal="mouse_entered" from="Botones/Botón de Ajustes" to="Botones" method="_on_botón_de_ajustes_mouse_entered"]
 [connection signal="button_up" from="Botones/Botón de Mapa" to="Maps" method="_on_botón_de_mapa_button_up"]
+[connection signal="mouse_entered" from="Botones/Botón de Mapa" to="Botones" method="_on_botón_de_mapa_mouse_entered"]
 [connection signal="button_up" from="Botones/Botón de Notas" to="Notepad" method="_on_botón_de_notas_button_up"]
+[connection signal="mouse_entered" from="Botones/Botón de Notas" to="Botones" method="_on_botón_de_notas_mouse_entered"]

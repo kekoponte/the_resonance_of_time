@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://rijy674jr0xh"
+path="res://.godot/imported/ Sibelius - Pelleas & Melisande.mp3-1bc490f88c29a4532b6d30ec6444659f.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/ Sibelius - Pelleas & Melisande.mp3"
+dest_files=["res://.godot/imported/ Sibelius - Pelleas & Melisande.mp3-1bc490f88c29a4532b6d30ec6444659f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
