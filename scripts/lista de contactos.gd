@@ -17,7 +17,7 @@ func _button_pressed(i):
 	get_parent().get_parent().get_node("Llamadas").z_index = 9
 	if Global.Contactos["Alan Ferris"] == 1:
 		Global.Contactos["Alan Ferris"] -= 1
-		Dialogic.start("alan")
+		Dialogic.start("comunicando")
 		Global.Nombre_en_llamada = "Alan Ferris"
 	if Global.Contactos["Clara Cole"] == 1:
 		Global.Contactos["Clara Cole"] -= 1

@@ -26,7 +26,7 @@
 
 [sub_resource type="Animation" id="Animation_7ac4f"]
 resource_name = "Presentacion"
-length = 60.0
+length = 63.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -34,7 +34,7 @@ tracks/0/path = NodePath("Presentacion/01Bedroom/01:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0.4, 8.03333, 14.1667, 16.4333),
+"times": PackedFloat32Array(0.4, 8.03333, 16.2667, 18.5333),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
@@ -42,23 +42,23 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Presentacion/01Bedroom/RichTextLabel:position")
+tracks/1/path = NodePath("Presentacion/01Bedroom/02:modulate")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0.2, 59.9667),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(5.46667, 16.4333, 18.7333, 27.5667, 29.5001),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(0, 180), Vector2(0, -810)]
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Presentacion/01Bedroom/02:modulate")
+tracks/2/path = NodePath("Presentacion/01Bedroom/03:modulate")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(5.46667, 14.2, 16.5, 24.6333, 26.5667),
+"times": PackedFloat32Array(5.46667, 27.7, 29.6, 42.5667, 44.1),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
@@ -66,35 +66,35 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Presentacion/01Bedroom/03:modulate")
+tracks/3/path = NodePath("Presentacion/01Bedroom/04:modulate")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(5.46667, 24.6, 26.5, 36.3, 37.8333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("Presentacion/01Bedroom/04:modulate")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(5.46667, 36.2, 37.8, 47.5333),
+"times": PackedFloat32Array(5.46667, 42.6, 44.2, 53.9333),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1)]
 }
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Presentacion/01Bedroom/01:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.166667),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("Presentacion/01Bedroom/01:visible")
+tracks/5/path = NodePath("Presentacion/01Bedroom/02:visible")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"times": PackedFloat32Array(0.166667),
+"times": PackedFloat32Array(5.46667),
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [true]
@@ -102,7 +102,7 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("Presentacion/01Bedroom/02:visible")
+tracks/6/path = NodePath("Presentacion/01Bedroom/03:visible")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
@@ -114,7 +114,7 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("Presentacion/01Bedroom/03:visible")
+tracks/7/path = NodePath("Presentacion/01Bedroom/04:visible")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
@@ -126,26 +126,38 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("Presentacion/01Bedroom/04:visible")
+tracks/8/path = NodePath("Presentacion/01Bedroom/04:texture")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
-"times": PackedFloat32Array(5.46667),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(5.46667, 42.1334, 42.2, 42.2667, 43.2, 44.8667, 44.9334, 45, 47.6667, 47.7334, 47.8, 49.6667, 49.7334, 49.8, 51.4, 51.4667, 51.5334, 52, 52.0667, 52.1334, 54.1334, 54.2, 54.2667, 55.6, 55.6667, 55.7334, 56.5, 56.5667, 56.6334, 58.3334, 58.4, 58.4667, 58.5334, 58.6, 58.6667, 59.4, 59.4667, 59.5334, 60.5667, 60.6334, 60.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [true]
+"values": [ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln")]
 }
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("Presentacion/01Bedroom/04:texture")
+tracks/9/path = NodePath("Presentacion/01Bedroom/Texto:position")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
-"times": PackedFloat32Array(5.46667, 39.1667, 39.2333, 39.3, 40.2333, 41.9, 41.9667, 42.0333, 44.7, 44.7667, 44.8333, 46.7, 46.7667, 46.8333, 48.4333, 48.5, 48.5667, 49.0333, 49.1, 49.1667, 51.1667, 51.2333, 51.3, 52.6333, 52.7, 52.7667, 53.5333, 53.6, 53.6667, 55.3667, 55.4333, 55.5, 55.5667, 55.6333, 55.7, 56.4333, 56.5, 56.5667, 57.6, 57.6667, 57.7333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln")]
+"times": PackedFloat32Array(0, 62.7333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-381, -207), Vector2(-381, -1152)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Presentacion/01Bedroom/Texto/RichTextLabel4:modulate")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(56.6667, 63),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_c4ryn"]
@@ -165,199 +177,199 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Presentacion/01Bedroom/RichTextLabel:position")
+tracks/1/path = NodePath("Presentacion/00UiHome:modulate")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(69, 217)]
+"values": [Color(1, 1, 1, 1)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Presentacion/00UiHome:modulate")
+tracks/2/path = NodePath("Presentacion/00UiHome/C:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Color(1, 1, 1, 1)]
+"values": [Vector2(92, -44)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Presentacion/00UiHome/C:position")
+tracks/3/path = NodePath("Presentacion/00UiHome/E:position")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(92, -44)]
+"values": [Vector2(81, -1)]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("Presentacion/00UiHome/E:position")
+tracks/4/path = NodePath("Presentacion/00UiHome/Epequena:position")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(81, -1)]
+"values": [Vector2(-126.5, -74.5)]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("Presentacion/00UiHome/Epequena:position")
+tracks/5/path = NodePath("Presentacion/00UiHome/H:position")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(-126.5, -74.5)]
+"values": [Vector2(-139.5, -74.5)]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("Presentacion/00UiHome/H:position")
+tracks/6/path = NodePath("Presentacion/00UiHome/N:position")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(-139.5, -74.5)]
+"values": [Vector2(-7, -44)]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("Presentacion/00UiHome/N:position")
+tracks/7/path = NodePath("Presentacion/00UiHome/O:position")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(-7, -44)]
+"values": [Vector2(-40, -44)]
 }
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("Presentacion/00UiHome/O:position")
+tracks/8/path = NodePath("Presentacion/00UiHome/T:position")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(-40, -44)]
+"values": [Vector2(-15, -1)]
 }
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("Presentacion/00UiHome/T:position")
+tracks/9/path = NodePath("Presentacion/00UiHome/Tpequena:position")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(-15, -1)]
+"values": [Vector2(-152.5, -74.5)]
 }
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("Presentacion/00UiHome/Tpequena:position")
+tracks/10/path = NodePath("Presentacion/00UiHome/Varias2:position")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(-152.5, -74.5)]
+"values": [Vector2(-7, -22.5)]
 }
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("Presentacion/00UiHome/Varias2:position")
+tracks/11/path = NodePath("Presentacion/00UiHome/Varias2:modulate")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(-7, -22.5)]
+"values": [Color(1, 1, 1, 1)]
 }
 tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("Presentacion/00UiHome/Varias2:modulate")
+tracks/12/path = NodePath("Presentacion/00UiHome/Varias:position")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Color(1, 1, 1, 1)]
+"values": [Vector2(-23.5, -22.5)]
 }
 tracks/13/type = "value"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("Presentacion/00UiHome/Varias:position")
+tracks/13/path = NodePath("Presentacion/00UiHome/Varias:modulate")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(-23.5, -22.5)]
+"values": [Color(1, 1, 1, 1)]
 }
 tracks/14/type = "value"
 tracks/14/imported = false
 tracks/14/enabled = true
-tracks/14/path = NodePath("Presentacion/00UiHome/Varias:modulate")
+tracks/14/path = NodePath("Presentacion/00UiHome/Opequena:position")
 tracks/14/interp = 1
 tracks/14/loop_wrap = true
 tracks/14/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Color(1, 1, 1, 1)]
+"values": [Vector2(-52.5, -13.5)]
 }
 tracks/15/type = "value"
 tracks/15/imported = false
 tracks/15/enabled = true
-tracks/15/path = NodePath("Presentacion/00UiHome/Opequena:position")
+tracks/15/path = NodePath("Presentacion/01Bedroom/02:modulate")
 tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(-52.5, -13.5)]
+"values": [Color(1, 1, 1, 1)]
 }
 tracks/16/type = "value"
 tracks/16/imported = false
 tracks/16/enabled = true
-tracks/16/path = NodePath("Presentacion/01Bedroom/02:modulate")
+tracks/16/path = NodePath("Presentacion/01Bedroom/03:modulate")
 tracks/16/interp = 1
 tracks/16/loop_wrap = true
 tracks/16/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Color(1, 1, 1, 1)]
+"values": [Color(1, 1, 1, 0)]
 }
 tracks/17/type = "value"
 tracks/17/imported = false
 tracks/17/enabled = true
-tracks/17/path = NodePath("Presentacion/01Bedroom/03:modulate")
+tracks/17/path = NodePath("Presentacion/01Bedroom/04:modulate")
 tracks/17/interp = 1
 tracks/17/loop_wrap = true
 tracks/17/keys = {
@@ -369,19 +381,19 @@ tracks/17/keys = {
 tracks/18/type = "value"
 tracks/18/imported = false
 tracks/18/enabled = true
-tracks/18/path = NodePath("Presentacion/01Bedroom/04:modulate")
+tracks/18/path = NodePath("Presentacion/01Bedroom/04:visible")
 tracks/18/interp = 1
 tracks/18/loop_wrap = true
 tracks/18/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 0)]
+"update": 1,
+"values": [false]
 }
 tracks/19/type = "value"
 tracks/19/imported = false
 tracks/19/enabled = true
-tracks/19/path = NodePath("Presentacion/01Bedroom/04:visible")
+tracks/19/path = NodePath("Presentacion/01Bedroom/03:visible")
 tracks/19/interp = 1
 tracks/19/loop_wrap = true
 tracks/19/keys = {
@@ -393,7 +405,7 @@ tracks/19/keys = {
 tracks/20/type = "value"
 tracks/20/imported = false
 tracks/20/enabled = true
-tracks/20/path = NodePath("Presentacion/01Bedroom/03:visible")
+tracks/20/path = NodePath("Presentacion/01Bedroom/02:visible")
 tracks/20/interp = 1
 tracks/20/loop_wrap = true
 tracks/20/keys = {
@@ -405,7 +417,7 @@ tracks/20/keys = {
 tracks/21/type = "value"
 tracks/21/imported = false
 tracks/21/enabled = true
-tracks/21/path = NodePath("Presentacion/01Bedroom/02:visible")
+tracks/21/path = NodePath("Presentacion/01Bedroom/01:visible")
 tracks/21/interp = 1
 tracks/21/loop_wrap = true
 tracks/21/keys = {
@@ -417,26 +429,67 @@ tracks/21/keys = {
 tracks/22/type = "value"
 tracks/22/imported = false
 tracks/22/enabled = true
-tracks/22/path = NodePath("Presentacion/01Bedroom/01:visible")
+tracks/22/path = NodePath("Presentacion/01Bedroom/04:texture")
 tracks/22/interp = 1
 tracks/22/loop_wrap = true
 tracks/22/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [false]
+"values": [ExtResource("15_ldeln")]
 }
 tracks/23/type = "value"
 tracks/23/imported = false
 tracks/23/enabled = true
-tracks/23/path = NodePath("Presentacion/01Bedroom/04:texture")
+tracks/23/path = NodePath("Presentacion/01Bedroom/Texto:position")
 tracks/23/interp = 1
 tracks/23/loop_wrap = true
 tracks/23/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-381, -207)]
+}
+tracks/24/type = "value"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("Presentacion/01Bedroom/Texto/RichTextLabel4:modulate")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_ocj7n"]
+resource_name = "blink"
+length = 10.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Presentacion/01Bedroom/04:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.266668, 0.333333, 3.63333, 3.7, 3.76667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [ExtResource("15_ldeln")]
+"values": [ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Presentacion/01Bedroom/04:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
 }
 
 [sub_resource type="Animation" id="Animation_noedu"]
@@ -659,35 +712,6 @@ tracks/17/keys = {
 "values": [false]
 }
 
-[sub_resource type="Animation" id="Animation_ocj7n"]
-resource_name = "blink"
-length = 10.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Presentacion/01Bedroom/04:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.266668, 0.333333, 3.63333, 3.7, 3.76667),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln"), ExtResource("15_ldeln"), ExtResource("15_kfttk"), ExtResource("15_ldeln")]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Presentacion/01Bedroom/04:visible")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_hsrnx"]
 _data = {
 "Presentacion": SubResource("Animation_7ac4f"),
@@ -792,11 +816,14 @@ position = Vector2(-117, -21)
 scale = Vector2(1.01852, 1.01852)
 texture = ExtResource("17_g0ss5")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Presentacion/01Bedroom"]
-offset_left = 69.0
-offset_top = 217.0
-offset_right = 363.0
-offset_bottom = 836.0
+[node name="Texto" type="Node2D" parent="Presentacion/01Bedroom"]
+position = Vector2(-381, -207)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Presentacion/01Bedroom/Texto"]
+offset_left = 389.0
+offset_top = 358.0
+offset_right = 683.0
+offset_bottom = 503.0
 theme_override_constants/line_separation = 6
 theme_override_fonts/normal_font = ExtResource("4_45mro")
 theme_override_font_sizes/normal_font_size = 10
@@ -807,25 +834,59 @@ I remember that very first job with Michael. 35 years ago.
 
 \"We're giving a voice to those who cannot speak\" he said.
 
-What a dumbass.
+What a dumbass."
+fit_content = true
+scroll_active = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
 
-                          ⏹︎
+[node name="RichTextLabel2" type="RichTextLabel" parent="Presentacion/01Bedroom/Texto"]
+offset_left = 389.0
+offset_top = 570.0
+offset_right = 683.0
+offset_bottom = 700.0
+theme_override_constants/line_separation = 6
+theme_override_fonts/normal_font = ExtResource("4_45mro")
+theme_override_font_sizes/normal_font_size = 10
+theme_override_styles/normal = SubResource("StyleBoxFlat_fbuxe")
+text = "10 years later it's the new year's eve of 1999 and I'm 34 years old and I'm fucking tired of this.
 
-10 years later it's the new years eve of 1999 and I'm 34 years old and I'm already tired of this.
+My boss dies of a heart attack in front of me. He just dies, letting out a little moan, in his desk. Nobody seems shocked."
+fit_content = true
+scroll_active = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
 
-My boss dies of a heart attack in front of me. He just dies, letting out a little moan, in his desk. Nobody seems shocked.
+[node name="RichTextLabel3" type="RichTextLabel" parent="Presentacion/01Bedroom/Texto"]
+offset_left = 389.0
+offset_top = 763.0
+offset_right = 683.0
+offset_bottom = 908.0
+theme_override_constants/line_separation = 6
+theme_override_fonts/normal_font = ExtResource("4_45mro")
+theme_override_font_sizes/normal_font_size = 10
+theme_override_styles/normal = SubResource("StyleBoxFlat_fbuxe")
+text = "It's 2009 now and I'd love to go back in time and tell Michael that this job is not a bad movie where he can just throw shitty phrases.
 
-                          ⏹︎
+I'm in an improvised autopsy room in an yellow field, trying to understand how the family of inmigrants in front of me died. Two children."
+fit_content = true
+scroll_active = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
 
-It's 2009 now and I'd love to go back in time and tell Michael that this job is not a bad movie where he can just throw shitty phrases.
+[node name="RichTextLabel4" type="RichTextLabel" parent="Presentacion/01Bedroom/Texto"]
+offset_left = 389.0
+offset_top = 959.0
+offset_right = 683.0
+offset_bottom = 1029.0
+theme_override_constants/line_separation = 6
+theme_override_fonts/normal_font = ExtResource("4_45mro")
+theme_override_font_sizes/normal_font_size = 10
+theme_override_styles/normal = SubResource("StyleBoxFlat_fbuxe")
+text = "It's today now. Madrid. 2024
+I didn't expect to be doing this 35 years later.
 
-I'm in an improvised autopsy room in an yellow field, trying to understand how the family of inmigrants in front of me died. Two children
-
-                          ⏹︎
-
-It's today now. I didn't expect to be doing this 35 years later.
-
-I just don't understand..."
+I wish that I could just stop..."
 fit_content = true
 scroll_active = false
 deselect_on_focus_loss_enabled = false

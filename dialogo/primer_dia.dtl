@@ -1,11 +1,11 @@
 [style name="Llamada_de_teléfono"]
-laura: Hi Elena
+laura: Hi Esther
 laura: I know it's early, but I'm afraid we have a corpse
 - Ok, I'll be there as soon as I drink a coffee
-	laura: No, Elena. Wait.\
+	laura: No, Esther. Wait.\
 There's something else.
 - Shit, Laura, couldn't you wait till I get to the office?
-	laura: No, Elena. I could not.\
+	laura: No, Esther. I could not.\
 There's something else.
 laura: There was a photograph. Of you. In her jacket.\
 It's a young woman. In her thirties.\
@@ -15,6 +15,6 @@ laura: ...
 laura: ...Esther?
 - I... I think...
 laura: ...What?
-laura: What is going on, Elena?
+laura: What is going on, Esther?
 - I think it might be my sister
 [signal arg="end"]
