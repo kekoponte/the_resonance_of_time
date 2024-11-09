@@ -16,6 +16,7 @@ var bloc_de_notas = ""
 var mano = load("res://assets/interface/mouse.png")
 var punta = load("res://assets/interface/mouse_arrow.png")
 var door = load("res://assets/interface/mouse_door.png")
+var lupa = load("res://assets/interface/mouse_lupa.png")
 
 
 # Listado de Mensajes
