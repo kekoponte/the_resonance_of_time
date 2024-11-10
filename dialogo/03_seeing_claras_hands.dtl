@@ -1,2 +1,5 @@
 [style name="personajes_en_habitacion"]
 There's something weird in her hands
+set {Morgue} += 1
+if {Morgue} == 2:
+	jump Michel_01/

@@ -202,13 +202,6 @@ offset_bottom = 57.0
 texture_normal = ExtResource("9_1s0iu")
 script = ExtResource("10_c7lse")
 
-[node name="rape" type="TextureButton" parent="Mouse_Areas"]
-layout_mode = 0
-offset_left = 230.0
-offset_top = 167.0
-offset_right = 275.0
-offset_bottom = 196.0
-
 [connection signal="button_down" from="Mouse_Areas/face" to="Mouse_Areas/face" method="_on_button_down"]
 [connection signal="mouse_entered" from="Mouse_Areas/face" to="Mouse_Areas/face" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Mouse_Areas/face" to="Mouse_Areas/face" method="_on_mouse_exited"]

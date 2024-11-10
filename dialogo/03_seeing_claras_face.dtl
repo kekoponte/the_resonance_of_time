@@ -2,3 +2,6 @@
 There you are
 My sweet child
 My little Clara. There's no doubt. It's you.
+set {Morgue} += 1
+if {Morgue} == 2:
+	jump Michel_01/

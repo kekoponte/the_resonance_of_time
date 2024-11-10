@@ -33,6 +33,7 @@ directories/dtl_directory={
 "Llamada_1_con_Colin": "res://dialogo/Llamada_1_con_Colin.dtl",
 "Llamada_1_con_Dennis": "res://dialogo/Llamada_1_con_Dennis.dtl",
 "Llamada_1_con_clara": "res://dialogo/Llamada_1_con_clara.dtl",
+"Michel_01": "res://dialogo/Michel_01.dtl",
 "alan": "res://dialogo/alan.dtl",
 "comunicando": "res://dialogo/comunicando.dtl",
 "laura_01": "res://dialogo/laura_01.dtl",
@@ -47,6 +48,7 @@ variables={
 "Laura_01": "1",
 "Laura_02": "1",
 "Laura_03": "1",
+"Morgue": 0,
 "where": "start"
 }
 extensions_folder="res://addons/dialogic_additions"

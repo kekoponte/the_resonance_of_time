@@ -17,7 +17,7 @@ var mano = load("res://assets/interface/mouse.png")
 var punta = load("res://assets/interface/mouse_arrow.png")
 var door = load("res://assets/interface/mouse_door.png")
 var lupa = load("res://assets/interface/mouse_lupa.png")
-
+var contador = 0
 
 # Listado de Mensajes
 var Contactos_Mensajes = {
