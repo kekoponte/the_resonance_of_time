@@ -1,7 +1,5 @@
 extends LineEdit
 
-var Destination = ""
-
 func _ready() -> void:
 	grab_focus()
 	set_process_input(true)

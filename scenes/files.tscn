@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://b53x8m2h6rlv4"]
+
+[ext_resource type="Texture2D" uid="uid://dhnfwodm0iydk" path="res://assets/phone/back_01.png" id="1_fi5cg"]
+[ext_resource type="Texture2D" uid="uid://cxy38ml7i6var" path="res://assets/phone/home_button.png" id="2_2y07i"]
+[ext_resource type="Texture2D" uid="uid://cbyl7p77epic7" path="res://assets/phone/home_button_pressed.png" id="3_cua4c"]
+[ext_resource type="Script" path="res://scripts/botón_de_home_notepad.gd" id="4_h32fj"]
+[ext_resource type="Script" path="res://scenes/listado_de_fotos.gd" id="5_hi60s"]
+
+[node name="Files" type="Node2D"]
+
+[node name="App Notas" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 146.0
+offset_bottom = 289.0
+mouse_filter = 1
+
+[node name="Fondo" type="Sprite2D" parent="App Notas"]
+z_index = -1
+position = Vector2(74, 147)
+texture = ExtResource("1_fi5cg")
+
+[node name="Botón de Home" type="TextureButton" parent="App Notas/Fondo"]
+z_index = 5
+offset_left = -16.0
+offset_top = 99.0
+offset_right = 8.0
+offset_bottom = 123.0
+texture_normal = ExtResource("2_2y07i")
+texture_pressed = ExtResource("3_cua4c")
+script = ExtResource("4_h32fj")
+
+[node name="listado_de_fotos" type="BoxContainer" parent="." groups=["Filegroup"]]
+clip_contents = true
+offset_left = 14.0
+offset_top = 21.0
+offset_right = 132.0
+offset_bottom = 235.0
+script = ExtResource("5_hi60s")

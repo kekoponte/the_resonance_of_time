@@ -24,22 +24,25 @@ Global="*res://scripts/global.gd"
 
 directories/dch_directory={
 "Esther": "res://dialogo/Esther.dch",
+"Michel": "res://dialogo/Characters/Michel.dch",
 "jake": "res://dialogo/jake.dch",
 "laura": "res://dialogo/laura.dch"
 }
 directories/dtl_directory={
-"03_seeing_claras_face": "res://dialogo/03_seeing_claras_face.dtl",
-"03_seeing_claras_hands": "res://dialogo/03_seeing_claras_hands.dtl",
+"03_seeing_claras_face": "res://dialogo/04_Morgue/03_seeing_claras_face.dtl",
+"03_seeing_claras_hands": "res://dialogo/04_Morgue/03_seeing_claras_hands.dtl",
 "Llamada_1_con_Colin": "res://dialogo/Llamada_1_con_Colin.dtl",
 "Llamada_1_con_Dennis": "res://dialogo/Llamada_1_con_Dennis.dtl",
 "Llamada_1_con_clara": "res://dialogo/Llamada_1_con_clara.dtl",
-"Michel_01": "res://dialogo/Michel_01.dtl",
+"Michel_01": "res://dialogo/04_Morgue/Michel_01.dtl",
 "alan": "res://dialogo/alan.dtl",
 "comunicando": "res://dialogo/comunicando.dtl",
+"foto_morgue": "res://dialogo/camara/foto_morgue.dtl",
 "laura_01": "res://dialogo/laura_01.dtl",
 "llamada_1_con_Clara": "res://dialogo/llamada_1_con_Clara.dtl",
 "monologo_inicial": "res://dialogo/monologo_inicial.dtl",
 "morgue": "res://dialogo/morgue.dtl",
+"no_foto": "res://dialogo/camara/no_foto.dtl",
 "primer_dia": "res://dialogo/primer_dia.dtl"
 }
 layout/style_list=["res://styles/personajes_en_habitacion.tres", "res://styles/Llamada_de_teléfono.tres", "res://styles/Intro.tres"]
@@ -49,6 +52,8 @@ variables={
 "Laura_02": "1",
 "Laura_03": "1",
 "Morgue": 0,
+"clara_face": "first_time",
+"clara_hand": "first_time",
 "where": "start"
 }
 extensions_folder="res://addons/dialogic_additions"
@@ -94,6 +99,10 @@ window/canvas_textures/default_texture_filter=1
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
+
+[global_group]
+
+Filegroup=""
 
 [input]
 

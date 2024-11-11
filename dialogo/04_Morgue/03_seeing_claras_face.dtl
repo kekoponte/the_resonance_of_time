@@ -1,0 +1,11 @@
+[style name="personajes_en_habitacion"]
+[background arg="res://assets/locations/03_Morgue/Clara.png" fade="0.0"]
+if {clara_face} == "first_time":
+	There you are
+	My sweet child
+	set {clara_face} = "after_first_time"
+	set {Morgue} += 1
+if {clara_face} == "after_first_time":
+	It's her. There's no doubt.
+if {Morgue} == 2:
+	jump Michel_01/

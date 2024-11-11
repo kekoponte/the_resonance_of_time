@@ -1,7 +1,6 @@
 extends TextureButton
 
 func _on_button_down() -> void:
-	$clara_hands.show()
 	Dialogic.start("03_seeing_claras_hands")
 
 

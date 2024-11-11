@@ -1,15 +1,11 @@
-[gd_scene load_steps=18 format=3 uid="uid://c6qjxx1uno1h5"]
+[gd_scene load_steps=14 format=3 uid="uid://c6qjxx1uno1h5"]
 
 [ext_resource type="Texture2D" uid="uid://6np5yxvxxqov" path="res://assets/locations/03_hospital_bed.png" id="1_463li"]
 [ext_resource type="Script" path="res://scripts/room_03_hospital_morgue.gd" id="1_rbq7p"]
 [ext_resource type="PackedScene" uid="uid://vn8ay56opuf" path="res://scenes/phone.tscn" id="2_3ns8o"]
 [ext_resource type="AudioStream" uid="uid://rijy674jr0xh" path="res://assets/sounds/ Sibelius - Pelleas & Melisande.mp3" id="4_ohf8l"]
 [ext_resource type="Script" path="res://scripts/03_Morgue/mouse_clara_face.gd" id="5_cwhgt"]
-[ext_resource type="Texture2D" uid="uid://wnati1a6tqwe" path="res://assets/locations/03_Morgue/Clara.png" id="6_ccgib"]
-[ext_resource type="Script" path="res://scripts/03_Morgue/clara_face.gd" id="7_5q51d"]
 [ext_resource type="Script" path="res://scripts/03_Morgue/mouse_clara_hands.gd" id="8_klaee"]
-[ext_resource type="Texture2D" uid="uid://bjr84l0avsygh" path="res://assets/locations/03_Morgue/hand.png" id="9_1s0iu"]
-[ext_resource type="Script" path="res://scripts/03_Morgue/clara_hands.gd" id="10_c7lse"]
 
 [sub_resource type="Animation" id="Animation_5nhyf"]
 length = 0.001
@@ -140,6 +136,7 @@ offset_bottom = 366.0
 color = Color(0, 0, 0, 1)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 1
 
 [node name="03HospitalBed" type="Sprite2D" parent="."]
 position = Vector2(320, 180)
@@ -158,55 +155,25 @@ stream = ExtResource("4_ohf8l")
 volume_db = -80.0
 autoplay = true
 
-[node name="Mouse_Areas" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="face" type="TextureButton" parent="Mouse_Areas"]
-layout_mode = 0
-offset_left = 366.0
-offset_top = 145.0
-offset_right = 446.0
-offset_bottom = 207.0
+[node name="face" type="TextureButton" parent="."]
+z_index = 1
+offset_left = 348.0
+offset_top = 136.0
+offset_right = 428.0
+offset_bottom = 198.0
 script = ExtResource("5_cwhgt")
 
-[node name="clara_face" type="TextureButton" parent="Mouse_Areas/face"]
-visible = false
-z_index = 5
-layout_mode = 0
-offset_left = -209.0
-offset_top = -109.0
-offset_right = 76.0
-offset_bottom = 110.0
-rotation = -9.74089e-05
-texture_normal = ExtResource("6_ccgib")
-script = ExtResource("7_5q51d")
-
-[node name="hands" type="TextureButton" parent="Mouse_Areas"]
-layout_mode = 0
-offset_left = 263.0
-offset_top = 210.0
-offset_right = 308.0
-offset_bottom = 239.0
+[node name="hands" type="TextureButton" parent="."]
+z_index = 1
+offset_left = 243.0
+offset_top = 202.0
+offset_right = 300.0
+offset_bottom = 235.0
 script = ExtResource("8_klaee")
 
-[node name="clara_hands" type="TextureButton" parent="Mouse_Areas/hands"]
-visible = false
-layout_mode = 0
-offset_left = -134.0
-offset_top = -162.0
-offset_right = 151.0
-offset_bottom = 57.0
-texture_normal = ExtResource("9_1s0iu")
-script = ExtResource("10_c7lse")
-
-[connection signal="button_down" from="Mouse_Areas/face" to="Mouse_Areas/face" method="_on_button_down"]
-[connection signal="mouse_entered" from="Mouse_Areas/face" to="Mouse_Areas/face" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Mouse_Areas/face" to="Mouse_Areas/face" method="_on_mouse_exited"]
-[connection signal="button_down" from="Mouse_Areas/face/clara_face" to="Mouse_Areas/face/clara_face" method="_on_button_down"]
-[connection signal="button_down" from="Mouse_Areas/hands" to="Mouse_Areas/hands" method="_on_button_down"]
-[connection signal="mouse_entered" from="Mouse_Areas/hands" to="Mouse_Areas/hands" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Mouse_Areas/hands" to="Mouse_Areas/hands" method="_on_mouse_exited"]
-[connection signal="button_down" from="Mouse_Areas/hands/clara_hands" to="Mouse_Areas/hands/clara_hands" method="_on_button_down"]
+[connection signal="button_down" from="face" to="face" method="_on_button_down"]
+[connection signal="mouse_entered" from="face" to="face" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="face" to="face" method="_on_mouse_exited"]
+[connection signal="button_down" from="hands" to="hands" method="_on_button_down"]
+[connection signal="mouse_entered" from="hands" to="hands" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="hands" to="hands" method="_on_mouse_exited"]

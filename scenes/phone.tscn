@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://vn8ay56opuf"]
+[gd_scene load_steps=39 format=3 uid="uid://vn8ay56opuf"]
 
 [ext_resource type="Texture2D" uid="uid://beks6fnb6rl84" path="res://assets/phone/phone_border.png" id="1_j61vq"]
 [ext_resource type="Texture2D" uid="uid://bjkxa8hgkpa7k" path="res://assets/phone/back_02.png" id="2_okc1m"]
@@ -27,6 +27,7 @@
 [ext_resource type="Texture2D" uid="uid://pnnab3s5pva1" path="res://assets/phone/but_09_camera_press.png" id="22_fdolo"]
 [ext_resource type="Texture2D" uid="uid://vuik681tkgv3" path="res://assets/phone/back_off.png" id="22_ffulx"]
 [ext_resource type="Script" path="res://scripts/maps.gd" id="23_puyw8"]
+[ext_resource type="Script" path="res://scripts/cámara.gd" id="23_vdf0h"]
 [ext_resource type="Script" path="res://scripts/pantalla_en_espera.gd" id="23_y063v"]
 [ext_resource type="FontFile" uid="uid://cyoe0lu3ghnvg" path="res://assets/fonts/dogicapixelbold.ttf" id="24_2chle"]
 [ext_resource type="Script" path="res://scripts/notepad.gd" id="25_02gv0"]
@@ -35,8 +36,8 @@
 [ext_resource type="Script" path="res://scripts/but_mensajes.gd" id="26_rkoko"]
 [ext_resource type="PackedScene" uid="uid://uipquy6s7naq" path="res://scenes/notepad.tscn" id="28_guerb"]
 [ext_resource type="Script" path="res://scripts/phone/set_horas.gd" id="30_fonlb"]
-[ext_resource type="PackedScene" uid="uid://sclhatktym8r" path="res://scenes/camara.tscn" id="31_0udu6"]
-[ext_resource type="Script" path="res://scripts/camara.gd" id="32_dlq3j"]
+[ext_resource type="PackedScene" uid="uid://b53x8m2h6rlv4" path="res://scenes/files.tscn" id="32_a0de5"]
+[ext_resource type="Script" path="res://scripts/phone/files.gd" id="33_vvtej"]
 
 [node name="Phone" type="Node2D"]
 position = Vector2(470, 27)
@@ -145,6 +146,7 @@ offset_right = 39.0
 offset_bottom = 90.0
 texture_normal = ExtResource("21_w57ve")
 texture_pressed = ExtResource("22_fdolo")
+script = ExtResource("23_vdf0h")
 
 [node name="Llamadas" parent="." instance=ExtResource("21_5lrpb")]
 visible = false
@@ -167,10 +169,9 @@ visible = false
 position = Vector2(-1, -1)
 script = ExtResource("26_rkoko")
 
-[node name="Camara" parent="." instance=ExtResource("31_0udu6")]
+[node name="Files" parent="." instance=ExtResource("32_a0de5")]
 visible = false
-position = Vector2(0, -1)
-script = ExtResource("32_dlq3j")
+script = ExtResource("33_vvtej")
 
 [node name="Espera2" type="Sprite2D" parent="."]
 visible = false
@@ -200,10 +201,12 @@ volume_db = 2.5
 [connection signal="button_up" from="Botones/Botón de Mensajes" to="Mensajes" method="_on_botón_de_mensajes_button_up"]
 [connection signal="mouse_entered" from="Botones/Botón de Mensajes" to="Botones" method="_on_botón_de_mensajes_mouse_entered"]
 [connection signal="mouse_entered" from="Botones/Botón de música" to="Botones" method="_on_botón_de_música_mouse_entered"]
+[connection signal="button_up" from="Botones/Botón de Files" to="Files" method="_on_botón_de_files_button_up"]
 [connection signal="mouse_entered" from="Botones/Botón de Files" to="Botones" method="_on_botón_de_files_mouse_entered"]
 [connection signal="mouse_entered" from="Botones/Botón de Ajustes" to="Botones" method="_on_botón_de_ajustes_mouse_entered"]
 [connection signal="button_up" from="Botones/Botón de Mapa" to="Maps" method="_on_botón_de_mapa_button_up"]
 [connection signal="mouse_entered" from="Botones/Botón de Mapa" to="Botones" method="_on_botón_de_mapa_mouse_entered"]
 [connection signal="button_up" from="Botones/Botón de Notas" to="Notepad" method="_on_botón_de_notas_button_up"]
 [connection signal="mouse_entered" from="Botones/Botón de Notas" to="Botones" method="_on_botón_de_notas_mouse_entered"]
-[connection signal="button_up" from="Botones/Botón de Cámara" to="Camara" method="_on_botón_de_cámara_button_up"]
+[connection signal="button_down" from="Botones/Botón de Cámara" to="Botones/Botón de Cámara" method="_on_button_down"]
+[connection signal="mouse_entered" from="Botones/Botón de Cámara" to="Botones" method="_on_botón_de_cámara_mouse_entered"]
