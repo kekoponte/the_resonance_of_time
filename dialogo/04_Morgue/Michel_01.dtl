@@ -1,2 +1,4 @@
+[style name="personajes_en_habitacion"]
 Michel: Wait! Who are you?
+join Michel left [animation="Fade In"]
 Michel: You shouldn't be here. This is an autopsy room.

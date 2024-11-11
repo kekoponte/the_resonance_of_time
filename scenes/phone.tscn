@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=3 uid="uid://vn8ay56opuf"]
+[gd_scene load_steps=42 format=3 uid="uid://vn8ay56opuf"]
 
 [ext_resource type="Texture2D" uid="uid://beks6fnb6rl84" path="res://assets/phone/phone_border.png" id="1_j61vq"]
 [ext_resource type="Texture2D" uid="uid://bjkxa8hgkpa7k" path="res://assets/phone/back_02.png" id="2_okc1m"]
@@ -9,8 +9,11 @@
 [ext_resource type="Texture2D" uid="uid://27y00r4qj5q4" path="res://assets/phone/but_02_internet_norm.png" id="11_nq73h"]
 [ext_resource type="Texture2D" uid="uid://7pbkvxxhv4f3" path="res://assets/phone/but_02_internet_press.png" id="12_3f461"]
 [ext_resource type="Texture2D" uid="uid://c2werlcop1k7x" path="res://assets/phone/but_03_message_norm.png" id="13_1ouq8"]
+[ext_resource type="Texture2D" uid="uid://btw71nod6xkbx" path="res://assets/phone/but_10_photos_norm.png" id="13_6ipwt"]
 [ext_resource type="Texture2D" uid="uid://b7aa6xq8c7sek" path="res://assets/phone/but_03_message_press.png" id="14_hns2t"]
+[ext_resource type="Texture2D" uid="uid://c4cq6goosmrir" path="res://assets/phone/but_10_photos_press.png" id="14_mgk7t"]
 [ext_resource type="Texture2D" uid="uid://1darxjtws45r" path="res://assets/phone/but_04_music_norm.png" id="15_lol5f"]
+[ext_resource type="FontFile" uid="uid://b2rl6owflbu8i" path="res://assets/fonts/runescape_uf.ttf" id="15_xxusd"]
 [ext_resource type="Texture2D" uid="uid://3g74n6watdv" path="res://assets/phone/but_04_music_press.png" id="16_kupfh"]
 [ext_resource type="Texture2D" uid="uid://dtmg7e500541" path="res://assets/phone/but_07_map_norm.png" id="16_y7teg"]
 [ext_resource type="Texture2D" uid="uid://s42lsjfxahla" path="res://assets/phone/but_07_map_press.png" id="17_efyyj"]
@@ -37,7 +40,7 @@
 [ext_resource type="PackedScene" uid="uid://uipquy6s7naq" path="res://scenes/notepad.tscn" id="28_guerb"]
 [ext_resource type="Script" path="res://scripts/phone/set_horas.gd" id="30_fonlb"]
 [ext_resource type="PackedScene" uid="uid://b53x8m2h6rlv4" path="res://scenes/files.tscn" id="32_a0de5"]
-[ext_resource type="Script" path="res://scripts/phone/files.gd" id="33_vvtej"]
+[ext_resource type="Script" path="res://scripts/phone/fotos.gd" id="33_vvtej"]
 
 [node name="Phone" type="Node2D"]
 position = Vector2(470, 27)
@@ -102,14 +105,25 @@ offset_bottom = 271.0
 texture_normal = ExtResource("15_lol5f")
 texture_pressed = ExtResource("16_kupfh")
 
-[node name="Botón de Files" type="TextureButton" parent="Botones"]
+[node name="Botón de Fotos" type="TextureButton" parent="Botones"]
 layout_mode = 0
 offset_left = 10.0
 offset_top = 29.0
 offset_right = 39.0
 offset_bottom = 57.0
-texture_normal = ExtResource("17_mrrvu")
-texture_pressed = ExtResource("18_qrhqb")
+texture_normal = ExtResource("13_6ipwt")
+texture_pressed = ExtResource("14_mgk7t")
+
+[node name="Label" type="Label" parent="Botones/Botón de Fotos"]
+layout_mode = 0
+offset_top = 29.0
+offset_right = 29.0
+offset_bottom = 37.0
+theme_override_colors/font_color = Color(0, 0, 0, 0.760784)
+theme_override_fonts/font = ExtResource("15_xxusd")
+theme_override_font_sizes/font_size = 7
+text = "Photos"
+horizontal_alignment = 1
 
 [node name="Botón de Ajustes" type="TextureButton" parent="Botones"]
 layout_mode = 0
@@ -120,6 +134,17 @@ offset_bottom = 57.0
 texture_normal = ExtResource("19_eevwe")
 texture_pressed = ExtResource("20_yenpe")
 
+[node name="Label2" type="Label" parent="Botones/Botón de Ajustes"]
+layout_mode = 0
+offset_top = 29.0
+offset_right = 29.0
+offset_bottom = 37.0
+theme_override_colors/font_color = Color(0, 0, 0, 0.760784)
+theme_override_fonts/font = ExtResource("15_xxusd")
+theme_override_font_sizes/font_size = 7
+text = "Settings"
+horizontal_alignment = 1
+
 [node name="Botón de Mapa" type="TextureButton" parent="Botones"]
 layout_mode = 0
 offset_left = 74.0
@@ -128,6 +153,17 @@ offset_right = 103.0
 offset_bottom = 57.0
 texture_normal = ExtResource("16_y7teg")
 texture_pressed = ExtResource("17_efyyj")
+
+[node name="Label3" type="Label" parent="Botones/Botón de Mapa"]
+layout_mode = 0
+offset_top = 29.0
+offset_right = 29.0
+offset_bottom = 37.0
+theme_override_colors/font_color = Color(0, 0, 0, 0.760784)
+theme_override_fonts/font = ExtResource("15_xxusd")
+theme_override_font_sizes/font_size = 7
+text = "Map"
+horizontal_alignment = 1
 
 [node name="Botón de Notas" type="TextureButton" parent="Botones"]
 layout_mode = 0
@@ -138,15 +174,57 @@ offset_bottom = 57.0
 texture_normal = ExtResource("18_p3tcy")
 texture_pressed = ExtResource("19_23brm")
 
+[node name="Label4" type="Label" parent="Botones/Botón de Notas"]
+layout_mode = 0
+offset_top = 29.0
+offset_right = 29.0
+offset_bottom = 37.0
+theme_override_colors/font_color = Color(0, 0, 0, 0.760784)
+theme_override_fonts/font = ExtResource("15_xxusd")
+theme_override_font_sizes/font_size = 7
+text = "Notes"
+horizontal_alignment = 1
+
 [node name="Botón de Cámara" type="TextureButton" parent="Botones"]
 layout_mode = 0
 offset_left = 10.0
-offset_top = 62.0
+offset_top = 69.0
 offset_right = 39.0
-offset_bottom = 90.0
+offset_bottom = 97.0
 texture_normal = ExtResource("21_w57ve")
 texture_pressed = ExtResource("22_fdolo")
 script = ExtResource("23_vdf0h")
+
+[node name="Label2" type="Label" parent="Botones/Botón de Cámara"]
+layout_mode = 0
+offset_top = 29.0
+offset_right = 29.0
+offset_bottom = 37.0
+theme_override_colors/font_color = Color(0, 0, 0, 0.760784)
+theme_override_fonts/font = ExtResource("15_xxusd")
+theme_override_font_sizes/font_size = 7
+text = "Camera"
+horizontal_alignment = 1
+
+[node name="Botón de Files" type="TextureButton" parent="Botones"]
+layout_mode = 0
+offset_left = 43.0
+offset_top = 69.0
+offset_right = 72.0
+offset_bottom = 97.0
+texture_normal = ExtResource("17_mrrvu")
+texture_pressed = ExtResource("18_qrhqb")
+
+[node name="Label3" type="Label" parent="Botones/Botón de Files"]
+layout_mode = 0
+offset_top = 29.0
+offset_right = 29.0
+offset_bottom = 37.0
+theme_override_colors/font_color = Color(0, 0, 0, 0.760784)
+theme_override_fonts/font = ExtResource("15_xxusd")
+theme_override_font_sizes/font_size = 7
+text = "Files"
+horizontal_alignment = 1
 
 [node name="Llamadas" parent="." instance=ExtResource("21_5lrpb")]
 visible = false
@@ -169,7 +247,7 @@ visible = false
 position = Vector2(-1, -1)
 script = ExtResource("26_rkoko")
 
-[node name="Files" parent="." instance=ExtResource("32_a0de5")]
+[node name="Fotos" parent="." instance=ExtResource("32_a0de5")]
 visible = false
 script = ExtResource("33_vvtej")
 
@@ -191,7 +269,7 @@ script = ExtResource("30_fonlb")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Espera2"]
 stream = ExtResource("25_37ckp")
-volume_db = 2.5
+volume_db = 4.0
 
 [connection signal="mouse_entered" from="PhoneBorder/Control" to="PhoneBorder" method="_on_control_mouse_entered"]
 [connection signal="mouse_exited" from="PhoneBorder/Control" to="PhoneBorder" method="_on_control_mouse_exited"]
@@ -201,8 +279,8 @@ volume_db = 2.5
 [connection signal="button_up" from="Botones/Botón de Mensajes" to="Mensajes" method="_on_botón_de_mensajes_button_up"]
 [connection signal="mouse_entered" from="Botones/Botón de Mensajes" to="Botones" method="_on_botón_de_mensajes_mouse_entered"]
 [connection signal="mouse_entered" from="Botones/Botón de música" to="Botones" method="_on_botón_de_música_mouse_entered"]
-[connection signal="button_up" from="Botones/Botón de Files" to="Files" method="_on_botón_de_files_button_up"]
-[connection signal="mouse_entered" from="Botones/Botón de Files" to="Botones" method="_on_botón_de_files_mouse_entered"]
+[connection signal="button_up" from="Botones/Botón de Fotos" to="Fotos" method="_on_botón_de_files_button_up"]
+[connection signal="mouse_entered" from="Botones/Botón de Fotos" to="Botones" method="_on_botón_de_files_mouse_entered"]
 [connection signal="mouse_entered" from="Botones/Botón de Ajustes" to="Botones" method="_on_botón_de_ajustes_mouse_entered"]
 [connection signal="button_up" from="Botones/Botón de Mapa" to="Maps" method="_on_botón_de_mapa_button_up"]
 [connection signal="mouse_entered" from="Botones/Botón de Mapa" to="Botones" method="_on_botón_de_mapa_mouse_entered"]

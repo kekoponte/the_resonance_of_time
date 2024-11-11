@@ -8,4 +8,5 @@ if {clara_hand} == "first_time":
 elif {clara_hand} == "after_first_time":
 	There are small remnants of skin under her nails.
 if {Morgue} == 2:
+	[background fade="0.0"]
 	jump Michel_01/

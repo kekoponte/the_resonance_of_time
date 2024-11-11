@@ -52,6 +52,7 @@ variables={
 "Laura_02": "1",
 "Laura_03": "1",
 "Morgue": 0,
+"alan": 1.0,
 "clara_face": "first_time",
 "clara_hand": "first_time",
 "where": "start"
@@ -78,6 +79,12 @@ text/autopauses={}
 glossary/default_case_sensitive=true
 text/autocolor_names=false
 audio/max_channels=4.0
+translation/enabled=false
+translation/original_locale="es_AR"
+translation/file_mode=1
+translation/translation_folder=""
+translation/save_mode=0
+translation/add_separator=false
 
 [dialogue_manager]
 
@@ -115,6 +122,10 @@ dialogic_default_action={
 , Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":0,"pressure":0.0,"pressed":false,"script":null)
 ]
 }
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
 
 [internationalization]
 

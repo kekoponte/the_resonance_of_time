@@ -24,7 +24,7 @@ func _on_area_2d_input_event(_viewport: Node, event: InputEvent, _shape_idx: int
 #Funcionalidad de ir al destino 
 #Global.direccion se define en "busqueda del mapa.gd"
 
-func _on_text_submitted(new_text: String) -> void:
+func _on_text_submitted(_new_text: String) -> void:
 	await get_tree().create_timer(0.3).timeout 
 	position = Global.Direccion
 	print(Global.Direccion)

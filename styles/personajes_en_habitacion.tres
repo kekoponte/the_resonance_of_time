@@ -44,7 +44,6 @@ overrides = {
 "box_margin_bottom": "10.0",
 "box_panel": "\"res://styles/personajes_en_habitacion_panel.tres\"",
 "box_size": "Vector2(550, 70)",
-"name_label_box_offset": "Vector2(0, 1)",
 "name_label_box_panel": "\"res://styles/personajes_en_habitacion_panel.tres\"",
 "name_label_custom_font_size": "8.0",
 "name_label_font": "\"res://assets/fonts/dogicapixelbold.ttf\"",

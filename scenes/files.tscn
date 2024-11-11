@@ -17,7 +17,7 @@ mouse_filter = 1
 
 [node name="Fondo" type="Sprite2D" parent="App Notas"]
 z_index = -1
-position = Vector2(74, 147)
+position = Vector2(74, 146)
 texture = ExtResource("1_fi5cg")
 
 [node name="Botón de Home" type="TextureButton" parent="App Notas/Fondo"]
@@ -30,10 +30,18 @@ texture_normal = ExtResource("2_2y07i")
 texture_pressed = ExtResource("3_cua4c")
 script = ExtResource("4_h32fj")
 
-[node name="listado_de_fotos" type="BoxContainer" parent="." groups=["Filegroup"]]
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 6.0
+offset_top = 10.0
+offset_right = 140.0
+offset_bottom = 238.0
+
+[node name="listado_de_fotos" type="VBoxContainer" parent="Control" groups=["Filegroup"]]
+z_index = 4
 clip_contents = true
-offset_left = 14.0
-offset_top = 21.0
-offset_right = 132.0
-offset_bottom = 235.0
+offset_top = 17.0
+offset_right = 133.0
+offset_bottom = 231.0
 script = ExtResource("5_hi60s")

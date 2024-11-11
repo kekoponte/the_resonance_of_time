@@ -130,7 +130,6 @@ libraries = {
 }
 
 [node name="ColorRect" type="ColorRect" parent="fade_in"]
-visible = false
 offset_right = 644.0
 offset_bottom = 366.0
 color = Color(0, 0, 0, 1)
@@ -161,6 +160,7 @@ offset_left = 348.0
 offset_top = 136.0
 offset_right = 428.0
 offset_bottom = 198.0
+focus_mode = 0
 script = ExtResource("5_cwhgt")
 
 [node name="hands" type="TextureButton" parent="."]
@@ -169,6 +169,7 @@ offset_left = 243.0
 offset_top = 202.0
 offset_right = 300.0
 offset_bottom = 235.0
+focus_mode = 0
 script = ExtResource("8_klaee")
 
 [connection signal="button_down" from="face" to="face" method="_on_button_down"]
