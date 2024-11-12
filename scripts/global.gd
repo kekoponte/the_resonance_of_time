@@ -23,6 +23,7 @@ var contador = 0 #Variable genérica para temas varios
 var Location = "" #Variable que guarda la localización actual. Relevante para la cámara
 var clara = load("res://assets/locations/03_Morgue/Clara.png")
 var listado_de_fotos = []
+var stress = 3
 
 # Variables para guardar el estado de las fotos
 var Clara_in_photos = 0

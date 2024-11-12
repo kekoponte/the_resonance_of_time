@@ -1,4 +1,11 @@
 [style name="personajes_en_habitacion"]
-Michel: Wait! Who are you?
+Michel (idle/idle): Wait! Who are you?
 join Michel left [animation="Fade In"]
 Michel: You shouldn't be here. This is an autopsy room.
+- My name is Esther, I'm here to identify the body
+	Michel (idle/idle): Oh, I'm sorry, Esther. Liutenent Laura mentioned that you'll be here this very morning.
+	Michel: Did you know the victim?
+- I'm a forensic expert, who are you?
+	Michel: I'm afraid I AM the forensic expert here
+	[signal arg="life_down"]
+Michel: Let's leave this room

@@ -24,3 +24,10 @@ func _on_dialogic_signal(argument:String):
 	elif argument == "phone":
 		$Phone.show()
 		$Phone.set_process(true)
+
+	elif argument == "life_start":
+		Global.stress = 3
+		$Stress_in_Conversation.show()
+	
+	elif argument == "life_down":
+		Global.stress -= 1
