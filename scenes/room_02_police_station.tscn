@@ -71,10 +71,10 @@ libraries = {
 
 [node name="label" type="RichTextLabel" parent="label"]
 clip_contents = false
-offset_left = 645.0
-offset_top = 9.0
-offset_right = 813.0
-offset_bottom = 29.0
+offset_left = -169.0
+offset_top = 311.0
+offset_right = -1.0
+offset_bottom = 331.0
 theme_override_fonts/normal_font = ExtResource("4_op461")
 theme_override_font_sizes/normal_font_size = 9
 theme_override_styles/normal = SubResource("StyleBoxFlat_1vksm")
@@ -93,13 +93,13 @@ script = ExtResource("8_djqr2")
 [node name="Label" type="Label" parent="morgue"]
 visible = false
 layout_mode = 0
-offset_left = 37.0
-offset_top = 91.0
-offset_right = 97.0
-offset_bottom = 114.0
+offset_left = 39.0
+offset_top = 93.0
+offset_right = 99.0
+offset_bottom = 116.0
 theme_override_fonts/font = ExtResource("8_7jek1")
 theme_override_font_sizes/font_size = 8
-text = "Morgue"
+text = "Enter"
 
 [connection signal="button_down" from="morgue" to="morgue" method="_on_button_down"]
 [connection signal="mouse_entered" from="morgue" to="morgue" method="_on_mouse_entered"]

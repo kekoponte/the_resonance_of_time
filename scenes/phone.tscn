@@ -75,6 +75,7 @@ offset_left = 10.0
 offset_top = 243.0
 offset_right = 39.0
 offset_bottom = 271.0
+focus_mode = 0
 texture_normal = ExtResource("3_a0jf0")
 texture_pressed = ExtResource("5_taa3r")
 
@@ -84,6 +85,7 @@ offset_left = 42.0
 offset_top = 243.0
 offset_right = 71.0
 offset_bottom = 271.0
+focus_mode = 0
 texture_normal = ExtResource("11_nq73h")
 texture_pressed = ExtResource("12_3f461")
 
@@ -93,6 +95,7 @@ offset_left = 74.0
 offset_top = 243.0
 offset_right = 103.0
 offset_bottom = 271.0
+focus_mode = 0
 texture_normal = ExtResource("13_1ouq8")
 texture_pressed = ExtResource("14_hns2t")
 
@@ -102,6 +105,7 @@ offset_left = 106.0
 offset_top = 243.0
 offset_right = 135.0
 offset_bottom = 271.0
+focus_mode = 0
 texture_normal = ExtResource("15_lol5f")
 texture_pressed = ExtResource("16_kupfh")
 
@@ -111,6 +115,7 @@ offset_left = 10.0
 offset_top = 29.0
 offset_right = 39.0
 offset_bottom = 57.0
+focus_mode = 0
 texture_normal = ExtResource("13_6ipwt")
 texture_pressed = ExtResource("14_mgk7t")
 
@@ -131,6 +136,7 @@ offset_left = 42.0
 offset_top = 29.0
 offset_right = 71.0
 offset_bottom = 57.0
+focus_mode = 0
 texture_normal = ExtResource("19_eevwe")
 texture_pressed = ExtResource("20_yenpe")
 
@@ -151,6 +157,7 @@ offset_left = 74.0
 offset_top = 29.0
 offset_right = 103.0
 offset_bottom = 57.0
+focus_mode = 0
 texture_normal = ExtResource("16_y7teg")
 texture_pressed = ExtResource("17_efyyj")
 
@@ -171,6 +178,7 @@ offset_left = 106.0
 offset_top = 29.0
 offset_right = 135.0
 offset_bottom = 57.0
+focus_mode = 0
 texture_normal = ExtResource("18_p3tcy")
 texture_pressed = ExtResource("19_23brm")
 
@@ -191,6 +199,7 @@ offset_left = 10.0
 offset_top = 69.0
 offset_right = 39.0
 offset_bottom = 97.0
+focus_mode = 0
 texture_normal = ExtResource("21_w57ve")
 texture_pressed = ExtResource("22_fdolo")
 script = ExtResource("23_vdf0h")
@@ -212,6 +221,7 @@ offset_left = 43.0
 offset_top = 69.0
 offset_right = 72.0
 offset_bottom = 97.0
+focus_mode = 0
 texture_normal = ExtResource("17_mrrvu")
 texture_pressed = ExtResource("18_qrhqb")
 

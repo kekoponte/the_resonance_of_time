@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cxy38ml7i6var" path="res://assets/phone/home_button.png" id="2_2y07i"]
 [ext_resource type="Texture2D" uid="uid://cbyl7p77epic7" path="res://assets/phone/home_button_pressed.png" id="3_cua4c"]
 [ext_resource type="Script" path="res://scripts/botón_de_home_notepad.gd" id="4_h32fj"]
-[ext_resource type="Script" path="res://scenes/listado_de_fotos.gd" id="5_hi60s"]
+[ext_resource type="FontFile" uid="uid://cebjma2udbg7" path="res://assets/fonts/dogicapixel.ttf" id="6_lr0j1"]
 
 [node name="Files" type="Node2D"]
 
@@ -38,10 +38,21 @@ offset_top = 10.0
 offset_right = 140.0
 offset_bottom = 238.0
 
-[node name="listado_de_fotos" type="VBoxContainer" parent="Control" groups=["Filegroup"]]
+[node name="listado_de_fotos" type="ScrollContainer" parent="Control"]
 z_index = 4
-clip_contents = true
-offset_top = 17.0
+layout_mode = 0
+offset_top = 37.0
 offset_right = 133.0
 offset_bottom = 231.0
-script = ExtResource("5_hi60s")
+
+[node name="listado_de_fotos" type="VBoxContainer" parent="Control/listado_de_fotos" groups=["Filegroup"]]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="."]
+offset_left = 16.0
+offset_top = 34.0
+offset_right = 98.0
+offset_bottom = 57.0
+theme_override_fonts/font = ExtResource("6_lr0j1")
+theme_override_font_sizes/font_size = 8
+text = "Photos"

@@ -24,6 +24,10 @@ var Location = "" #Variable que guarda la localización actual. Relevante para l
 var clara = load("res://assets/locations/03_Morgue/Clara.png")
 var listado_de_fotos = []
 
+# Variables para guardar el estado de las fotos
+var Clara_in_photos = 0
+
+
 # Listado de Mensajes
 var Contactos_Mensajes = {
 	"Name 1" : 0,

@@ -43,6 +43,7 @@ directories/dtl_directory={
 "monologo_inicial": "res://dialogo/monologo_inicial.dtl",
 "morgue": "res://dialogo/morgue.dtl",
 "no_foto": "res://dialogo/camara/no_foto.dtl",
+"no_more_foto": "res://dialogo/no_more_foto.dtl",
 "primer_dia": "res://dialogo/primer_dia.dtl"
 }
 layout/style_list=["res://styles/personajes_en_habitacion.tres", "res://styles/Llamada_de_teléfono.tres", "res://styles/Intro.tres"]
