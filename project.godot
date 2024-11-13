@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 Global="*res://scripts/global.gd"
+SceneSwitcher="*res://scripts/scene_switcher.gd"
 
 [dialogic]
 
@@ -50,10 +51,13 @@ directories/dtl_directory={
 layout/style_list=["res://styles/personajes_en_habitacion.tres", "res://styles/Llamada_de_teléfono.tres", "res://styles/Intro.tres"]
 layout/default_style=""
 variables={
+"Morgue": 0,
+"Waiting_room": {
 "Laura_01": "1",
 "Laura_02": "1",
 "Laura_03": "1",
-"Morgue": 0,
+"track_de_timeline": "0"
+},
 "alan": 1.0,
 "clara_face": "first_time",
 "clara_hand": "first_time",

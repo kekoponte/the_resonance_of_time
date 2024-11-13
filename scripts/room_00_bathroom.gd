@@ -9,6 +9,7 @@ func _ready() -> void:
 	await $Presentacion.animation_finished
 	$Presentacion.play("blink")
 	Dialogic.start("monologo_inicial")
+
 func _on_dialogic_signal(argument:String):
 	if argument == "end":
-		get_tree().change_scene_to_file("res://scenes/room_01_bedroom.tscn")
+		SceneSwitcher.switch_scene("res://scenes/room_01_bedroom.tscn")

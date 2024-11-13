@@ -33,4 +33,4 @@ func _on_dialogic_signal(argument:String):
 		Global.stress += 1
 	
 	elif argument == "end_morgue":
-		get_tree().change_scene_to_file("res://scenes/room_02_hospital_waiting_room.tscn")
+		SceneSwitcher.switch_scene("res://scenes/room_02_hospital_waiting_room.tscn")
