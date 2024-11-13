@@ -21,11 +21,14 @@ if {Waiting_room.track_de_timeline} == "0":
 		laura (sad): She's here. In the morgue. I think she's already prepared for the autopsy.
 	laura (Idle): I don't think you need to conduct the whole thing, Esther. I just need your help to identify the body.
 	laura: A doctor will make the autopsy and will get back to us with the results.
-	laura: Esther...
-	laura: I'm afraid I need to leave.
+	laura: I'm afraid I need to leave, Esther
 	laura: If she's your sister. I'll need to ask you to come to the [color=#1eaf18]Police Station[/color] for an interrogation.
+	set {Waiting_room.track_de_timeline} = "2"
 	[signal arg="police_station"]
 	[signal arg="phone"]
-	set {Waiting_room.track_de_timeline} = "2"
+	[end_timeline]
 elif {Waiting_room.track_de_timeline} == "2":
-	Esther: I need to see Laura.
+	[style name="personajes_en_habitacion"]
+	join Esther center
+	Esther: Looks like I need to see Laura.
+	[signal arg="phone"]

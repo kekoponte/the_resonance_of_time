@@ -1,10 +1,7 @@
 extends Node2D
 
-
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	Global.Location = "Morgue"
-	Global.contador = 0
 	Dialogic.start("morgue")
 	$Phone.set_process(false)
 	$Phone.hide()
@@ -34,3 +31,4 @@ func _on_dialogic_signal(argument:String):
 	
 	elif argument == "end_morgue":
 		SceneSwitcher.switch_scene("res://scenes/room_02_hospital_waiting_room.tscn")
+		print("hola")
