@@ -8,6 +8,7 @@ var Contactos = {
 	"Dennis Bridge" : 0
 	}
 
+var track_de_escenas = 1
 var Nombre_en_llamada = "init" #Variable que muestra el nombre en el teléfono cuando hay llamadas
 var Nombre_en_mensajes = "" #Variable que muestra el nombre en el teléfono cuando hay mensajes
 var Hora = 7 #Horas en el móvil y en el juego

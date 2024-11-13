@@ -12,4 +12,4 @@ func _on_dialogic_signal(argument:String):
 	if argument == "end":
 		$ending.play("new_animation")
 		await $ending.animation_finished
-		get_tree().change_scene_to_file("res://scenes/room_02_police_station.tscn")
+		get_tree().change_scene_to_file("res://scenes/room_02_hospital_waiting_room.tscn")

@@ -26,8 +26,11 @@ func _on_dialogic_signal(argument:String):
 		$Phone.set_process(true)
 
 	elif argument == "life_start":
-		Global.stress = 3
-		$Stress_in_Conversation.show()
+		Global.stress = 0
+		$stress_del_personaje.show()
 	
 	elif argument == "life_down":
-		Global.stress -= 1
+		Global.stress += 1
+	
+	elif argument == "end_morgue":
+		get_tree().change_scene_to_file("res://scenes/room_02_hospital_waiting_room.tscn")

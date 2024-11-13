@@ -31,6 +31,7 @@ directories/dch_directory={
 directories/dtl_directory={
 "03_seeing_claras_face": "res://dialogo/04_Morgue/03_seeing_claras_face.dtl",
 "03_seeing_claras_hands": "res://dialogo/04_Morgue/03_seeing_claras_hands.dtl",
+"Esther_hospital_vuelta": "res://dialogo/02_Hospital_waiting_room/Esther_hospital_vuelta.dtl",
 "Llamada_1_con_Colin": "res://dialogo/Llamada_1_con_Colin.dtl",
 "Llamada_1_con_Dennis": "res://dialogo/Llamada_1_con_Dennis.dtl",
 "Llamada_1_con_clara": "res://dialogo/Llamada_1_con_clara.dtl",

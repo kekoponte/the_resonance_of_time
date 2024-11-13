@@ -1,12 +1,12 @@
 [gd_scene load_steps=12 format=3 uid="uid://cqd37qby15op2"]
 
-[ext_resource type="Script" path="res://scripts/room_02_bedroom_day.gd" id="1_youmw"]
-[ext_resource type="Texture2D" uid="uid://d0ku00257pyn6" path="res://assets/locations/02_bedroom.png" id="2_hvhpy"]
-[ext_resource type="PackedScene" uid="uid://vn8ay56opuf" path="res://scenes/phone.tscn" id="3_hki8f"]
-[ext_resource type="FontFile" uid="uid://cyoe0lu3ghnvg" path="res://assets/fonts/dogicapixelbold.ttf" id="4_op461"]
-[ext_resource type="Script" path="res://scripts/labels/label_hospital.gd" id="5_jp5k3"]
-[ext_resource type="FontFile" uid="uid://cebjma2udbg7" path="res://assets/fonts/dogicapixel.ttf" id="8_7jek1"]
-[ext_resource type="Script" path="res://scripts/go_to_morgue.gd" id="8_djqr2"]
+[ext_resource type="Script" path="res://scripts/room_02_hospital_waiting_room.gd" id="1_bjalq"]
+[ext_resource type="Texture2D" uid="uid://d0ku00257pyn6" path="res://assets/locations/02_bedroom.png" id="2_2lyj3"]
+[ext_resource type="PackedScene" uid="uid://vn8ay56opuf" path="res://scenes/phone.tscn" id="3_jq66x"]
+[ext_resource type="FontFile" uid="uid://cyoe0lu3ghnvg" path="res://assets/fonts/dogicapixelbold.ttf" id="4_o0ni1"]
+[ext_resource type="Script" path="res://scripts/labels/label_hospital.gd" id="5_wxo1e"]
+[ext_resource type="Script" path="res://scripts/go_to_morgue.gd" id="6_dwtxe"]
+[ext_resource type="FontFile" uid="uid://cebjma2udbg7" path="res://assets/fonts/dogicapixel.ttf" id="7_px4o8"]
 
 [sub_resource type="Animation" id="Animation_1skx1"]
 length = 0.001
@@ -52,15 +52,15 @@ content_margin_right = 5.0
 content_margin_bottom = 5.0
 bg_color = Color(0, 0, 0, 0.498039)
 
-[node name="room_02_police_station" type="Node2D"]
-script = ExtResource("1_youmw")
+[node name="room_02_Hospital_waiting_room" type="Node2D"]
+script = ExtResource("1_bjalq")
 
 [node name="02Bedroom" type="Sprite2D" parent="."]
 z_index = -10
 position = Vector2(320, 180)
-texture = ExtResource("2_hvhpy")
+texture = ExtResource("2_2lyj3")
 
-[node name="Phone" parent="." instance=ExtResource("3_hki8f")]
+[node name="Phone" parent="." instance=ExtResource("3_jq66x")]
 position = Vector2(470, 40)
 
 [node name="label" type="AnimationPlayer" parent="."]
@@ -75,20 +75,20 @@ offset_left = -169.0
 offset_top = 311.0
 offset_right = -1.0
 offset_bottom = 331.0
-theme_override_fonts/normal_font = ExtResource("4_op461")
+theme_override_fonts/normal_font = ExtResource("4_o0ni1")
 theme_override_font_sizes/normal_font_size = 9
 theme_override_styles/normal = SubResource("StyleBoxFlat_1vksm")
 bbcode_enabled = true
 text = "La Paz Hospital"
 scroll_active = false
-script = ExtResource("5_jp5k3")
+script = ExtResource("5_wxo1e")
 
 [node name="morgue" type="TextureButton" parent="."]
 offset_left = 155.0
 offset_top = 47.0
 offset_right = 198.0
 offset_bottom = 238.0
-script = ExtResource("8_djqr2")
+script = ExtResource("6_dwtxe")
 
 [node name="Label" type="Label" parent="morgue"]
 visible = false
@@ -97,7 +97,7 @@ offset_left = 39.0
 offset_top = 93.0
 offset_right = 99.0
 offset_bottom = 116.0
-theme_override_fonts/font = ExtResource("8_7jek1")
+theme_override_fonts/font = ExtResource("7_px4o8")
 theme_override_font_sizes/font_size = 8
 text = "Enter"
 

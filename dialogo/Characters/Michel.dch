@@ -15,15 +15,6 @@
 "nicknames": [""],
 "offset": Vector2(0, 0),
 "portraits": {
-"idle/blink": {
-"export_overrides": {
-"image": "\"res://assets/characters/michel_blink.png\""
-},
-"mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
-"scene": ""
-},
 "idle/idle": {
 "export_overrides": {
 "image": "\"res://assets/characters/michel_idle.png\""

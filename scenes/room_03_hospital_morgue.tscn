@@ -1,12 +1,14 @@
-[gd_scene load_steps=15 format=3 uid="uid://c6qjxx1uno1h5"]
+[gd_scene load_steps=19 format=3 uid="uid://c6qjxx1uno1h5"]
 
 [ext_resource type="Texture2D" uid="uid://6np5yxvxxqov" path="res://assets/locations/03_hospital_bed.png" id="1_463li"]
 [ext_resource type="Script" path="res://scripts/room_03_hospital_morgue.gd" id="1_rbq7p"]
 [ext_resource type="PackedScene" uid="uid://vn8ay56opuf" path="res://scenes/phone.tscn" id="2_3ns8o"]
 [ext_resource type="AudioStream" uid="uid://rijy674jr0xh" path="res://assets/sounds/ Sibelius - Pelleas & Melisande.mp3" id="4_ohf8l"]
 [ext_resource type="Script" path="res://scripts/03_Morgue/mouse_clara_face.gd" id="5_cwhgt"]
-[ext_resource type="PackedScene" uid="uid://w8frhdmlb2pk" path="res://scenes/stress_in_conversation.tscn" id="7_45usu"]
+[ext_resource type="FontFile" uid="uid://cebjma2udbg7" path="res://assets/fonts/dogicapixel.ttf" id="7_istrr"]
 [ext_resource type="Script" path="res://scripts/03_Morgue/mouse_clara_hands.gd" id="8_klaee"]
+[ext_resource type="Script" path="res://scripts/stress.gd" id="8_vtfrc"]
+[ext_resource type="FontFile" uid="uid://cyoe0lu3ghnvg" path="res://assets/fonts/dogicapixelbold.ttf" id="9_dpnax"]
 
 [sub_resource type="Animation" id="Animation_5nhyf"]
 length = 0.001
@@ -122,6 +124,11 @@ _data = {
 "song": SubResource("Animation_g8iat")
 }
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dtvxw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ivpua"]
+bg_color = Color(0.179312, 0.347983, 0.735113, 1)
+
 [node name="Morgue" type="Node2D"]
 script = ExtResource("1_rbq7p")
 
@@ -131,7 +138,6 @@ libraries = {
 }
 
 [node name="ColorRect" type="ColorRect" parent="fade_in"]
-visible = false
 offset_right = 644.0
 offset_bottom = 366.0
 color = Color(0, 0, 0, 1)
@@ -174,10 +180,27 @@ offset_bottom = 235.0
 focus_mode = 0
 script = ExtResource("8_klaee")
 
-[node name="Stress_in_Conversation" parent="." instance=ExtResource("7_45usu")]
+[node name="stress_del_personaje" type="ProgressBar" parent="."]
 visible = false
-position = Vector2(11, 16)
-script = null
+offset_left = 69.0
+offset_top = 156.0
+offset_right = 123.0
+offset_bottom = 167.0
+theme_override_fonts/font = ExtResource("7_istrr")
+theme_override_font_sizes/font_size = 6
+theme_override_styles/background = SubResource("StyleBoxFlat_dtvxw")
+theme_override_styles/fill = SubResource("StyleBoxFlat_ivpua")
+max_value = 5.0
+step = 1.0
+script = ExtResource("8_vtfrc")
+
+[node name="Label" type="Label" parent="stress_del_personaje"]
+layout_mode = 0
+offset_top = -9.0
+offset_right = 41.0
+theme_override_fonts/font = ExtResource("9_dpnax")
+theme_override_font_sizes/font_size = 7
+text = "Stress"
 
 [connection signal="button_down" from="face" to="face" method="_on_button_down"]
 [connection signal="mouse_entered" from="face" to="face" method="_on_mouse_entered"]
