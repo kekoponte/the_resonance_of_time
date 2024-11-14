@@ -24,6 +24,8 @@ var Location:String = "" #Variable que guarda la localización actual. Relevante
 var clara = load("res://assets/locations/03_Morgue/Clara.png")
 var listado_de_fotos:Array = []
 var stress:int = 3
+var track_de_escena:int = 1
+
 
 # Variables para guardar el estado de las fotos
 var Clara_in_photos = 0

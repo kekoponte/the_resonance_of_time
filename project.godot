@@ -32,7 +32,6 @@ directories/dch_directory={
 directories/dtl_directory={
 "03_seeing_claras_face": "res://dialogo/04_Morgue/03_seeing_claras_face.dtl",
 "03_seeing_claras_hands": "res://dialogo/04_Morgue/03_seeing_claras_hands.dtl",
-"Esther_hospital_vuelta": "res://dialogo/02_Hospital_waiting_room/Esther_hospital_vuelta.dtl",
 "Llamada_1_con_Colin": "res://dialogo/Llamada_1_con_Colin.dtl",
 "Llamada_1_con_Dennis": "res://dialogo/Llamada_1_con_Dennis.dtl",
 "Llamada_1_con_clara": "res://dialogo/Llamada_1_con_clara.dtl",
@@ -40,13 +39,14 @@ directories/dtl_directory={
 "alan": "res://dialogo/alan.dtl",
 "comunicando": "res://dialogo/comunicando.dtl",
 "foto_morgue": "res://dialogo/camara/foto_morgue.dtl",
-"laura_01": "res://dialogo/laura_01.dtl",
+"laura_01": "res://dialogo/02_Hospital_waiting_room/02_Wait_Room_01.dtl",
 "llamada_1_con_Clara": "res://dialogo/llamada_1_con_Clara.dtl",
 "monologo_inicial": "res://dialogo/monologo_inicial.dtl",
 "morgue": "res://dialogo/morgue.dtl",
 "no_foto": "res://dialogo/camara/no_foto.dtl",
 "no_more_foto": "res://dialogo/no_more_foto.dtl",
-"primer_dia": "res://dialogo/primer_dia.dtl"
+"primer_dia": "res://dialogo/primer_dia.dtl",
+"waiting_room_01": "res://dialogo/02_Hospital_waiting_room/waiting_room_01.dtl"
 }
 layout/style_list=["res://styles/personajes_en_habitacion.tres", "res://styles/Llamada_de_teléfono.tres", "res://styles/Intro.tres"]
 layout/default_style=""

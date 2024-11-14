@@ -1,11 +1,20 @@
 extends Node2D
 
 func _ready() -> void:
-	$label.play("intro")
-	Dialogic.start("laura_01")
-	$Phone.set_process(false)
-	$Phone.hide()
-	Dialogic.signal_event.connect(_on_dialogic_signal)
+	if Global.track_de_escena == 1:
+		$label.play("intro")
+		Dialogic.start("laura_01")
+		$Phone.set_process(false)
+		$Phone.hide()
+		Dialogic.signal_event.connect(_on_dialogic_signal)
+		Global.track_de_escena = 2
+	
+	elif Global.track_de_escena == 2:
+		$label.play("intro")
+		Dialogic.start("waiting_room_01")
+		$Phone.set_process(false)
+		$Phone.hide()
+		Dialogic.signal_event.connect(_on_dialogic_signal)
 	
 func _on_dialogic_signal(argument:String):
 	if argument == "phone":

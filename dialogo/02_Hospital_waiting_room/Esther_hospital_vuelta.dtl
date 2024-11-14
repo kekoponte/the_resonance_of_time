@@ -1,5 +1,0 @@
-[style name="personajes_en_habitacion"]
-Esther: hola hola hola
-[wait_input]
-Esther: Creo que debería ir a ver a Laura.
-[signal arg="phone"]
