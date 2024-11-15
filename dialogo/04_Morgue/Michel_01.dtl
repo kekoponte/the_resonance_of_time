@@ -20,5 +20,5 @@ Michel: You shouldn't be here. This is an autopsy room.
 Michel: If lieutenant Laura told you to meet her at the Police Station, I think you should do exactly that.
 Michel: I'm sure she wants to know every piece of information you might have.
 Michel: My name is Michel by the way.
-leave Michel
+leave Michel [animation="Fade Out" wait="true"]
 [signal arg="end_morgue"]

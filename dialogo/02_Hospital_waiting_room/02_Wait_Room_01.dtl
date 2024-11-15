@@ -1,5 +1,5 @@
 [style name="personajes_en_habitacion"]
-if {Waiting_room.track_de_timeline} == "0":
+if {Waiting_room.tracking} == "1":
 	join laura (Idle) left [animation="Fade In"]
 	laura (Idle): Hi Esther. I'm so sorry. I hope this woman is not your sister.
 	laura (sad): I'm afraid I need to ask you to identify the body.
@@ -23,12 +23,11 @@ if {Waiting_room.track_de_timeline} == "0":
 	laura: A doctor will make the autopsy and will get back to us with the results.
 	laura: I'm afraid I need to leave, Esther
 	laura: If she's your sister. I'll need to ask you to come to the [color=#1eaf18]Police Station[/color] for an interrogation.
-	set {Waiting_room.track_de_timeline} = "2"
+	leave laura
 	[signal arg="police_station"]
 	[signal arg="phone"]
-	[end_timeline]
-elif {Waiting_room.track_de_timeline} == "2":
+	set {Waiting_room.tracking} = "2"
+elif {Waiting_room.tracking} == "2":
 	[style name="personajes_en_habitacion"]
 	join Esther center
-	Esther: Looks like I need to see Laura.
-	[signal arg="phone"]
+	Esther: I need to see Laura

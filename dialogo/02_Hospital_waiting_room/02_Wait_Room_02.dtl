@@ -1,0 +1,5 @@
+[style name="personajes_en_habitacion"]
+join laura (Idle) left [animation="Fade In"]
+laura (Idle): I need to go to the  [color=#1eaf18]Police Station[/color] to see Laura.
+laura: test
+[signal arg="phone"]

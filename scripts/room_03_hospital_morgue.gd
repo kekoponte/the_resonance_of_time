@@ -31,4 +31,3 @@ func _on_dialogic_signal(argument:String):
 	
 	elif argument == "end_morgue":
 		SceneSwitcher.switch_scene("res://scenes/room_02_hospital_waiting_room.tscn")
-		print("hola")
