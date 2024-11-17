@@ -1,14 +1,14 @@
 [style name="personajes_en_habitacion"]
 if {Waiting_room.tracking} == "1":
 	join laura (Idle) left [animation="Fade In"]
-	laura (Idle): Hi Esther. I'm so sorry. I hope this woman is not your sister.
+	laura (Idle): Hi Esther. I'm so sorry. I hope this man is not your brother.
 	laura (sad): I'm afraid I need to ask you to identify the body.
 	label pregunta 1
-	- It's been more than 12 years since I last saw her | [if {Waiting_room.Laura_01} == "1"]
+	- It's been more than 12 years since I last saw him. | [if {Waiting_room.Laura_01} == "1"]
 		set {Waiting_room.Laura_01} = "0"
 		laura (Idle): 12 years? What happened?
 		leave laura [animation="Fade Out" length="0.1"]
-		Esther: She just disappeared. There was an investigation, but nobody was able to find her.
+		Esther: He just disappeared. There was an investigation, but nobody was able to find him.
 		join laura (Idle) left [animation="Fade In"]
 		laura: Do you think you can handle an identification?
 		jump pregunta 1
@@ -16,18 +16,20 @@ if {Waiting_room.tracking} == "1":
 		set {Waiting_room.Laura_02} = "0"
 		laura (Idle): I'm so sorry, Esther. I'm afraid I need your help here.
 		jump pregunta 1
-	- Where is she? | [if {Waiting_room.Laura_03} == "1"]
+	- Where is he? | [if {Waiting_room.Laura_03} == "1"]
 		set {Waiting_room.Laura_03} = "0"
-		laura (sad): She's here. In the morgue. I think she's already prepared for the autopsy.
+		laura (sad): He's here. In the morgue. I think he's already prepared for the autopsy.
 	laura (Idle): I don't think you need to conduct the whole thing, Esther. I just need your help to identify the body.
 	laura: A doctor will make the autopsy and will get back to us with the results.
 	laura: I'm afraid I need to leave, Esther
-	laura: If she's your sister. I'll need to ask you to come to the [color=#1eaf18]Police Station[/color] for an interrogation.
+	laura: If he's your brother. I'll need to ask you to come to the [color=#1eaf18]Police Station[/color] for an interrogation.
 	leave laura
 	[signal arg="police_station"]
 	[signal arg="phone"]
 	set {Waiting_room.tracking} = "2"
+	[end_timeline]
 elif {Waiting_room.tracking} == "2":
 	[style name="personajes_en_habitacion"]
 	join Esther center
 	Esther: I need to see Laura
+	[signal arg="phone"]

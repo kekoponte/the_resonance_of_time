@@ -4,13 +4,15 @@
 "_translation_id": "",
 "color": Color(1, 1, 1, 1),
 "custom_info": {
+"prefix": "",
 "sound_mood_default": "",
 "sound_moods": {},
-"style": ""
+"style": "",
+"suffix": ""
 },
 "default_portrait": "idle/idle",
 "description": "",
-"display_name": "Michel",
+"display_name": "Michelle",
 "mirror": false,
 "nicknames": [""],
 "offset": Vector2(0, 0),

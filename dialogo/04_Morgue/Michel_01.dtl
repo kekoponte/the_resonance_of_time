@@ -6,10 +6,10 @@ Michel: You shouldn't be here. This is an autopsy room.
 	Michel (idle/idle): Oh, I'm sorry, Esther. Lieutenant Laura mentioned that you'll be here this very morning.
 	label victim
 	Michel: Do you know the victim?
-	- Yes, she's my sister Clara.
+	- Yes, he's my brother Marcos.
 	- Actually, I'm not sure.
 		leave Michel [animation="Fade Out"]
-		Esther: She looks like my sister. But she's been missing for 12 years now.
+		Esther: He looks like my brother. But I'm not sure. He's been missing for 12 years now.
 		join Michel left [animation="Fade In"]
 - I'm a forensic expert, who are you?
 	Michel: I'm afraid I AM the forensic expert here.
@@ -19,6 +19,6 @@ Michel: You shouldn't be here. This is an autopsy room.
 	jump victim
 Michel: If lieutenant Laura told you to meet her at the Police Station, I think you should do exactly that.
 Michel: I'm sure she wants to know every piece of information you might have.
-Michel: My name is Michel by the way.
+Michel: My name is Michelle by the way.
 leave Michel [animation="Fade Out" wait="true"]
-[signal arg="end_morgue"]
+[end_timeline]

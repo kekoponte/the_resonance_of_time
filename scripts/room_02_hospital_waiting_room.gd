@@ -7,14 +7,15 @@ func _ready() -> void:
 		$Phone.set_process(false)
 		$Phone.hide()
 		Dialogic.signal_event.connect(_on_dialogic_signal)
-#		Global.track_de_escena = 1
+		Global.track_de_escena = 2
 	
-	#elif Global.track_de_escena == 2:
-		#$label.play("intro")
-		#Dialogic.start("02_Wait_Room_02")
-		#$Phone.set_process(false)
-		#$Phone.hide()
-		#Dialogic.signal_event.connect(_on_dialogic_signal)
+	elif Global.track_de_escena == 2:
+		print(Global.track_de_escena)
+		$label.play("intro")
+		Dialogic.start("02_Wait_Room_02")
+		Dialogic.signal_event.connect(_on_dialogic_signal)
+		$Phone.set_process(false)
+		$Phone.hide()
 	
 func _on_dialogic_signal(argument:String):
 	if argument == "phone":

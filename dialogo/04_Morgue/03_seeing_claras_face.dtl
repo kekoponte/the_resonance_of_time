@@ -7,7 +7,7 @@ if {clara_face} == "first_time":
 	set {clara_face} = "after_first_time"
 	set {Morgue} += 1
 elif {clara_face} == "after_first_time":
-	Esther: It's her. There's no doubt.
+	Esther: It's he. There's no doubt.
 if {Morgue} == 2:
 	[background fade="0.0"]
 	jump Michel_01/

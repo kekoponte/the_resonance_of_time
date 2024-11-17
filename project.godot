@@ -94,7 +94,7 @@ translation/add_separator=false
 animations/join_default="Fade In"
 animations/leave_default="Fade Out"
 portraits/default_portrait=""
-layout/end_behaviour=0
+layout/end_behaviour=1
 
 [dialogue_manager]
 
