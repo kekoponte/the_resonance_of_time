@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=3 uid="uid://vn8ay56opuf"]
+[gd_scene load_steps=44 format=3 uid="uid://vn8ay56opuf"]
 
 [ext_resource type="Texture2D" uid="uid://beks6fnb6rl84" path="res://assets/phone/phone_border.png" id="1_j61vq"]
 [ext_resource type="Texture2D" uid="uid://bjkxa8hgkpa7k" path="res://assets/phone/back_02.png" id="2_okc1m"]
@@ -37,7 +37,9 @@
 [ext_resource type="AudioStream" uid="uid://d3soippf3cy5d" path="res://assets/sounds/unlock.mp3" id="25_37ckp"]
 [ext_resource type="PackedScene" uid="uid://bhrwnhblsxw2c" path="res://scenes/mensajes.tscn" id="25_n0cn1"]
 [ext_resource type="Script" path="res://scripts/but_mensajes.gd" id="26_rkoko"]
+[ext_resource type="Texture2D" uid="uid://iivoplynmol5" path="res://assets/phone/but_11_News_norm.png" id="27_3mrur"]
 [ext_resource type="PackedScene" uid="uid://uipquy6s7naq" path="res://scenes/notepad.tscn" id="28_guerb"]
+[ext_resource type="Texture2D" uid="uid://cikw6b3bmgrh0" path="res://assets/phone/but_11_News_press.png" id="28_mhl5y"]
 [ext_resource type="Script" path="res://scripts/phone/set_horas.gd" id="30_fonlb"]
 [ext_resource type="PackedScene" uid="uid://b53x8m2h6rlv4" path="res://scenes/files.tscn" id="32_a0de5"]
 [ext_resource type="Script" path="res://scripts/phone/fotos.gd" id="33_vvtej"]
@@ -234,6 +236,26 @@ theme_override_colors/font_color = Color(0, 0, 0, 0.760784)
 theme_override_fonts/font = ExtResource("15_xxusd")
 theme_override_font_sizes/font_size = 7
 text = "Files"
+horizontal_alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="Botones"]
+layout_mode = 0
+offset_left = 75.0
+offset_top = 69.0
+offset_right = 104.0
+offset_bottom = 97.0
+texture_normal = ExtResource("27_3mrur")
+texture_pressed = ExtResource("28_mhl5y")
+
+[node name="Label4" type="Label" parent="Botones/TextureButton"]
+layout_mode = 0
+offset_top = 29.0
+offset_right = 29.0
+offset_bottom = 37.0
+theme_override_colors/font_color = Color(0, 0, 0, 0.760784)
+theme_override_fonts/font = ExtResource("15_xxusd")
+theme_override_font_sizes/font_size = 7
+text = "News"
 horizontal_alignment = 1
 
 [node name="Llamadas" parent="." instance=ExtResource("21_5lrpb")]

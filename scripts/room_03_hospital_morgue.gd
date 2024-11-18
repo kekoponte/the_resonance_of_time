@@ -2,6 +2,7 @@ extends Node2D
 
 func _ready() -> void:
 	Global.Location = "Morgue"
+	$fondo.play("fondo_morgue")
 	Dialogic.start("morgue")
 	$Phone.set_process(false)
 	$Phone.hide()
