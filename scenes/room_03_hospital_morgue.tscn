@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://c6qjxx1uno1h5"]
+[gd_scene load_steps=27 format=3 uid="uid://c6qjxx1uno1h5"]
 
 [ext_resource type="Script" path="res://scripts/room_03_hospital_morgue.gd" id="1_rbq7p"]
 [ext_resource type="PackedScene" uid="uid://vn8ay56opuf" path="res://scenes/phone.tscn" id="2_3ns8o"]
@@ -8,6 +8,7 @@
 [ext_resource type="AudioStream" uid="uid://rijy674jr0xh" path="res://assets/sounds/ Sibelius - Pelleas & Melisande.mp3" id="4_ohf8l"]
 [ext_resource type="Script" path="res://scripts/03_Morgue/mouse_clara_face.gd" id="5_cwhgt"]
 [ext_resource type="Texture2D" uid="uid://doverg8kk3jai" path="res://assets/locations/03_Morgue/03_hospital_bed_him3.png" id="5_htajq"]
+[ext_resource type="Script" path="res://scripts/03_Morgue/phone.gd" id="7_a2d6a"]
 [ext_resource type="FontFile" uid="uid://cebjma2udbg7" path="res://assets/fonts/dogicapixel.ttf" id="7_istrr"]
 [ext_resource type="Script" path="res://scripts/03_Morgue/mouse_clara_hands.gd" id="8_klaee"]
 [ext_resource type="Script" path="res://scripts/stress.gd" id="8_vtfrc"]
@@ -201,6 +202,7 @@ z_index = 1
 
 [node name="Phone" parent="." instance=ExtResource("2_3ns8o")]
 position = Vector2(470, 40)
+script = ExtResource("7_a2d6a")
 
 [node name="haendel_song" type="AnimationPlayer" parent="."]
 libraries = {
@@ -271,9 +273,11 @@ theme_override_fonts/font = ExtResource("7_istrr")
 theme_override_font_sizes/font_size = 10
 text = "Back to the Waiting Room"
 
+[connection signal="button_down" from="face" to="Phone" method="_on_face_button_down"]
 [connection signal="button_down" from="face" to="face" method="_on_button_down"]
 [connection signal="mouse_entered" from="face" to="face" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="face" to="face" method="_on_mouse_exited"]
+[connection signal="button_down" from="hands" to="Phone" method="_on_hands_button_down"]
 [connection signal="button_down" from="hands" to="hands" method="_on_button_down"]
 [connection signal="mouse_entered" from="hands" to="hands" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="hands" to="hands" method="_on_mouse_exited"]

@@ -23,6 +23,10 @@ func _on_dialogic_signal(argument:String):
 		$Phone.show()
 		$Phone.set_process(true)
 
+	elif argument =="phone_off":
+		$Phone.hide()
+		$Phone.set_process(false)
+		
 	elif argument == "life_start":
 		Global.stress = 0
 		$stress_del_personaje.show()

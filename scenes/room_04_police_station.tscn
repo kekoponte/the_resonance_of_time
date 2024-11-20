@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://fvqfj4ckswna"]
+
+[ext_resource type="Texture2D" uid="uid://dm12do0wxpvpx" path="res://assets/locations/04_police_station.png" id="1_sgiuh"]
+[ext_resource type="PackedScene" uid="uid://vn8ay56opuf" path="res://scenes/phone.tscn" id="2_5ui1g"]
+
+[node name="Police_Station" type="Node2D"]
+
+[node name="04PoliceStation" type="Sprite2D" parent="."]
+position = Vector2(320, 180)
+texture = ExtResource("1_sgiuh")
+
+[node name="Phone" parent="." instance=ExtResource("2_5ui1g")]
+position = Vector2(458, 36)
