@@ -3,6 +3,7 @@
 if {clara_hand} == "first_time":
 	Esther: There's something weird in his hands
 	Esther: Looks like small remnants of skin under his nails.
+	[background arg="res://assets/interface/back.png" fade="0.0"]
 	set {clara_hand} = "after_first_time"
 	[signal arg="phone"]
 	set {Morgue} += 1
@@ -10,7 +11,7 @@ elif {clara_hand} == "after_first_time":
 	Esther: There are small remnants of skin under his nails.
 	[signal arg="phone"]
 if {Morgue} == 2:
-	[background fade="0.0"]
+	[background arg="res://assets/interface/back.png" fade="0.0"]
 	[signal arg="phone_off"]
 	set {Morgue} = 3
 	jump Michel_01/

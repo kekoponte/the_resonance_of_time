@@ -6,6 +6,7 @@ func _ready() -> void:
 	current_scene = root.get_child(root.get_child_count() -1)
 
 func switch_scene(res_path):
+	Global.contador_fotos = 0
 	call_deferred("_deferred_switch_scene", res_path)
 
 func _deferred_switch_scene(res_path):

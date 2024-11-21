@@ -26,9 +26,13 @@ var listado_de_fotos:Array = []
 var stress:int = 3
 var track_de_escena:int = 1
 
-
 # Variables para guardar el estado de las fotos
+var contador_fotos = 0
 var Clara_in_photos = 0
+
+# Variables por habitaciones
+var contador_waiting_room:int = 1
+var contador_morgue:int = 1
 
 # Listado de Mensajes
 var Contactos_Mensajes = {

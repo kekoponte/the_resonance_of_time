@@ -1,6 +1,9 @@
 extends Node2D
 
 func _ready() -> void:
+	
+	Global.Location = "Waiting Room"
+
 	if Global.track_de_escena == 1:
 		$label.play("intro")
 		Dialogic.start("02_Wait_Room_01")

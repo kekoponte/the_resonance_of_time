@@ -4,14 +4,15 @@ if {clara_face} == "first_time":
 	Esther: There you are
 	Esther: My sweet child
 	Esther: It's you. Of course it's you
+	[background arg="res://assets/interface/back.png" fade="0.0"]
 	[signal arg="phone"]
 	set {clara_face} = "after_first_time"
 	set {Morgue} += 1
 elif {clara_face} == "after_first_time":
-	Esther: It's he. There's no doubt.
+	Esther: It's Marcos. There's no doubt.
 	[signal arg="phone"]
 if {Morgue} == 2:
-	[background fade="0.0"]
+	[background arg="res://assets/interface/back.png" fade="0.0"]
 	set {Morgue} = 3
 	[signal arg="phone_off"]
 	jump Michel_01/

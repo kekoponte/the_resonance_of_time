@@ -73,43 +73,47 @@ script = ExtResource("4_k73dl")
 
 [node name="Botón de Llamada" type="TextureButton" parent="Botones"]
 layout_mode = 0
-offset_left = 10.0
+offset_left = 9.0
 offset_top = 243.0
-offset_right = 39.0
+offset_right = 40.0
 offset_bottom = 271.0
 focus_mode = 0
 texture_normal = ExtResource("3_a0jf0")
 texture_pressed = ExtResource("5_taa3r")
+stretch_mode = 3
 
 [node name="Botón de Internet" type="TextureButton" parent="Botones"]
 layout_mode = 0
-offset_left = 42.0
+offset_left = 41.0
 offset_top = 243.0
-offset_right = 71.0
+offset_right = 72.0
 offset_bottom = 271.0
 focus_mode = 0
 texture_normal = ExtResource("11_nq73h")
 texture_pressed = ExtResource("12_3f461")
+stretch_mode = 3
 
 [node name="Botón de Mensajes" type="TextureButton" parent="Botones"]
 layout_mode = 0
-offset_left = 74.0
+offset_left = 73.0
 offset_top = 243.0
-offset_right = 103.0
+offset_right = 104.0
 offset_bottom = 271.0
 focus_mode = 0
 texture_normal = ExtResource("13_1ouq8")
 texture_pressed = ExtResource("14_hns2t")
+stretch_mode = 3
 
 [node name="Botón de música" type="TextureButton" parent="Botones"]
 layout_mode = 0
-offset_left = 106.0
+offset_left = 105.0
 offset_top = 243.0
-offset_right = 135.0
+offset_right = 136.0
 offset_bottom = 271.0
 focus_mode = 0
 texture_normal = ExtResource("15_lol5f")
 texture_pressed = ExtResource("16_kupfh")
+stretch_mode = 3
 
 [node name="Botón de Fotos" type="TextureButton" parent="Botones"]
 layout_mode = 0
@@ -238,7 +242,7 @@ theme_override_font_sizes/font_size = 7
 text = "Files"
 horizontal_alignment = 1
 
-[node name="TextureButton" type="TextureButton" parent="Botones"]
+[node name="Botón de News" type="TextureButton" parent="Botones"]
 layout_mode = 0
 offset_left = 75.0
 offset_top = 69.0
@@ -247,7 +251,7 @@ offset_bottom = 97.0
 texture_normal = ExtResource("27_3mrur")
 texture_pressed = ExtResource("28_mhl5y")
 
-[node name="Label4" type="Label" parent="Botones/TextureButton"]
+[node name="Label4" type="Label" parent="Botones/Botón de News"]
 layout_mode = 0
 offset_top = 29.0
 offset_right = 29.0

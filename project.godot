@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 Global="*res://scripts/global.gd"
 SceneSwitcher="*res://scripts/scene_switcher.gd"
+AddFotosToApp="*res://scripts/add_fotos_to_app.gd"
 
 [dialogic]
 
@@ -32,6 +33,7 @@ directories/dch_directory={
 directories/dtl_directory={
 "02_Wait_Room_01": "res://dialogo/02_Hospital_waiting_room/02_Wait_Room_01.dtl",
 "02_Wait_Room_02": "res://dialogo/02_Hospital_waiting_room/02_Wait_Room_02.dtl",
+"02_Wait_Room_03": "res://dialogo/02_Hospital_waiting_room/02_Wait_Room_03.dtl",
 "03_seeing_claras_face": "res://dialogo/04_Morgue/03_seeing_claras_face.dtl",
 "03_seeing_claras_hands": "res://dialogo/04_Morgue/03_seeing_claras_hands.dtl",
 "Llamada_1_con_Colin": "res://dialogo/Llamada_1_con_Colin.dtl",

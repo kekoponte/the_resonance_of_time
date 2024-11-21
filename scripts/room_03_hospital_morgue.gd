@@ -2,12 +2,17 @@ extends Node2D
 
 func _ready() -> void:
 	Global.Location = "Morgue"
-	$fondo.play("fondo_morgue")
-	Dialogic.start("morgue")
-	$Phone.set_process(false)
-	$Phone.hide()
-	Dialogic.signal_event.connect(_on_dialogic_signal)
-
+	if Global.contador_morgue == 1:
+		$fondo.play("fondo_morgue")
+		Dialogic.start("morgue")
+		$Phone.set_process(false)
+		$Phone.hide()
+		Dialogic.signal_event.connect(_on_dialogic_signal)
+		Global.contador_morgue = 2
+	elif Global.contador_morgue == 2:
+		Dialogic.signal_event.connect(_on_dialogic_signal)
+		$fade_in/ColorRect.hide()
+		
 func _on_dialogic_signal(argument:String):
 	if argument == "musica":
 		$haendel_song.play("song")
@@ -36,3 +41,6 @@ func _on_dialogic_signal(argument:String):
 	
 	elif argument == "end_morgue":
 		SceneSwitcher.switch_scene("res://scenes/room_02_hospital_waiting_room.tscn")
+
+	elif argument == "track_room":
+		Global.contador_waiting_room = 2

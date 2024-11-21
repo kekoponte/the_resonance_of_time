@@ -1,4 +1,5 @@
 [style name="personajes_en_habitacion"]
+[background arg="res://assets/interface/back.png" fade="0.0"]
 if {Waiting_room.tracking} == "1":
 	join laura (Idle) left [animation="Fade In"]
 	laura (Idle): Hi Esther. I'm so sorry. I hope this man is not your brother.
