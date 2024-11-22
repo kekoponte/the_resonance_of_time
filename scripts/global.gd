@@ -2,10 +2,18 @@ extends Node
 
 # Listado de Contactos en el teléfono
 var Contactos = {
-	"Alan Ferris" : 0,
-	"Clara Cole" : 0,
+	"Abraham Vieito" : 0,
+	"Adrián Rodríguez" : 0,
+	"Ángela Lopez" : 0,
+	"Antonio Ramiro" : 0,
+	"Bea Rodríguez": 0,
 	"Colin Baskins" : 0,
-	"Dennis Bridge" : 0
+	"David García" : 0,
+	"Dennis Bridge" : 0,
+	"Isabel Peña" : 0,
+	"Patricia Mata" : 0,
+	"Ramón Olivares" : 0,
+	"Roi Villamarín" :0,
 	}
 
 var Nombre_en_llamada:String = "init" #Variable que muestra el nombre en el teléfono cuando hay llamadas
@@ -20,7 +28,6 @@ var punta = load("res://assets/interface/mouse_arrow.png") #Icono de ratón de f
 var door = load("res://assets/interface/mouse_door.png") #Icono de ratón de puerta
 var lupa = load("res://assets/interface/mouse_lupa.png") #Icono de ratón de lupa
 var contador:int = 0 #Variable genérica para temas varios 
-var Location:String = "" #Variable que guarda la localización actual. Relevante para la cámara
 var clara = load("res://assets/locations/03_Morgue/Clara.png")
 var listado_de_fotos:Array = []
 var stress:int = 3
@@ -31,8 +38,11 @@ var contador_fotos = 0
 var Clara_in_photos = 0
 
 # Variables por habitaciones
+var Location:String = "" #Variable que guarda la localización actual. Relevante para la cámara
 var contador_waiting_room:int = 1
 var contador_morgue:int = 1
+var contador_police_station:int = 1
+
 
 # Listado de Mensajes
 var Contactos_Mensajes = {

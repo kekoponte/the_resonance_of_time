@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://vjcalqhdaqe4"]
+[gd_scene load_steps=21 format=3 uid="uid://vjcalqhdaqe4"]
 
 [ext_resource type="Script" path="res://scripts/botón_de_home_Mapa.gd" id="3_1jcqm"]
 [ext_resource type="Texture2D" uid="uid://cxy38ml7i6var" path="res://assets/phone/home_button.png" id="3_opgta"]
@@ -13,9 +13,56 @@
 [ext_resource type="Texture2D" uid="uid://2oc6jsj8io3y" path="res://assets/interface/button_pressed.png" id="9_7m6iu"]
 [ext_resource type="Script" path="res://scripts/boton_ir_del_mapa.gd" id="9_nu6ow"]
 [ext_resource type="FontFile" uid="uid://cyoe0lu3ghnvg" path="res://assets/fonts/dogicapixelbold.ttf" id="10_2i2uf"]
+[ext_resource type="Texture2D" uid="uid://c48jbmpsr1eun" path="res://assets/interface/car.png" id="11_vpyss"]
+[ext_resource type="AudioStream" uid="uid://bcdmq3jeuqfx7" path="res://assets/sounds/car.mp3" id="12_m25x6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aydis"]
 size = Vector2(10686.3, 11300.7)
+
+[sub_resource type="Animation" id="Animation_bosjo"]
+resource_name = "transicion"
+length = 3.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../Boton_ir/transicion_entre_escenas/Sprite2D:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.566667, 2.02),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1188, 186.25), Vector2(-581, 186.25)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../Boton_ir/transicion_entre_escenas/ColorRect:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.5, 2.05333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1499, 0), Vector2(-275, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../Boton_ir/transicion_entre_escenas/AudioStreamPlayer:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_pvmjk"]
+_data = {
+"transicion": SubResource("Animation_bosjo")
+}
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ssxss"]
 
@@ -98,6 +145,28 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("10_2i2uf")
 theme_override_font_sizes/font_size = 14
 text = "Go"
+
+[node name="transicion_entre_escenas" type="AnimationPlayer" parent="Mascara_Mapa/Control2/Mapa/Boton_ir"]
+root_node = NodePath("../../Area2D/CollisionShape2D")
+libraries = {
+"": SubResource("AnimationLibrary_pvmjk")
+}
+
+[node name="Sprite2D" type="Sprite2D" parent="Mascara_Mapa/Control2/Mapa/Boton_ir/transicion_entre_escenas"]
+z_index = 1000
+position = Vector2(1188, 186.25)
+scale = Vector2(0.816483, 0.816483)
+texture = ExtResource("11_vpyss")
+
+[node name="ColorRect" type="ColorRect" parent="Mascara_Mapa/Control2/Mapa/Boton_ir/transicion_entre_escenas"]
+z_index = 999
+offset_left = 1499.0
+offset_right = 2461.0
+offset_bottom = 372.0
+color = Color(0, 0, 0, 1)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Mascara_Mapa/Control2/Mapa/Boton_ir/transicion_entre_escenas"]
+stream = ExtResource("12_m25x6")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = 1

@@ -50,7 +50,7 @@ directories/dtl_directory={
 "no_more_foto": "res://dialogo/no_more_foto.dtl",
 "primer_dia": "res://dialogo/primer_dia.dtl"
 }
-layout/style_list=["res://styles/personajes_en_habitacion.tres", "res://styles/Llamada_de_teléfono.tres", "res://styles/Intro.tres"]
+layout/style_list=["res://styles/personajes_en_habitacion.tres", "res://styles/Llamada_de_teléfono.tres", "res://styles/Intro.tres", "res://styles/clear_screen.tres"]
 layout/default_style=""
 variables={
 "Morgue": 0,
@@ -122,6 +122,10 @@ enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
 [global_group]
 
 Filegroup=""
+
+[gui]
+
+theme/custom_font="res://assets/fonts/dogicapixel.ttf"
 
 [input]
 
