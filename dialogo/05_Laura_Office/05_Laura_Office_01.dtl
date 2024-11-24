@@ -1,0 +1,13 @@
+[style name="personajes_en_habitacion"]
+[signal arg="phone_off"]
+join laura left [animation="Fade In"]
+laura: Hi Esther.
+laura: The doctor told me that you identified the body of your brother Marcos.\
+I'm so sorry, Esther.
+[background arg="res://assets/locations/05_Laura_Office/slide_marcos.png" fade="0.0"]
+laura: There are some things I need to discuss with you.\
+Firs of all, are you completely sure that this is your brother?
+laura: I'm afraid to say that the forensic expert established the cause of the dead as a suicide.
+leave laura
+[signal arg="phone_on"]
+[signal arg="end"]

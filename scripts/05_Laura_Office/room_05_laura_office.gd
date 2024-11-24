@@ -1,4 +1,4 @@
 extends Node2D
 
 func _ready() -> void:
-	Global.Location = "Police Station"
+	Global.Location = "Laura Office"

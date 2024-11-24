@@ -27,6 +27,7 @@ var mano = load("res://assets/interface/mouse.png") #Icono de ratón de mano
 var punta = load("res://assets/interface/mouse_arrow.png") #Icono de ratón de flecha
 var door = load("res://assets/interface/mouse_door.png") #Icono de ratón de puerta
 var lupa = load("res://assets/interface/mouse_lupa.png") #Icono de ratón de lupa
+var talk = load("res://assets/interface/mouse_boca.png") #Icono de ratón de hablar
 var contador:int = 0 #Variable genérica para temas varios 
 var clara = load("res://assets/locations/03_Morgue/Clara.png")
 var listado_de_fotos:Array = []
@@ -42,7 +43,7 @@ var Location:String = "" #Variable que guarda la localización actual. Relevante
 var contador_waiting_room:int = 1
 var contador_morgue:int = 1
 var contador_police_station:int = 1
-
+var contador_laura_office:int = 1
 
 # Listado de Mensajes
 var Contactos_Mensajes = {
