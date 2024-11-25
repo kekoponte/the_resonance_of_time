@@ -4,10 +4,10 @@ join laura left [animation="Fade In"]
 laura: Hi Esther.
 laura: The doctor told me that you identified the body of your brother Marcos.\
 I'm so sorry, Esther.
-laura: There are some things I need to discuss with you.\
-Firs of all, are you completely sure that this is your brother?
 [sound path="res://assets/sounds/slide.mp3" volume="0.0"]
 [background arg="res://assets/locations/05_Laura_Office/slide_marcos.png" fade="0.0"]
+laura: There are some things I need to discuss with you.\
+First of all, are you completely sure that this is your brother?
 - I'm afraid I'm sure, Laura
 	laura: I'm so so sorry, Esther
 - It's been 12 years since I last saw him, but I think it is.
@@ -18,7 +18,7 @@ laura (sad): I'm afraid to say that the forensic expert established the cause of
 laura (Idle): I'm going to give the case to Javier and I'll tell him to keep you posted.
 label Primeras_Preguntas
 - Where did you find him? | [if {Laura_Office.01} == "1"] [else="hide"]
-	laura (sad): The body was found in  [color=#1eaf18]Parla [/color]. In a junk yard.
+	laura (sad): The body was found in [color=#1eaf18]Parla[/color]. In a junk yard.
 	laura (Idle): It seems that he suffered an overdose, but the amount of drugs in his body has made us think of suicide.
 	set {Laura_Office.01} = "2"
 	jump Primeras_Preguntas
@@ -34,13 +34,13 @@ label Primeras_Preguntas
 - Who found the body, Laura? | [if {Laura_Office.01} == "2" and {Laura_Office.02} == "2"] [else="hide"]
 	laura: I shouldn't share this with you, you know that.
 	leave laura
-	join Esther right
+	join Esther left
 	Esther: Laura, please. We know each other.
 	leave Esther
 	join laura left
-	laura: A man named Lucas Hidalgo made the call. He is a scrap dealer. that works in the junk yard in  [color=#1eaf18]Parla [/color].
-laura (Idle): Javier will give you a call soon. Why don't you go [color=#1eaf18]Home [/color] and rest for a while?
-laura: And please, Esther, don't go to [color=#1eaf18]La Paz Hospital [/color]. Let Michelle do his work.
+	laura: A man named Lucas Hidalgo made the call. He is a scrap dealer. that works in the junk yard in [color=#1eaf18]Parla[/color].
+laura (Idle): Javier will give you a call soon. Why don't you go [color=#1eaf18]Home[/color] and rest for a while?
+laura (sad): And please, Esther, don't go to [color=#1eaf18]La Paz Hospital[/color]. Let Michelle do his work.
 leave laura
 [signal arg="phone_on"]
 [signal arg="end"]

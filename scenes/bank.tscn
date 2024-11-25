@@ -1,0 +1,114 @@
+[gd_scene load_steps=6 format=3 uid="uid://c604awremhbr7"]
+
+[ext_resource type="Texture2D" uid="uid://bnyhghckrfrim" path="res://assets/phone/back_bank.png" id="1_klipx"]
+[ext_resource type="Texture2D" uid="uid://cxy38ml7i6var" path="res://assets/phone/home_button.png" id="2_dkkol"]
+[ext_resource type="Texture2D" uid="uid://cbyl7p77epic7" path="res://assets/phone/home_button_pressed.png" id="3_ehqun"]
+[ext_resource type="Script" path="res://scripts/phone/botón_de_home_news.gd" id="4_xpp1d"]
+[ext_resource type="FontFile" uid="uid://ce6w5vlh66kkr" path="res://assets/fonts/BirchLeaf.otf" id="5_bw83t"]
+
+[node name="Bank" type="Node2D"]
+
+[node name="BackBank" type="Sprite2D" parent="."]
+position = Vector2(74, 146)
+texture = ExtResource("1_klipx")
+
+[node name="Botón de Home" type="TextureButton" parent="BackBank"]
+offset_left = -16.0
+offset_top = 100.0
+offset_right = 8.0
+offset_bottom = 124.0
+texture_normal = ExtResource("2_dkkol")
+texture_pressed = ExtResource("3_ehqun")
+script = ExtResource("4_xpp1d")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 12.0
+offset_top = 31.0
+offset_right = 135.0
+offset_bottom = 48.0
+mouse_filter = 2
+theme_override_fonts/normal_font = ExtResource("5_bw83t")
+bbcode_enabled = true
+text = "[right] ※ The Bank[/right]"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+offset_left = 11.0
+offset_top = 52.0
+offset_right = 111.0
+offset_bottom = 61.0
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 7
+text = "Accounts"
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="."]
+offset_left = 17.0
+offset_top = 68.0
+offset_right = 43.0
+offset_bottom = 77.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 7
+text = "Main"
+
+[node name="RichTextLabel5" type="RichTextLabel" parent="."]
+offset_left = 66.0
+offset_top = 68.0
+offset_right = 131.0
+offset_bottom = 77.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(0.474277, 0.769645, 0.540465, 1)
+theme_override_font_sizes/normal_font_size = 7
+bbcode_enabled = true
+text = "[right]721,50€[/right]"
+
+[node name="RichTextLabel6" type="RichTextLabel" parent="."]
+offset_left = 17.0
+offset_top = 110.0
+offset_right = 63.0
+offset_bottom = 119.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 7
+text = "Credit"
+
+[node name="RichTextLabel7" type="RichTextLabel" parent="."]
+offset_left = 66.0
+offset_top = 110.0
+offset_right = 131.0
+offset_bottom = 119.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(0.882353, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 7
+bbcode_enabled = true
+text = "[right]81,25€[/right]"
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="."]
+offset_left = 11.0
+offset_top = 95.0
+offset_right = 111.0
+offset_bottom = 104.0
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 7
+text = "Cards"
+
+[node name="RichTextLabel8" type="RichTextLabel" parent="."]
+offset_left = 16.0
+offset_top = 200.0
+offset_right = 131.0
+offset_bottom = 231.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_constants/line_separation = 2
+theme_override_font_sizes/normal_font_size = 7
+text = "Get a personal loan today at the lowest rate!"
+
+[node name="Banner" type="RichTextLabel" parent="."]
+offset_left = 17.0
+offset_top = 171.0
+offset_right = 132.0
+offset_bottom = 200.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_constants/line_separation = -3
+theme_override_fonts/normal_font = ExtResource("5_bw83t")
+text = "Believe in your dreams"

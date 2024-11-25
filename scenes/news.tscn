@@ -21,7 +21,6 @@ position = Vector2(77, 142)
 texture = ExtResource("1_yvt5m")
 
 [node name="Botón de Home" type="TextureButton" parent="background"]
-z_index = 10
 offset_left = -16.0
 offset_top = 104.0
 offset_right = 8.0
@@ -68,20 +67,24 @@ The owner of Smith's Electronics has reported a missing shipment of high-end gad
 The City Council has approved a $2 million budget for the renovation of Riverside Park. The project aims to improve playgrounds, add new walking trails, and enhance lighting for safety.
 
 ---
+[b]Community Garden Flourishes in Lavapiés[/b]
+A community garden project in the Lavapiés neighborhood has yielded a bountiful harvest. Residents came together to cultivate organic vegetables, promoting sustainability and community engagement.
+
+---
 [b]Mysterious Power Outages Plague Downtown[/b]
 Residents and businesses in the downtown area have experienced intermittent power outages over the past week. Utility companies are baffled and are working to identify the cause.
 
 ---
 [b]Charity Gala Raises Funds for Local Hospital[/b]
-*Excerpt:* The annual charity gala held at the Grand Hotel successfully raised over $200,000 for the St. Mary's Hospital expansion project. Local celebrities and philanthropists attended the event.
+The annual charity gala held at the Grand Hotel successfully raised over $200,000 for the St. Mary's Hospital expansion project. Local celebrities and philanthropists attended the event.
 
 ---
-[b]Traffic Accident Causes Major Delays on Highway 9[/b]
-A multi-vehicle collision on Highway 9 caused significant traffic delays during rush hour yesterday. No serious injuries were reported, but authorities urge drivers to exercise caution.
+[b]Traffic Accident Causes Major Delays on Highway A6[/b]
+A multi-vehicle collision on Highway A6 caused significant traffic delays during rush hour yesterday. No serious injuries were reported, but authorities urge drivers to exercise caution.
 
 ---
-[b]New Art Exhibition Opens at City Museum[/b]
-The City Museum unveiled its latest art exhibition featuring works by contemporary local artists. The exhibition will run through the end of the month.
+[b]New Art Exhibition Opens at Museo del Prado[/b]
+The Prado unveiled its latest art exhibition featuring works by contemporary local artists. The exhibition will run through the end of the month.
 
 ---
 [b]School Board Discusses Budget Cuts[/b]
@@ -102,6 +105,41 @@ Jane Doe, a resident of our town, has released her latest novel \"Mystery in the
 ---
 [b]Firefighters Contain Blaze at Warehouse[/b]
 A fire broke out at a warehouse on Elm Street late last night. Firefighters managed to contain the blaze before it spread to adjacent buildings. The cause of the fire is under investigation.
+
+[b]Madrid Hosts International Art Fair ARCOmadrid[/b]
+The annual contemporary art fair ARCOmadrid opened at IFEMA, featuring works from over 200 galleries worldwide. Art enthusiasts are flocking to see the latest in modern art until the event closes on Sunday.
+
+---
+[b]City Approves Expansion of Metro Line 8[/b]
+The Madrid City Council has approved plans to expand Metro Line 8 to improve connectivity to the northeast suburbs. Construction is set to begin next spring and is expected to be completed by 2026.
+
+---
+[b]Renovation of Plaza Mayor Unveiled[/b]
+After months of restoration, the newly renovated Plaza Mayor was unveiled yesterday. The historic square now boasts improved lighting and restored facades, enhancing its charm for both locals and tourists.
+
+---
+[b]Real Madrid Signs Rising Star Forward[/b]
+Real Madrid CF announced the signing of 19-year-old striker Alejandro Torres. Fans are excited to see how the young talent will bolster the team's offense in the upcoming season.
+
+---
+[b]New Eco-Park Opens in Madrid Río[/b]
+A new eco-park has opened along the Madrid Río, offering residents a green space equipped with solar-powered facilities and interactive environmental exhibits for children.
+
+---
+[b]Local Chef Wins Tapas Competition[/b]
+Chef Isabel Martín of \"La Cocina Madrileña\" won first place at the annual Tapas Competition with her innovative squid ink and goat cheese creation, delighting judges and attendees alike.
+
+---
+[b]Police Investigate Art Theft from Private Gallery[/b]
+Authorities are investigating the theft of several valuable paintings from a private gallery in the Salamanca district. The missing artworks are estimated to be worth over €2 million.
+
+---
+[b]Madrid Introduces Electric Buses to Fleet[/b]
+The city's public transportation system has added 50 new electric buses to its fleet. This initiative aims to reduce carbon emissions and modernize Madrid's transit infrastructure.
+
+---
+[b]Record Attendance at Santiago Bernabéu Stadium Concert[/b]
+International pop star Mira Paula performed to a record-breaking crowd at Santiago Bernabéu Stadium last night. The concert is being hailed as one of the biggest entertainment events of the year in Madrid.
 
 ---
 [b]Mayor Announces Plan to Tackle Homelessness[/b]
@@ -126,11 +164,13 @@ fit_content = true
 
 [node name="Label2" type="RichTextLabel" parent="."]
 offset_left = 9.0
-offset_top = 13.0
+offset_top = 11.0
 offset_right = 143.0
-offset_bottom = 25.0
+offset_bottom = 23.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 6
 bbcode_enabled = true
 text = "[center]Miércoles[/center]"
 script = ExtResource("7_db2no")
+
+[connection signal="mouse_entered" from="Label2" to="Label2" method="_on_mouse_entered"]

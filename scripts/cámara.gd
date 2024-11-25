@@ -1,6 +1,6 @@
 extends TextureButton
 
-func _on_button_down() -> void:
+func _on_button_up() -> void:
 	if Global.Location == "Morgue" and Global.Clara_in_photos == 0 :
 		Dialogic.start("foto_morgue")
 		Global.listado_de_fotos.append(load("res://assets/locations/03_Morgue/clara_file.png"))
