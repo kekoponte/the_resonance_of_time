@@ -10,8 +10,8 @@ Firs of all, are you completely sure that this is your brother?
 [background arg="res://assets/locations/05_Laura_Office/slide_marcos.png" fade="0.0"]
 - I'm afraid I'm sure, Laura
 	laura: I'm so so sorry, Esther
-- I can't be sure. It's been 12 years since I last saw him.
-	laura: I'll need to know more about your brother
+- It's been 12 years since I last saw him, but I think it is.
+	laura: We'll need to know more about your brother.
 [sound path="res://assets/sounds/slide.mp3" volume="0.0"]
 [background arg="res://assets/interface/back.png" fade="0.0"]
 laura (sad): I'm afraid to say that the forensic expert established the cause of the dead as a suicide.
@@ -34,9 +34,13 @@ label Primeras_Preguntas
 - Who found the body, Laura? | [if {Laura_Office.01} == "2" and {Laura_Office.02} == "2"] [else="hide"]
 	laura: I shouldn't share this with you, you know that.
 	leave laura
+	join Esther right
 	Esther: Laura, please. We know each other.
+	leave Esther
 	join laura left
 	laura: A man named Lucas Hidalgo made the call. He is a scrap dealer. that works in the junk yard in  [color=#1eaf18]Parla [/color].
+laura (Idle): Javier will give you a call soon. Why don't you go [color=#1eaf18]Home [/color] and rest for a while?
+laura: And please, Esther, don't go to [color=#1eaf18]La Paz Hospital [/color]. Let Michelle do his work.
 leave laura
 [signal arg="phone_on"]
 [signal arg="end"]
