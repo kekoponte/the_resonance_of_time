@@ -1,5 +1,0 @@
-[signal arg="phone_off"]
-[style name="personajes_en_habitacion"]
-join laura left [animation="Fade In"]
-laura: Hi Esther.
-[signal arg="end"]

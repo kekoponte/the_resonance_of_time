@@ -20,6 +20,7 @@ var Nombre_en_llamada:String = "init" #Variable que muestra el nombre en el tel�
 var Nombre_en_mensajes:String = "" #Variable que muestra el nombre en el teléfono cuando hay mensajes
 var Hora:int = 7 #Horas en el móvil y en el juego
 var Minutos:int = 16 #Minutos en el móvil y en el juego
+var dia:String = "[center]Monday[/center]"
 var Direccion = Vector2(0,0) #Variable para mostrar un lugar en el mapa
 var Status_phone:int = 0 #Variable genérica para temas varios del móvil
 var bloc_de_notas:String = "" #Variable que guarda las notas del notepad

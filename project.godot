@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Phone"
+config/name="The Resonance Of Time"
 run/main_scene="res://scenes/game.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
@@ -37,8 +37,6 @@ directories/dtl_directory={
 "03_seeing_claras_face": "res://dialogo/04_Morgue/03_seeing_claras_face.dtl",
 "03_seeing_claras_hands": "res://dialogo/04_Morgue/03_seeing_claras_hands.dtl",
 "05_Laura_Office_01": "res://dialogo/05_Laura_Office/05_Laura_Office_01.dtl",
-"05_Laura_Office_o1": "res://dialogo/05_Laura_Office/05_Laura_Office_o1.dtl",
-"Laura_office_01": "res://dialogo/05_Laura_Office/Laura_office_01.dtl",
 "Llamada_1_con_Colin": "res://dialogo/Llamada_1_con_Colin.dtl",
 "Llamada_1_con_Dennis": "res://dialogo/Llamada_1_con_Dennis.dtl",
 "Llamada_1_con_clara": "res://dialogo/Llamada_1_con_clara.dtl",
@@ -56,6 +54,11 @@ directories/dtl_directory={
 layout/style_list=["res://styles/personajes_en_habitacion.tres", "res://styles/Llamada_de_teléfono.tres", "res://styles/Intro.tres", "res://styles/clear_screen.tres"]
 layout/default_style=""
 variables={
+"Laura_Office": {
+"01": "1",
+"02": "1",
+"03": ""
+},
 "Morgue": 0,
 "Waiting_room": {
 "Laura_01": "1",
@@ -113,7 +116,7 @@ data_directory="res://dialogue"
 
 window/size/viewport_width=640
 window/size/viewport_height=360
-window/size/mode=2
+window/size/mode=4
 window/stretch/mode="canvas_items"
 mouse_cursor/custom_image="res://assets/interface/mouse_arrow.png"
 window/canvas_textures/default_texture_filter=1

@@ -1,0 +1,136 @@
+[gd_scene load_steps=10 format=3 uid="uid://b7nf8cme8rvsl"]
+
+[ext_resource type="Texture2D" uid="uid://b7cj6d2xrdcxn" path="res://assets/phone/back_news.png" id="1_yvt5m"]
+[ext_resource type="FontFile" uid="uid://b2rl6owflbu8i" path="res://assets/fonts/runescape_uf.ttf" id="2_0m5f2"]
+[ext_resource type="Texture2D" uid="uid://cxy38ml7i6var" path="res://assets/phone/home_button.png" id="2_01gno"]
+[ext_resource type="Texture2D" uid="uid://cbyl7p77epic7" path="res://assets/phone/home_button_pressed.png" id="3_54pwx"]
+[ext_resource type="Script" path="res://scripts/phone/botón_de_home_news.gd" id="4_vrgt0"]
+[ext_resource type="FontFile" uid="uid://cebjma2udbg7" path="res://assets/fonts/dogicapixel.ttf" id="6_cjigb"]
+[ext_resource type="Script" path="res://scripts/phone/set_dia.gd" id="7_db2no"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ebegf"]
+bg_color = Color(0.255488, 0.251286, 0.244338, 1)
+
+[sub_resource type="Theme" id="Theme_unupx"]
+VScrollBar/styles/scroll = SubResource("StyleBoxFlat_ebegf")
+
+[node name="News" type="Node2D"]
+
+[node name="background" type="Sprite2D" parent="."]
+position = Vector2(77, 142)
+texture = ExtResource("1_yvt5m")
+
+[node name="Botón de Home" type="TextureButton" parent="background"]
+z_index = 10
+offset_left = -16.0
+offset_top = 104.0
+offset_right = 8.0
+offset_bottom = 128.0
+texture_normal = ExtResource("2_01gno")
+texture_pressed = ExtResource("3_54pwx")
+script = ExtResource("4_vrgt0")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 36.0
+offset_top = 18.0
+offset_right = 114.0
+offset_bottom = 42.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_0m5f2")
+theme_override_font_sizes/font_size = 23
+text = "The News"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+offset_left = 16.0
+offset_top = 52.0
+offset_right = 137.0
+offset_bottom = 242.0
+theme = SubResource("Theme_unupx")
+scroll_vertical_custom_step = 2.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+custom_minimum_size = Vector2(121, 100)
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_constants/line_separation = 3
+theme_override_fonts/normal_font = ExtResource("6_cjigb")
+theme_override_font_sizes/normal_font_size = 6
+theme_override_font_sizes/bold_font_size = 7
+bbcode_enabled = true
+text = "[b]Local Business Owner Reports Missing Shipment[/b]
+The owner of Smith's Electronics has reported a missing shipment of high-end gadgets worth over $50,000. The delivery was expected last Tuesday but never arrived. Police are investigating the possibility of theft.
+
+---
+[b]City Council Approves New Park Renovation[/b]
+The City Council has approved a $2 million budget for the renovation of Riverside Park. The project aims to improve playgrounds, add new walking trails, and enhance lighting for safety.
+
+---
+[b]Mysterious Power Outages Plague Downtown[/b]
+Residents and businesses in the downtown area have experienced intermittent power outages over the past week. Utility companies are baffled and are working to identify the cause.
+
+---
+[b]Charity Gala Raises Funds for Local Hospital[/b]
+*Excerpt:* The annual charity gala held at the Grand Hotel successfully raised over $200,000 for the St. Mary's Hospital expansion project. Local celebrities and philanthropists attended the event.
+
+---
+[b]Traffic Accident Causes Major Delays on Highway 9[/b]
+A multi-vehicle collision on Highway 9 caused significant traffic delays during rush hour yesterday. No serious injuries were reported, but authorities urge drivers to exercise caution.
+
+---
+[b]New Art Exhibition Opens at City Museum[/b]
+The City Museum unveiled its latest art exhibition featuring works by contemporary local artists. The exhibition will run through the end of the month.
+
+---
+[b]School Board Discusses Budget Cuts[/b]
+The school board meeting on Monday focused on proposed budget cuts due to decreased funding. Programs in art and music may face reductions, sparking concern among parents and teachers.
+
+---
+[b]Police Investigate Vandalism at Historical Site[/b]
+Police are investigating an act of vandalism at the Old Town Hall, a historical landmark. Graffiti was found on the building's exterior early this morning.
+
+---
+[b]Community Garden Sees Record Harvest[/b]
+The downtown community garden reported a record harvest this season, thanks to favorable weather and increased volunteer participation.
+
+---
+[b]Local Author Releases Bestselling Novel[/b]
+Jane Doe, a resident of our town, has released her latest novel \"Mystery in the Shadows,\" which has quickly climbed the bestseller lists nationwide.
+
+---
+[b]Firefighters Contain Blaze at Warehouse[/b]
+A fire broke out at a warehouse on Elm Street late last night. Firefighters managed to contain the blaze before it spread to adjacent buildings. The cause of the fire is under investigation.
+
+---
+[b]Mayor Announces Plan to Tackle Homelessness[/b]
+Mayor John Smith unveiled a comprehensive plan to address the growing homelessness issue, including the development of affordable housing and increased support services.
+
+---
+[b]Local Sports Team Wins Championship[/b]
+The Eagles clinched the state championship after a thrilling overtime victory last night. Fans celebrated the win with a parade scheduled for Saturday.
+
+---
+[b]Mysterious Illness Affects Residents[/b]
+Several residents in the Riverdale neighborhood have reported symptoms of a mysterious illness, prompting health officials to investigate potential environmental causes.
+
+---
+[b]New Tech Startup Promises Innovation[/b]
+A new tech startup, InnovateX, has opened its headquarters downtown, promising to bring cutting-edge technology solutions and new jobs to the area.
+
+
+
+"
+fit_content = true
+
+[node name="Label2" type="RichTextLabel" parent="."]
+offset_left = 9.0
+offset_top = 13.0
+offset_right = 143.0
+offset_bottom = 25.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 6
+bbcode_enabled = true
+text = "[center]Miércoles[/center]"
+script = ExtResource("7_db2no")
