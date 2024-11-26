@@ -1,12 +1,15 @@
-[gd_scene load_steps=10 format=3 uid="uid://b7nf8cme8rvsl"]
+[gd_scene load_steps=13 format=3 uid="uid://b7nf8cme8rvsl"]
 
+[ext_resource type="Script" path="res://scripts/phone/news_mouse.gd" id="1_2tnmt"]
 [ext_resource type="Texture2D" uid="uid://b7cj6d2xrdcxn" path="res://assets/phone/back_news.png" id="1_yvt5m"]
 [ext_resource type="FontFile" uid="uid://b2rl6owflbu8i" path="res://assets/fonts/runescape_uf.ttf" id="2_0m5f2"]
 [ext_resource type="Texture2D" uid="uid://cxy38ml7i6var" path="res://assets/phone/home_button.png" id="2_01gno"]
 [ext_resource type="Texture2D" uid="uid://cbyl7p77epic7" path="res://assets/phone/home_button_pressed.png" id="3_54pwx"]
 [ext_resource type="Script" path="res://scripts/phone/botón_de_home_news.gd" id="4_vrgt0"]
 [ext_resource type="FontFile" uid="uid://cebjma2udbg7" path="res://assets/fonts/dogicapixel.ttf" id="6_cjigb"]
+[ext_resource type="Script" path="res://scripts/phone/news_mouse_2.gd" id="7_cy50n"]
 [ext_resource type="Script" path="res://scripts/phone/set_dia.gd" id="7_db2no"]
+[ext_resource type="Script" path="res://scripts/phone/news_mouse_3.gd" id="8_skeub"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ebegf"]
 bg_color = Color(0.255488, 0.251286, 0.244338, 1)
@@ -16,11 +19,22 @@ VScrollBar/styles/scroll = SubResource("StyleBoxFlat_ebegf")
 
 [node name="News" type="Node2D"]
 
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 4.0
+offset_right = 148.0
+offset_bottom = 283.0
+mouse_filter = 1
+script = ExtResource("1_2tnmt")
+
 [node name="background" type="Sprite2D" parent="."]
+z_index = 1
 position = Vector2(77, 142)
 texture = ExtResource("1_yvt5m")
 
 [node name="Botón de Home" type="TextureButton" parent="background"]
+z_index = 1
 offset_left = -16.0
 offset_top = 104.0
 offset_right = 8.0
@@ -30,6 +44,7 @@ texture_pressed = ExtResource("3_54pwx")
 script = ExtResource("4_vrgt0")
 
 [node name="Label" type="Label" parent="."]
+z_index = 1
 offset_left = 36.0
 offset_top = 18.0
 offset_right = 114.0
@@ -40,18 +55,23 @@ theme_override_font_sizes/font_size = 23
 text = "The News"
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
+z_index = 1
 offset_left = 16.0
 offset_top = 52.0
 offset_right = 137.0
 offset_bottom = 242.0
 theme = SubResource("Theme_unupx")
 scroll_vertical_custom_step = 2.0
+script = ExtResource("7_cy50n")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+z_index = 1
 custom_minimum_size = Vector2(121, 100)
 layout_mode = 2
+script = ExtResource("8_skeub")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="ScrollContainer/VBoxContainer"]
+z_index = 1
 layout_mode = 2
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_constants/line_separation = 3
@@ -163,6 +183,7 @@ A new tech startup, InnovateX, has opened its headquarters downtown, promising t
 fit_content = true
 
 [node name="Label2" type="RichTextLabel" parent="."]
+z_index = 1
 offset_left = 9.0
 offset_top = 11.0
 offset_right = 143.0
@@ -173,4 +194,8 @@ bbcode_enabled = true
 text = "[center]Miércoles[/center]"
 script = ExtResource("7_db2no")
 
+[connection signal="mouse_entered" from="Control" to="Control" method="_on_mouse_entered"]
+[connection signal="mouse_entered" from="background/Botón de Home" to="background/Botón de Home" method="_on_mouse_entered"]
+[connection signal="mouse_entered" from="ScrollContainer" to="ScrollContainer" method="_on_mouse_entered"]
+[connection signal="mouse_entered" from="ScrollContainer/VBoxContainer" to="ScrollContainer/VBoxContainer" method="_on_mouse_entered"]
 [connection signal="mouse_entered" from="Label2" to="Label2" method="_on_mouse_entered"]
