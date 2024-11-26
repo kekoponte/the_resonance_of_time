@@ -15,7 +15,6 @@ position = Vector2(320, 180)
 texture = ExtResource("1_wpiiq")
 
 [node name="Phone" parent="." instance=ExtResource("2_fgceg")]
-position = Vector2(470, 40)
 
 [node name="TextureButton" type="TextureButton" parent="."]
 offset_left = 316.0

@@ -28,6 +28,7 @@ PassTime="*res://scripts/pass_time.gd"
 directories/dch_directory={
 "Esther": "res://dialogo/Esther.dch",
 "Michel": "res://dialogo/Characters/Michel.dch",
+"Miguel": "res://dialogo/Characters/Miguel.dch",
 "jake": "res://dialogo/jake.dch",
 "laura": "res://dialogo/laura.dch"
 }
@@ -42,6 +43,7 @@ directories/dtl_directory={
 "Llamada_1_con_Dennis": "res://dialogo/Llamada_1_con_Dennis.dtl",
 "Llamada_1_con_clara": "res://dialogo/Llamada_1_con_clara.dtl",
 "Michel_01": "res://dialogo/04_Morgue/Michel_01.dtl",
+"Parla_01": "res://dialogo/06_Parla/Parla_01.dtl",
 "alan": "res://dialogo/alan.dtl",
 "banner_bank": "res://dialogo/banner_bank.dtl",
 "comunicando": "res://dialogo/comunicando.dtl",

@@ -1,0 +1,7 @@
+[background arg="res://assets/interface/back.png" fade="0.0"]
+[style name="personajes_en_habitacion"]
+Esther: The junkyard in Parla is way bigger than I thought
+Esther: I cross the big metal gate and see the manager working by a big crane.
+join Miguel left
+Miguel: Who are you?
+[signal arg="phone"]

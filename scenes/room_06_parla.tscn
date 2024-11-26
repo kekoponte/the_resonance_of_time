@@ -1,12 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://blemrgpq3ttb0"]
+[gd_scene load_steps=9 format=3 uid="uid://blemrgpq3ttb0"]
 
 [ext_resource type="Script" path="res://scripts/06_Parla/room_06_parla.gd" id="1_0wym5"]
 [ext_resource type="Texture2D" uid="uid://fgnt7q0t7wh4" path="res://assets/locations/06_parla.png" id="1_fgqw3"]
-[ext_resource type="Texture2D" uid="uid://7tat653m77it" path="res://assets/locations/06_Parla/06_grua_1.png" id="2_fd6tp"]
-[ext_resource type="Texture2D" uid="uid://saoojajuxb4h" path="res://assets/locations/06_Parla/06_grua_2.png" id="3_uoji3"]
-[ext_resource type="Texture2D" uid="uid://s3utxkf14qjf" path="res://assets/locations/06_Parla/06_grua_3.png" id="4_cc2cu"]
-[ext_resource type="Texture2D" uid="uid://rbvsqj8u0rum" path="res://assets/locations/06_Parla/06_grua_mask.png" id="5_wcvnq"]
-[ext_resource type="Texture2D" uid="uid://dngclphnmwop2" path="res://assets/locations/06_Parla/06_grua_mask2.png" id="7_b32jf"]
+[ext_resource type="Texture2D" uid="uid://bt8yyhfyxl0d" path="res://assets/locations/06_Parla/06_parla-towers.png" id="3_ne7bh"]
+[ext_resource type="PackedScene" uid="uid://vn8ay56opuf" path="res://scenes/phone.tscn" id="8_jhe3v"]
 
 [sub_resource type="Animation" id="Animation_5eery"]
 resource_name = "Parla"
@@ -21,79 +18,19 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 8),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(800, 180), Vector2(-160, 180)]
+"values": [Vector2(531, 180), Vector2(100, 180)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("AnimationPlayer/06Grua1:position")
+tracks/1/path = NodePath("AnimationPlayer/06Parla-towers:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0, 8),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(901, 139), Vector2(127, 139)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("AnimationPlayer/06GruaMask:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 8),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(859, 127), Vector2(-101, 126)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("AnimationPlayer/06Grua2:position")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0, 8),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(365, 53), Vector2(-595, 53)]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("AnimationPlayer/06Grua2:rotation")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0, 2.2),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, -0.10472]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("AnimationPlayer/06Grua3:position")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0, 6.2, 7.73333),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(1482, 21), Vector2(519, 21), Vector2(442, 21)]
-}
-tracks/6/type = "value"
-tracks/6/imported = false
-tracks/6/enabled = true
-tracks/6/path = NodePath("AnimationPlayer/06GruaMask2:position")
-tracks/6/interp = 1
-tracks/6/loop_wrap = true
-tracks/6/keys = {
-"times": PackedFloat32Array(0, 8),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(249, 73), Vector2(-711, 78)]
+"values": [Vector2(792, 147), Vector2(385, 147)]
 }
 
 [sub_resource type="Animation" id="Animation_2lcks"]
@@ -113,79 +50,36 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("AnimationPlayer/06Grua1:position")
+tracks/1/path = NodePath("AnimationPlayer/06Parla-towers:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(1092, 134)]
+"values": [Vector2(792, 147)]
 }
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("AnimationPlayer/06GruaMask:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
+
+[sub_resource type="Animation" id="Animation_f1pyp"]
+resource_name = "Parla_2"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/06Parla:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(820, 65)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("AnimationPlayer/06Grua2:position")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(365, 53)]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("AnimationPlayer/06Grua2:rotation")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [-0.0523599]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("AnimationPlayer/06Grua3:position")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1066, 21)]
-}
-tracks/6/type = "value"
-tracks/6/imported = false
-tracks/6/enabled = true
-tracks/6/path = NodePath("AnimationPlayer/06GruaMask2:position")
-tracks/6/interp = 1
-tracks/6/loop_wrap = true
-tracks/6/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(250, 78)]
+"values": [Vector2(-160, 180)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_5neou"]
 _data = {
 "Parla": SubResource("Animation_5eery"),
+"Parla_2": SubResource("Animation_f1pyp"),
 "RESET": SubResource("Animation_2lcks")
 }
 
@@ -201,26 +95,9 @@ libraries = {
 position = Vector2(800, 180)
 texture = ExtResource("1_fgqw3")
 
-[node name="06Grua1" type="Sprite2D" parent="AnimationPlayer"]
-z_index = 2
-position = Vector2(1092, 134)
-texture = ExtResource("2_fd6tp")
+[node name="06Parla-towers" type="Sprite2D" parent="AnimationPlayer"]
+position = Vector2(792, 147)
+texture = ExtResource("3_ne7bh")
 
-[node name="06Grua2" type="Sprite2D" parent="AnimationPlayer"]
-position = Vector2(365, 53)
-rotation = -0.0523599
-scale = Vector2(1.24849, 1.24849)
-texture = ExtResource("3_uoji3")
-
-[node name="06Grua3" type="Sprite2D" parent="AnimationPlayer"]
-position = Vector2(1066, 21)
-texture = ExtResource("4_cc2cu")
-
-[node name="06GruaMask" type="Sprite2D" parent="AnimationPlayer"]
-z_index = 3
-position = Vector2(820, 65)
-texture = ExtResource("5_wcvnq")
-
-[node name="06GruaMask2" type="Sprite2D" parent="AnimationPlayer"]
-position = Vector2(250, 78)
-texture = ExtResource("7_b32jf")
+[node name="Phone" parent="." instance=ExtResource("8_jhe3v")]
+z_index = 5

@@ -14,5 +14,7 @@ func _on_text_submitted(Destination) -> void:
 		Global.Direccion = Vector2(190,90)
 	elif Destination == "Work":
 		Global.Direccion = Vector2(-190,10)
+	elif Destination == "Parla":
+		Global.Direccion = Vector2(250,340)
 	else:
 		print("No conozco ese sitio")

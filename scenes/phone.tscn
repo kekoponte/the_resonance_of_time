@@ -116,7 +116,7 @@ _data = {
 }
 
 [node name="Phone" type="Node2D"]
-position = Vector2(470, 27)
+position = Vector2(470, 40)
 
 [node name="PhoneBorder" type="Sprite2D" parent="."]
 z_index = 10
@@ -458,7 +458,8 @@ libraries = {
 
 [node name="Sprite2D" type="Sprite2D" parent="face_id"]
 visible = false
-position = Vector2(544, 173)
+z_index = 5
+position = Vector2(544, 186)
 texture = ExtResource("53_avwt2")
 
 [connection signal="mouse_entered" from="PhoneBorder/Control" to="PhoneBorder" method="_on_control_mouse_entered"]
