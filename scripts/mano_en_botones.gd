@@ -34,3 +34,6 @@ func _on_botón_de_news_mouse_entered() -> void:
 
 func _on_botón_de_bank_mouse_entered() -> void:
 	Input.set_custom_mouse_cursor(Global.mano)
+
+func _on_botón_de_story_mouse_entered() -> void:
+	Input.set_custom_mouse_cursor(Global.mano)

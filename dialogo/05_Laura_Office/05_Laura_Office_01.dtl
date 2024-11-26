@@ -15,15 +15,16 @@ First of all, are you completely sure that this is your brother?
 [sound path="res://assets/sounds/slide.mp3" volume="0.0"]
 [background arg="res://assets/interface/back.png" fade="0.0"]
 laura (sad): I'm afraid to say that the forensic expert established the cause of the dead as a suicide.
-laura (Idle): I'm going to give the case to Javier and I'll tell him to keep you posted.
+laura (Idle): I'm going to give the case to Javier and I'll make sure that he keeps you posted.
+laura (Idle): I'm sorry, Esther, but we're buried in work here, and the resources are scarce.
 label Primeras_Preguntas
 - Where did you find him? | [if {Laura_Office.01} == "1"] [else="hide"]
-	laura (sad): The body was found in [color=#1eaf18]Parla[/color]. In a junk yard.
+	laura (sad): The body was found in [color=#1eaf18]Parla[/color]. In a junk yard. But please, Esther. Let us do our work.
 	laura (Idle): It seems that he suffered an overdose, but the amount of drugs in his body has made us think of suicide.
 	set {Laura_Office.01} = "2"
 	jump Primeras_Preguntas
 - I saw something in his hands in the morge | [if {Laura_Office.02} == "1"] [else="hide"]
-	laura (Idle): The forensic expert didn't mention anything. But Esther, please, keep yourself out of this. Let us do our work.
+	laura (Idle): The forensic expert didn't mention anything. Please, keep yourself out of this, Esther.
 	set {Laura_Office.02} = "2"
 	jump Primeras_Preguntas
 - Who is Javier? | [if {Laura_Office.03} == "1"] [else="hide"]
@@ -31,7 +32,7 @@ label Primeras_Preguntas
 	laura: I'll talk to him as soon as he gets to the station. I'm sure he will talk to you soon.
 	set {Laura_Office.03} = "2"
 	jump Primeras_Preguntas
-- Who found the body, Laura? | [if {Laura_Office.01} == "2" and {Laura_Office.02} == "2"] [else="hide"]
+- Who found the body, Laura? | [if {Laura_Office.01} == "2" and {Laura_Office.02} == "2" and {Laura_Office.03} == "2"] [else="hide"]
 	laura: I shouldn't share this with you, you know that.
 	leave laura
 	join Esther left
@@ -41,6 +42,19 @@ label Primeras_Preguntas
 	laura: A man named Lucas Hidalgo made the call. He is a scrap dealer. that works in the junk yard in [color=#1eaf18]Parla[/color].
 laura (Idle): Javier will give you a call soon. Why don't you go [color=#1eaf18]Home[/color] and rest for a while?
 laura (sad): And please, Esther, don't go to [color=#1eaf18]La Paz Hospital[/color]. Let Michelle do his work.
+leave laura
+join Esther left
+Esther: I'm afraid I need to do my own research here, Laura.
+leave Esther
+join laura left
+laura: If you hinder our investigation, I will have to arrest you, Esther
+- Laura, we're talking about my brother here
+- I need to know what happened
+laura: Listen, there's no signs of foul play here. If you want to ask some questions, I can't stop you
+laura: But please, be careful
+laura (sad): You have until Wednesday at 9\:00 am. If you interrupt our work after Wednesday, I promise you that I'll arrest you
+laura (Idle): You are my friend, Esther. But I'm doing this for your safety.
+laura: Wednesday at 9. And please, call me with any findings.
 leave laura
 [signal arg="phone_on"]
 [signal arg="end"]

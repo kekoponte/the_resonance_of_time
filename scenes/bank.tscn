@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://c604awremhbr7"]
+[gd_scene load_steps=7 format=3 uid="uid://c604awremhbr7"]
 
 [ext_resource type="Texture2D" uid="uid://bnyhghckrfrim" path="res://assets/phone/back_bank.png" id="1_klipx"]
 [ext_resource type="Texture2D" uid="uid://cxy38ml7i6var" path="res://assets/phone/home_button.png" id="2_dkkol"]
 [ext_resource type="Texture2D" uid="uid://cbyl7p77epic7" path="res://assets/phone/home_button_pressed.png" id="3_ehqun"]
 [ext_resource type="Script" path="res://scripts/phone/botón_de_home_news.gd" id="4_xpp1d"]
 [ext_resource type="FontFile" uid="uid://ce6w5vlh66kkr" path="res://assets/fonts/BirchLeaf.otf" id="5_bw83t"]
+[ext_resource type="Script" path="res://scripts/phone/bank_banner.gd" id="6_tqqfg"]
 
 [node name="Bank" type="Node2D"]
 
@@ -63,9 +64,9 @@ text = "[right]721,50€[/right]"
 
 [node name="RichTextLabel6" type="RichTextLabel" parent="."]
 offset_left = 17.0
-offset_top = 110.0
+offset_top = 111.0
 offset_right = 63.0
-offset_bottom = 119.0
+offset_bottom = 120.0
 mouse_filter = 2
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 7
@@ -73,14 +74,14 @@ text = "Credit"
 
 [node name="RichTextLabel7" type="RichTextLabel" parent="."]
 offset_left = 66.0
-offset_top = 110.0
+offset_top = 111.0
 offset_right = 131.0
-offset_bottom = 119.0
+offset_bottom = 120.0
 mouse_filter = 2
 theme_override_colors/default_color = Color(0.882353, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 7
 bbcode_enabled = true
-text = "[right]81,25€[/right]"
+text = "[right]- 81,25€[/right]"
 
 [node name="RichTextLabel3" type="RichTextLabel" parent="."]
 offset_left = 11.0
@@ -112,3 +113,12 @@ theme_override_colors/default_color = Color(1, 1, 1, 1)
 theme_override_constants/line_separation = -3
 theme_override_fonts/normal_font = ExtResource("5_bw83t")
 text = "Believe in your dreams"
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = 11.0
+offset_top = 140.0
+offset_right = 137.0
+offset_bottom = 231.0
+script = ExtResource("6_tqqfg")
+
+[connection signal="button_down" from="TextureButton" to="TextureButton" method="_on_button_down"]
