@@ -9,7 +9,7 @@ func _ready() -> void:
 	$Phone.set_process(false)
 	Dialogic.signal_event.connect(_on_dialogic_signal)
 	await $AnimationPlayer.animation_finished
-	#$AnimationPlayer.play("Parla_2")
+	$AnimationPlayer.play("Parla_2")
 
 func _on_dialogic_signal(argument:String):
 	if argument == "phone":

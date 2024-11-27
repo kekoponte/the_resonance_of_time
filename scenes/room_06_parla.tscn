@@ -1,9 +1,14 @@
-[gd_scene load_steps=9 format=3 uid="uid://blemrgpq3ttb0"]
+[gd_scene load_steps=14 format=3 uid="uid://blemrgpq3ttb0"]
 
 [ext_resource type="Script" path="res://scripts/06_Parla/room_06_parla.gd" id="1_0wym5"]
 [ext_resource type="Texture2D" uid="uid://fgnt7q0t7wh4" path="res://assets/locations/06_parla.png" id="1_fgqw3"]
 [ext_resource type="Texture2D" uid="uid://bt8yyhfyxl0d" path="res://assets/locations/06_Parla/06_parla-towers.png" id="3_ne7bh"]
+[ext_resource type="Texture2D" uid="uid://7tat653m77it" path="res://assets/locations/06_Parla/06_grua_1.png" id="4_a8dxg"]
+[ext_resource type="Texture2D" uid="uid://dngclphnmwop2" path="res://assets/locations/06_Parla/06_grua_mask2.png" id="5_qh8hk"]
+[ext_resource type="Texture2D" uid="uid://rbvsqj8u0rum" path="res://assets/locations/06_Parla/06_grua_mask.png" id="6_woyqg"]
+[ext_resource type="Texture2D" uid="uid://saoojajuxb4h" path="res://assets/locations/06_Parla/06_grua_2.png" id="7_3gkbn"]
 [ext_resource type="PackedScene" uid="uid://vn8ay56opuf" path="res://scenes/phone.tscn" id="8_jhe3v"]
+[ext_resource type="Texture2D" uid="uid://s3utxkf14qjf" path="res://assets/locations/06_Parla/06_grua_3.png" id="8_kejvg"]
 
 [sub_resource type="Animation" id="Animation_5eery"]
 resource_name = "Parla"
@@ -30,7 +35,120 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0, 8),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(792, 147), Vector2(385, 147)]
+"values": [Vector2(715, 147), Vector2(361, 147)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimationPlayer/06Grua1:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(615, 144), Vector2(285, 144)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AnimationPlayer/06GruaMask:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(546, 151), Vector2(115, 151)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("AnimationPlayer/06GruaMask2:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(165, 82.5), Vector2(-266, 82.5)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("AnimationPlayer/06Grua2:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(229, 67.5), Vector2(-202, 67.5)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("AnimationPlayer/06Grua2:rotation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 2.96667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -0.410152]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("AnimationPlayer/06Grua3:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(353, 31), Vector2(425, 31)]
+}
+
+[sub_resource type="Animation" id="Animation_f1pyp"]
+resource_name = "Parla_2"
+length = 20.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/06Parla:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(100, 180)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimationPlayer/06Grua1:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 6.7, 8.13333, 14.5333),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(285, 144), Vector2(285, 144), Vector2(262, 144), Vector2(293, 144)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimationPlayer/06Grua3:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 5.03333, 15.2667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(425, 31), Vector2(425, 31), Vector2(-24, 31)]
 }
 
 [sub_resource type="Animation" id="Animation_2lcks"]
@@ -59,21 +177,77 @@ tracks/1/keys = {
 "update": 0,
 "values": [Vector2(792, 147)]
 }
-
-[sub_resource type="Animation" id="Animation_f1pyp"]
-resource_name = "Parla_2"
-length = 5.0
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("AnimationPlayer/06Parla:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimationPlayer/06Grua1:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(-160, 180)]
+"values": [Vector2(285, 144)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AnimationPlayer/06GruaMask:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(110, 115)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("AnimationPlayer/06GruaMask2:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(165, 82.5)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("AnimationPlayer/06Grua2:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(229, 67.5)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("AnimationPlayer/06Grua2:rotation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("AnimationPlayer/06Grua3:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(353, 31)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_5neou"]
@@ -99,5 +273,26 @@ texture = ExtResource("1_fgqw3")
 position = Vector2(792, 147)
 texture = ExtResource("3_ne7bh")
 
+[node name="06Grua2" type="Sprite2D" parent="AnimationPlayer"]
+position = Vector2(229, 67.5)
+texture = ExtResource("7_3gkbn")
+
+[node name="06Grua1" type="Sprite2D" parent="AnimationPlayer"]
+position = Vector2(285, 144)
+texture = ExtResource("4_a8dxg")
+
+[node name="06GruaMask2" type="Sprite2D" parent="AnimationPlayer"]
+position = Vector2(165, 82.5)
+texture = ExtResource("5_qh8hk")
+
+[node name="06GruaMask" type="Sprite2D" parent="AnimationPlayer"]
+position = Vector2(110, 115)
+texture = ExtResource("6_woyqg")
+
+[node name="06Grua3" type="Sprite2D" parent="AnimationPlayer"]
+position = Vector2(353, 31)
+texture = ExtResource("8_kejvg")
+
 [node name="Phone" parent="." instance=ExtResource("8_jhe3v")]
+visible = false
 z_index = 5
