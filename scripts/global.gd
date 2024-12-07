@@ -31,7 +31,21 @@ var lupa = load("res://assets/interface/mouse_lupa.png") #Icono de ratón de lup
 var talk = load("res://assets/interface/mouse_boca.png") #Icono de ratón de hablar
 var contador:int = 0 #Variable genérica para temas varios 
 var clara = load("res://assets/locations/03_Morgue/Clara.png")
-var listado_de_fotos:Array = []
+var listado_de_fotos:Array = [load("res://assets/phone/old_photos/01.png"),
+load("res://assets/phone/old_photos/02.png"),
+load("res://assets/phone/old_photos/03.png"),
+load("res://assets/phone/old_photos/04.png"),
+load("res://assets/phone/old_photos/05.png"),
+load("res://assets/phone/old_photos/06.png"),
+load("res://assets/phone/old_photos/07.png"),
+load("res://assets/phone/old_photos/08.png"),
+load("res://assets/phone/old_photos/09.png"),
+load("res://assets/phone/old_photos/10.png"),
+load("res://assets/phone/old_photos/11.png"),
+load("res://assets/phone/old_photos/12.png"),
+load("res://assets/phone/old_photos/13.png"),
+load("res://assets/phone/old_photos/14.png")]
+
 var stress:int = 3
 var track_de_escena:int = 1
 

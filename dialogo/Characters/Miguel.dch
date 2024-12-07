@@ -17,6 +17,33 @@
 "nicknames": [""],
 "offset": Vector2(0, 0),
 "portraits": {
+"+1": {
+"export_overrides": {
+"image": "\"res://assets/characters/miguel_worried.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"+2": {
+"export_overrides": {
+"image": "\"res://assets/characters/miguel_very_worried.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"+3": {
+"export_overrides": {
+"image": "\"res://assets/characters/miguel_very_very_worried.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
 "idle": {
 "export_overrides": {
 "image": "\"res://assets/characters/miguel_idle.png\""

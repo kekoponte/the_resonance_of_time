@@ -1,0 +1,9 @@
+[style name="personajes_en_habitacion"]
+[signal arg="car"]
+Miguel (+1): This is the car
+Miguel (+1): The police finished searching for evidence an hour ago
+Miguel (+1): They tried to precint the whole thing, but it's like impossible in this state.
+Miguel (+1): I saw a couple of cats five minutes ago inside it.
+Miguel: I'll be at my office if you need anything else.
+[signal arg="phone"]
+[end_timeline]

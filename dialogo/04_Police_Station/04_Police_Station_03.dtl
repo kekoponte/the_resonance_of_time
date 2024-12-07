@@ -1,0 +1,4 @@
+[style name="personajes_en_habitacion"]
+[background arg="res://assets/interface/back.png" fade="0.0"]
+Esther: I need a security card to access the evidence room.
+[end_timeline]

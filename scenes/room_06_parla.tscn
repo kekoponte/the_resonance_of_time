@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://blemrgpq3ttb0"]
+[gd_scene load_steps=17 format=3 uid="uid://blemrgpq3ttb0"]
 
 [ext_resource type="Script" path="res://scripts/06_Parla/room_06_parla.gd" id="1_0wym5"]
 [ext_resource type="Texture2D" uid="uid://fgnt7q0t7wh4" path="res://assets/locations/06_parla.png" id="1_fgqw3"]
@@ -9,6 +9,9 @@
 [ext_resource type="Texture2D" uid="uid://saoojajuxb4h" path="res://assets/locations/06_Parla/06_grua_2.png" id="7_3gkbn"]
 [ext_resource type="PackedScene" uid="uid://vn8ay56opuf" path="res://scenes/phone.tscn" id="8_jhe3v"]
 [ext_resource type="Texture2D" uid="uid://s3utxkf14qjf" path="res://assets/locations/06_Parla/06_grua_3.png" id="8_kejvg"]
+[ext_resource type="Texture2D" uid="uid://h2srqkovnmbl" path="res://assets/locations/06_Parla/06_red_car.png" id="10_s3dk4"]
+[ext_resource type="Script" path="res://scripts/06_Parla/matricula.gd" id="11_i2vj5"]
+[ext_resource type="Script" path="res://scripts/06_Parla/interior.gd" id="12_0nf5w"]
 
 [sub_resource type="Animation" id="Animation_5eery"]
 resource_name = "Parla"
@@ -296,3 +299,30 @@ texture = ExtResource("8_kejvg")
 [node name="Phone" parent="." instance=ExtResource("8_jhe3v")]
 visible = false
 z_index = 5
+
+[node name="06RedCar" type="Sprite2D" parent="."]
+visible = false
+z_index = 1
+position = Vector2(320, 180)
+texture = ExtResource("10_s3dk4")
+
+[node name="matricula" type="TextureButton" parent="06RedCar"]
+offset_left = -264.0
+offset_top = 71.0
+offset_right = -178.0
+offset_bottom = 127.0
+script = ExtResource("11_i2vj5")
+
+[node name="interior" type="TextureButton" parent="06RedCar"]
+offset_left = 30.0
+offset_top = -114.0
+offset_right = 159.0
+offset_bottom = -8.0
+script = ExtResource("12_0nf5w")
+
+[connection signal="button_down" from="06RedCar/matricula" to="06RedCar/matricula" method="_on_button_down"]
+[connection signal="mouse_entered" from="06RedCar/matricula" to="06RedCar/matricula" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="06RedCar/matricula" to="06RedCar/matricula" method="_on_mouse_exited"]
+[connection signal="button_down" from="06RedCar/interior" to="06RedCar/interior" method="_on_button_down"]
+[connection signal="mouse_entered" from="06RedCar/interior" to="06RedCar/interior" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="06RedCar/interior" to="06RedCar/interior" method="_on_mouse_exited"]

@@ -13,15 +13,21 @@ First of all, are you completely sure that this is your brother?
 - It's been 12 years since I last saw him, but I think it is.
 	laura: We'll need to know more about your brother.
 [sound path="res://assets/sounds/slide.mp3" volume="0.0"]
-[background arg="res://assets/interface/back.png" fade="0.0"]
+[background arg="res://assets/locations/05_Laura_Office/slide_autopsia.png" fade="0.0"]
 laura (sad): I'm afraid to say that the forensic expert established the cause of the dead as a suicide.
 laura (Idle): I'm going to give the case to Javier and I'll make sure that he keeps you posted.
+[sound path="res://assets/sounds/slide.mp3" volume="0.0"]
+[background arg="res://assets/interface/back.png" fade="0.0"]
 laura (Idle): I'm sorry, Esther, but we're buried in work here, and the resources are scarce.
 label Primeras_Preguntas
 - Where did you find him? | [if {Laura_Office.01} == "1"] [else="hide"]
+	[sound path="res://assets/sounds/slide.mp3" volume="0.0"]
+	[background arg="res://assets/locations/05_Laura_Office/slide_parla.png" fade="0.0"]
 	laura (sad): The body was found in [color=#1eaf18]Parla[/color]. In a junk yard. But please, Esther. Let us do our work.
 	laura (Idle): It seems that he suffered an overdose, but the amount of drugs in his body has made us think of suicide.
 	set {Laura_Office.01} = "2"
+	[sound path="res://assets/sounds/slide.mp3" volume="0.0"]
+	[background arg="res://assets/interface/back.png" fade="0.0"]
 	jump Primeras_Preguntas
 - I saw something in his hands in the morge | [if {Laura_Office.02} == "1"] [else="hide"]
 	laura (Idle): The forensic expert didn't mention anything. Please, keep yourself out of this, Esther.
@@ -52,9 +58,9 @@ laura: If you hinder our investigation, I will have to arrest you, Esther
 - I need to know what happened
 laura: Listen, there's no signs of foul play here. If you want to ask some questions, I can't stop you
 laura: But please, be careful
-laura (sad): You have until Wednesday at 9\:00 am. If you interrupt our work after Wednesday, I promise you that I'll arrest you
+laura (sad): You have until  [color=#990000]Wednesday at 9\:00 am [/color]. If you interrupt our work after Wednesday, I promise you that I'll arrest you
 laura (Idle): You are my friend, Esther. But I'm doing this for your safety.
-laura: Wednesday at 9. And please, call me with any findings.
+laura: [color=#990000][b]Wednesday at 9[/b][/color]. And please, call me with any findings.
 leave laura
-[signal arg="phone_on"]
+[background arg="res://assets/interface/back.png" fade="0.0"]
 [signal arg="end"]

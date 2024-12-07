@@ -5,7 +5,7 @@ extends Node2D
 var selected = false
 var mouse_offset = Vector2()
 
-func _process(delta):
+func _process(_delta):
 	if selected:
 		followmouse()
 

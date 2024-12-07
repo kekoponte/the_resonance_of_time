@@ -38,12 +38,17 @@ directories/dtl_directory={
 "02_Wait_Room_03": "res://dialogo/02_Hospital_waiting_room/02_Wait_Room_03.dtl",
 "03_seeing_claras_face": "res://dialogo/04_Morgue/03_seeing_claras_face.dtl",
 "03_seeing_claras_hands": "res://dialogo/04_Morgue/03_seeing_claras_hands.dtl",
+"04_Police_Station_01": "res://dialogo/04_Police_Station/04_Police_Station_01.dtl",
+"04_Police_Station_02": "res://dialogo/04_Police_Station/04_Police_Station_02.dtl",
+"04_Police_Station_03": "res://dialogo/04_Police_Station/04_Police_Station_03.dtl",
 "05_Laura_Office_01": "res://dialogo/05_Laura_Office/05_Laura_Office_01.dtl",
+"05_Laura_Office_02": "res://dialogo/05_Laura_Office/05_Laura_Office_02.dtl",
+"06_Parla_01": "res://dialogo/06_Parla/06_Parla_01.dtl",
 "Llamada_1_con_Colin": "res://dialogo/Llamada_1_con_Colin.dtl",
 "Llamada_1_con_Dennis": "res://dialogo/Llamada_1_con_Dennis.dtl",
 "Llamada_1_con_clara": "res://dialogo/Llamada_1_con_clara.dtl",
 "Michel_01": "res://dialogo/04_Morgue/Michel_01.dtl",
-"Parla_01": "res://dialogo/06_Parla/Parla_01.dtl",
+"Parla_02": "res://dialogo/06_Parla/Parla_02.dtl",
 "alan": "res://dialogo/alan.dtl",
 "banner_bank": "res://dialogo/banner_bank.dtl",
 "comunicando": "res://dialogo/comunicando.dtl",
@@ -64,6 +69,11 @@ variables={
 "03": "1"
 },
 "Morgue": 0,
+"Parla": {
+"stress": 0,
+"tracking_1": 1,
+"tracking_2": 1
+},
 "Waiting_room": {
 "Laura_01": "1",
 "Laura_02": "1",
@@ -120,7 +130,6 @@ data_directory="res://dialogue"
 
 window/size/viewport_width=640
 window/size/viewport_height=360
-window/size/mode=4
 window/stretch/mode="canvas_items"
 mouse_cursor/custom_image="res://assets/interface/mouse_arrow.png"
 window/canvas_textures/default_texture_filter=1

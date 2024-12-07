@@ -1,10 +1,35 @@
-[gd_scene load_steps=6 format=3 uid="uid://b53x8m2h6rlv4"]
+[gd_scene load_steps=13 format=3 uid="uid://b53x8m2h6rlv4"]
 
 [ext_resource type="Texture2D" uid="uid://dhnfwodm0iydk" path="res://assets/phone/back_01.png" id="1_fi5cg"]
 [ext_resource type="Texture2D" uid="uid://cxy38ml7i6var" path="res://assets/phone/home_button.png" id="2_2y07i"]
 [ext_resource type="Texture2D" uid="uid://cbyl7p77epic7" path="res://assets/phone/home_button_pressed.png" id="3_cua4c"]
 [ext_resource type="Script" path="res://scripts/botón_de_home_notepad.gd" id="4_h32fj"]
 [ext_resource type="FontFile" uid="uid://cebjma2udbg7" path="res://assets/fonts/dogicapixel.ttf" id="6_lr0j1"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_oyxxv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ty6b4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3gcg5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ndwwe"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_07mf1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_21d08"]
+
+[sub_resource type="Theme" id="Theme_7jc3n"]
+VScrollBar/icons/decrement = SubResource("ImageTexture_oyxxv")
+VScrollBar/icons/decrement_highlight = SubResource("ImageTexture_oyxxv")
+VScrollBar/icons/decrement_pressed = SubResource("ImageTexture_oyxxv")
+VScrollBar/icons/increment = SubResource("ImageTexture_oyxxv")
+VScrollBar/icons/increment_highlight = SubResource("ImageTexture_oyxxv")
+VScrollBar/icons/increment_pressed = SubResource("ImageTexture_oyxxv")
+VScrollBar/styles/grabber = SubResource("StyleBoxEmpty_ty6b4")
+VScrollBar/styles/grabber_highlight = SubResource("StyleBoxEmpty_3gcg5")
+VScrollBar/styles/grabber_pressed = SubResource("StyleBoxEmpty_ndwwe")
+VScrollBar/styles/scroll = SubResource("StyleBoxEmpty_07mf1")
+VScrollBar/styles/scroll_focus = SubResource("StyleBoxEmpty_21d08")
 
 [node name="Files" type="Node2D"]
 
@@ -44,6 +69,7 @@ layout_mode = 0
 offset_top = 37.0
 offset_right = 133.0
 offset_bottom = 231.0
+theme = SubResource("Theme_7jc3n")
 
 [node name="listado_de_fotos" type="VBoxContainer" parent="Control/listado_de_fotos" groups=["Filegroup"]]
 layout_mode = 2
