@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://blemrgpq3ttb0"]
+[gd_scene load_steps=21 format=3 uid="uid://blemrgpq3ttb0"]
 
 [ext_resource type="Script" path="res://scripts/06_Parla/room_06_parla.gd" id="1_0wym5"]
 [ext_resource type="Texture2D" uid="uid://fgnt7q0t7wh4" path="res://assets/locations/06_parla.png" id="1_fgqw3"]
@@ -12,6 +12,10 @@
 [ext_resource type="Texture2D" uid="uid://h2srqkovnmbl" path="res://assets/locations/06_Parla/06_red_car.png" id="10_s3dk4"]
 [ext_resource type="Script" path="res://scripts/06_Parla/matricula.gd" id="11_i2vj5"]
 [ext_resource type="Script" path="res://scripts/06_Parla/interior.gd" id="12_0nf5w"]
+[ext_resource type="Script" path="res://scripts/06_Parla/plate_but.gd" id="12_0ybl1"]
+[ext_resource type="Texture2D" uid="uid://cc4g8i4nnsmky" path="res://assets/locations/06_Parla/plate.png" id="13_ogxdm"]
+[ext_resource type="Texture2D" uid="uid://rltybrytygre" path="res://assets/locations/06_Parla/06_interior_car.png" id="15_3qhoo"]
+[ext_resource type="Script" path="res://scripts/06_Parla/to_office.gd" id="15_b2meg"]
 
 [sub_resource type="Animation" id="Animation_5eery"]
 resource_name = "Parla"
@@ -307,22 +311,62 @@ position = Vector2(320, 180)
 texture = ExtResource("10_s3dk4")
 
 [node name="matricula" type="TextureButton" parent="06RedCar"]
-offset_left = -264.0
-offset_top = 71.0
-offset_right = -178.0
-offset_bottom = 127.0
+offset_left = -282.0
+offset_top = 67.0
+offset_right = -187.0
+offset_bottom = 123.0
 script = ExtResource("11_i2vj5")
 
-[node name="interior" type="TextureButton" parent="06RedCar"]
-offset_left = 30.0
+[node name="Plate_but" type="TextureButton" parent="06RedCar/matricula"]
+visible = false
+layout_mode = 0
+offset_left = 3.0
 offset_top = -114.0
-offset_right = 159.0
-offset_bottom = -8.0
+offset_right = 358.0
+offset_bottom = 16.0
+script = ExtResource("12_0ybl1")
+
+[node name="Plate" type="Sprite2D" parent="06RedCar/matricula/Plate_but"]
+position = Vector2(212, 36)
+texture = ExtResource("13_ogxdm")
+
+[node name="interior" type="TextureButton" parent="06RedCar"]
+offset_left = 14.0
+offset_top = -112.0
+offset_right = 161.0
+offset_bottom = 6.0
 script = ExtResource("12_0nf5w")
+
+[node name="06InteriorCar" type="Sprite2D" parent="06RedCar/interior"]
+visible = false
+position = Vector2(3, 88)
+rotation = -0.0593412
+texture = ExtResource("15_3qhoo")
+
+[node name="to_office" type="TextureButton" parent="06RedCar"]
+offset_left = -320.0
+offset_top = 138.0
+offset_right = 129.0
+offset_bottom = 184.0
+script = ExtResource("15_b2meg")
+
+[node name="Label" type="Label" parent="06RedCar/to_office"]
+visible = false
+layout_mode = 0
+offset_left = 105.0
+offset_top = 20.0
+offset_right = 269.0
+offset_bottom = 34.0
+theme_override_font_sizes/font_size = 10
+text = "To the Office"
 
 [connection signal="button_down" from="06RedCar/matricula" to="06RedCar/matricula" method="_on_button_down"]
 [connection signal="mouse_entered" from="06RedCar/matricula" to="06RedCar/matricula" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="06RedCar/matricula" to="06RedCar/matricula" method="_on_mouse_exited"]
+[connection signal="button_down" from="06RedCar/matricula/Plate_but" to="06RedCar/matricula/Plate_but" method="_on_button_down"]
 [connection signal="button_down" from="06RedCar/interior" to="06RedCar/interior" method="_on_button_down"]
 [connection signal="mouse_entered" from="06RedCar/interior" to="06RedCar/interior" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="06RedCar/interior" to="06RedCar/interior" method="_on_mouse_exited"]
+[connection signal="button_down" from="06RedCar/to_office" to="06RedCar/to_office" method="_on_button_down"]
+[connection signal="mouse_entered" from="06RedCar/to_office" to="06RedCar/to_office" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="06RedCar/to_office" to="06RedCar/to_office" method="_on_mouse_exited"]

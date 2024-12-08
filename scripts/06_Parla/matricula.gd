@@ -9,3 +9,7 @@ func _on_mouse_exited() -> void:
 
 func _on_button_down() -> void:
 	Dialogic.start("06_matricula")
+	$Plate_but.show()
+	get_parent().get_node("interior").hide()
+	get_parent().get_node("to_office").hide()
+	Global.contador_parla_matricula = 2

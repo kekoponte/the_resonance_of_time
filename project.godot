@@ -44,6 +44,8 @@ directories/dtl_directory={
 "05_Laura_Office_01": "res://dialogo/05_Laura_Office/05_Laura_Office_01.dtl",
 "05_Laura_Office_02": "res://dialogo/05_Laura_Office/05_Laura_Office_02.dtl",
 "06_Parla_01": "res://dialogo/06_Parla/06_Parla_01.dtl",
+"06_Parla_foto_matricula": "res://dialogo/06_Parla/06_Parla_foto_matricula.dtl",
+"06_matricula": "res://dialogo/06_Parla/06_matricula.dtl",
 "Llamada_1_con_Colin": "res://dialogo/Llamada_1_con_Colin.dtl",
 "Llamada_1_con_Dennis": "res://dialogo/Llamada_1_con_Dennis.dtl",
 "Llamada_1_con_clara": "res://dialogo/Llamada_1_con_clara.dtl",

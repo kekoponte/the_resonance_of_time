@@ -1,0 +1,4 @@
+[background arg="res://assets/interface/back.png" fade="0.0"]
+[style name="personajes_en_habitacion"]
+[sound path="res://assets/sounds/camera_shutter.mp3" volume="0.0"]
+You take a photo of the license plate

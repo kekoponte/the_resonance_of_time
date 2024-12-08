@@ -59,6 +59,8 @@ var contador_waiting_room:int = 1
 var contador_morgue:int = 1
 var contador_police_station:int = 1
 var contador_laura_office:int = 1
+var contador_parla:int = 1
+var contador_parla_matricula = 1
 
 # Listado de Mensajes
 var Contactos_Mensajes = {
