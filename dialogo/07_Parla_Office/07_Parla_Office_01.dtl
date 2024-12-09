@@ -1,8 +1,20 @@
 [signal arg="phone_off"]
 [background arg="res://assets/interface/back.png" fade="0.0"]
 [style name="Intro"]
-Miguel (idle): How can I help you?
-- What time did you find the body?
+Miguel (idle): How can I help you? I'm kind of busy right now.
+label pregunta_1
+- What time did you find the body? | [if {Parla_Office.Miguel_01} == 1]
+	Miguel: I told you. It was midnight.
+	set {Parla_Office.Miguel_01} = 0
+	jump pregunta_1
+- Did the police mention anything before they left? | [if {Parla_Office.Miguel_02} == 1]
+	Miguel: The guy was an asshole.
+	Miguel: He basically treated me like a criminal
+	Miguel: He wanted to know if I have cameras, which I don't.
+	Miguel: I heard him say that 
+	set {Parla_Office.Miguel_02} = 0
+	jump pregunta_1
+- Can you tell me anything about the car?
 [signal arg="phone_on"]
 [signal arg="end"]
 [end_timeline]
