@@ -57,10 +57,14 @@ var Clara_in_photos = 0
 var Location:String = "" #Variable que guarda la localización actual. Relevante para la cámara
 var contador_waiting_room:int = 1
 var contador_morgue:int = 1
+var contador_morgue_2:int = 0
 var contador_police_station:int = 1
 var contador_laura_office:int = 1
 var contador_parla:int = 1
 var contador_parla_matricula = 1
+var activar_parla:int = 0
+var matricula_in_photos:int = 0
+var contador_Parla_office:int = 1
 
 # Listado de Mensajes
 var Contactos_Mensajes = {

@@ -45,7 +45,7 @@ label Primeras_Preguntas
 	Esther: Laura, please. We know each other.
 	leave Esther
 	join laura left
-	laura: A man named Lucas Hidalgo made the call. He is a scrap dealer. that works in the junk yard in [color=#1eaf18]Parla[/color].
+	laura: A man named Miguel@ Hidalgo made the call. He is a scrap dealer. that works in the junk yard in [color=#1eaf18]Parla[/color].
 laura (Idle): Javier will give you a call soon. Why don't you go [color=#1eaf18]Home[/color] and rest for a while?
 laura (sad): And please, Esther, don't go to [color=#1eaf18]La Paz Hospital[/color]. Let Michelle do his work.
 leave laura

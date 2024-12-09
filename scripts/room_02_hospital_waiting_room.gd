@@ -1,8 +1,7 @@
 extends Node2D
 
 func _ready() -> void:
-	
-	Global.Location = "Waiting Room"
+	Global.Location = "La Paz Hospital"
 
 	if Global.track_de_escena == 1:
 		$label.play("intro")
@@ -13,12 +12,16 @@ func _ready() -> void:
 		Global.track_de_escena = 2
 	
 	elif Global.track_de_escena == 2:
-		print(Global.track_de_escena)
 		$label.play("intro")
 		Dialogic.start("02_Wait_Room_02")
 		Dialogic.signal_event.connect(_on_dialogic_signal)
 		$Phone.set_process(false)
 		$Phone.hide()
+		Global.track_de_escena = 3
+
+	elif Global.track_de_escena == 3:
+		$label.play("intro")
+
 	
 func _on_dialogic_signal(argument:String):
 	if argument == "phone":

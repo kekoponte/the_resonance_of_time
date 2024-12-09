@@ -3,18 +3,14 @@ Michel (idle/idle): Wait! Who are you?
 join Michel left [animation="Fade In"]
 Michel: You shouldn't be here. This is an autopsy room.
 - My name is Esther, I'm here to identify the body
-	Michel (idle/idle): Oh, I'm sorry, Esther. Lieutenant Laura mentioned that you'll be here this very morning.
+	Michel: Oh, I'm sorry, Esther. Lieutenant Laura mentioned that you'll be here this very morning.
 	label victim
 	Michel: Do you know the victim?
 	- Yes, he's my brother Marcos.
-	- Actually, I'm not sure.
-		leave Michel [animation="Fade Out"]
-		Esther: He looks like my brother. But I'm not sure. He's been missing for 12 years now.
-		join Michel left [animation="Fade In"]
+	- I do, but it's none of your business
+		Michel (idle/+2): You don't need to talk to me like this.
 - I'm a forensic expert, who are you?
-	Michel: I'm afraid I AM the forensic expert here.
-	[signal arg="life_start"]
-	[signal arg="life_down"]
+	Michel (idle/+1): I'm afraid I AM the forensic expert here.
 	Michel: I hope you have a better explanation.
 	jump victim
 Michel: If lieutenant Laura told you to meet her at the Police Station, I think you should do exactly that.

@@ -4,9 +4,9 @@
 [ext_resource type="Texture2D" uid="uid://dm12do0wxpvpx" path="res://assets/locations/04_police_station.png" id="1_sgiuh"]
 [ext_resource type="PackedScene" uid="uid://vn8ay56opuf" path="res://scenes/phone.tscn" id="2_5ui1g"]
 [ext_resource type="FontFile" uid="uid://cyoe0lu3ghnvg" path="res://assets/fonts/dogicapixelbold.ttf" id="4_ggftr"]
-[ext_resource type="Script" path="res://scripts/04_Police_Station/label_police_station.gd" id="5_gbgh8"]
 [ext_resource type="Script" path="res://scripts/04_Police_Station/despacho_laura.gd" id="6_jtfv0"]
 [ext_resource type="FontFile" uid="uid://cebjma2udbg7" path="res://assets/fonts/dogicapixel.ttf" id="7_iqx0c"]
+[ext_resource type="Script" path="res://scripts/labels/label_hospital.gd" id="8_k55jl"]
 [ext_resource type="Script" path="res://scripts/04_Police_Station/evidence_room.gd" id="8_s7sfe"]
 
 [sub_resource type="Animation" id="Animation_1skx1"]
@@ -37,7 +37,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.7, 5.46667, 5.96667),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(645, 9), Vector2(473, 9), Vector2(473, 9), Vector2(645, 9)]
+"values": [Vector2(645, 9), Vector2(445, 9), Vector2(445, 9), Vector2(645, 9)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_pgeh0"]
@@ -46,7 +46,7 @@ _data = {
 "intro": SubResource("Animation_kjfum")
 }
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ju2sr"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_06ktw"]
 content_margin_left = 5.0
 content_margin_top = 5.0
 content_margin_right = 5.0
@@ -61,27 +61,6 @@ position = Vector2(320, 180)
 texture = ExtResource("1_sgiuh")
 
 [node name="Phone" parent="." instance=ExtResource("2_5ui1g")]
-
-[node name="label" type="AnimationPlayer" parent="."]
-root_node = NodePath("label")
-libraries = {
-"": SubResource("AnimationLibrary_pgeh0")
-}
-autoplay = "intro"
-
-[node name="label" type="RichTextLabel" parent="label"]
-clip_contents = false
-offset_left = -169.0
-offset_top = 311.0
-offset_right = -1.0
-offset_bottom = 331.0
-theme_override_fonts/normal_font = ExtResource("4_ggftr")
-theme_override_font_sizes/normal_font_size = 9
-theme_override_styles/normal = SubResource("StyleBoxFlat_ju2sr")
-bbcode_enabled = true
-text = "La Paz Hospital"
-scroll_active = false
-script = ExtResource("5_gbgh8")
 
 [node name="Despacho_Laura" type="TextureButton" parent="."]
 offset_left = 59.0
@@ -142,6 +121,27 @@ theme_override_font_sizes/font_size = 6
 text = "Lieutenant"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="label" type="AnimationPlayer" parent="."]
+root_node = NodePath("label")
+libraries = {
+"": SubResource("AnimationLibrary_pgeh0")
+}
+
+[node name="label" type="RichTextLabel" parent="label"]
+clip_contents = false
+offset_left = -169.0
+offset_top = 311.0
+offset_right = 29.0
+offset_bottom = 331.0
+theme_override_fonts/normal_font = ExtResource("4_ggftr")
+theme_override_font_sizes/normal_font_size = 9
+theme_override_styles/normal = SubResource("StyleBoxFlat_06ktw")
+bbcode_enabled = true
+text = "Parla Junkyard"
+scroll_active = false
+script = ExtResource("8_k55jl")
+metadata/_edit_use_anchors_ = true
 
 [connection signal="button_down" from="Despacho_Laura" to="Despacho_Laura" method="_on_button_down"]
 [connection signal="mouse_entered" from="Despacho_Laura" to="Despacho_Laura" method="_on_mouse_entered"]

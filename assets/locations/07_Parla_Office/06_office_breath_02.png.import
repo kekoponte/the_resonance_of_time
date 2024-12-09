@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://butg4htsjw3du"
-path="res://.godot/imported/06_office.png-8e794f64aba053108a29a6855e4fff17.ctex"
+uid="uid://bx2hlh50ktrmt"
+path="res://.godot/imported/06_office_breath_02.png-51dd6507d3f3c32b8591829adb62c0a1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/locations/06_Parla/06_office.png"
-dest_files=["res://.godot/imported/06_office.png-8e794f64aba053108a29a6855e4fff17.ctex"]
+source_file="res://assets/locations/07_Parla_Office/06_office_breath_02.png"
+dest_files=["res://.godot/imported/06_office_breath_02.png-51dd6507d3f3c32b8591829adb62c0a1.ctex"]
 
 [params]
 

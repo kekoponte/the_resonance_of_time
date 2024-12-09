@@ -12,4 +12,4 @@ func _on_mouse_exited() -> void:
 
 
 func _on_button_down() -> void:
-	pass
+	SceneSwitcher.switch_scene("res://scenes/room_07_parla_office.tscn")

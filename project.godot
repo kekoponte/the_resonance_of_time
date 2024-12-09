@@ -33,6 +33,7 @@ directories/dch_directory={
 "laura": "res://dialogo/laura.dch"
 }
 directories/dtl_directory={
+"02_Hospital_morguefirst": "res://dialogo/02_Hospital_waiting_room/02_Hospital_morguefirst.dtl",
 "02_Wait_Room_01": "res://dialogo/02_Hospital_waiting_room/02_Wait_Room_01.dtl",
 "02_Wait_Room_02": "res://dialogo/02_Hospital_waiting_room/02_Wait_Room_02.dtl",
 "02_Wait_Room_03": "res://dialogo/02_Hospital_waiting_room/02_Wait_Room_03.dtl",
@@ -45,7 +46,11 @@ directories/dtl_directory={
 "05_Laura_Office_02": "res://dialogo/05_Laura_Office/05_Laura_Office_02.dtl",
 "06_Parla_01": "res://dialogo/06_Parla/06_Parla_01.dtl",
 "06_Parla_foto_matricula": "res://dialogo/06_Parla/06_Parla_foto_matricula.dtl",
+"06_interior": "res://dialogo/06_Parla/06_interior.dtl",
 "06_matricula": "res://dialogo/06_Parla/06_matricula.dtl",
+"06_no_more_Parla_foto_matricula": "res://dialogo/06_Parla/06_no_more_Parla_foto_matricula.dtl",
+"07_Parla_Office_01": "res://dialogo/07_Parla_Office/07_Parla_Office_01.dtl",
+"07_Parla_Office_02": "res://dialogo/07_Parla_Office/07_Parla_Office_02.dtl",
 "Llamada_1_con_Colin": "res://dialogo/Llamada_1_con_Colin.dtl",
 "Llamada_1_con_Dennis": "res://dialogo/Llamada_1_con_Dennis.dtl",
 "Llamada_1_con_clara": "res://dialogo/Llamada_1_con_clara.dtl",
@@ -56,6 +61,7 @@ directories/dtl_directory={
 "comunicando": "res://dialogo/comunicando.dtl",
 "foto_morgue": "res://dialogo/camara/foto_morgue.dtl",
 "llamada_1_con_Clara": "res://dialogo/llamada_1_con_Clara.dtl",
+"mapa_no": "res://dialogo/mapa_no.dtl",
 "monologo_inicial": "res://dialogo/monologo_inicial.dtl",
 "morgue": "res://dialogo/morgue.dtl",
 "no_foto": "res://dialogo/camara/no_foto.dtl",

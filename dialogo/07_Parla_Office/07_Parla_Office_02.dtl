@@ -1,0 +1,7 @@
+[signal arg="phone_off"]
+[background arg="res://assets/interface/back.png" fade="0.0"]
+[style name="Intro"]
+Miguel: I already told you everything I know.
+[signal arg="phone_on"]
+[signal arg="end"]
+[end_timeline]

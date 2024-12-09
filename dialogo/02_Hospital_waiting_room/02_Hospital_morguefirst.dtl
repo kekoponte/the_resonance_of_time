@@ -1,0 +1,4 @@
+[background arg="res://assets/interface/back.png" fade="0.0"]
+[style name="personajes_en_habitacion"]
+Esther: I should go to the morgue first
+[end_timeline]

@@ -1,17 +1,11 @@
 extends TextureButton
 
+
 func _on_button_down() -> void:
-	if Global.contador_laura_office == 1:
-		self.hide()
-		Dialogic.start("05_Laura_Office_01")
-		Dialogic.signal_event.connect(_on_dialogic_signal)
-		Global.activar_parla = 1
-	elif Global.contador_laura_office == 2:
-		self.hide()
-		Dialogic.start("05_Laura_Office_02")
-	
+	SceneSwitcher.switch_scene("res://scenes/room_06_parla.tscn")
+
 func _on_mouse_entered() -> void:
-	Input.set_custom_mouse_cursor(Global.talk)
+	Input.set_custom_mouse_cursor(Global.door)
 	$Label.show()
 
 func _on_mouse_exited() -> void:
@@ -27,7 +21,6 @@ func _on_dialogic_signal(argument:String):
 		get_parent().get_node("Phone").show()
 
 	if argument == "end":
-		Global.contador_laura_office = 2
-		Global.contador_police_station = 2
+		Global.contador_Parla_office = 2
 		Dialogic.end_timeline()
 		self.show()

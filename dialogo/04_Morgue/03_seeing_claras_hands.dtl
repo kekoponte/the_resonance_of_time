@@ -9,6 +9,7 @@ if {clara_hand} == "first_time":
 	set {Morgue} += 1
 elif {clara_hand} == "after_first_time":
 	Esther: There are small remnants of skin under his nails.
+	[background arg="res://assets/interface/back.png" fade="0.0"]
 	[signal arg="phone"]
 if {Morgue} == 2:
 	[background arg="res://assets/interface/back.png" fade="0.0"]

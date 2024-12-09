@@ -17,6 +17,24 @@
 "nicknames": [""],
 "offset": Vector2(0, 0),
 "portraits": {
+"idle/+1": {
+"export_overrides": {
+"image": "\"res://assets/characters/michel_doubt.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"idle/+2": {
+"export_overrides": {
+"image": "\"res://assets/characters/michel_doubt_2.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
 "idle/idle": {
 "export_overrides": {
 "image": "\"res://assets/characters/michel_idle.png\""

@@ -36,7 +36,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.7, 5.46667, 5.96667),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(645, 9), Vector2(473, 9), Vector2(473, 9), Vector2(645, 9)]
+"values": [Vector2(645, 9), Vector2(445, 9), Vector2(445, 9), Vector2(645, 9)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_pgeh0"]
@@ -61,7 +61,6 @@ position = Vector2(320, 180)
 texture = ExtResource("2_2lyj3")
 
 [node name="Phone" parent="." instance=ExtResource("3_jq66x")]
-position = Vector2(470, 40)
 
 [node name="label" type="AnimationPlayer" parent="."]
 root_node = NodePath("label")
@@ -71,10 +70,10 @@ libraries = {
 
 [node name="label" type="RichTextLabel" parent="label"]
 clip_contents = false
-offset_left = -169.0
-offset_top = 311.0
-offset_right = -1.0
-offset_bottom = 331.0
+offset_left = 645.0
+offset_top = 9.0
+offset_right = 843.0
+offset_bottom = 29.0
 theme_override_fonts/normal_font = ExtResource("4_o0ni1")
 theme_override_font_sizes/normal_font_size = 9
 theme_override_styles/normal = SubResource("StyleBoxFlat_1vksm")
@@ -82,6 +81,7 @@ bbcode_enabled = true
 text = "La Paz Hospital"
 scroll_active = false
 script = ExtResource("5_wxo1e")
+metadata/_edit_use_anchors_ = true
 
 [node name="morgue" type="TextureButton" parent="."]
 offset_left = 162.0

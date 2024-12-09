@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3xdyf3vx251e"
-path="res://.godot/imported/michel_doubt_blink.png-4d505a94a634a543bd1e25c878a287a5.ctex"
+uid="uid://dvv6nlkhrlucn"
+path="res://.godot/imported/michel_doubt_2.png-315c83655f65669826cff782a67734c3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/michel_doubt_blink.png"
-dest_files=["res://.godot/imported/michel_doubt_blink.png-4d505a94a634a543bd1e25c878a287a5.ctex"]
+source_file="res://assets/characters/michel_doubt_2.png"
+dest_files=["res://.godot/imported/michel_doubt_2.png-315c83655f65669826cff782a67734c3.ctex"]
 
 [params]
 

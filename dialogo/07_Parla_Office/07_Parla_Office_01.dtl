@@ -1,0 +1,8 @@
+[signal arg="phone_off"]
+[background arg="res://assets/interface/back.png" fade="0.0"]
+[style name="Intro"]
+Miguel (idle): How can I help you?
+- What time did you find the body?
+[signal arg="phone_on"]
+[signal arg="end"]
+[end_timeline]
