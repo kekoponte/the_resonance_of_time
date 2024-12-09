@@ -11,9 +11,13 @@ var Contactos = {
 	"David García" : 0,
 	"Dennis Bridge" : 0,
 	"Isabel Peña" : 0,
+	"Marcos de la Fuente" :0,
 	"Patricia Mata" : 0,
 	"Ramón Olivares" : 0,
 	"Roi Villamarín" :0,
+	"Tito Calas" :0,
+	"Vanessa Perez" :0,
+	"Yago Dopazo" :0,
 	}
 
 var Nombre_en_llamada:String = "init" #Variable que muestra el nombre en el teléfono cuando hay llamadas
@@ -21,6 +25,7 @@ var Nombre_en_mensajes:String = "" #Variable que muestra el nombre en el teléfo
 var Hora:int = 7 #Horas en el móvil y en el juego
 var Minutos:int = 16 #Minutos en el móvil y en el juego
 var dia:String = "[center]Monday[/center]"
+var marcado_telefono:String = ""
 var Direccion = Vector2(0,0) #Variable para mostrar un lugar en el mapa
 var Status_phone:int = 0 #Variable genérica para temas varios del móvil
 var bloc_de_notas:String = "" #Variable que guarda las notas del notepad

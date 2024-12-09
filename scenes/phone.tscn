@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=3 uid="uid://vn8ay56opuf"]
+[gd_scene load_steps=61 format=3 uid="uid://vn8ay56opuf"]
 
 [ext_resource type="Texture2D" uid="uid://beks6fnb6rl84" path="res://assets/phone/phone_border.png" id="1_j61vq"]
 [ext_resource type="Texture2D" uid="uid://bjkxa8hgkpa7k" path="res://assets/phone/back_02.png" id="2_okc1m"]
@@ -46,12 +46,16 @@
 [ext_resource type="Texture2D" uid="uid://bgfpluoko8ex8" path="res://assets/phone/but_13_story_norm.png" id="31_reioe"]
 [ext_resource type="PackedScene" uid="uid://b53x8m2h6rlv4" path="res://scenes/files.tscn" id="32_a0de5"]
 [ext_resource type="Texture2D" uid="uid://c8stcsmn1566b" path="res://assets/phone/but_13_story_press.png" id="32_mfm8p"]
+[ext_resource type="Texture2D" uid="uid://dp05vvp1jxe2" path="res://assets/phone/but_14_contact_norm.png" id="33_nlpya"]
 [ext_resource type="Script" path="res://scripts/phone/fotos.gd" id="33_vvtej"]
+[ext_resource type="Texture2D" uid="uid://dstkq3rtfcddw" path="res://assets/phone/but_14_contact_press.png" id="34_hakcl"]
 [ext_resource type="Script" path="res://scripts/phone/news.gd" id="42_i5e7a"]
 [ext_resource type="PackedScene" uid="uid://c604awremhbr7" path="res://scenes/bank.tscn" id="43_glvrw"]
 [ext_resource type="Script" path="res://scripts/phone/bank.gd" id="44_q127i"]
 [ext_resource type="PackedScene" uid="uid://b7nf8cme8rvsl" path="res://scenes/news.tscn" id="46_llolr"]
 [ext_resource type="Script" path="res://scripts/phone/set_dia.gd" id="48_ign87"]
+[ext_resource type="PackedScene" uid="uid://c07qpqkwkru4i" path="res://scenes/telefono.tscn" id="49_x5jqx"]
+[ext_resource type="Script" path="res://scripts/phone/telefono.gd" id="50_dri5x"]
 [ext_resource type="Texture2D" uid="uid://o3njaqjw563f" path="res://assets/phone/print.png" id="53_avwt2"]
 
 [sub_resource type="Animation" id="Animation_iow3e"]
@@ -373,6 +377,26 @@ theme_override_font_sizes/font_size = 8
 text = "Story"
 horizontal_alignment = 1
 
+[node name="Botón de Contactos" type="TextureButton" parent="Botones"]
+layout_mode = 0
+offset_left = 43.0
+offset_top = 109.0
+offset_right = 72.0
+offset_bottom = 137.0
+texture_normal = ExtResource("33_nlpya")
+texture_pressed = ExtResource("34_hakcl")
+
+[node name="Label4" type="Label" parent="Botones/Botón de Contactos"]
+layout_mode = 0
+offset_top = 29.0
+offset_right = 29.0
+offset_bottom = 37.0
+theme_override_colors/font_color = Color(0, 0, 0, 0.760784)
+theme_override_fonts/font = ExtResource("15_xxusd")
+theme_override_font_sizes/font_size = 8
+text = "Contacts"
+horizontal_alignment = 1
+
 [node name="Llamadas" parent="." instance=ExtResource("21_5lrpb")]
 visible = false
 z_index = -1
@@ -407,6 +431,12 @@ script = ExtResource("42_i5e7a")
 visible = false
 position = Vector2(-1, 0)
 script = ExtResource("44_q127i")
+
+[node name="Telefono" parent="." instance=ExtResource("49_x5jqx")]
+visible = false
+z_index = -1
+position = Vector2(-1, 0)
+script = ExtResource("50_dri5x")
 
 [node name="Espera2" type="Sprite2D" parent="."]
 visible = false
@@ -465,7 +495,7 @@ texture = ExtResource("53_avwt2")
 
 [connection signal="mouse_entered" from="PhoneBorder/Control" to="PhoneBorder" method="_on_control_mouse_entered"]
 [connection signal="mouse_exited" from="PhoneBorder/Control" to="PhoneBorder" method="_on_control_mouse_exited"]
-[connection signal="button_up" from="Botones/Botón de Llamada" to="Llamadas" method="_on_botón_de_llamada_button_up"]
+[connection signal="button_up" from="Botones/Botón de Llamada" to="Telefono" method="_on_botón_de_llamada_button_up"]
 [connection signal="mouse_entered" from="Botones/Botón de Llamada" to="Botones" method="_on_botón_de_llamada_mouse_entered"]
 [connection signal="mouse_entered" from="Botones/Botón de Internet" to="Botones" method="_on_botón_de_internet_mouse_entered"]
 [connection signal="button_up" from="Botones/Botón de Mensajes" to="Mensajes" method="_on_botón_de_mensajes_button_up"]
@@ -486,3 +516,5 @@ texture = ExtResource("53_avwt2")
 [connection signal="button_down" from="Botones/Botón de Bank" to="Bank" method="_on_botón_de_bank_button_down"]
 [connection signal="mouse_entered" from="Botones/Botón de Bank" to="Botones" method="_on_botón_de_bank_mouse_entered"]
 [connection signal="mouse_entered" from="Botones/Botón de Story" to="Botones" method="_on_botón_de_story_mouse_entered"]
+[connection signal="button_up" from="Botones/Botón de Contactos" to="Llamadas" method="_on_botón_de_contactos_button_up"]
+[connection signal="mouse_entered" from="Botones/Botón de Contactos" to="Botones" method="_on_botón_de_contactos_mouse_entered"]

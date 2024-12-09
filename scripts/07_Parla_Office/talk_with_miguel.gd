@@ -25,6 +25,9 @@ func _on_dialogic_signal(argument:String):
 	if argument == "phone_on":
 		get_parent().get_node("Phone").show()
 
+	if argument == "diego_to_agenda":
+		Global.Contactos.get_or_add("Diego Lopez", 0)
+
 	if argument == "end":
 		Global.contador_Parla_office = 2
 		Dialogic.end_timeline()

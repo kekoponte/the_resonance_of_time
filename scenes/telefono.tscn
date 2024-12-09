@@ -1,0 +1,156 @@
+[gd_scene load_steps=28 format=3 uid="uid://c07qpqkwkru4i"]
+
+[ext_resource type="Texture2D" uid="uid://dvx7johpakm6x" path="res://assets/phone/back_llamadas.png" id="1_ermon"]
+[ext_resource type="Texture2D" uid="uid://cxy38ml7i6var" path="res://assets/phone/home_button.png" id="2_ucgw3"]
+[ext_resource type="Texture2D" uid="uid://cbyl7p77epic7" path="res://assets/phone/home_button_pressed.png" id="3_qu02o"]
+[ext_resource type="Script" path="res://scripts/botón_de_home_Llamadas.gd" id="4_k2k72"]
+[ext_resource type="PackedScene" uid="uid://dojbkn1yuwaxs" path="res://scenes/llamadas.tscn" id="5_wqp48"]
+[ext_resource type="FontFile" uid="uid://cyoe0lu3ghnvg" path="res://assets/fonts/dogicapixelbold.ttf" id="6_ot80i"]
+[ext_resource type="Texture2D" uid="uid://8bcx2x72o0qg" path="res://assets/phone/but_15_1_n.png" id="7_65n16"]
+[ext_resource type="Texture2D" uid="uid://h56iiecny2p8" path="res://assets/phone/but_15_1_p.png" id="7_sstcl"]
+[ext_resource type="Texture2D" uid="uid://djd4y7wr1puj5" path="res://assets/phone/but_15_2_n.png" id="8_se1s6"]
+[ext_resource type="Texture2D" uid="uid://dlm653s5qetfu" path="res://assets/phone/but_15_2_p.png" id="9_fl241"]
+[ext_resource type="Texture2D" uid="uid://b127pw1pwit3t" path="res://assets/phone/but_15_3_n.png" id="9_y7vqt"]
+[ext_resource type="Texture2D" uid="uid://dewrmng6fuacf" path="res://assets/phone/but_15_4_n.png" id="10_o7gdj"]
+[ext_resource type="Texture2D" uid="uid://hx4ut5arcpru" path="res://assets/phone/but_15_3_p.png" id="11_ekhv0"]
+[ext_resource type="Texture2D" uid="uid://c4e0m1anadavq" path="res://assets/phone/but_15_5_n.png" id="11_ikqx2"]
+[ext_resource type="Texture2D" uid="uid://c0dwals03vhsb" path="res://assets/phone/but_15_6_n.png" id="12_egawr"]
+[ext_resource type="Texture2D" uid="uid://b1q7nk81ga0ko" path="res://assets/phone/but_15_7_n.png" id="13_8dl50"]
+[ext_resource type="Texture2D" uid="uid://c5iarogxpv6n2" path="res://assets/phone/but_15_4_p.png" id="13_bcmn0"]
+[ext_resource type="Texture2D" uid="uid://c0tdjspi1axir" path="res://assets/phone/but_15_8_n.png" id="14_4ae0e"]
+[ext_resource type="Texture2D" uid="uid://bwdes1lwsx7mh" path="res://assets/phone/but_15_5_p.png" id="15_btlfb"]
+[ext_resource type="Texture2D" uid="uid://cgvwjtwh53dmc" path="res://assets/phone/but_15_9_n.png" id="15_gxs75"]
+[ext_resource type="Texture2D" uid="uid://cq0ikh4pwh4r6" path="res://assets/phone/but_15_0_n.png" id="16_72fhi"]
+[ext_resource type="Texture2D" uid="uid://bu3l0o8fo0nbf" path="res://assets/phone/but_15_6_p.png" id="17_7308i"]
+[ext_resource type="Texture2D" uid="uid://5xgi1ma4eqcm" path="res://assets/phone/but_15_7_p.png" id="19_pid86"]
+[ext_resource type="Texture2D" uid="uid://dnuemekr34fdd" path="res://assets/phone/but_15_8_p.png" id="21_6e0a2"]
+[ext_resource type="Texture2D" uid="uid://dlusotts78mcn" path="res://assets/phone/but_15_9_p.png" id="23_cqjyc"]
+[ext_resource type="Texture2D" uid="uid://bc8rauxy8ykss" path="res://assets/phone/but_15_0_p.png" id="25_cotdd"]
+[ext_resource type="Script" path="res://scripts/phone/numeromarcado.gd" id="27_nnfg7"]
+
+[node name="Telefono" type="Node2D"]
+
+[node name="App Llamada" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 146.0
+offset_bottom = 289.0
+mouse_filter = 1
+
+[node name="Fondo" type="Sprite2D" parent="App Llamada"]
+position = Vector2(74, 147)
+texture = ExtResource("1_ermon")
+
+[node name="Botón de Home" type="TextureButton" parent="."]
+z_index = 1
+offset_left = 58.0
+offset_top = 246.0
+offset_right = 82.0
+offset_bottom = 270.0
+texture_normal = ExtResource("2_ucgw3")
+texture_pressed = ExtResource("3_qu02o")
+script = ExtResource("4_k2k72")
+
+[node name="Llamadas" parent="." instance=ExtResource("5_wqp48")]
+z_index = -1
+position = Vector2(0, -1)
+
+[node name="but1" type="TextureButton" parent="."]
+offset_left = 22.0
+offset_top = 82.0
+offset_right = 51.0
+offset_bottom = 110.0
+texture_normal = ExtResource("7_65n16")
+texture_pressed = ExtResource("7_sstcl")
+
+[node name="but2" type="TextureButton" parent="."]
+offset_left = 56.0
+offset_top = 82.0
+offset_right = 85.0
+offset_bottom = 110.0
+texture_normal = ExtResource("8_se1s6")
+texture_pressed = ExtResource("9_fl241")
+
+[node name="but3" type="TextureButton" parent="."]
+offset_left = 90.0
+offset_top = 82.0
+offset_right = 119.0
+offset_bottom = 110.0
+texture_normal = ExtResource("9_y7vqt")
+texture_pressed = ExtResource("11_ekhv0")
+
+[node name="but4" type="TextureButton" parent="."]
+offset_left = 22.0
+offset_top = 115.0
+offset_right = 51.0
+offset_bottom = 143.0
+texture_normal = ExtResource("10_o7gdj")
+texture_pressed = ExtResource("13_bcmn0")
+
+[node name="but5" type="TextureButton" parent="."]
+offset_left = 56.0
+offset_top = 115.0
+offset_right = 85.0
+offset_bottom = 143.0
+texture_normal = ExtResource("11_ikqx2")
+texture_pressed = ExtResource("15_btlfb")
+
+[node name="but6" type="TextureButton" parent="."]
+offset_left = 90.0
+offset_top = 115.0
+offset_right = 119.0
+offset_bottom = 143.0
+texture_normal = ExtResource("12_egawr")
+texture_pressed = ExtResource("17_7308i")
+
+[node name="but7" type="TextureButton" parent="."]
+offset_left = 22.0
+offset_top = 148.0
+offset_right = 51.0
+offset_bottom = 176.0
+texture_normal = ExtResource("13_8dl50")
+texture_pressed = ExtResource("19_pid86")
+
+[node name="but8" type="TextureButton" parent="."]
+offset_left = 56.0
+offset_top = 148.0
+offset_right = 85.0
+offset_bottom = 176.0
+texture_normal = ExtResource("14_4ae0e")
+texture_pressed = ExtResource("21_6e0a2")
+
+[node name="but9" type="TextureButton" parent="."]
+offset_left = 90.0
+offset_top = 148.0
+offset_right = 119.0
+offset_bottom = 176.0
+texture_normal = ExtResource("15_gxs75")
+texture_pressed = ExtResource("23_cqjyc")
+
+[node name="but0" type="TextureButton" parent="."]
+offset_left = 56.0
+offset_top = 181.0
+offset_right = 85.0
+offset_bottom = 209.0
+texture_normal = ExtResource("16_72fhi")
+texture_pressed = ExtResource("25_cotdd")
+
+[node name="numeromarcado" type="Label" parent="."]
+offset_left = 19.0
+offset_top = 41.0
+offset_right = 124.0
+offset_bottom = 53.0
+theme_override_fonts/font = ExtResource("6_ot80i")
+theme_override_font_sizes/font_size = 12
+script = ExtResource("27_nnfg7")
+
+[connection signal="button_up" from="but1" to="numeromarcado" method="_on_but_1_button_up"]
+[connection signal="button_up" from="but2" to="numeromarcado" method="_on_but_2_button_up"]
+[connection signal="button_up" from="but3" to="numeromarcado" method="_on_but_3_button_up"]
+[connection signal="button_up" from="but4" to="numeromarcado" method="_on_but_4_button_up"]
+[connection signal="button_up" from="but5" to="numeromarcado" method="_on_but_5_button_up"]
+[connection signal="button_up" from="but6" to="numeromarcado" method="_on_but_6_button_up"]
+[connection signal="button_up" from="but7" to="numeromarcado" method="_on_but_7_button_up"]
+[connection signal="button_up" from="but8" to="numeromarcado" method="_on_but_8_button_up"]
+[connection signal="button_up" from="but9" to="numeromarcado" method="_on_but_9_button_up"]
+[connection signal="button_up" from="but0" to="numeromarcado" method="_on_but_0_button_up"]

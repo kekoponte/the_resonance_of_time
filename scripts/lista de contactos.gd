@@ -10,7 +10,7 @@ func _ready() -> void:
 		debug.pressed.connect(_button_pressed.bind(i)) # Añade a cada botón la dirección del link guardado en el Array
 		add_child(debug)
 		debug.alignment = HORIZONTAL_ALIGNMENT_LEFT
-		
+
 func _button_pressed(i):
 	Global.Contactos[i] += 1
 	get_parent().get_parent().get_node("Llamadas").show()

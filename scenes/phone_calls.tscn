@@ -1,12 +1,27 @@
-[gd_scene load_steps=8 format=3 uid="uid://bsfy47goajeds"]
+[gd_scene load_steps=14 format=3 uid="uid://bsfy47goajeds"]
 
 [ext_resource type="Script" path="res://scripts/botón_de_home_Llamadas.gd" id="5_xv1ho"]
 [ext_resource type="Theme" uid="uid://ctd2o4vigmhrn" path="res://styles/nombres_llamada_hover.tres" id="6_by500"]
 [ext_resource type="Script" path="res://scripts/lista de contactos.gd" id="6_hov1i"]
+[ext_resource type="FontFile" uid="uid://cyoe0lu3ghnvg" path="res://assets/fonts/dogicapixelbold.ttf" id="8_86fdn"]
 [ext_resource type="PackedScene" uid="uid://dojbkn1yuwaxs" path="res://scenes/llamadas.tscn" id="8_j87ud"]
 [ext_resource type="Texture2D" uid="uid://dvx7johpakm6x" path="res://assets/phone/back_llamadas.png" id="17_1kckv"]
 [ext_resource type="Texture2D" uid="uid://cxy38ml7i6var" path="res://assets/phone/home_button.png" id="18_bsvk2"]
 [ext_resource type="Texture2D" uid="uid://cbyl7p77epic7" path="res://assets/phone/home_button_pressed.png" id="19_2ih00"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d0cjc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j1k0q"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pe657"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p5gqn"]
+
+[sub_resource type="Theme" id="Theme_ifmg3"]
+VScrollBar/styles/grabber = SubResource("StyleBoxEmpty_d0cjc")
+VScrollBar/styles/grabber_highlight = SubResource("StyleBoxEmpty_j1k0q")
+VScrollBar/styles/grabber_pressed = SubResource("StyleBoxEmpty_pe657")
+VScrollBar/styles/scroll = SubResource("StyleBoxEmpty_p5gqn")
 
 [node name="Llamadas" type="Node2D"]
 position = Vector2(470, 27)
@@ -25,11 +40,12 @@ texture = ExtResource("17_1kckv")
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
 z_index = 1
 offset_left = 11.0
-offset_top = 44.0
+offset_top = 45.0
 offset_right = 135.0
-offset_bottom = 235.0
+offset_bottom = 240.0
+theme = SubResource("Theme_ifmg3")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer" groups=["listado_contactos"]]
 z_index = 1
 clip_contents = true
 layout_direction = 2
@@ -51,3 +67,13 @@ script = ExtResource("5_xv1ho")
 [node name="Llamadas" parent="." instance=ExtResource("8_j87ud")]
 z_index = -1
 position = Vector2(0, -1)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 11.0
+offset_top = 29.0
+offset_right = 161.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_86fdn")
+theme_override_font_sizes/font_size = 8
+text = "Contact List"

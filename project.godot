@@ -154,6 +154,7 @@ enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
 [global_group]
 
 Filegroup=""
+listado_contactos=""
 
 [gui]
 
