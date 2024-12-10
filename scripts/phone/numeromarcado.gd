@@ -85,3 +85,10 @@ func _on_but_0_button_up() -> void:
 		contador_telefono += 1
 		if contador_telefono > 9:
 			self.text =""
+
+
+func _on_butcall_button_up() -> void:
+	if self.text == "675085147":
+		Dialogic.start("Call_Keko")
+	else:
+		Dialogic.start("comunicando")

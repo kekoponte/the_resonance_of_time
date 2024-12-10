@@ -1,1 +1,9 @@
-Esther: There's nothing inside
+[style name="personajes_en_habitacion"]
+[background arg="res://assets/interface/back.png" fade="0.0"]
+if {Parla.interior_car} == 1:
+	The car is completely trashed
+	You see some rests of the previous forensics work
+	They may have collected some fingerprints
+	You move some of the trash in the floor near the passenger's seat
+	set {Parla.interior_car} = 2
+There is a crumpled ticket from a parking lot near [color=#1eaf18]Plaza Olavide[/color]

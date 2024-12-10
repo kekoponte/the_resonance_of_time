@@ -51,6 +51,7 @@ directories/dtl_directory={
 "06_no_more_Parla_foto_matricula": "res://dialogo/06_Parla/06_no_more_Parla_foto_matricula.dtl",
 "07_Parla_Office_01": "res://dialogo/07_Parla_Office/07_Parla_Office_01.dtl",
 "07_Parla_Office_02": "res://dialogo/07_Parla_Office/07_Parla_Office_02.dtl",
+"Call_Keko": "res://dialogo/Llamadas/Call_Keko.dtl",
 "Llamada_1_con_Colin": "res://dialogo/Llamada_1_con_Colin.dtl",
 "Llamada_1_con_Dennis": "res://dialogo/Llamada_1_con_Dennis.dtl",
 "Llamada_1_con_clara": "res://dialogo/Llamada_1_con_clara.dtl",
@@ -78,6 +79,7 @@ variables={
 },
 "Morgue": 0,
 "Parla": {
+"interior_car": 1,
 "stress": 0,
 "tracking_1": 1,
 "tracking_2": 1

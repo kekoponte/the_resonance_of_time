@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://c07qpqkwkru4i"]
+[gd_scene load_steps=30 format=3 uid="uid://c07qpqkwkru4i"]
 
 [ext_resource type="Texture2D" uid="uid://dvx7johpakm6x" path="res://assets/phone/back_llamadas.png" id="1_ermon"]
 [ext_resource type="Texture2D" uid="uid://cxy38ml7i6var" path="res://assets/phone/home_button.png" id="2_ucgw3"]
@@ -26,6 +26,8 @@
 [ext_resource type="Texture2D" uid="uid://dnuemekr34fdd" path="res://assets/phone/but_15_8_p.png" id="21_6e0a2"]
 [ext_resource type="Texture2D" uid="uid://dlusotts78mcn" path="res://assets/phone/but_15_9_p.png" id="23_cqjyc"]
 [ext_resource type="Texture2D" uid="uid://bc8rauxy8ykss" path="res://assets/phone/but_15_0_p.png" id="25_cotdd"]
+[ext_resource type="Texture2D" uid="uid://bi842bikhure7" path="res://assets/phone/but_15_call_n.png" id="26_ek0w1"]
+[ext_resource type="Texture2D" uid="uid://c4mb0ex2jvyt4" path="res://assets/phone/but_15_call_p.png" id="27_hnaiq"]
 [ext_resource type="Script" path="res://scripts/phone/numeromarcado.gd" id="27_nnfg7"]
 
 [node name="Telefono" type="Node2D"]
@@ -128,12 +130,20 @@ texture_normal = ExtResource("15_gxs75")
 texture_pressed = ExtResource("23_cqjyc")
 
 [node name="but0" type="TextureButton" parent="."]
-offset_left = 56.0
+offset_left = 90.0
 offset_top = 181.0
-offset_right = 85.0
+offset_right = 119.0
 offset_bottom = 209.0
 texture_normal = ExtResource("16_72fhi")
 texture_pressed = ExtResource("25_cotdd")
+
+[node name="butcall" type="TextureButton" parent="."]
+offset_left = 22.0
+offset_top = 181.0
+offset_right = 68.0
+offset_bottom = 209.0
+texture_normal = ExtResource("26_ek0w1")
+texture_pressed = ExtResource("27_hnaiq")
 
 [node name="numeromarcado" type="Label" parent="."]
 offset_left = 19.0
@@ -154,3 +164,4 @@ script = ExtResource("27_nnfg7")
 [connection signal="button_up" from="but8" to="numeromarcado" method="_on_but_8_button_up"]
 [connection signal="button_up" from="but9" to="numeromarcado" method="_on_but_9_button_up"]
 [connection signal="button_up" from="but0" to="numeromarcado" method="_on_but_0_button_up"]
+[connection signal="button_up" from="butcall" to="numeromarcado" method="_on_butcall_button_up"]

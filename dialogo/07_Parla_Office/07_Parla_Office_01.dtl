@@ -20,16 +20,11 @@ label pregunta_1
 - Can you tell me anything about the car? | [if {Parla_Office.Miguel_03} == 1] [else="hide"]
 	Miguel: Not much. It was an old sedan
 	Miguel: It belonged to a guy named Diego Lopez, I think I might have his phone over here
-	[style name="Llamada_de_teléfono"]
-	[signal arg="phone_on"]
-	You save Diego's phone in your agenda
-	[signal arg="phone_off"]
-	[signal arg="diego_to_agenda"]
-	[style name="Intro"]
+	Miguel: Here\: 555 765 234. You didn't get that from me, ok?
 	Miguel: I think he was like a teacher or something
 	set {Parla_Office.Miguel_03} = 0
 	jump pregunta_1
-- Is there anything else that I should know? | [if {Parla_Office.Miguel_01} == 0 and {Parla_Office.Miguel_02} == 0 and {Parla_Office.Miguel_03} == 0 ]
+- Is there anything else that I should know? | [if {Parla_Office.Miguel_01} == 0 and {Parla_Office.Miguel_02} == 0 and {Parla_Office.Miguel_03} == 0]
 	Miguel: Hum... The forensic expert mentioned that there was nothing relevant in the car
 	Miguel: Just a drug addict who had gone too far
 	Miguel: But I've seen my fair share of drug addicts, and this was not one of them
