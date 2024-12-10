@@ -1,0 +1,261 @@
+[gd_scene load_steps=42 format=3 uid="uid://bgka2ss4dc5qh"]
+
+[ext_resource type="Script" path="res://scripts/08_Traffic_Control_room/room_08_traffic.gd" id="1_atne2"]
+[ext_resource type="Texture2D" uid="uid://bsc6in0cg1yx3" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_1.png" id="2_te5cc"]
+[ext_resource type="Texture2D" uid="uid://bi85vytdqc23t" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_2.png" id="3_6tgra"]
+[ext_resource type="Texture2D" uid="uid://b57h5aoy1okjr" path="res://assets/locations/08_Traffic_Control_Tower/08_technician.png" id="4_6wyng"]
+[ext_resource type="Texture2D" uid="uid://v715pafx0fsk" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_screen_1g.png" id="4_uucfo"]
+[ext_resource type="Texture2D" uid="uid://nh2ys575mf8s" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_screen_1a.png" id="5_l0uod"]
+[ext_resource type="Texture2D" uid="uid://bflplfuwl5alq" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_screen_1b.png" id="6_dw0jg"]
+[ext_resource type="Texture2D" uid="uid://dys0rw2cn4q3" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_screen_1c.png" id="7_lky0d"]
+[ext_resource type="Texture2D" uid="uid://boq7hkjcqlb7n" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_screen_1d.png" id="8_s204o"]
+[ext_resource type="Texture2D" uid="uid://dyn8wuy2n68wl" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_screen_1e.png" id="9_nh8ru"]
+[ext_resource type="Texture2D" uid="uid://crisj1d5wraet" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_screen_1f.png" id="10_jqtx7"]
+[ext_resource type="Texture2D" uid="uid://4vmnmrrvt2lx" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_screen_2a.png" id="11_hlosp"]
+[ext_resource type="Texture2D" uid="uid://bjf8uahqxlld" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_screen_2b.png" id="12_wa6lk"]
+[ext_resource type="Texture2D" uid="uid://ogipug8f1gu1" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_screen_2c.png" id="13_lg7fq"]
+[ext_resource type="Texture2D" uid="uid://cwisrvwkjh4gi" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_screen_2d.png" id="14_65vwk"]
+[ext_resource type="Texture2D" uid="uid://6vxjafy3imd1" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_screen_2e.png" id="15_oc1d0"]
+[ext_resource type="Texture2D" uid="uid://djpbnr4wxgm6w" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_screen_2f.png" id="16_xoh1t"]
+[ext_resource type="Texture2D" uid="uid://dr8ik6a7l3a6e" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_screen_2g.png" id="17_vuuf1"]
+[ext_resource type="Texture2D" uid="uid://ctr2pjr64aj0d" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_screen_2h.png" id="18_03ku1"]
+[ext_resource type="Texture2D" uid="uid://cybnqkujiagxu" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_screen_2i.png" id="19_mf5sr"]
+[ext_resource type="Texture2D" uid="uid://cbrvppvrvhg6b" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_screen_2j.png" id="20_t1g2x"]
+[ext_resource type="Texture2D" uid="uid://dgnww1rkmi6e8" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_screen_2k.png" id="21_vcon6"]
+[ext_resource type="Texture2D" uid="uid://17gfup4x3cv8" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_screen_2l.png" id="22_4y1ux"]
+[ext_resource type="Texture2D" uid="uid://nrqy4rap8j4v" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_screen_3a.png" id="23_grvva"]
+[ext_resource type="PackedScene" uid="uid://vn8ay56opuf" path="res://scenes/phone.tscn" id="24_i0o1w"]
+[ext_resource type="Texture2D" uid="uid://b63ewc0arb7df" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_screen_3b.png" id="24_sofp5"]
+[ext_resource type="Texture2D" uid="uid://djqjajy5tt71g" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_screen_3c.png" id="25_40hkq"]
+[ext_resource type="FontFile" uid="uid://cyoe0lu3ghnvg" path="res://assets/fonts/dogicapixelbold.ttf" id="25_a8ukp"]
+[ext_resource type="Script" path="res://scripts/labels/label_hospital.gd" id="26_4tr0a"]
+[ext_resource type="Texture2D" uid="uid://hhfrs4cgt3f5" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_screen_3d.png" id="26_ucc1s"]
+[ext_resource type="Script" path="res://scripts/08_Traffic_Control_room/tecnico.gd" id="27_ecsp7"]
+[ext_resource type="Texture2D" uid="uid://djhiw122uw0we" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_screen_3e.png" id="27_spdmc"]
+[ext_resource type="Texture2D" uid="uid://dvgg8enlusxsl" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_screen_3f.png" id="28_tl43i"]
+[ext_resource type="Texture2D" uid="uid://brumg2qc7rwq8" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_screen_3g.png" id="29_hfufa"]
+
+[sub_resource type="Animation" id="Animation_jb2di"]
+resource_name = "background"
+length = 11.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("08TrafficControlTower1:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.7, 1.4, 2.1, 2.63333, 3.33333, 4.03333, 4.73333, 5.36667, 6.06667, 6.76667, 7.46667, 8.13333, 8.83333, 9.53333, 10.1, 10.7667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("2_te5cc"), ExtResource("3_6tgra"), ExtResource("2_te5cc"), ExtResource("3_6tgra"), ExtResource("2_te5cc"), ExtResource("3_6tgra"), ExtResource("2_te5cc"), ExtResource("3_6tgra"), ExtResource("2_te5cc"), ExtResource("3_6tgra"), ExtResource("2_te5cc"), ExtResource("3_6tgra"), ExtResource("2_te5cc"), ExtResource("3_6tgra"), ExtResource("2_te5cc"), ExtResource("3_6tgra"), ExtResource("2_te5cc")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("08TrafficControlTowerScreen1g:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 6.26667, 6.36667, 6.46667, 6.56667, 6.66667, 6.76667, 6.86667, 6.96667, 9.3, 9.4, 9.5, 9.6, 9.7, 9.8, 9.9, 10),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [ExtResource("4_uucfo"), ExtResource("5_l0uod"), ExtResource("6_dw0jg"), ExtResource("7_lky0d"), ExtResource("8_s204o"), ExtResource("9_nh8ru"), ExtResource("10_jqtx7"), ExtResource("4_uucfo"), ExtResource("4_uucfo"), ExtResource("5_l0uod"), ExtResource("6_dw0jg"), ExtResource("7_lky0d"), ExtResource("8_s204o"), ExtResource("9_nh8ru"), ExtResource("10_jqtx7"), ExtResource("4_uucfo"), ExtResource("4_uucfo"), ExtResource("5_l0uod"), ExtResource("6_dw0jg"), ExtResource("7_lky0d"), ExtResource("8_s204o"), ExtResource("9_nh8ru"), ExtResource("10_jqtx7"), ExtResource("4_uucfo")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("08TrafficControlTowerScreen2a:texture")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.03333, 1.2, 1.4, 1.6, 1.8, 1.96667, 2.2, 2.43333, 2.6, 2.8, 3, 3.2, 3.4, 5.66667, 5.83333, 6.03333, 6.23333, 6.43333, 6.6, 6.83333, 7.06667, 7.23333, 7.43333, 7.63333, 7.83333, 8.03333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("11_hlosp"), ExtResource("11_hlosp"), ExtResource("12_wa6lk"), ExtResource("13_lg7fq"), ExtResource("14_65vwk"), ExtResource("15_oc1d0"), ExtResource("16_xoh1t"), ExtResource("17_vuuf1"), ExtResource("18_03ku1"), ExtResource("19_mf5sr"), ExtResource("20_t1g2x"), ExtResource("21_vcon6"), ExtResource("22_4y1ux"), ExtResource("11_hlosp"), ExtResource("11_hlosp"), ExtResource("12_wa6lk"), ExtResource("13_lg7fq"), ExtResource("14_65vwk"), ExtResource("15_oc1d0"), ExtResource("16_xoh1t"), ExtResource("17_vuuf1"), ExtResource("18_03ku1"), ExtResource("19_mf5sr"), ExtResource("20_t1g2x"), ExtResource("21_vcon6"), ExtResource("22_4y1ux"), ExtResource("11_hlosp")]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("08TrafficControlTowerScreen3a:texture")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 2.93333, 3.13333, 3.33333, 3.53333, 3.7, 3.9, 4.1, 4.3, 8.03333, 8.23333, 8.43333, 8.63333, 8.8, 9, 9.2, 9.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("23_grvva"), ExtResource("23_grvva"), ExtResource("24_sofp5"), ExtResource("25_40hkq"), ExtResource("26_ucc1s"), ExtResource("27_spdmc"), ExtResource("28_tl43i"), ExtResource("29_hfufa"), ExtResource("23_grvva"), ExtResource("23_grvva"), ExtResource("24_sofp5"), ExtResource("25_40hkq"), ExtResource("26_ucc1s"), ExtResource("27_spdmc"), ExtResource("28_tl43i"), ExtResource("29_hfufa"), ExtResource("23_grvva")]
+}
+
+[sub_resource type="Animation" id="Animation_mtnon"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("08TrafficControlTower1:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_te5cc")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("08TrafficControlTowerScreen1g:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("4_uucfo")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("08TrafficControlTowerScreen2a:texture")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("11_hlosp")]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("08TrafficControlTowerScreen3a:texture")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("23_grvva")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_076ma"]
+_data = {
+"RESET": SubResource("Animation_mtnon"),
+"background": SubResource("Animation_jb2di")
+}
+
+[sub_resource type="Animation" id="Animation_1skx1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-169, 311)]
+}
+
+[sub_resource type="Animation" id="Animation_kjfum"]
+resource_name = "intro"
+length = 6.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.7, 5.46667, 5.96667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(645, 9), Vector2(445, 9), Vector2(445, 9), Vector2(645, 9)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_pgeh0"]
+_data = {
+"RESET": SubResource("Animation_1skx1"),
+"intro": SubResource("Animation_kjfum")
+}
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mnxwn"]
+content_margin_left = 5.0
+content_margin_top = 5.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+bg_color = Color(0, 0, 0, 0.498039)
+
+[node name="room_08_traffic_control" type="Node2D"]
+script = ExtResource("1_atne2")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_076ma")
+}
+
+[node name="08TrafficControlTower1" type="Sprite2D" parent="."]
+position = Vector2(320, 180)
+texture = ExtResource("2_te5cc")
+
+[node name="08TrafficControlTowerScreen1g" type="Sprite2D" parent="."]
+position = Vector2(325, 73)
+texture = ExtResource("4_uucfo")
+
+[node name="08TrafficControlTowerScreen2a" type="Sprite2D" parent="."]
+position = Vector2(182.75, 72)
+scale = Vector2(1.00467, 1)
+texture = ExtResource("11_hlosp")
+
+[node name="08TrafficControlTowerScreen3a" type="Sprite2D" parent="."]
+position = Vector2(464.25, 73)
+scale = Vector2(1.00476, 1)
+texture = ExtResource("23_grvva")
+
+[node name="Phone" parent="." instance=ExtResource("24_i0o1w")]
+
+[node name="label" type="AnimationPlayer" parent="."]
+root_node = NodePath("label")
+libraries = {
+"": SubResource("AnimationLibrary_pgeh0")
+}
+
+[node name="label" type="RichTextLabel" parent="label"]
+clip_contents = false
+offset_left = -169.0
+offset_top = 311.0
+offset_right = 29.0
+offset_bottom = 331.0
+theme_override_fonts/normal_font = ExtResource("25_a8ukp")
+theme_override_font_sizes/normal_font_size = 9
+theme_override_styles/normal = SubResource("StyleBoxFlat_mnxwn")
+bbcode_enabled = true
+text = "Parla Junkyard"
+scroll_active = false
+script = ExtResource("26_4tr0a")
+metadata/_edit_use_anchors_ = true
+
+[node name="tecnico" type="TextureButton" parent="."]
+offset_left = 266.0
+offset_top = 156.0
+offset_right = 369.0
+offset_bottom = 248.0
+texture_normal = ExtResource("4_6wyng")
+script = ExtResource("27_ecsp7")
+
+[node name="Label" type="Label" parent="tecnico"]
+visible = false
+layout_mode = 0
+offset_left = -8.0
+offset_top = 136.0
+offset_right = 110.0
+offset_bottom = 148.0
+theme_override_font_sizes/font_size = 10
+text = "Talk with guard"
+
+[connection signal="button_down" from="tecnico" to="tecnico" method="_on_button_down"]
+[connection signal="mouse_entered" from="tecnico" to="tecnico" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="tecnico" to="tecnico" method="_on_mouse_exited"]

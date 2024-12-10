@@ -1,6 +1,6 @@
+[style name="personajes_en_habitacion"]
 [music path="res://assets/sounds/llamando.mp3" fade="0.0" volume="0.0" loop="false"]
 [wait time="2.5"]
 [style name="Llamada_de_teléfono"]
 The mobile phone you are calling is switched off. Please try again later.
-[style name="personajes_en_habitacion"]
 [signal arg="end"]

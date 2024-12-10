@@ -97,7 +97,7 @@ script = ExtResource("3_1jcqm")
 offset_left = 4.0
 offset_top = 6.0
 offset_right = 141.0
-offset_bottom = 286.0
+offset_bottom = 282.0
 mouse_filter = 2
 
 [node name="Control2" type="Control" parent="Mascara_Mapa"]
