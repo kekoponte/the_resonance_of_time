@@ -20,5 +20,7 @@ func _on_text_submitted(Destination) -> void:
 		Global.Direccion = Vector2(250,340)
 	elif Destination == "La Paz Hospital" or Destination == "La Paz" or Destination == "Hospital":
 		Global.Direccion = Vector2(150,100)
+	elif Destination == "Traffic Control" or "Traffic Department" or "Traffic" or "Trafic":
+		Global.Direccion = Vector2(100,300)
 	else:
 		Global.Direccion = Vector2(randf_range(50, 400), randf_range(50, 400))

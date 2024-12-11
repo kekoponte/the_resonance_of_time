@@ -30,7 +30,8 @@ directories/dch_directory={
 "Michel": "res://dialogo/Characters/Michel.dch",
 "Miguel": "res://dialogo/Characters/Miguel.dch",
 "jake": "res://dialogo/jake.dch",
-"laura": "res://dialogo/laura.dch"
+"laura": "res://dialogo/laura.dch",
+"lucas_traffic": "res://dialogo/Characters/lucas_traffic.dch"
 }
 directories/dtl_directory={
 "02_Hospital_morguefirst": "res://dialogo/02_Hospital_waiting_room/02_Hospital_morguefirst.dtl",
@@ -51,6 +52,7 @@ directories/dtl_directory={
 "06_no_more_Parla_foto_matricula": "res://dialogo/06_Parla/06_no_more_Parla_foto_matricula.dtl",
 "07_Parla_Office_01": "res://dialogo/07_Parla_Office/07_Parla_Office_01.dtl",
 "07_Parla_Office_02": "res://dialogo/07_Parla_Office/07_Parla_Office_02.dtl",
+"08_traffic_control_01": "res://dialogo/08_traffic_control/08_traffic_control_01.dtl",
 "Call_Keko": "res://dialogo/Llamadas/Call_Keko.dtl",
 "Llamada_1_con_Colin": "res://dialogo/Llamada_1_con_Colin.dtl",
 "Llamada_1_con_Dennis": "res://dialogo/Llamada_1_con_Dennis.dtl",

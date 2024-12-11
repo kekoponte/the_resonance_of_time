@@ -68,8 +68,10 @@ var contador_laura_office:int = 1
 var contador_parla:int = 1
 var contador_parla_matricula = 1
 var activar_parla:int = 0
+var activar_traffic:bool = false
 var matricula_in_photos:int = 0
 var contador_Parla_office:int = 1
+var contador_traffic_control:int = 1
 
 # Listado de Mensajes
 var Contactos_Mensajes = {

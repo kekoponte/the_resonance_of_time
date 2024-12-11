@@ -15,6 +15,7 @@ label pregunta_1
 	Miguel: He basically treated me like a criminal
 	Miguel: He wanted to know if I have cameras, which I don't
 	Miguel: I heard him say that they were going to check  traffic cameras in the  [color=#1eaf18]Traffic Department[/color]
+	[signal arg="traffic_on"]
 	set {Parla_Office.Miguel_02} = 0
 	jump pregunta_1
 - Can you tell me anything about the car? | [if {Parla_Office.Miguel_03} == 1] [else="hide"]

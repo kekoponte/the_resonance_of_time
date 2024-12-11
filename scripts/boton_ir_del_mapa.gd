@@ -20,6 +20,10 @@ func _on_button_down() -> void:
 		PassTime.pass_time(185)
 		await $transicion_entre_escenas.animation_finished
 		SceneSwitcher.switch_scene("res://scenes/room_02_hospital_waiting_room.tscn")
-
+	elif Global.Direccion == Vector2(100,300) and Global.activar_traffic == true:
+		$transicion_entre_escenas.play("transicion")
+		PassTime.pass_time(185)
+		await $transicion_entre_escenas.animation_finished
+		SceneSwitcher.switch_scene("res://scenes/room_08_traffic_control.tscn")		
 	else:
 		Dialogic.start("mapa_no")

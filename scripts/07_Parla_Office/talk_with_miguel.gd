@@ -32,3 +32,6 @@ func _on_dialogic_signal(argument:String):
 		Global.contador_Parla_office = 2
 		Dialogic.end_timeline()
 		self.show()
+	
+	if argument == "traffic_on":
+		Global.activar_traffic = true
