@@ -2,4 +2,5 @@ Esther: Wait!
 Esther: That van! Could you give me a clear image of the van?
 join lucas_traffic center
 lucas_traffic: Sure
+leave lucas_traffic
 [signal arg="van"]

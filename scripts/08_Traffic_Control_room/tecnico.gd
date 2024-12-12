@@ -11,6 +11,9 @@ func _on_button_down() -> void:
 	elif Global.contador_traffic_control == 3:
 		self.hide()
 		Dialogic.start("08_traffic_control_fin")
+	elif Global.contador_traffic_control == 4:
+		self.hide()
+		Dialogic.start("08_traffic_control_pantalla")
 	
 func _on_mouse_entered() -> void:
 	Input.set_custom_mouse_cursor(Global.talk)
@@ -39,11 +42,16 @@ func _on_dialogic_signal(argument:String):
 		Global.contador_traffic_control = 3
 	
 	if argument == "footage":
+		self.set_disabled(true)
 		$AnimationPlayer.play("footage")
 		await $AnimationPlayer.animation_finished
 		Dialogic.start("08_traffic_control_footage_2")
 		self.hide
 	
 	if argument == "van":
+		self.set_disabled(true)
 		$AnimationPlayer.play("footage2")
-		
+		await $AnimationPlayer.animation_finished
+		$ver_footage.show()
+		self.set_disabled(false)
+		Global.contador_traffic_control = 4

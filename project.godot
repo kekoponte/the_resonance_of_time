@@ -57,6 +57,7 @@ directories/dtl_directory={
 "08_traffic_control_footage": "res://dialogo/08_traffic_control/08_traffic_control_footage.dtl",
 "08_traffic_control_footage_2": "res://dialogo/08_traffic_control/08_traffic_control_footage_2.dtl",
 "08_traffic_control_matricula": "res://dialogo/08_traffic_control/08_traffic_control_matricula.dtl",
+"08_traffic_control_pantalla": "res://dialogo/08_traffic_control/08_traffic_control_pantalla.dtl",
 "Call_Keko": "res://dialogo/Llamadas/Call_Keko.dtl",
 "Michel_01": "res://dialogo/04_Morgue/Michel_01.dtl",
 "Parla_02": "res://dialogo/06_Parla/Parla_02.dtl",
