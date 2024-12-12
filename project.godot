@@ -53,17 +53,17 @@ directories/dtl_directory={
 "07_Parla_Office_01": "res://dialogo/07_Parla_Office/07_Parla_Office_01.dtl",
 "07_Parla_Office_02": "res://dialogo/07_Parla_Office/07_Parla_Office_02.dtl",
 "08_traffic_control_01": "res://dialogo/08_traffic_control/08_traffic_control_01.dtl",
+"08_traffic_control_fin": "res://dialogo/08_traffic_control/08_traffic_control_fin.dtl",
+"08_traffic_control_footage": "res://dialogo/08_traffic_control/08_traffic_control_footage.dtl",
+"08_traffic_control_footage_2": "res://dialogo/08_traffic_control/08_traffic_control_footage_2.dtl",
+"08_traffic_control_matricula": "res://dialogo/08_traffic_control/08_traffic_control_matricula.dtl",
 "Call_Keko": "res://dialogo/Llamadas/Call_Keko.dtl",
-"Llamada_1_con_Colin": "res://dialogo/Llamada_1_con_Colin.dtl",
-"Llamada_1_con_Dennis": "res://dialogo/Llamada_1_con_Dennis.dtl",
-"Llamada_1_con_clara": "res://dialogo/Llamada_1_con_clara.dtl",
 "Michel_01": "res://dialogo/04_Morgue/Michel_01.dtl",
 "Parla_02": "res://dialogo/06_Parla/Parla_02.dtl",
 "alan": "res://dialogo/alan.dtl",
 "banner_bank": "res://dialogo/banner_bank.dtl",
 "comunicando": "res://dialogo/comunicando.dtl",
 "foto_morgue": "res://dialogo/camara/foto_morgue.dtl",
-"llamada_1_con_Clara": "res://dialogo/llamada_1_con_Clara.dtl",
 "mapa_no": "res://dialogo/mapa_no.dtl",
 "monologo_inicial": "res://dialogo/monologo_inicial.dtl",
 "morgue": "res://dialogo/morgue.dtl",
@@ -90,6 +90,11 @@ variables={
 "Miguel_01": 1,
 "Miguel_02": 1,
 "Miguel_03": 1
+},
+"Traffic_Control": {
+"Lucas_Stress": "0",
+"estado_matricula": 0,
+"matricula": ""
 },
 "Waiting_room": {
 "Laura_01": "1",

@@ -1,0 +1,17 @@
+lucas_traffic: Do you know the license plate number?
+label input_matricula
+[text_input var="Traffic_Control.matricula"]
+
+if {Traffic_Control.matricula} == "1547AKL" or {Traffic_Control.matricula} == "1547 AKL"  or {Traffic_Control.matricula} == "1547akl" or {Traffic_Control.matricula} == "1547 akl":
+	lucas_traffic: Let me check that
+	lucas_traffic: It belongs to a red sedan out of circulation since 2023
+	lucas_traffic: The owner was Diego Lopez
+	lucas_traffic: He has no outstanding fines
+	lucas_traffic: Honestly, I don't see anything funny here
+	[signal arg="fin_matricula"]
+else:
+	lucas_traffic: Hum... there's nothing weird about that plate
+	lucas_traffic: Are you sure that's the right number?
+leave lucas_traffic
+[signal arg="phone_on"]
+[signal arg="end"]

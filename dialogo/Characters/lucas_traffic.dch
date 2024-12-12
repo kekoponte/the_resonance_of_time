@@ -35,6 +35,15 @@
 "scale": 1,
 "scene": ""
 },
+"+3": {
+"export_overrides": {
+"image": "\"res://assets/characters/lucas_3.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
 "idle": {
 "export_overrides": {
 "image": "\"res://assets/characters/lucas_idle.png\""

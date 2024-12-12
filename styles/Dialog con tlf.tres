@@ -1,0 +1,109 @@
+[gd_resource type="Resource" script_class="DialogicStyle" load_steps=21 format=3 uid="uid://d3bwvnlkjt5ce"]
+
+[ext_resource type="PackedScene" uid="uid://cqpb3ie51rwl5" path="res://addons/dialogic/Modules/DefaultLayoutParts/Base_Default/default_layout_base.tscn" id="1_whda6"]
+[ext_resource type="Script" path="res://addons/dialogic/Resources/dialogic_style_layer.gd" id="2_nf81e"]
+[ext_resource type="PackedScene" uid="uid://c1k5m0w3r40xf" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn" id="3_b5jhw"]
+[ext_resource type="PackedScene" uid="uid://cy1y14inwkplb" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/vn_portrait_layer.tscn" id="4_07hr4"]
+[ext_resource type="PackedScene" uid="uid://cn674foxwedqu" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn" id="5_6fmbh"]
+[ext_resource type="PackedScene" uid="uid://dsbwnp5hegnu3" path="res://dialogo/PopupGlossary/custom_glossary_popup_layer.tscn" id="7_pqt4l"]
+[ext_resource type="PackedScene" uid="uid://dhk6j6eb6e3q" path="res://dialogo/CenteredChoices/custom_vn_choice_layer.tscn" id="8_cie3n"]
+[ext_resource type="PackedScene" uid="uid://cvgf4c6gg0tsy" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn" id="9_uwcmo"]
+[ext_resource type="PackedScene" uid="uid://lx24i8fl6uo" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn" id="10_7k12d"]
+[ext_resource type="PackedScene" uid="uid://dl0m6bsg1lv3s" path="res://styles/VisualNovelTextbox/custom_visual_novel_with_phone.tscn" id="11_2pi8y"]
+[ext_resource type="Script" path="res://addons/dialogic/Resources/dialogic_style.gd" id="11_bclix"]
+
+[sub_resource type="Resource" id="Resource_c324g"]
+script = ExtResource("2_nf81e")
+scene = ExtResource("1_whda6")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_opdgx"]
+script = ExtResource("2_nf81e")
+scene = ExtResource("3_b5jhw")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_d3dm0"]
+script = ExtResource("2_nf81e")
+scene = ExtResource("4_07hr4")
+overrides = {
+"portrait_size_mode": "0"
+}
+
+[sub_resource type="Resource" id="Resource_6mvki"]
+script = ExtResource("2_nf81e")
+scene = ExtResource("5_6fmbh")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_lypyg"]
+script = ExtResource("2_nf81e")
+scene = ExtResource("7_pqt4l")
+overrides = {
+"font_custom": "\"res://assets/fonts/dogicapixel.ttf\"",
+"font_use_global": "false"
+}
+
+[sub_resource type="Resource" id="Resource_b0liu"]
+script = ExtResource("2_nf81e")
+scene = ExtResource("8_cie3n")
+overrides = {
+"boxes_stylebox_focused": "\"res://styles/estilo_de_respuestas_focus.tres\"",
+"boxes_stylebox_hovered": "\"res://styles/estilo_de_respuestas_hover.tres\"",
+"boxes_stylebox_normal": "\"res://styles/estilo_de_respuestas.tres\"",
+"font_custom": "\"res://assets/fonts/dogicapixel.ttf\"",
+"font_size_custom": "8.0",
+"font_size_use_global": "false",
+"font_use_global": "false",
+"text_color_use_global": "false"
+}
+
+[sub_resource type="Resource" id="Resource_hbtrf"]
+script = ExtResource("2_nf81e")
+scene = ExtResource("9_uwcmo")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_6758r"]
+script = ExtResource("2_nf81e")
+scene = ExtResource("10_7k12d")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_4rr3c"]
+script = ExtResource("2_nf81e")
+scene = ExtResource("11_2pi8y")
+overrides = {
+"bold_font": "\"res://assets/fonts/dogicapixelbold.ttf\"",
+"box_animation_in": "0",
+"box_animation_out": "0",
+"box_color_custom": "Color(1, 1, 1, 1)",
+"box_color_use_global": "false",
+"box_margin_bottom": "10.0",
+"box_size": "Vector2(550, 70)",
+"name_label_font": "\"res://assets/fonts/dogicapixelbold.ttf\"",
+"name_label_use_character_color": "false",
+"name_label_use_global_color": "false",
+"name_label_use_global_font": "false",
+"name_label_use_global_font_size": "false",
+"normal_font": "\"res://assets/fonts/dogicapixel.ttf\"",
+"text_custom_color": "Color(0, 0, 0, 1)",
+"text_use_global_color": "false",
+"text_use_global_font": "false",
+"text_use_global_size": "false"
+}
+
+[resource]
+script = ExtResource("11_bclix")
+name = "Dialog con tlf"
+layer_list = Array[String](["10", "11", "12", "18", "14", "15", "16", "17"])
+layer_info = {
+"": SubResource("Resource_c324g"),
+"10": SubResource("Resource_opdgx"),
+"11": SubResource("Resource_d3dm0"),
+"12": SubResource("Resource_6mvki"),
+"14": SubResource("Resource_lypyg"),
+"15": SubResource("Resource_b0liu"),
+"16": SubResource("Resource_hbtrf"),
+"17": SubResource("Resource_6758r"),
+"18": SubResource("Resource_4rr3c")
+}
+base_overrides = {}
+layers = Array[ExtResource("2_nf81e")]([])
+metadata/_latest_layer = ""

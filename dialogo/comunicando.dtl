@@ -1,3 +1,4 @@
+[background arg="res://assets/interface/back.png" fade="0.0"]
 [style name="personajes_en_habitacion"]
 [music path="res://assets/sounds/llamando.mp3" fade="0.0" volume="0.0" loop="false"]
 [wait time="2.5"]

@@ -2,4 +2,44 @@
 [style name="personajes_en_habitacion"]
 [signal arg="phone_off"]
 join lucas_traffic left
-lucas_traffic: How can I help you?
+lucas_traffic: Hi, I'm Lucas. How can I help you?
+- I'd like to check a License Plate
+- I'd like to check some traffic cameras from yesterday
+lucas_traffic: Wow, I think I'd need a court order to do that
+- I'm working on a murder case
+	lucas_traffic (+1): Then I asume you do have an order
+	set {Traffic_Control.Lucas_Stress} = "1"
+	- I do, I'll send it back as soon as possible
+		lucas_traffic (+2): Hum... You should come back once you have it
+		set {Traffic_Control.Lucas_Stress} = "2"
+		lucas_traffic: You know how this works
+		- I really need your help. My brother died yesterday
+			jump second part
+		- You better help me with this, Lucas
+			lucas_traffic (+3): Wow, this is too much. Please leave this room.
+			set {Traffic_Control.Lucas_Stress} = "3"
+	- I didn't have the time yet
+- I really need your help. My brother died yesterday
+	label second part
+	if {Traffic_Control.Lucas_Stress} == "2":
+		lucas_traffic (+1): Ok, ok, what do you need?
+		jump third part
+	else:
+		lucas_traffic: Ou... Sorry to hear that
+		lucas_traffic: I'm not sure you should be investigating this, but....
+		lucas_traffic: What do you need?
+		label third part
+		- Footage from yesterday and information on a license plate
+		lucas_traffic: That's way too much
+		lucas_traffic (+1): I could lose my job for this
+		lucas_traffic (+2): I could help you with one of those. And that's already too much
+		- I'd like to see the footage from yesterday
+			jump 08_traffic_control_footage/
+		- I'd like to know more on a license plate
+			lucas_traffic: Ok, what's the number?
+			- Let me check that for a second
+				[signal arg="phone_on"]
+				[signal arg="matricula"]
+				[signal arg="end"]
+			- Sure, it's...
+				jump 08_traffic_control_matricula/input_matricula

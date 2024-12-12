@@ -1,0 +1,5 @@
+lucas_traffic: I've already said too much
+lucas_traffic: I'm afraid I can't help you with anything else
+leave lucas_traffic
+[signal arg="phone_on"]
+[signal arg="end"]

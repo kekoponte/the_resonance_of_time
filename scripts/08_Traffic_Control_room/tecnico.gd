@@ -7,7 +7,10 @@ func _on_button_down() -> void:
 		Dialogic.signal_event.connect(_on_dialogic_signal)
 	elif Global.contador_traffic_control == 2:
 		self.hide()
-		Dialogic.start("08_traffic_control_02")
+		Dialogic.start("08_traffic_control_matricula")
+	elif Global.contador_traffic_control == 3:
+		self.hide()
+		Dialogic.start("08_traffic_control_fin")
 	
 func _on_mouse_entered() -> void:
 	Input.set_custom_mouse_cursor(Global.talk)
@@ -26,7 +29,21 @@ func _on_dialogic_signal(argument:String):
 		get_parent().get_node("Phone").show()
 
 	if argument == "end":
-		Global.contador_laura_office = 2
-		Global.contador_police_station = 2
 		Dialogic.end_timeline()
 		self.show()
+
+	if argument == "matricula":
+		Global.contador_traffic_control = 2
+
+	if argument == "fin_matricula":
+		Global.contador_traffic_control = 3
+	
+	if argument == "footage":
+		$AnimationPlayer.play("footage")
+		await $AnimationPlayer.animation_finished
+		Dialogic.start("08_traffic_control_footage_2")
+		self.hide
+	
+	if argument == "van":
+		$AnimationPlayer.play("footage2")
+		

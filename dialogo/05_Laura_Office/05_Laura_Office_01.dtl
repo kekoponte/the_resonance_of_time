@@ -1,3 +1,4 @@
+[background arg="res://assets/interface/back.png" fade="0.0"]
 [style name="personajes_en_habitacion"]
 [signal arg="phone_off"]
 join laura left [animation="Fade In"]
