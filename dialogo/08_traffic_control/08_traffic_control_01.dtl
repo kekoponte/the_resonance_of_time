@@ -19,6 +19,14 @@ lucas_traffic: Wow, I think I'd need a court order to do that
 			lucas_traffic (+3): Wow, this is too much. Please leave this room.
 			set {Traffic_Control.Lucas_Stress} = "3"
 	- I didn't have the time yet
+		lucas_traffic (+2): Hum... You should come back once you have it
+		set {Traffic_Control.Lucas_Stress} = "2"
+		lucas_traffic: You know how this works
+		- I really need your help. My brother died yesterday
+			jump second part
+		- You better help me with this, Lucas
+			lucas_traffic (+3): Wow, this is too much. Please leave this room.
+			set {Traffic_Control.Lucas_Stress} = "3"
 - I really need your help. My brother died yesterday
 	label second part
 	if {Traffic_Control.Lucas_Stress} == "2":
@@ -33,7 +41,7 @@ lucas_traffic: Wow, I think I'd need a court order to do that
 		lucas_traffic: That's way too much
 		lucas_traffic (+1): I could lose my job for this
 		lucas_traffic (+2): I could help you with one of those. And that's already too much
-		- I'd like to see the footage from yesterday
+		- I'd like to see the footage
 			jump 08_traffic_control_footage/
 		- I'd like to know more on a license plate
 			lucas_traffic: Ok, what's the number?
@@ -42,4 +50,5 @@ lucas_traffic: Wow, I think I'd need a court order to do that
 				[signal arg="matricula"]
 				[signal arg="end"]
 			- Sure, it's...
+				[signal arg="matricula"]
 				jump 08_traffic_control_matricula/input_matricula

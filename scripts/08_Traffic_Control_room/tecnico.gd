@@ -11,6 +11,8 @@ func _on_button_down() -> void:
 	elif Global.contador_traffic_control == 3:
 		self.hide()
 		Dialogic.start("08_traffic_control_fin")
+		$AnimationPlayer.play("RESET")
+		
 	elif Global.contador_traffic_control == 4:
 		self.hide()
 		Dialogic.start("08_traffic_control_pantalla")

@@ -9,3 +9,5 @@ func _on_mouse_exited() -> void:
 
 func _on_button_down() -> void:
 	$boton_cerrar.show()
+	Global.traffic_control_foto_furgoneta = 1
+	Dialogic.start("08_ver_furgoneta")

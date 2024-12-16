@@ -1,0 +1,11 @@
+[signal arg="phone_off"]
+[background arg="res://assets/interface/back.png" fade="0.0"]
+[style name="personajes_en_habitacion"]
+join Esther right
+Esther: That's the van Miguel mentioned
+Esther: It's a [color=#1eaf18]BDF Logistics [/color]' van
+Esther: The license plate is 1426ALM
+Esther: I can't see who is driving, but there are two people inside that van
+leave Esther
+[signal arg="phone_on"]
+[signal arg="end"]

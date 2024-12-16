@@ -13,6 +13,10 @@ func _on_button_up() -> void:
 		Global.matricula_in_photos = 1
 	elif Global.Location == "Parla Junkyard" and Global.contador_parla_matricula == 2 and Global.matricula_in_photos == 1 :
 		Dialogic.start("06_no_more_Parla_foto_matricula")
+	elif Global.Location == "Traffic Control" and Global.traffic_control_foto_furgoneta == 1:
+		Global.listado_de_fotos.insert(0, load("res://assets/locations/08_Traffic_Control_Tower/van_file.png"))
+		Dialogic.start("08_foto_van")
+		Global.traffic_control_foto_furgoneta = 2
 
 	else:
 		Dialogic.start("no_foto")

@@ -1,3 +1,6 @@
+[background arg="res://assets/interface/back.png" fade="0.0"]
+[style name="personajes_en_habitacion"]
+join lucas_traffic (+1) left
 lucas_traffic: I've already said too much
 lucas_traffic: I'm afraid I can't help you with anything else
 leave lucas_traffic

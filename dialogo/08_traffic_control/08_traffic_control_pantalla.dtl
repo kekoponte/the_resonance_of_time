@@ -1,3 +1,5 @@
+[signal arg="phone_off"]
 lucas_traffic: That's the van right there
 leave lucas_traffic
+[signal arg="phone_on"]
 [signal arg="end"]

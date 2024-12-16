@@ -1,6 +1,10 @@
+[signal arg="phone_off"]
+join Esther right
 Esther: Wait!
 Esther: That van! Could you give me a clear image of the van?
-join lucas_traffic center
+leave Esther
+join lucas_traffic left
 lucas_traffic: Sure
 leave lucas_traffic
 [signal arg="van"]
+[signal arg="phone_on"]

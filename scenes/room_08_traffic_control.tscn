@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=3 uid="uid://bgka2ss4dc5qh"]
+[gd_scene load_steps=55 format=3 uid="uid://bgka2ss4dc5qh"]
 
 [ext_resource type="Script" path="res://scripts/08_Traffic_Control_room/room_08_traffic.gd" id="1_atne2"]
 [ext_resource type="Texture2D" uid="uid://bsc6in0cg1yx3" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_1.png" id="2_te5cc"]
@@ -42,6 +42,7 @@
 [ext_resource type="Texture2D" uid="uid://u8gnjuqt68s8" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_screen_4f.png" id="40_m4w5n"]
 [ext_resource type="Script" path="res://scripts/08_Traffic_Control_room/boton_monitores.gd" id="41_7bcug"]
 [ext_resource type="Texture2D" uid="uid://c2vtij417i27p" path="res://assets/locations/08_Traffic_Control_Tower/08_van.png" id="42_d3j8c"]
+[ext_resource type="Script" path="res://scripts/08_Traffic_Control_room/boton_cerrar_footage.gd" id="42_urrab"]
 
 [sub_resource type="Animation" id="Animation_mtnon"]
 length = 0.001
@@ -682,7 +683,7 @@ z_index = 1
 layout_mode = 0
 offset_left = -247.0
 offset_top = -122.0
-offset_right = 361.0
+offset_right = 190.0
 offset_bottom = -47.0
 script = ExtResource("41_7bcug")
 
@@ -691,6 +692,7 @@ visible = false
 layout_mode = 0
 offset_right = 400.0
 offset_bottom = 257.0
+script = ExtResource("42_urrab")
 
 [node name="08Van" type="Sprite2D" parent="tecnico/ver_footage/boton_cerrar"]
 position = Vector2(302, 146)
@@ -702,3 +704,4 @@ texture = ExtResource("42_d3j8c")
 [connection signal="button_down" from="tecnico/ver_footage" to="tecnico/ver_footage" method="_on_button_down"]
 [connection signal="mouse_entered" from="tecnico/ver_footage" to="tecnico/ver_footage" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="tecnico/ver_footage" to="tecnico/ver_footage" method="_on_mouse_exited"]
+[connection signal="button_down" from="tecnico/ver_footage/boton_cerrar" to="tecnico/ver_footage/boton_cerrar" method="_on_button_down"]

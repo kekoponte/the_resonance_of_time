@@ -1,7 +1,9 @@
 [background arg="res://assets/interface/back.png" fade="0.0"]
 [style name="personajes_en_habitacion"]
+join Esther center
 Esther: I need to understand what happened with Marcos.
 Esther: More than that. I need to know what happened to him all this 12 years.
 Esther: I have until this very Wednesday till 9\:00 am to understand what happened here.
 Esther: Ok. Lets' do this.
+leave Esther
 [signal arg="end"]

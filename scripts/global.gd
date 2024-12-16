@@ -72,6 +72,7 @@ var activar_traffic:bool = false
 var matricula_in_photos:int = 0
 var contador_Parla_office:int = 1
 var contador_traffic_control:int = 1
+var traffic_control_foto_furgoneta:int = 0
 
 # Listado de Mensajes
 var Contactos_Mensajes = {

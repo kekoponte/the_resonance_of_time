@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://blemrgpq3ttb0"]
+[gd_scene load_steps=30 format=3 uid="uid://blemrgpq3ttb0"]
 
 [ext_resource type="Script" path="res://scripts/06_Parla/room_06_parla.gd" id="1_0wym5"]
 [ext_resource type="Texture2D" uid="uid://fgnt7q0t7wh4" path="res://assets/locations/06_parla.png" id="1_fgqw3"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://vn8ay56opuf" path="res://scenes/phone.tscn" id="8_jhe3v"]
 [ext_resource type="Texture2D" uid="uid://s3utxkf14qjf" path="res://assets/locations/06_Parla/06_grua_3.png" id="8_kejvg"]
 [ext_resource type="Texture2D" uid="uid://h2srqkovnmbl" path="res://assets/locations/06_Parla/06_red_car.png" id="10_s3dk4"]
+[ext_resource type="Texture2D" uid="uid://bgmqi2y4jonl8" path="res://assets/locations/06_Parla/06_red_car-matricula.png" id="11_hm4nb"]
 [ext_resource type="Script" path="res://scripts/06_Parla/matricula.gd" id="11_i2vj5"]
 [ext_resource type="Script" path="res://scripts/06_Parla/interior.gd" id="12_0nf5w"]
 [ext_resource type="Script" path="res://scripts/06_Parla/plate_but.gd" id="12_0ybl1"]
@@ -17,6 +18,7 @@
 [ext_resource type="Script" path="res://scripts/06_Parla/interior_but.gd" id="15_3bqdr"]
 [ext_resource type="Texture2D" uid="uid://rltybrytygre" path="res://assets/locations/06_Parla/06_interior_car.png" id="15_3qhoo"]
 [ext_resource type="Script" path="res://scripts/06_Parla/to_office.gd" id="15_b2meg"]
+[ext_resource type="Texture2D" uid="uid://bqwqixnt1k5mn" path="res://assets/locations/06_Parla/06_red_car-interior.png" id="15_rhjg6"]
 [ext_resource type="FontFile" uid="uid://cyoe0lu3ghnvg" path="res://assets/fonts/dogicapixelbold.ttf" id="18_tkwnc"]
 [ext_resource type="Script" path="res://scripts/labels/label_hospital.gd" id="19_bh8fq"]
 
@@ -358,10 +360,11 @@ position = Vector2(320, 180)
 texture = ExtResource("10_s3dk4")
 
 [node name="matricula" type="TextureButton" parent="06RedCar"]
-offset_left = -282.0
-offset_top = 67.0
-offset_right = -187.0
-offset_bottom = 123.0
+offset_left = -313.0
+offset_top = 36.0
+offset_right = -141.0
+offset_bottom = 135.0
+texture_hover = ExtResource("11_hm4nb")
 script = ExtResource("11_i2vj5")
 
 [node name="Plate_but" type="TextureButton" parent="06RedCar/matricula"]
@@ -378,10 +381,10 @@ position = Vector2(212, 36)
 texture = ExtResource("13_ogxdm")
 
 [node name="interior" type="TextureButton" parent="06RedCar"]
-offset_left = 14.0
 offset_top = -112.0
 offset_right = 161.0
-offset_bottom = 6.0
+offset_bottom = 22.0
+texture_hover = ExtResource("15_rhjg6")
 script = ExtResource("12_0nf5w")
 
 [node name="interior_but" type="TextureButton" parent="06RedCar/interior"]
@@ -400,7 +403,7 @@ texture = ExtResource("15_3qhoo")
 
 [node name="to_office" type="TextureButton" parent="06RedCar"]
 offset_left = -320.0
-offset_top = 123.0
+offset_top = 136.0
 offset_right = 129.0
 offset_bottom = 180.0
 script = ExtResource("15_b2meg")

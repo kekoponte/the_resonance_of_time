@@ -19,7 +19,7 @@
 "portraits": {
 "idle": {
 "export_overrides": {
-"image": "\"\""
+"image": "\"res://assets/characters/esther_dialog.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
