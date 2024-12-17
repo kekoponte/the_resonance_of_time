@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://c6qjxx1uno1h5"]
+[gd_scene load_steps=30 format=3 uid="uid://c6qjxx1uno1h5"]
 
 [ext_resource type="Script" path="res://scripts/room_03_hospital_morgue.gd" id="1_rbq7p"]
 [ext_resource type="PackedScene" uid="uid://vn8ay56opuf" path="res://scenes/phone.tscn" id="2_3ns8o"]
@@ -13,7 +13,9 @@
 [ext_resource type="Script" path="res://scripts/03_Morgue/mouse_clara_hands.gd" id="8_klaee"]
 [ext_resource type="Script" path="res://scripts/stress.gd" id="8_vtfrc"]
 [ext_resource type="FontFile" uid="uid://cyoe0lu3ghnvg" path="res://assets/fonts/dogicapixelbold.ttf" id="9_dpnax"]
+[ext_resource type="Texture2D" uid="uid://dirkyh67lowop" path="res://assets/locations/03_Morgue/03_hospital_head_over.png" id="9_lki8b"]
 [ext_resource type="Script" path="res://scripts/boton_vuelta_a_waiting.gd" id="10_crn31"]
+[ext_resource type="Texture2D" uid="uid://gpawuqamsdjc" path="res://assets/locations/03_Morgue/03_hospital_hand_over.png" id="10_srpq2"]
 
 [sub_resource type="Animation" id="Animation_5nhyf"]
 length = 0.001
@@ -244,20 +246,22 @@ autoplay = true
 
 [node name="face" type="TextureButton" parent="."]
 z_index = 1
-offset_left = 132.0
-offset_top = 138.0
-offset_right = 212.0
-offset_bottom = 200.0
+offset_left = 121.0
+offset_top = 127.0
+offset_right = 227.0
+offset_bottom = 209.0
 focus_mode = 0
+texture_hover = ExtResource("9_lki8b")
 script = ExtResource("5_cwhgt")
 
 [node name="hands" type="TextureButton" parent="."]
 z_index = 1
-offset_left = 242.0
-offset_top = 184.0
-offset_right = 299.0
-offset_bottom = 217.0
+offset_left = 234.0
+offset_top = 174.0
+offset_right = 340.0
+offset_bottom = 238.0
 focus_mode = 0
+texture_hover = ExtResource("10_srpq2")
 script = ExtResource("8_klaee")
 
 [node name="stress_del_personaje" type="ProgressBar" parent="."]

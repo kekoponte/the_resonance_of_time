@@ -2,4 +2,6 @@
 [background fade="0.0"]
 join Esther left [animation="Fade In"]
 Esther: I need to go to the  [color=#1eaf18]Police Station[/color] to see Laura.
+leave Esther
 [signal arg="phone"]
+[end_timeline]

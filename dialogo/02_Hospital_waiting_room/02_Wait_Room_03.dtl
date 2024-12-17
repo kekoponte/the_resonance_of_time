@@ -1,3 +1,5 @@
 [background fade="0.0"]
 [style name="personajes_en_habitacion"]
 Esther: The door is closed.
+leave Esther
+[end_timeline]

@@ -33,4 +33,6 @@ elif {Waiting_room.tracking} == "2":
 	[style name="personajes_en_habitacion"]
 	join Esther center
 	Esther: I need to see Laura
+	leave Esther
 	[signal arg="phone"]
+	[end_timeline]
