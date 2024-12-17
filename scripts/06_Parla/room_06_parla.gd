@@ -25,3 +25,8 @@ func _on_dialogic_signal(argument:String):
 		$Phone.set_process(true)
 	if argument == "car":
 		$"06RedCar".show()
+	
+	if argument == "stress":
+		$AnimationPlayer.play("stress")
+		await $AnimationPlayer.animation_finished
+		$AnimationPlayer.play("Parla_2")

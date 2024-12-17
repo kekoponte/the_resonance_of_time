@@ -16,6 +16,9 @@ func _ready() -> void:
 func _on_dialogic_signal(argument:String):
 	if argument == "musica":
 		$haendel_song.play("song")
+		
+	elif argument == "stress":
+		$fondo.play("stress")
 
 	elif argument == "fade_in":
 		$fade_in.play("start")

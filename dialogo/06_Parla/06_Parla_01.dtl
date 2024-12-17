@@ -1,14 +1,22 @@
 [background arg="res://assets/interface/back.png" fade="0.0"]
 [style name="personajes_en_habitacion"]
+[wait time="3.8"]
 Esther: The junkyard in Parla is way bigger than I thought
+Esther: There are trashed cars everywhere
 Esther: I cross the big metal gate and see the manager working by a big crane.
+Esther: He's a giant guy, but he also seems
 join Miguel left
-Miguel: Morning! How can I help you?
+Miguel: Hi there!
+Miguel: How can I help you?
 - I am working on the case of the corpse that appeared here
 	set {Parla.stress} = 1
+	[sound path="res://assets/sounds/fail.mp3" volume="0.0"]
+	[signal arg="stress"]
 	Miguel (+1): What do you mean with "working"?
 	label pregunta_1
 	- I am the forensic expert asigned to the case | [if {Parla.tracking_2} == 1]
+		[sound path="res://assets/sounds/fail.mp3" volume="0.0"]
+		[signal arg="stress"]
 		set {Parla.stress} = 2
 		Miguel (+2): I don't think you are. A guy named Michelle just left the place
 		Miguel (+2): He said that we could proceed to trash the car.
@@ -27,9 +35,11 @@ Miguel: Morning! How can I help you?
 			Miguel: Sure, come with me.
 			jump Parla_02/
 - My name is Esther, I'm a forensic expert
+	[sound path="res://assets/sounds/fail.mp3" volume="0.0"]
 	Miguel (+1): They took the corpse hours ago. What do you want?
 	jump pregunta_1
 - I am with the police
+	[sound path="res://assets/sounds/fail.mp3" volume="0.0"]
 	Miguel (+1): May I see your badge?
 	- (Show him your badge)
 		Miguel (+1): How can I help you?

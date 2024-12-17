@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://blemrgpq3ttb0"]
+[gd_scene load_steps=31 format=3 uid="uid://blemrgpq3ttb0"]
 
 [ext_resource type="Script" path="res://scripts/06_Parla/room_06_parla.gd" id="1_0wym5"]
 [ext_resource type="Texture2D" uid="uid://fgnt7q0t7wh4" path="res://assets/locations/06_parla.png" id="1_fgqw3"]
@@ -262,11 +262,28 @@ tracks/7/keys = {
 "values": [Vector2(353, 31)]
 }
 
+[sub_resource type="Animation" id="Animation_aucqf"]
+resource_name = "stress"
+length = 0.14
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/06Parla:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0333333, 0.0666667, 0.1, 0.133333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(100, 180), Vector2(110, 185), Vector2(105, 177), Vector2(100, 184), Vector2(100, 180)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_5neou"]
 _data = {
 "Parla": SubResource("Animation_5eery"),
 "Parla_2": SubResource("Animation_f1pyp"),
-"RESET": SubResource("Animation_2lcks")
+"RESET": SubResource("Animation_2lcks"),
+"stress": SubResource("Animation_aucqf")
 }
 
 [sub_resource type="Animation" id="Animation_1skx1"]

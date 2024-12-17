@@ -8,8 +8,12 @@ Michel: You shouldn't be here. This is an autopsy room.
 	Michel: Do you know the victim?
 	- Yes, he's my brother Marcos.
 	- I do, but it's none of your business
+		[signal arg="stress"]
+		[sound path="res://assets/sounds/fail.mp3" volume="0.0"]
 		Michel (idle/+2): You don't need to talk to me like this.
 - I'm a forensic expert, who are you?
+	[signal arg="stress"]
+	[sound path="res://assets/sounds/fail.mp3" volume="0.0"]
 	Michel (idle/+1): I'm afraid I AM the forensic expert here.
 	Michel: I hope you have a better explanation.
 	jump victim
