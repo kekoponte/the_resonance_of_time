@@ -51,6 +51,9 @@ load("res://assets/phone/old_photos/12.png"),
 load("res://assets/phone/old_photos/13.png"),
 load("res://assets/phone/old_photos/14.png")]
 
+var listado_de_sitios:Array = ["Home", "Hospital La Paz", "Parla", "Traffic Department", "BDF Logistics", "Police Station","Home", "Hospital La Paz", "Parla", "Traffic Department", "BDF Logistics", "Police Station"]
+var listado_de_things:Array = ["Go to the morgue", "Go to the Police Station", "Go to Parla's Junkyard", "Go to traffic Department", "Identify Marcos", "Find the BDF Logistics Van"]
+var listado_de_diario:Array = ["Liutenant Laura call me this morning, looks like a corpse was found and it might be my brother."]
 var stress:int = 3
 var track_de_escena:int = 1
 

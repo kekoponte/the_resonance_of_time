@@ -32,3 +32,13 @@ func _on_text_submitted(_new_text: String) -> void:
 	$Boton_ir.position = Vector2(28,150) - Global.Direccion
 	$marker.show()
 	$Boton_ir.show()
+
+
+func _on_texture_button_button_down() -> void:
+	await get_tree().create_timer(0.3).timeout 
+	position = Global.Direccion
+	print(Global.Direccion)
+	$marker.position = Vector2(68,135) - Global.Direccion 
+	$Boton_ir.position = Vector2(28,150) - Global.Direccion
+	$marker.show()
+	$Boton_ir.show()

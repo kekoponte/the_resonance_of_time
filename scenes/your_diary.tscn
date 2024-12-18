@@ -1,0 +1,73 @@
+[gd_scene load_steps=8 format=3 uid="uid://cgscrc8il1sho"]
+
+[ext_resource type="Texture2D" uid="uid://c4n62p8ndh7k" path="res://assets/phone/back_00_off.png" id="1_nkpw3"]
+[ext_resource type="Texture2D" uid="uid://cxy38ml7i6var" path="res://assets/phone/home_button.png" id="2_68b6q"]
+[ext_resource type="Texture2D" uid="uid://cbyl7p77epic7" path="res://assets/phone/home_button_pressed.png" id="3_ap8cu"]
+[ext_resource type="Script" path="res://scripts/botón_de_home_notepad.gd" id="4_g5qg3"]
+[ext_resource type="Theme" uid="uid://ckn84k327sxon" path="res://styles/to_dos_app.tres" id="5_2soyd"]
+[ext_resource type="FontFile" uid="uid://ce6w5vlh66kkr" path="res://assets/fonts/BirchLeaf.otf" id="5_hxrbe"]
+[ext_resource type="FontFile" uid="uid://cebjma2udbg7" path="res://assets/fonts/dogicapixel.ttf" id="6_d2an3"]
+
+[node name="Your Diary" type="Node2D"]
+
+[node name="App Notas" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 146.0
+offset_bottom = 289.0
+mouse_filter = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Fondo" type="Sprite2D" parent="App Notas"]
+z_index = -1
+position = Vector2(74, 147)
+texture = ExtResource("1_nkpw3")
+
+[node name="Botón de Home" type="TextureButton" parent="App Notas/Fondo"]
+z_index = 5
+z_as_relative = false
+offset_left = -16.0
+offset_top = 99.0
+offset_right = 8.0
+offset_bottom = 123.0
+texture_normal = ExtResource("2_68b6q")
+texture_pressed = ExtResource("3_ap8cu")
+script = ExtResource("4_g5qg3")
+metadata/_edit_use_anchors_ = true
+
+[node name="diario" type="RichTextLabel" parent="App Notas" groups=["diario"]]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 54.0
+offset_right = 132.0
+offset_bottom = 239.0
+theme = ExtResource("5_2soyd")
+theme_override_constants/line_separation = 2
+theme_override_font_sizes/normal_font_size = 6
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper nisl erat, ut aliquam risus viverra non. Nunc velit dui, luctus id elit ut, lacinia molestie erat. Vivamus id dui rutrum, consectetur massa nec, euismod quam. Curabitur augue nulla, tempus nec urna sed, volutpat laoreet leo. Nam varius ullamcorper facilisis. Etiam ultrices augue id volutpat bibendum. In pulvinar felis et convallis lacinia. In vitae augue gravida, luctus erat et, laoreet velit. Praesent scelerisque nulla non vehicula varius. Pellentesque ut rhoncus ex. Nunc vel magna ac augue consectetur consequat. Donec eget dapibus nisi.
+
+Vestibulum magna justo, iaculis nec ultrices vel, imperdiet eget nisl. Nullam sollicitudin dui vitae nulla bibendum, ut vulputate libero efficitur. Maecenas finibus odio ac ultricies gravida. Nam maximus bibendum sapien at volutpat. Aliquam erat volutpat. Proin dapibus justo a dui hendrerit, eu luctus nibh pellentesque. Sed congue gravida vulputate.
+
+Nam vitae ex sapien. Donec erat metus, ornare vel purus vitae, congue rhoncus magna. Aenean consectetur metus bibendum, ultrices odio eget, pharetra purus. Ut a dui a augue facilisis condimentum. Donec at eros non dolor consequat commodo. Maecenas fringilla consequat neque, vel porta arcu aliquet gravida. Donec egestas semper ante et cursus. Pellentesque elementum leo vitae purus rutrum iaculis. Sed nec convallis eros, in suscipit odio. Sed maximus sollicitudin urna non rutrum. Cras lacinia arcu porta condimentum suscipit."
+
+[node name="Label" type="Label" parent="."]
+offset_left = 12.0
+offset_top = 26.0
+offset_right = 84.0
+offset_bottom = 40.0
+theme_override_colors/font_color = Color(0.0980392, 0.615686, 0.862745, 1)
+theme_override_fonts/font = ExtResource("5_hxrbe")
+theme_override_font_sizes/font_size = 13
+text = "Your Diary"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label4" type="Label" parent="."]
+offset_left = 13.0
+offset_top = 41.0
+offset_right = 111.0
+offset_bottom = 55.0
+theme_override_colors/font_color = Color(0.86, 0.541083, 0.0946, 1)
+theme_override_fonts/font = ExtResource("6_d2an3")
+theme_override_font_sizes/font_size = 6
+text = "Your story so far..."
+metadata/_edit_use_anchors_ = true

@@ -1,0 +1,24 @@
+extends Node
+
+func add_place_to_todos() -> void:
+	var listado = get_tree().get_nodes_in_group("sitios")
+	listado[0].text = ""
+
+	for i in Global.listado_de_sitios:
+		listado[0].append_text("[ul] " + i + " [/ul]")
+
+
+func add_thing_to_todos() -> void:
+	var listado = get_tree().get_nodes_in_group("things")
+	listado[0].text = ""
+
+	for i in Global.listado_de_things:
+		listado[0].append_text("[ul] " + i + " [/ul]")
+
+
+func add_entry_to_diary() -> void:
+	var listado = get_tree().get_nodes_in_group("diario")
+	listado[0].text = ""
+
+	for i in Global.listado_de_diario:
+		listado[0].append_text(i)

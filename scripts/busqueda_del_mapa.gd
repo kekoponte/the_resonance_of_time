@@ -9,7 +9,6 @@ func _ready() -> void:
 
 func _on_text_submitted(Destination) -> void:
 	Destination = Destination.capitalize()
-	print(Destination)
 	if Destination == "Home":
 		Global.Direccion = Vector2(135,0)
 	elif Destination == "Police Station" or Destination == "Police":
@@ -24,3 +23,9 @@ func _on_text_submitted(Destination) -> void:
 		Global.Direccion = Vector2(100,300)
 	else:
 		Global.Direccion = Vector2(randf_range(50, 400), randf_range(50, 400))
+
+
+func _on_texture_button_button_down() -> void:
+	var Destination = self.text
+	print(Destination)
+	_on_text_submitted(Destination)

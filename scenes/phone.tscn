@@ -1,4 +1,4 @@
-[gd_scene load_steps=61 format=3 uid="uid://vn8ay56opuf"]
+[gd_scene load_steps=67 format=3 uid="uid://vn8ay56opuf"]
 
 [ext_resource type="Texture2D" uid="uid://beks6fnb6rl84" path="res://assets/phone/phone_border.png" id="1_j61vq"]
 [ext_resource type="Texture2D" uid="uid://bjkxa8hgkpa7k" path="res://assets/phone/back_02.png" id="2_okc1m"]
@@ -43,12 +43,16 @@
 [ext_resource type="Texture2D" uid="uid://dx0fth2rsqer7" path="res://assets/phone/but_12_Bank_norm.png" id="29_xmvop"]
 [ext_resource type="Texture2D" uid="uid://cptb7ydcks35d" path="res://assets/phone/but_12_Bank_press.png" id="30_awbui"]
 [ext_resource type="Script" path="res://scripts/phone/set_horas.gd" id="30_fonlb"]
+[ext_resource type="Texture2D" uid="uid://dt5d0a2nelm7l" path="res://assets/phone/but_16_thingz_norm.png" id="31_5gbmj"]
 [ext_resource type="Texture2D" uid="uid://bgfpluoko8ex8" path="res://assets/phone/but_13_story_norm.png" id="31_reioe"]
 [ext_resource type="PackedScene" uid="uid://b53x8m2h6rlv4" path="res://scenes/files.tscn" id="32_a0de5"]
+[ext_resource type="Texture2D" uid="uid://be7pd4jmu7s8k" path="res://assets/phone/but_16_thingz_press.png" id="32_g4hjr"]
 [ext_resource type="Texture2D" uid="uid://c8stcsmn1566b" path="res://assets/phone/but_13_story_press.png" id="32_mfm8p"]
 [ext_resource type="Texture2D" uid="uid://dp05vvp1jxe2" path="res://assets/phone/but_14_contact_norm.png" id="33_nlpya"]
 [ext_resource type="Script" path="res://scripts/phone/fotos.gd" id="33_vvtej"]
 [ext_resource type="Texture2D" uid="uid://dstkq3rtfcddw" path="res://assets/phone/but_14_contact_press.png" id="34_hakcl"]
+[ext_resource type="PackedScene" uid="uid://cgscrc8il1sho" path="res://scenes/your_diary.tscn" id="39_doev2"]
+[ext_resource type="Script" path="res://scripts/phone/your_diary.gd" id="40_ysfq0"]
 [ext_resource type="Script" path="res://scripts/phone/news.gd" id="42_i5e7a"]
 [ext_resource type="PackedScene" uid="uid://c604awremhbr7" path="res://scenes/bank.tscn" id="43_glvrw"]
 [ext_resource type="Script" path="res://scripts/phone/bank.gd" id="44_q127i"]
@@ -56,6 +60,8 @@
 [ext_resource type="Script" path="res://scripts/phone/set_dia.gd" id="48_ign87"]
 [ext_resource type="PackedScene" uid="uid://c07qpqkwkru4i" path="res://scenes/telefono.tscn" id="49_x5jqx"]
 [ext_resource type="Script" path="res://scripts/phone/telefono.gd" id="50_dri5x"]
+[ext_resource type="PackedScene" uid="uid://b8hu06gjd2ysq" path="res://scenes/to_dos_app.tscn" id="51_ol0jk"]
+[ext_resource type="Script" path="res://scripts/phone/to_dos_app.gd" id="52_8cyry"]
 [ext_resource type="Texture2D" uid="uid://o3njaqjw563f" path="res://assets/phone/print.png" id="53_avwt2"]
 
 [sub_resource type="Animation" id="Animation_iow3e"]
@@ -357,16 +363,16 @@ theme_override_font_sizes/font_size = 8
 text = "Bank"
 horizontal_alignment = 1
 
-[node name="Botón de Story" type="TextureButton" parent="Botones"]
+[node name="Botón de Thingz" type="TextureButton" parent="Botones"]
 layout_mode = 0
 offset_left = 10.0
 offset_top = 109.0
 offset_right = 39.0
 offset_bottom = 137.0
-texture_normal = ExtResource("31_reioe")
-texture_pressed = ExtResource("32_mfm8p")
+texture_normal = ExtResource("31_5gbmj")
+texture_pressed = ExtResource("32_g4hjr")
 
-[node name="Label3" type="Label" parent="Botones/Botón de Story"]
+[node name="Label3" type="Label" parent="Botones/Botón de Thingz"]
 layout_mode = 0
 offset_top = 29.0
 offset_right = 29.0
@@ -374,7 +380,7 @@ offset_bottom = 37.0
 theme_override_colors/font_color = Color(0, 0, 0, 0.760784)
 theme_override_fonts/font = ExtResource("15_xxusd")
 theme_override_font_sizes/font_size = 8
-text = "Story"
+text = "Timez!"
 horizontal_alignment = 1
 
 [node name="Botón de Contactos" type="TextureButton" parent="Botones"]
@@ -396,6 +402,38 @@ theme_override_fonts/font = ExtResource("15_xxusd")
 theme_override_font_sizes/font_size = 8
 text = "Contacts"
 horizontal_alignment = 1
+
+[node name="Botón de Story" type="TextureButton" parent="Botones"]
+layout_mode = 0
+offset_left = 75.0
+offset_top = 109.0
+offset_right = 104.0
+offset_bottom = 137.0
+texture_normal = ExtResource("31_reioe")
+texture_pressed = ExtResource("32_mfm8p")
+
+[node name="Label5" type="Label" parent="Botones/Botón de Story"]
+layout_mode = 0
+offset_top = 29.0
+offset_right = 29.0
+offset_bottom = 37.0
+theme_override_colors/font_color = Color(0, 0, 0, 0.760784)
+theme_override_fonts/font = ExtResource("15_xxusd")
+theme_override_font_sizes/font_size = 8
+text = "Your diary"
+horizontal_alignment = 1
+
+[node name="ToDos_App" parent="." instance=ExtResource("51_ol0jk")]
+visible = false
+z_index = -1
+position = Vector2(-1, -1)
+script = ExtResource("52_8cyry")
+
+[node name="Your Diary" parent="." instance=ExtResource("39_doev2")]
+visible = false
+z_index = -1
+position = Vector2(1, 0)
+script = ExtResource("40_ysfq0")
 
 [node name="Llamadas" parent="." instance=ExtResource("21_5lrpb")]
 visible = false
@@ -515,6 +553,9 @@ texture = ExtResource("53_avwt2")
 [connection signal="mouse_entered" from="Botones/Botón de News" to="Botones" method="_on_botón_de_news_mouse_entered"]
 [connection signal="button_down" from="Botones/Botón de Bank" to="Bank" method="_on_botón_de_bank_button_down"]
 [connection signal="mouse_entered" from="Botones/Botón de Bank" to="Botones" method="_on_botón_de_bank_mouse_entered"]
-[connection signal="mouse_entered" from="Botones/Botón de Story" to="Botones" method="_on_botón_de_story_mouse_entered"]
+[connection signal="button_up" from="Botones/Botón de Thingz" to="ToDos_App" method="_on_botón_de_story_button_up"]
+[connection signal="mouse_entered" from="Botones/Botón de Thingz" to="Botones" method="_on_botón_de_story_mouse_entered"]
 [connection signal="button_up" from="Botones/Botón de Contactos" to="Llamadas" method="_on_botón_de_contactos_button_up"]
 [connection signal="mouse_entered" from="Botones/Botón de Contactos" to="Botones" method="_on_botón_de_contactos_mouse_entered"]
+[connection signal="button_up" from="Botones/Botón de Story" to="Your Diary" method="_on_botón_de_story_button_up"]
+[connection signal="mouse_entered" from="Botones/Botón de Story" to="Botones" method="_on_botón_de_story_mouse_entered"]

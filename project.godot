@@ -22,6 +22,7 @@ Global="*res://scripts/global.gd"
 SceneSwitcher="*res://scripts/scene_switcher.gd"
 AddFotosToApp="*res://scripts/add_fotos_to_app.gd"
 PassTime="*res://scripts/pass_time.gd"
+AddNotesToThings="*res://scripts/add_notes_to_things.gd"
 
 [dialogic]
 
@@ -167,6 +168,9 @@ enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
 
 Filegroup=""
 listado_contactos=""
+sitios=""
+things=""
+diario=""
 
 [gui]
 
