@@ -3,7 +3,6 @@ extends LineEdit
 #boton_ir_del_mapa.gd Detona la acción, este es el listado de direcciones
 
 func _ready() -> void:
-	grab_focus()
 	set_process_input(true)
 	set_process_unhandled_key_input(true)
 
@@ -27,5 +26,10 @@ func _on_text_submitted(Destination) -> void:
 
 func _on_texture_button_button_down() -> void:
 	var Destination = self.text
-	print(Destination)
+	_on_text_submitted(Destination)
+
+
+func _on_lugares_guardados_meta_clicked(meta: Variant) -> void:
+	self.text = str(meta)
+	var Destination = self.text
 	_on_text_submitted(Destination)

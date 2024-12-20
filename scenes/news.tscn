@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://b7nf8cme8rvsl"]
+[gd_scene load_steps=10 format=3 uid="uid://b7nf8cme8rvsl"]
 
 [ext_resource type="Script" path="res://scripts/phone/news_mouse.gd" id="1_2tnmt"]
 [ext_resource type="Texture2D" uid="uid://b7cj6d2xrdcxn" path="res://assets/phone/back_news.png" id="1_yvt5m"]
@@ -7,15 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://cbyl7p77epic7" path="res://assets/phone/home_button_pressed.png" id="3_54pwx"]
 [ext_resource type="Script" path="res://scripts/phone/botón_de_home_news.gd" id="4_vrgt0"]
 [ext_resource type="FontFile" uid="uid://cebjma2udbg7" path="res://assets/fonts/dogicapixel.ttf" id="6_cjigb"]
-[ext_resource type="Script" path="res://scripts/phone/news_mouse_2.gd" id="7_cy50n"]
 [ext_resource type="Script" path="res://scripts/phone/set_dia.gd" id="7_db2no"]
-[ext_resource type="Script" path="res://scripts/phone/news_mouse_3.gd" id="8_skeub"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ebegf"]
-bg_color = Color(0.255488, 0.251286, 0.244338, 1)
-
-[sub_resource type="Theme" id="Theme_unupx"]
-VScrollBar/styles/scroll = SubResource("StyleBoxFlat_ebegf")
+[ext_resource type="Theme" uid="uid://ckn84k327sxon" path="res://styles/to_dos_app.tres" id="8_s4rni"]
 
 [node name="News" type="Node2D"]
 
@@ -33,46 +26,13 @@ z_index = 1
 position = Vector2(77, 142)
 texture = ExtResource("1_yvt5m")
 
-[node name="Botón de Home" type="TextureButton" parent="background"]
-z_index = 1
-offset_left = -16.0
-offset_top = 104.0
-offset_right = 8.0
-offset_bottom = 128.0
-texture_normal = ExtResource("2_01gno")
-texture_pressed = ExtResource("3_54pwx")
-script = ExtResource("4_vrgt0")
-
-[node name="Label" type="Label" parent="."]
-z_index = 1
-offset_left = 36.0
-offset_top = 18.0
-offset_right = 114.0
-offset_bottom = 42.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("2_0m5f2")
-theme_override_font_sizes/font_size = 23
-text = "The News"
-
-[node name="ScrollContainer" type="ScrollContainer" parent="."]
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
 z_index = 1
 offset_left = 16.0
 offset_top = 52.0
 offset_right = 137.0
-offset_bottom = 242.0
-theme = SubResource("Theme_unupx")
-scroll_vertical_custom_step = 2.0
-script = ExtResource("7_cy50n")
-
-[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
-z_index = 1
-custom_minimum_size = Vector2(121, 100)
-layout_mode = 2
-script = ExtResource("8_skeub")
-
-[node name="RichTextLabel" type="RichTextLabel" parent="ScrollContainer/VBoxContainer"]
-z_index = 1
-layout_mode = 2
+offset_bottom = 273.0
+theme = ExtResource("8_s4rni")
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_constants/line_separation = 3
 theme_override_fonts/normal_font = ExtResource("6_cjigb")
@@ -180,7 +140,18 @@ A new tech startup, InnovateX, has opened its headquarters downtown, promising t
 
 
 "
-fit_content = true
+script = ExtResource("1_2tnmt")
+
+[node name="Label" type="Label" parent="."]
+z_index = 1
+offset_left = 36.0
+offset_top = 18.0
+offset_right = 114.0
+offset_bottom = 42.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_0m5f2")
+theme_override_font_sizes/font_size = 23
+text = "The News"
 
 [node name="Label2" type="RichTextLabel" parent="."]
 z_index = 1
@@ -194,8 +165,16 @@ bbcode_enabled = true
 text = "[center]Miércoles[/center]"
 script = ExtResource("7_db2no")
 
+[node name="Botón de Home" type="TextureButton" parent="."]
+z_index = 3
+offset_left = 61.0
+offset_top = 246.0
+offset_right = 85.0
+offset_bottom = 270.0
+texture_normal = ExtResource("2_01gno")
+texture_pressed = ExtResource("3_54pwx")
+script = ExtResource("4_vrgt0")
+
 [connection signal="mouse_entered" from="Control" to="Control" method="_on_mouse_entered"]
-[connection signal="mouse_entered" from="background/Botón de Home" to="background/Botón de Home" method="_on_mouse_entered"]
-[connection signal="mouse_entered" from="ScrollContainer" to="ScrollContainer" method="_on_mouse_entered"]
-[connection signal="mouse_entered" from="ScrollContainer/VBoxContainer" to="ScrollContainer/VBoxContainer" method="_on_mouse_entered"]
 [connection signal="mouse_entered" from="Label2" to="Label2" method="_on_mouse_entered"]
+[connection signal="mouse_entered" from="Botón de Home" to="Botón de Home" method="_on_mouse_entered"]

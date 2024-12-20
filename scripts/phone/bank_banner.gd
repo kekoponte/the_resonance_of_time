@@ -7,4 +7,4 @@ func _on_button_down() -> void:
 
 
 func _on_mouse_entered() -> void:
-	Input.set_custom_mouse_cursor(Global.mano)
+	Input.set_custom_mouse_cursor(Global.mano,Input.CURSOR_ARROW,Vector2(11,0))

@@ -47,3 +47,6 @@ func _on_dialogic_signal(argument:String):
 
 	elif argument == "track_room":
 		Global.contador_waiting_room = 2
+		Global.listado_de_diario.append("I went to the morgue and my brother Marcos was there")
+		Global.listado_de_things.erase("Go to the morgue")
+		Global.listado_de_things.append("Go to the Police Station")

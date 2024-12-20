@@ -1,5 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://b8hu06gjd2ysq"]
+[gd_scene load_steps=9 format=3 uid="uid://b8hu06gjd2ysq"]
 
+[ext_resource type="Script" path="res://scripts/phone/raton en apps.gd" id="1_35205"]
 [ext_resource type="Texture2D" uid="uid://codigbfy65jvw" path="res://assets/phone/back_03.png" id="1_ntmfd"]
 [ext_resource type="Texture2D" uid="uid://cxy38ml7i6var" path="res://assets/phone/home_button.png" id="2_6q7mh"]
 [ext_resource type="Texture2D" uid="uid://cbyl7p77epic7" path="res://assets/phone/home_button_pressed.png" id="3_ng2cn"]
@@ -16,6 +17,7 @@ anchors_preset = 0
 offset_right = 146.0
 offset_bottom = 289.0
 mouse_filter = 1
+script = ExtResource("1_35205")
 metadata/_edit_use_anchors_ = true
 
 [node name="Fondo" type="Sprite2D" parent="App Notas"]
@@ -33,20 +35,6 @@ offset_bottom = 123.0
 texture_normal = ExtResource("2_6q7mh")
 texture_pressed = ExtResource("3_ng2cn")
 script = ExtResource("4_1s82n")
-metadata/_edit_use_anchors_ = true
-
-[node name="Places" type="RichTextLabel" parent="." groups=["sitios"]]
-offset_left = 8.0
-offset_top = 64.0
-offset_right = 137.0
-offset_bottom = 136.0
-theme = ExtResource("5_6fggb")
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_constants/line_separation = 4
-theme_override_font_sizes/normal_font_size = 6
-bbcode_enabled = true
-text = "testing
-testing"
 metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="."]
@@ -68,7 +56,7 @@ offset_bottom = 67.0
 theme_override_colors/font_color = Color(0.0980392, 0.615686, 0.862745, 1)
 theme_override_fonts/font = ExtResource("5_n8jk4")
 theme_override_font_sizes/font_size = 6
-text = "Places to visit"
+text = "Your list:"
 metadata/_edit_use_anchors_ = true
 
 [node name="Label4" type="Label" parent="."]
@@ -82,25 +70,21 @@ theme_override_font_sizes/font_size = 6
 text = "Your tasks in control"
 metadata/_edit_use_anchors_ = true
 
-[node name="Label3" type="Label" parent="."]
-offset_left = 13.0
-offset_top = 146.0
-offset_right = 93.0
-offset_bottom = 160.0
-theme_override_colors/font_color = Color(0.0980392, 0.615686, 0.862745, 1)
-theme_override_fonts/font = ExtResource("5_n8jk4")
-theme_override_font_sizes/font_size = 6
-text = "Things to do"
-metadata/_edit_use_anchors_ = true
-
 [node name="Things" type="RichTextLabel" parent="." groups=["things"]]
 offset_left = 8.0
-offset_top = 157.0
+offset_top = 63.0
 offset_right = 137.0
-offset_bottom = 242.0
+offset_bottom = 235.0
 theme = ExtResource("5_6fggb")
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_constants/line_separation = 4
 theme_override_font_sizes/normal_font_size = 6
 bbcode_enabled = true
+script = ExtResource("1_35205")
 metadata/_edit_use_anchors_ = true
+
+[connection signal="mouse_entered" from="App Notas" to="App Notas" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="App Notas" to="App Notas" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="App Notas/Fondo/Botón de Home" to="App Notas/Fondo/Botón de Home" method="_on_mouse_entered"]
+[connection signal="mouse_entered" from="Things" to="Things" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Things" to="Things" method="_on_mouse_exited"]

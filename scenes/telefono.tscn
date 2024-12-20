@@ -1,6 +1,7 @@
-[gd_scene load_steps=30 format=3 uid="uid://c07qpqkwkru4i"]
+[gd_scene load_steps=32 format=3 uid="uid://c07qpqkwkru4i"]
 
 [ext_resource type="Texture2D" uid="uid://dvx7johpakm6x" path="res://assets/phone/back_llamadas.png" id="1_ermon"]
+[ext_resource type="Script" path="res://scripts/phone/raton en apps.gd" id="1_f5mck"]
 [ext_resource type="Texture2D" uid="uid://cxy38ml7i6var" path="res://assets/phone/home_button.png" id="2_ucgw3"]
 [ext_resource type="Texture2D" uid="uid://cbyl7p77epic7" path="res://assets/phone/home_button_pressed.png" id="3_qu02o"]
 [ext_resource type="Script" path="res://scripts/botón_de_home_Llamadas.gd" id="4_k2k72"]
@@ -10,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://h56iiecny2p8" path="res://assets/phone/but_15_1_p.png" id="7_sstcl"]
 [ext_resource type="Texture2D" uid="uid://djd4y7wr1puj5" path="res://assets/phone/but_15_2_n.png" id="8_se1s6"]
 [ext_resource type="Texture2D" uid="uid://dlm653s5qetfu" path="res://assets/phone/but_15_2_p.png" id="9_fl241"]
+[ext_resource type="Script" path="res://scripts/phone/raton en botones.gd" id="9_uy30k"]
 [ext_resource type="Texture2D" uid="uid://b127pw1pwit3t" path="res://assets/phone/but_15_3_n.png" id="9_y7vqt"]
 [ext_resource type="Texture2D" uid="uid://dewrmng6fuacf" path="res://assets/phone/but_15_4_n.png" id="10_o7gdj"]
 [ext_resource type="Texture2D" uid="uid://hx4ut5arcpru" path="res://assets/phone/but_15_3_p.png" id="11_ekhv0"]
@@ -38,12 +40,13 @@ anchors_preset = 0
 offset_right = 146.0
 offset_bottom = 289.0
 mouse_filter = 1
+script = ExtResource("1_f5mck")
 
 [node name="Fondo" type="Sprite2D" parent="App Llamada"]
 position = Vector2(74, 147)
 texture = ExtResource("1_ermon")
 
-[node name="Botón de Home" type="TextureButton" parent="."]
+[node name="Botón de Home" type="TextureButton" parent="App Llamada"]
 z_index = 1
 offset_left = 58.0
 offset_top = 246.0
@@ -53,99 +56,110 @@ texture_normal = ExtResource("2_ucgw3")
 texture_pressed = ExtResource("3_qu02o")
 script = ExtResource("4_k2k72")
 
-[node name="Llamadas" parent="." instance=ExtResource("5_wqp48")]
+[node name="Llamadas" parent="App Llamada" instance=ExtResource("5_wqp48")]
 z_index = -1
 position = Vector2(0, -1)
 
-[node name="but1" type="TextureButton" parent="."]
+[node name="but1" type="TextureButton" parent="App Llamada"]
 offset_left = 22.0
 offset_top = 82.0
 offset_right = 51.0
 offset_bottom = 110.0
 texture_normal = ExtResource("7_65n16")
 texture_pressed = ExtResource("7_sstcl")
+script = ExtResource("9_uy30k")
 
-[node name="but2" type="TextureButton" parent="."]
+[node name="but2" type="TextureButton" parent="App Llamada"]
 offset_left = 56.0
 offset_top = 82.0
 offset_right = 85.0
 offset_bottom = 110.0
 texture_normal = ExtResource("8_se1s6")
 texture_pressed = ExtResource("9_fl241")
+script = ExtResource("9_uy30k")
 
-[node name="but3" type="TextureButton" parent="."]
+[node name="but3" type="TextureButton" parent="App Llamada"]
 offset_left = 90.0
 offset_top = 82.0
 offset_right = 119.0
 offset_bottom = 110.0
 texture_normal = ExtResource("9_y7vqt")
 texture_pressed = ExtResource("11_ekhv0")
+script = ExtResource("9_uy30k")
 
-[node name="but4" type="TextureButton" parent="."]
+[node name="but4" type="TextureButton" parent="App Llamada"]
 offset_left = 22.0
 offset_top = 115.0
 offset_right = 51.0
 offset_bottom = 143.0
 texture_normal = ExtResource("10_o7gdj")
 texture_pressed = ExtResource("13_bcmn0")
+script = ExtResource("9_uy30k")
 
-[node name="but5" type="TextureButton" parent="."]
+[node name="but5" type="TextureButton" parent="App Llamada"]
 offset_left = 56.0
 offset_top = 115.0
 offset_right = 85.0
 offset_bottom = 143.0
 texture_normal = ExtResource("11_ikqx2")
 texture_pressed = ExtResource("15_btlfb")
+script = ExtResource("9_uy30k")
 
-[node name="but6" type="TextureButton" parent="."]
+[node name="but6" type="TextureButton" parent="App Llamada"]
 offset_left = 90.0
 offset_top = 115.0
 offset_right = 119.0
 offset_bottom = 143.0
 texture_normal = ExtResource("12_egawr")
 texture_pressed = ExtResource("17_7308i")
+script = ExtResource("9_uy30k")
 
-[node name="but7" type="TextureButton" parent="."]
+[node name="but7" type="TextureButton" parent="App Llamada"]
 offset_left = 22.0
 offset_top = 148.0
 offset_right = 51.0
 offset_bottom = 176.0
 texture_normal = ExtResource("13_8dl50")
 texture_pressed = ExtResource("19_pid86")
+script = ExtResource("9_uy30k")
 
-[node name="but8" type="TextureButton" parent="."]
+[node name="but8" type="TextureButton" parent="App Llamada"]
 offset_left = 56.0
 offset_top = 148.0
 offset_right = 85.0
 offset_bottom = 176.0
 texture_normal = ExtResource("14_4ae0e")
 texture_pressed = ExtResource("21_6e0a2")
+script = ExtResource("9_uy30k")
 
-[node name="but9" type="TextureButton" parent="."]
+[node name="but9" type="TextureButton" parent="App Llamada"]
 offset_left = 90.0
 offset_top = 148.0
 offset_right = 119.0
 offset_bottom = 176.0
 texture_normal = ExtResource("15_gxs75")
 texture_pressed = ExtResource("23_cqjyc")
+script = ExtResource("9_uy30k")
 
-[node name="but0" type="TextureButton" parent="."]
+[node name="but0" type="TextureButton" parent="App Llamada"]
 offset_left = 90.0
 offset_top = 181.0
 offset_right = 119.0
 offset_bottom = 209.0
 texture_normal = ExtResource("16_72fhi")
 texture_pressed = ExtResource("25_cotdd")
+script = ExtResource("9_uy30k")
 
-[node name="butcall" type="TextureButton" parent="."]
+[node name="butcall" type="TextureButton" parent="App Llamada"]
 offset_left = 22.0
 offset_top = 181.0
 offset_right = 68.0
 offset_bottom = 209.0
 texture_normal = ExtResource("26_ek0w1")
 texture_pressed = ExtResource("27_hnaiq")
+script = ExtResource("9_uy30k")
 
-[node name="numeromarcado" type="Label" parent="."]
+[node name="numeromarcado" type="Label" parent="App Llamada"]
 offset_left = 19.0
 offset_top = 41.0
 offset_right = 124.0
@@ -154,14 +168,28 @@ theme_override_fonts/font = ExtResource("6_ot80i")
 theme_override_font_sizes/font_size = 12
 script = ExtResource("27_nnfg7")
 
-[connection signal="button_up" from="but1" to="numeromarcado" method="_on_but_1_button_up"]
-[connection signal="button_up" from="but2" to="numeromarcado" method="_on_but_2_button_up"]
-[connection signal="button_up" from="but3" to="numeromarcado" method="_on_but_3_button_up"]
-[connection signal="button_up" from="but4" to="numeromarcado" method="_on_but_4_button_up"]
-[connection signal="button_up" from="but5" to="numeromarcado" method="_on_but_5_button_up"]
-[connection signal="button_up" from="but6" to="numeromarcado" method="_on_but_6_button_up"]
-[connection signal="button_up" from="but7" to="numeromarcado" method="_on_but_7_button_up"]
-[connection signal="button_up" from="but8" to="numeromarcado" method="_on_but_8_button_up"]
-[connection signal="button_up" from="but9" to="numeromarcado" method="_on_but_9_button_up"]
-[connection signal="button_up" from="but0" to="numeromarcado" method="_on_but_0_button_up"]
-[connection signal="button_up" from="butcall" to="numeromarcado" method="_on_butcall_button_up"]
+[connection signal="mouse_entered" from="App Llamada" to="App Llamada" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="App Llamada" to="App Llamada" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="App Llamada/Botón de Home" to="App Llamada/Botón de Home" method="_on_mouse_entered"]
+[connection signal="button_up" from="App Llamada/but1" to="App Llamada/numeromarcado" method="_on_but_1_button_up"]
+[connection signal="mouse_entered" from="App Llamada/but1" to="App Llamada/but1" method="_on_mouse_entered"]
+[connection signal="button_up" from="App Llamada/but2" to="App Llamada/numeromarcado" method="_on_but_2_button_up"]
+[connection signal="mouse_entered" from="App Llamada/but2" to="App Llamada/but2" method="_on_mouse_entered"]
+[connection signal="button_up" from="App Llamada/but3" to="App Llamada/numeromarcado" method="_on_but_3_button_up"]
+[connection signal="mouse_entered" from="App Llamada/but3" to="App Llamada/but3" method="_on_mouse_entered"]
+[connection signal="button_up" from="App Llamada/but4" to="App Llamada/numeromarcado" method="_on_but_4_button_up"]
+[connection signal="mouse_entered" from="App Llamada/but4" to="App Llamada/but4" method="_on_mouse_entered"]
+[connection signal="button_up" from="App Llamada/but5" to="App Llamada/numeromarcado" method="_on_but_5_button_up"]
+[connection signal="mouse_entered" from="App Llamada/but5" to="App Llamada/but5" method="_on_mouse_entered"]
+[connection signal="button_up" from="App Llamada/but6" to="App Llamada/numeromarcado" method="_on_but_6_button_up"]
+[connection signal="mouse_entered" from="App Llamada/but6" to="App Llamada/but6" method="_on_mouse_entered"]
+[connection signal="button_up" from="App Llamada/but7" to="App Llamada/numeromarcado" method="_on_but_7_button_up"]
+[connection signal="mouse_entered" from="App Llamada/but7" to="App Llamada/but7" method="_on_mouse_entered"]
+[connection signal="button_up" from="App Llamada/but8" to="App Llamada/numeromarcado" method="_on_but_8_button_up"]
+[connection signal="mouse_entered" from="App Llamada/but8" to="App Llamada/but8" method="_on_mouse_entered"]
+[connection signal="button_up" from="App Llamada/but9" to="App Llamada/numeromarcado" method="_on_but_9_button_up"]
+[connection signal="mouse_entered" from="App Llamada/but9" to="App Llamada/but9" method="_on_mouse_entered"]
+[connection signal="button_up" from="App Llamada/but0" to="App Llamada/numeromarcado" method="_on_but_0_button_up"]
+[connection signal="mouse_entered" from="App Llamada/but0" to="App Llamada/but0" method="_on_mouse_entered"]
+[connection signal="button_up" from="App Llamada/butcall" to="App Llamada/numeromarcado" method="_on_butcall_button_up"]
+[connection signal="mouse_entered" from="App Llamada/butcall" to="App Llamada/butcall" method="_on_mouse_entered"]

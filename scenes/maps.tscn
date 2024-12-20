@@ -1,5 +1,6 @@
-[gd_scene load_steps=22 format=3 uid="uid://vjcalqhdaqe4"]
+[gd_scene load_steps=27 format=3 uid="uid://vjcalqhdaqe4"]
 
+[ext_resource type="Script" path="res://scripts/phone/raton en apps.gd" id="1_naua3"]
 [ext_resource type="Script" path="res://scripts/botón_de_home_Mapa.gd" id="3_1jcqm"]
 [ext_resource type="Texture2D" uid="uid://cxy38ml7i6var" path="res://assets/phone/home_button.png" id="3_opgta"]
 [ext_resource type="Texture2D" uid="uid://cbyl7p77epic7" path="res://assets/phone/home_button_pressed.png" id="4_1oxs0"]
@@ -15,6 +16,7 @@
 [ext_resource type="FontFile" uid="uid://cyoe0lu3ghnvg" path="res://assets/fonts/dogicapixelbold.ttf" id="10_2i2uf"]
 [ext_resource type="Texture2D" uid="uid://c48jbmpsr1eun" path="res://assets/interface/car.png" id="11_vpyss"]
 [ext_resource type="AudioStream" uid="uid://bcdmq3jeuqfx7" path="res://assets/sounds/car.mp3" id="12_m25x6"]
+[ext_resource type="Script" path="res://scripts/phone/lugares_guardados.gd" id="13_4yc5i"]
 [ext_resource type="Texture2D" uid="uid://dr5y6ei14t0w2" path="res://assets/interface/search_map_button.png" id="16_r0dwe"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aydis"]
@@ -65,6 +67,24 @@ _data = {
 "transicion": SubResource("Animation_bosjo")
 }
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_834nt"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 4
+border_width_top = 10
+border_color = Color(1, 1, 1, 1)
+shadow_size = 1
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a3jb1"]
+border_width_right = 4
+
+[sub_resource type="Theme" id="Theme_torjn"]
+default_font_size = 6
+RichTextLabel/constants/shadow_offset_x = 1
+RichTextLabel/constants/shadow_offset_y = 1
+RichTextLabel/styles/normal = SubResource("StyleBoxFlat_834nt")
+VScrollBar/styles/scroll = SubResource("StyleBoxFlat_a3jb1")
+
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ssxss"]
 
 [sub_resource type="Theme" id="Theme_sp4rt"]
@@ -79,6 +99,7 @@ anchors_preset = 0
 offset_right = 146.0
 offset_bottom = 290.0
 mouse_filter = 1
+script = ExtResource("1_naua3")
 
 [node name="Fondo" type="Sprite2D" parent="App Mapas"]
 z_index = -1
@@ -169,6 +190,26 @@ color = Color(0, 0, 0, 1)
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Mascara_Mapa/Control2/Mapa/Boton_ir/transicion_entre_escenas"]
 stream = ExtResource("12_m25x6")
 
+[node name="lugares_guardados" type="RichTextLabel" parent="." groups=["sitios"]]
+visible = false
+clip_contents = false
+offset_left = 20.0
+offset_top = 52.0
+offset_right = 123.0
+offset_bottom = 115.0
+theme = SubResource("Theme_torjn")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_constants/line_separation = 6
+theme_override_font_sizes/normal_font_size = 6
+theme_override_font_sizes/bold_font_size = 6
+bbcode_enabled = true
+text = "[b]Recent searches[/b]
+Places
+show
+up here"
+meta_underlined = false
+script = ExtResource("13_4yc5i")
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = 1
 position = Vector2(72, 46)
@@ -201,8 +242,14 @@ offset_right = 105.0
 offset_bottom = 13.0
 texture_normal = ExtResource("16_r0dwe")
 
+[connection signal="mouse_entered" from="App Mapas" to="App Mapas" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="App Mapas" to="App Mapas" method="_on_mouse_exited"]
 [connection signal="input_event" from="Mascara_Mapa/Control2/Mapa/Area2D" to="Mascara_Mapa/Control2/Mapa" method="_on_area_2d_input_event"]
 [connection signal="button_down" from="Mascara_Mapa/Control2/Mapa/Boton_ir" to="Mascara_Mapa/Control2/Mapa/Boton_ir" method="_on_button_down"]
+[connection signal="meta_clicked" from="lugares_guardados" to="Mascara_Mapa/Control2/Mapa" method="_on_lugares_guardados_meta_clicked"]
+[connection signal="meta_clicked" from="lugares_guardados" to="Sprite2D/TextEdit" method="_on_lugares_guardados_meta_clicked"]
+[connection signal="meta_hover_started" from="lugares_guardados" to="lugares_guardados" method="_on_meta_hover_started"]
+[connection signal="focus_entered" from="Sprite2D/TextEdit" to="lugares_guardados" method="_on_text_edit_focus_entered"]
 [connection signal="text_submitted" from="Sprite2D/TextEdit" to="Mascara_Mapa/Control2/Mapa" method="_on_text_submitted"]
 [connection signal="text_submitted" from="Sprite2D/TextEdit" to="Sprite2D/TextEdit" method="_on_text_submitted"]
 [connection signal="button_down" from="Sprite2D/TextEdit/TextureButton" to="Mascara_Mapa/Control2/Mapa" method="_on_texture_button_button_down"]
