@@ -23,15 +23,6 @@ z_index = 1
 position = Vector2(74, 146)
 texture = ExtResource("1_klipx")
 
-[node name="Botón de Home" type="TextureButton" parent="BackBank"]
-offset_left = -16.0
-offset_top = 100.0
-offset_right = 8.0
-offset_bottom = 124.0
-texture_normal = ExtResource("2_dkkol")
-texture_pressed = ExtResource("3_ehqun")
-script = ExtResource("4_xpp1d")
-
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 z_index = 1
 offset_left = 12.0
@@ -141,8 +132,18 @@ offset_right = 137.0
 offset_bottom = 231.0
 script = ExtResource("6_tqqfg")
 
+[node name="Botón de Home" type="TextureButton" parent="."]
+z_index = 2
+offset_left = 58.0
+offset_top = 246.0
+offset_right = 87.0
+offset_bottom = 274.0
+texture_normal = ExtResource("2_dkkol")
+texture_pressed = ExtResource("3_ehqun")
+script = ExtResource("4_xpp1d")
+
 [connection signal="mouse_entered" from="Control" to="Control" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Control" to="Control" method="_on_mouse_exited"]
-[connection signal="mouse_entered" from="BackBank/Botón de Home" to="BackBank/Botón de Home" method="_on_mouse_entered"]
 [connection signal="button_down" from="TextureButton" to="TextureButton" method="_on_button_down"]
 [connection signal="mouse_entered" from="TextureButton" to="TextureButton" method="_on_mouse_entered"]
+[connection signal="mouse_entered" from="Botón de Home" to="Botón de Home" method="_on_mouse_entered"]

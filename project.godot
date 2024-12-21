@@ -171,6 +171,7 @@ listado_contactos=""
 sitios=""
 things=""
 diario=""
+notas=""
 
 [gui]
 

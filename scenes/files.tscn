@@ -1,10 +1,9 @@
-[gd_scene load_steps=13 format=3 uid="uid://b53x8m2h6rlv4"]
+[gd_scene load_steps=12 format=3 uid="uid://b53x8m2h6rlv4"]
 
-[ext_resource type="Texture2D" uid="uid://dhnfwodm0iydk" path="res://assets/phone/back_01.png" id="1_fi5cg"]
+[ext_resource type="Texture2D" uid="uid://vuik681tkgv3" path="res://assets/phone/back_off.png" id="1_yw33p"]
 [ext_resource type="Texture2D" uid="uid://cxy38ml7i6var" path="res://assets/phone/home_button.png" id="2_2y07i"]
 [ext_resource type="Texture2D" uid="uid://cbyl7p77epic7" path="res://assets/phone/home_button_pressed.png" id="3_cua4c"]
-[ext_resource type="Script" path="res://scripts/botón_de_home_notepad.gd" id="4_h32fj"]
-[ext_resource type="FontFile" uid="uid://cebjma2udbg7" path="res://assets/fonts/dogicapixel.ttf" id="6_lr0j1"]
+[ext_resource type="Script" path="res://scripts/phone/botón_de_home_fotos.gd" id="3_hhhxn"]
 
 [sub_resource type="ImageTexture" id="ImageTexture_oyxxv"]
 
@@ -43,17 +42,7 @@ mouse_filter = 1
 [node name="Fondo" type="Sprite2D" parent="App Notas"]
 z_index = -1
 position = Vector2(74, 146)
-texture = ExtResource("1_fi5cg")
-
-[node name="Botón de Home" type="TextureButton" parent="App Notas/Fondo"]
-z_index = 5
-offset_left = -16.0
-offset_top = 99.0
-offset_right = 8.0
-offset_bottom = 123.0
-texture_normal = ExtResource("2_2y07i")
-texture_pressed = ExtResource("3_cua4c")
-script = ExtResource("4_h32fj")
+texture = ExtResource("1_yw33p")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -66,19 +55,23 @@ offset_bottom = 238.0
 [node name="listado_de_fotos" type="ScrollContainer" parent="Control"]
 z_index = 4
 layout_mode = 0
-offset_top = 37.0
+offset_top = -4.0
 offset_right = 133.0
-offset_bottom = 231.0
+offset_bottom = 273.0
 theme = SubResource("Theme_7jc3n")
 
 [node name="listado_de_fotos" type="VBoxContainer" parent="Control/listado_de_fotos" groups=["Filegroup"]]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="."]
-offset_left = 16.0
-offset_top = 34.0
-offset_right = 98.0
-offset_bottom = 57.0
-theme_override_fonts/font = ExtResource("6_lr0j1")
-theme_override_font_sizes/font_size = 8
-text = "Photos"
+[node name="Botón de Home" type="TextureButton" parent="."]
+z_index = 6
+offset_left = 58.0
+offset_top = 245.0
+offset_right = 82.0
+offset_bottom = 269.0
+texture_normal = ExtResource("2_2y07i")
+texture_pressed = ExtResource("3_cua4c")
+script = ExtResource("3_hhhxn")
+
+[connection signal="button_up" from="Botón de Home" to="Botón de Home" method="_on_button_up"]
+[connection signal="mouse_entered" from="Botón de Home" to="Botón de Home" method="_on_mouse_entered"]

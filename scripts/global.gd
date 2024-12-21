@@ -49,9 +49,19 @@ load("res://assets/phone/old_photos/10.png"),
 load("res://assets/phone/old_photos/11.png"),
 load("res://assets/phone/old_photos/12.png"),
 load("res://assets/phone/old_photos/13.png"),
-load("res://assets/phone/old_photos/14.png")]
+load("res://assets/phone/old_photos/14.png"),
+load("res://assets/phone/old_photos/15.png"),
+load("res://assets/phone/old_photos/16.png"),
+load("res://assets/phone/old_photos/17.png"),
+load("res://assets/phone/old_photos/18.png"),
+load("res://assets/phone/old_photos/19.png"),
+load("res://assets/phone/old_photos/20.png"),
+load("res://assets/phone/old_photos/21.png")]
 
-var listado_de_sitios:Array = ["Home", "La Paz Hospital", "Police Station", "Parla", "Traffic Department", "BDF Logistics"]
+
+
+
+var listado_de_sitios:Array = ["Home", "Police Station"]
 var listado_de_things:Array = ["Go to the morgue"]
 var listado_de_diario:Array = ["Liutenant Laura call me this morning, looks like a corpse was found and it might be my brother."]
 var stress:int = 3
@@ -60,6 +70,7 @@ var track_de_escena:int = 1
 # Variables para guardar el estado de las fotos
 var contador_fotos = 0
 var Clara_in_photos = 0
+var matricula_in_photos:int = 0
 
 # Variables por habitaciones
 var Location:String = "" #Variable que guarda la localización actual. Relevante para la cámara
@@ -72,7 +83,6 @@ var contador_parla:int = 1
 var contador_parla_matricula = 1
 var activar_parla:int = 0
 var activar_traffic:bool = false
-var matricula_in_photos:int = 0
 var contador_Parla_office:int = 1
 var contador_traffic_control:int = 1
 var traffic_control_foto_furgoneta:int = 0

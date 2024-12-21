@@ -7,3 +7,7 @@ func _on_meta_hover_started(meta: Variant) -> void:
 
 func _on_text_edit_focus_entered() -> void:
 	self.visible = true
+
+
+func _on_mouse_entered() -> void:
+	Input.set_custom_mouse_cursor(Global.mano,Input.CURSOR_ARROW,Vector2(11,0))

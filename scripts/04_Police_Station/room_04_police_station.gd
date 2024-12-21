@@ -3,6 +3,7 @@ extends Node2D
 func _ready() -> void:
 	Global.Location = "Police Station"
 	$label.play("intro")
+	Global.listado_de_sitios.append("La Paz Hospital")
 	if Global.contador_police_station == 2:
 		$Phone.hide()
 		Dialogic.start("04_Police_Station_01")

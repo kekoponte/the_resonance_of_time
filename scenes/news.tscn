@@ -39,7 +39,12 @@ theme_override_fonts/normal_font = ExtResource("6_cjigb")
 theme_override_font_sizes/normal_font_size = 6
 theme_override_font_sizes/bold_font_size = 7
 bbcode_enabled = true
-text = "[b]Local Business Owner Reports Missing Shipment[/b]
+text = "[b]Traffic Accident Causes Major Delays on Highway A6[/b]
+[img]res://assets/phone/news/2.png[/img]
+A multi-vehicle collision on Highway A6 caused significant traffic delays during rush hour yesterday. No serious injuries were reported, but authorities urge drivers to exercise caution.
+
+---
+[b]Local Business Owner Reports Missing Shipment[/b]
 The owner of Smith's Electronics has reported a missing shipment of high-end gadgets worth over $50,000. The delivery was expected last Tuesday but never arrived. Police are investigating the possibility of theft.
 
 ---
@@ -48,6 +53,7 @@ The City Council has approved a $2 million budget for the renovation of Riversid
 
 ---
 [b]Community Garden Flourishes in Lavapiés[/b]
+[img]res://assets/phone/news/3.png[/img]
 A community garden project in the Lavapiés neighborhood has yielded a bountiful harvest. Residents came together to cultivate organic vegetables, promoting sustainability and community engagement.
 
 ---
@@ -56,11 +62,8 @@ Residents and businesses in the downtown area have experienced intermittent powe
 
 ---
 [b]Charity Gala Raises Funds for Local Hospital[/b]
+[img]res://assets/phone/news/1.png[/img]
 The annual charity gala held at the Grand Hotel successfully raised over $200,000 for the St. Mary's Hospital expansion project. Local celebrities and philanthropists attended the event.
-
----
-[b]Traffic Accident Causes Major Delays on Highway A6[/b]
-A multi-vehicle collision on Highway A6 caused significant traffic delays during rush hour yesterday. No serious injuries were reported, but authorities urge drivers to exercise caution.
 
 ---
 [b]New Art Exhibition Opens at Museo del Prado[/b]
@@ -86,6 +89,7 @@ Jane Doe, a resident of our town, has released her latest novel \"Mystery in the
 [b]Firefighters Contain Blaze at Warehouse[/b]
 A fire broke out at a warehouse on Elm Street late last night. Firefighters managed to contain the blaze before it spread to adjacent buildings. The cause of the fire is under investigation.
 
+---
 [b]Madrid Hosts International Art Fair ARCOmadrid[/b]
 The annual contemporary art fair ARCOmadrid opened at IFEMA, featuring works from over 200 galleries worldwide. Art enthusiasts are flocking to see the latest in modern art until the event closes on Sunday.
 
@@ -98,8 +102,9 @@ The Madrid City Council has approved plans to expand Metro Line 8 to improve con
 After months of restoration, the newly renovated Plaza Mayor was unveiled yesterday. The historic square now boasts improved lighting and restored facades, enhancing its charm for both locals and tourists.
 
 ---
-[b]Real Madrid Signs Rising Star Forward[/b]
-Real Madrid CF announced the signing of 19-year-old striker Alejandro Torres. Fans are excited to see how the young talent will bolster the team's offense in the upcoming season.
+[b]Madrid Signs Rising Star Forward[/b]
+[img]res://assets/phone/news/5.png[/img]
+Madrid CF announced the signing of 19-year-old striker Alejandro Torres. Fans are excited to see how the young talent will bolster the team's offense in the upcoming season.
 
 ---
 [b]New Eco-Park Opens in Madrid Río[/b]
@@ -107,6 +112,7 @@ A new eco-park has opened along the Madrid Río, offering residents a green spac
 
 ---
 [b]Local Chef Wins Tapas Competition[/b]
+[img]res://assets/phone/news/4.png[/img]
 Chef Isabel Martín of \"La Cocina Madrileña\" won first place at the annual Tapas Competition with her innovative squid ink and goat cheese creation, delighting judges and attendees alike.
 
 ---

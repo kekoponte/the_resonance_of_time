@@ -20,3 +20,11 @@ func add_entry_to_diary() -> void:
 	listado[0].text = ""
 	for i in Global.listado_de_diario:
 		listado[0].append_text("[p]" + i + "[/p]")
+
+func save_notes_in_global() -> void:
+	var listado = get_tree().get_nodes_in_group("notas")
+	Global.bloc_de_notas = listado[0].text
+
+func load_notes_in_global() -> void:
+	var listado = get_tree().get_nodes_in_group("notas")
+	listado[0].text = Global.bloc_de_notas
