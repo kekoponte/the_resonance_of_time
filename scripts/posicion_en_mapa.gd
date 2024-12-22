@@ -42,7 +42,7 @@ func _on_texture_button_button_down() -> void:
 	$Boton_ir.show()
 
 
-func _on_lugares_guardados_meta_clicked(meta: Variant) -> void:
+func _on_lugares_guardados_meta_clicked(_meta: Variant) -> void:
 	await get_tree().create_timer(0.1).timeout 
 	position = Global.Direccion
 	$marker.position = Vector2(68,135) - Global.Direccion 

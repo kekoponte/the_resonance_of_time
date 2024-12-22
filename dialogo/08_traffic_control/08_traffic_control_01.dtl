@@ -8,10 +8,12 @@ lucas_traffic: Hi, I'm Lucas. How can I help you?
 lucas_traffic: Wow, I think I'd need a court order to do that
 - I'm working on a murder case
 	[sound path="res://assets/sounds/fail.mp3" volume="0.0"]
+	[signal arg="stress"]
 	lucas_traffic (+1): Then I asume you do have an order
 	set {Traffic_Control.Lucas_Stress} = "1"
 	- I do, I'll send it back as soon as possible
 		[sound path="res://assets/sounds/fail.mp3" volume="0.0"]
+		[signal arg="stress"]
 		lucas_traffic (+2): Hum... You should come back once you have it
 		set {Traffic_Control.Lucas_Stress} = "2"
 		lucas_traffic: You know how this works
@@ -19,10 +21,15 @@ lucas_traffic: Wow, I think I'd need a court order to do that
 			jump second part
 		- You better help me with this, Lucas
 			[sound path="res://assets/sounds/fail.mp3" volume="0.0"]
+			[signal arg="stress"]
 			lucas_traffic (+3): Wow, this is too much. Please leave this room.
+			leave lucas_traffic
+			[signal arg="phone_on"]
 			set {Traffic_Control.Lucas_Stress} = "3"
+			[signal arg="fin_cabreado"]
 	- I didn't have the time yet
 		[sound path="res://assets/sounds/fail.mp3" volume="0.0"]
+		[signal arg="stress"]
 		lucas_traffic (+2): Hum... You should come back once you have it
 		set {Traffic_Control.Lucas_Stress} = "2"
 		lucas_traffic: You know how this works
@@ -30,12 +37,16 @@ lucas_traffic: Wow, I think I'd need a court order to do that
 			jump second part
 		- You better help me with this, Lucas
 			[sound path="res://assets/sounds/fail.mp3" volume="0.0"]
+			[signal arg="stress"]
 			lucas_traffic (+3): Wow, this is too much. Please leave this room.
+			leave lucas_traffic
 			set {Traffic_Control.Lucas_Stress} = "3"
+			[signal arg="phone_on"]
+			[signal arg="fin_cabreado"]
 - I really need your help. My brother died yesterday
 	label second part
 	if {Traffic_Control.Lucas_Stress} == "2":
-		lucas_traffic (+1): Ok, ok, what do you need?
+		lucas_traffic (idle): Ok, ok, what do you need?
 		jump third part
 	else:
 		lucas_traffic: Ou... Sorry to hear that
@@ -45,8 +56,10 @@ lucas_traffic: Wow, I think I'd need a court order to do that
 		- Footage from yesterday and information on a license plate
 		lucas_traffic: That's way too much
 		[sound path="res://assets/sounds/fail.mp3" volume="0.0"]
+		[signal arg="stress"]
 		lucas_traffic (+1): I could lose my job for this
 		[sound path="res://assets/sounds/fail.mp3" volume="0.0"]
+		[signal arg="stress"]
 		lucas_traffic (+2): I could help you with one of those. And that's already too much
 		- I'd like to see the footage
 			jump 08_traffic_control_footage/

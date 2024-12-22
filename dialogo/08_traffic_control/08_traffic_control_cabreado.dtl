@@ -1,0 +1,5 @@
+[background arg="res://assets/interface/back.png" fade="0.0"]
+join lucas_traffic (+3) left
+lucas_traffic: Please leave this room or I'll call the police.
+leave lucas_traffic
+[signal arg="end"]

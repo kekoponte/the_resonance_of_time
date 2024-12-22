@@ -55,6 +55,7 @@ directories/dtl_directory={
 "07_Parla_Office_02": "res://dialogo/07_Parla_Office/07_Parla_Office_02.dtl",
 "08_foto_van": "res://dialogo/08_traffic_control/08_foto_van.dtl",
 "08_traffic_control_01": "res://dialogo/08_traffic_control/08_traffic_control_01.dtl",
+"08_traffic_control_cabreado": "res://dialogo/08_traffic_control/08_traffic_control_cabreado.dtl",
 "08_traffic_control_fin": "res://dialogo/08_traffic_control/08_traffic_control_fin.dtl",
 "08_traffic_control_footage": "res://dialogo/08_traffic_control/08_traffic_control_footage.dtl",
 "08_traffic_control_footage_2": "res://dialogo/08_traffic_control/08_traffic_control_footage_2.dtl",

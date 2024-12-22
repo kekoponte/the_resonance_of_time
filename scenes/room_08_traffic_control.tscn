@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=3 uid="uid://bgka2ss4dc5qh"]
+[gd_scene load_steps=56 format=3 uid="uid://bgka2ss4dc5qh"]
 
 [ext_resource type="Script" path="res://scripts/08_Traffic_Control_room/room_08_traffic.gd" id="1_atne2"]
 [ext_resource type="Texture2D" uid="uid://bsc6in0cg1yx3" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_1.png" id="2_te5cc"]
@@ -168,6 +168,18 @@ tracks/0/keys = {
 "update": 0,
 "values": [Vector2(-169, 311)]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../08TrafficControlTower1:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(320, 180)]
+}
 
 [sub_resource type="Animation" id="Animation_kjfum"]
 resource_name = "intro"
@@ -185,10 +197,27 @@ tracks/0/keys = {
 "values": [Vector2(645, 9), Vector2(445, 9), Vector2(445, 9), Vector2(645, 9)]
 }
 
+[sub_resource type="Animation" id="Animation_vlimf"]
+resource_name = "stress"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../08TrafficControlTower1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0333333, 0.0666667, 0.1, 0.133333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(320, 180), Vector2(323, 183), Vector2(319, 179), Vector2(319, 181), Vector2(320, 180)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_pgeh0"]
 _data = {
 "RESET": SubResource("Animation_1skx1"),
-"intro": SubResource("Animation_kjfum")
+"intro": SubResource("Animation_kjfum"),
+"stress": SubResource("Animation_vlimf")
 }
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mnxwn"]

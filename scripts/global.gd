@@ -61,7 +61,7 @@ load("res://assets/phone/old_photos/21.png")]
 
 
 
-var listado_de_sitios:Array = ["Home", "Police Station"]
+var listado_de_sitios:Array = ["Home","La Paz Hospital"]
 var listado_de_things:Array = ["Go to the morgue"]
 var listado_de_diario:Array = ["Liutenant Laura call me this morning, looks like a corpse was found and it might be my brother."]
 var stress:int = 3
@@ -77,7 +77,7 @@ var Location:String = "" #Variable que guarda la localización actual. Relevante
 var contador_waiting_room:int = 1
 var contador_morgue:int = 1
 var contador_morgue_2:int = 0
-var contador_police_station:int = 1
+var contador_police_station:String = "Primera vez"
 var contador_laura_office:int = 1
 var contador_parla:int = 1
 var contador_parla_matricula = 1
@@ -85,6 +85,7 @@ var activar_parla:int = 0
 var activar_traffic:bool = false
 var contador_Parla_office:int = 1
 var contador_traffic_control:int = 1
+var contador_conversacion_guarda:int = 1
 var traffic_control_foto_furgoneta:int = 0
 
 # Listado de Mensajes
