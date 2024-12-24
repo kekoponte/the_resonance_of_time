@@ -1,12 +1,7 @@
 extends TextureButton
 
-
 func _on_button_down() -> void:
-	if Global.contador_waiting_room == 1:
-		Global.contador_morgue_2 = "Primera vez"
-		SceneSwitcher.switch_scene("res://scenes/room_03_hospital_morgue.tscn")
-	if Global.contador_waiting_room == 2:
-		Dialogic.start("02_Wait_Room_03")
+	get_parent().get_parent().hide()
 
 func _on_mouse_entered() -> void:
 	Input.set_custom_mouse_cursor(Global.door)

@@ -2,14 +2,14 @@ extends Node2D
 
 func _ready() -> void:
 	Global.Location = "Morgue"
-	if Global.contador_morgue == 1:
+	if Global.contador_morgue == "Primera vez":
 		$fondo.play("fondo_morgue")
 		Dialogic.start("morgue")
 		$Phone.set_process(false)
 		$Phone.hide()
 		Dialogic.signal_event.connect(_on_dialogic_signal)
-		Global.contador_morgue = 2
-	elif Global.contador_morgue == 2:
+		Global.contador_morgue = "Normal"
+	elif Global.contador_morgue == "Normal":
 		Dialogic.signal_event.connect(_on_dialogic_signal)
 		$fade_in/ColorRect.hide()
 		
@@ -50,3 +50,5 @@ func _on_dialogic_signal(argument:String):
 		Global.listado_de_diario.append("I went to the morgue and my brother Marcos was there")
 		Global.listado_de_things.erase("Go to the morgue")
 		Global.listado_de_things.append("Go to the Police Station")
+		Global.contador_hospital = "Despues de identificar a Marcos"
+		Global.contador_morgue_2 = "Despues de identificar a Marcos"

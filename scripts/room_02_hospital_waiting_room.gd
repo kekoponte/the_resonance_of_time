@@ -3,31 +3,32 @@ extends Node2D
 func _ready() -> void:
 	Global.Location = "La Paz Hospital"
 
-	if Global.track_de_escena == 1:
+	if Global.contador_hospital == "Primera vez":
 		$label.play("intro")
 		Dialogic.start("02_Wait_Room_01")
 		$Phone.set_process(false)
 		$Phone.hide()
 		Dialogic.signal_event.connect(_on_dialogic_signal)
-		Global.track_de_escena = 2
+		Global.contador_hospital = "Normal"
 	
-	elif Global.track_de_escena == 2:
+	elif Global.contador_hospital == "Despues de identificar a Marcos":
 		$label.play("intro")
 		Dialogic.start("02_Wait_Room_02")
 		Dialogic.signal_event.connect(_on_dialogic_signal)
 		$Phone.set_process(false)
 		$Phone.hide()
-		Global.track_de_escena = 3
+		Global.contador_hospital = "Normal"
 
-	elif Global.track_de_escena == 3:
+	elif Global.contador_hospital == "Normal":
 		$label.play("intro")
 
-	
+	elif Global.contador_hospital == "Volver al hospital":
+		$label.play("intro")
+		$Entrada.show()
+
+
 func _on_dialogic_signal(argument:String):
 	if argument == "phone":
 		$Phone.show()
 		$Phone.set_process(true)
 		$morgue.show()
-
-	if argument == "police_station":
-		Global.bloc_de_notas += "Go to the Police Station for interrogation"

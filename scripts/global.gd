@@ -7,11 +7,13 @@ var Contactos = {
 	"Ángela Lopez" : 0,
 	"Antonio Ramiro" : 0,
 	"Bea Rodríguez": 0,
+	"Carmen Vieito" : 0,
 	"Colin Baskins" : 0,
 	"David García" : 0,
 	"Dennis Bridge" : 0,
 	"Isabel Peña" : 0,
 	"Marcos de la Fuente" :0,
+	"Marta Mendez" : 0,
 	"Patricia Mata" : 0,
 	"Ramón Olivares" : 0,
 	"Roi Villamarín" :0,
@@ -65,7 +67,6 @@ var listado_de_sitios:Array = ["Home","La Paz Hospital"]
 var listado_de_things:Array = ["Go to the morgue"]
 var listado_de_diario:Array = ["Liutenant Laura call me this morning, looks like a corpse was found and it might be my brother."]
 var stress:int = 3
-var track_de_escena:int = 1
 
 # Variables para guardar el estado de las fotos
 var contador_fotos = 0
@@ -74,9 +75,10 @@ var matricula_in_photos:int = 0
 
 # Variables por habitaciones
 var Location:String = "" #Variable que guarda la localización actual. Relevante para la cámara
+var contador_hospital:String = "Primera vez"
 var contador_waiting_room:int = 1
-var contador_morgue:int = 1
-var contador_morgue_2:int = 0
+var contador_morgue:String = "Primera vez"
+var contador_morgue_2:String = "Primera vez"
 var contador_police_station:String = "Primera vez"
 var contador_laura_office:int = 1
 var contador_parla:int = 1

@@ -18,7 +18,13 @@ func _button_pressed(i):
 	if Global.Contactos["Abraham Vieito"] == 1:
 		Global.Contactos["Abraham Vieito"] -= 1
 		Dialogic.start("comunicando")
-		Global.Nombre_en_llamada = "Adrián Rodríguez"
+		Global.Nombre_en_llamada = "Abraham Vieito"
+
+	if Global.Contactos["Carmen Vieito"] == 1:
+		Global.Contactos["Carmen Vieito"] -= 1
+		Dialogic.start("comunicando")
+		Global.Nombre_en_llamada = "Carmen Vieito"
+		
 	if Global.Contactos["Adrián Rodríguez"] == 1:
 		Global.Contactos["Adrián Rodríguez"] -= 1
 		Dialogic.start("comunicando")
@@ -78,6 +84,11 @@ func _button_pressed(i):
 		Global.Contactos["Adrián Rodríguez"] -= 1
 		Dialogic.start("comunicando")
 		Global.Nombre_en_llamada = "Adrián Rodríguez"
+	
+	if Global.Contactos["Marta Mendez"] == 1:
+		Global.Contactos["Marta Mendez"] -= 1
+		Dialogic.start("comunicando")
+		Global.Nombre_en_llamada = "Marta Mendez"
 	
 	if Global.Contactos["Marcos de la Fuente"] == 1:
 		Global.Contactos["Marcos de la Fuente"] -= 1

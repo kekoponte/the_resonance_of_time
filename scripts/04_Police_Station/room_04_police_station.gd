@@ -21,6 +21,7 @@ func _ready() -> void:
 		Global.listado_de_things.append("Visit Parla's junkyard")
 		Global.listado_de_things.append("Talk with Michele")
 		Global.listado_de_things.erase("Go to the Police Station")
+		#Global.Global.contador_hospital = "Volver al hospital"
 	
 	if Global.contador_police_station == "Normal sin entrar al despacho":
 		$label.play("intro")

@@ -203,7 +203,7 @@ theme_override_constants/line_separation = 6
 theme_override_font_sizes/normal_font_size = 6
 theme_override_font_sizes/bold_font_size = 6
 bbcode_enabled = true
-text = "[b]Recent searches[/b]
+text = "[b]Visited places[/b]
 Places
 show
 up here"

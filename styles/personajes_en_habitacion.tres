@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://c1k5m0w3r40xf" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn" id="2_uboog"]
 [ext_resource type="PackedScene" uid="uid://cy1y14inwkplb" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/vn_portrait_layer.tscn" id="3_l3jp8"]
 [ext_resource type="PackedScene" uid="uid://cn674foxwedqu" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn" id="4_c5ao1"]
-[ext_resource type="PackedScene" uid="uid://cs2rbee6i6lod" path="res://styles/VisualNovelTextbox/custom_visual_novel_textbox.tscn" id="5_8blfe"]
+[ext_resource type="PackedScene" uid="uid://wvpfbj7hnwk1" path="res://styles/VisualNovelTextbox/custom_visual_novel_textbox.tscn" id="5_8blfe"]
 [ext_resource type="PackedScene" uid="uid://dsbwnp5hegnu3" path="res://dialogo/PopupGlossary/custom_glossary_popup_layer.tscn" id="6_axp5n"]
 [ext_resource type="PackedScene" uid="uid://dhk6j6eb6e3q" path="res://dialogo/CenteredChoices/custom_vn_choice_layer.tscn" id="7_ear64"]
 [ext_resource type="PackedScene" uid="uid://c6bhldcn3x3q4" path="res://styles/VisualNovelTextbox/SimpleTextInputBox/custom_simple_text_input_box.tscn" id="9_85sx2"]
