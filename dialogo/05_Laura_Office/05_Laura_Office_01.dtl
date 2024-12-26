@@ -46,9 +46,9 @@ label Primeras_Preguntas
 	Esther: Laura, please. We know each other.
 	leave Esther
 	join laura left
-	laura: A man named Miguel@ Hidalgo made the call. He is a scrap dealer. that works in the junk yard in [color=#1eaf18]Parla[/color].
+	laura: A man named Miguel Hidalgo made the call. He is a scrap dealer. that works in the junk yard in [color=#1eaf18]Parla[/color].
 laura (Idle): Javier will give you a call soon. Why don't you go [color=#1eaf18]Home[/color] and rest for a while?
-laura (sad): And please, Esther, don't go to [color=#1eaf18]La Paz Hospital[/color]. Let Michelle do his work.
+laura (sad): And please, Esther, don't go to [color=#1eaf18]La Paz Hospital[/color]. Let the forensic expert do his work.
 leave laura
 join Esther left
 Esther: I'm afraid I need to do my own research here, Laura.
@@ -58,7 +58,7 @@ laura: If you hinder our investigation, I will have to arrest you, Esther
 - Laura, we're talking about my brother here
 - I need to know what happened
 laura: Listen, there's no signs of foul play here. If you want to ask some questions, I can't stop you
-laura: But please, be careful
+laura: But please, be careful. I'm sending you the autopsy report to your Files app.
 laura (sad): You have until  [color=#990000]Wednesday at 9\:00 am [/color]. If you interrupt our work after Wednesday, I promise you that I'll arrest you
 laura (Idle): You are my friend, Esther. But I'm doing this for your safety.
 laura: [color=#990000][b]Wednesday at 9[/b][/color]. And please, call me with any findings.

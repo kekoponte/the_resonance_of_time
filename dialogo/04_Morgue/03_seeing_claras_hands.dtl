@@ -1,5 +1,6 @@
 [style name="personajes_en_habitacion"]
 [background arg="res://assets/locations/03_Morgue/hand.png" fade="0.0"]
+join Esther right
 if {clara_hand} == "first_time":
 	Esther: There's something weird in his hands
 	Esther: Looks like small remnants of skin under his nails.
@@ -7,6 +8,7 @@ if {clara_hand} == "first_time":
 	set {clara_hand} = "after_first_time"
 	[signal arg="phone"]
 	set {Morgue} += 1
+	[clear time="0.0" step="false"]
 elif {clara_hand} == "after_first_time":
 	Esther: There are small remnants of skin under his nails.
 	[background arg="res://assets/interface/back.png" fade="0.0"]
@@ -16,3 +18,4 @@ if {Morgue} == 2:
 	[signal arg="phone_off"]
 	set {Morgue} = 3
 	jump Michel_01/
+[clear time="0.0" step="false"]

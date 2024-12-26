@@ -1,0 +1,434 @@
+[gd_scene load_steps=24 format=3 uid="uid://dhbfxgra5qbwk"]
+
+[ext_resource type="Script" path="res://scripts/phone/raton en apps.gd" id="1_bfh6m"]
+[ext_resource type="Script" path="res://scripts/phone/autopsia.gd" id="1_o0f1h"]
+[ext_resource type="Texture2D" uid="uid://dh705kwr2wuqn" path="res://assets/phone/back_apps.png" id="2_um0ql"]
+[ext_resource type="Texture2D" uid="uid://cxy38ml7i6var" path="res://assets/phone/home_button.png" id="3_ddx3l"]
+[ext_resource type="Texture2D" uid="uid://cbyl7p77epic7" path="res://assets/phone/home_button_pressed.png" id="4_id01q"]
+[ext_resource type="Texture2D" uid="uid://eyit1p82l8w" path="res://assets/phone/back_button.png" id="4_np0qe"]
+[ext_resource type="Texture2D" uid="uid://vm536mn1i2xk" path="res://assets/phone/files/autopst.png" id="5_2txiq"]
+[ext_resource type="Texture2D" uid="uid://bwbsxddk3ydsk" path="res://assets/phone/back_button_pressed.png" id="5_xi28p"]
+[ext_resource type="Script" path="res://scripts/phone/listado_de_files.gd" id="6_bihso"]
+[ext_resource type="Script" path="res://scripts/phone/botón_de_home_files.gd" id="9_u2uxa"]
+[ext_resource type="Script" path="res://scripts/phone/button_autopsy.gd" id="10_e85jx"]
+[ext_resource type="FontFile" uid="uid://cyoe0lu3ghnvg" path="res://assets/fonts/dogicapixelbold.ttf" id="13_2lrg8"]
+[ext_resource type="Texture2D" uid="uid://733nmq7g8to" path="res://assets/phone/files/about.png" id="13_6a5b2"]
+[ext_resource type="Texture2D" uid="uid://bnjmh5pobo5mm" path="res://assets/phone/files/close.png" id="14_hxxc0"]
+[ext_resource type="FontFile" uid="uid://b2rl6owflbu8i" path="res://assets/fonts/runescape_uf.ttf" id="14_wojs4"]
+[ext_resource type="Texture2D" uid="uid://b0v0ecdecufjy" path="res://assets/phone/files/close_hover.png" id="15_5rr71"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_oyxxv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ty6b4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3gcg5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ndwwe"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_07mf1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_21d08"]
+
+[sub_resource type="Theme" id="Theme_mwl8e"]
+VScrollBar/icons/decrement = SubResource("ImageTexture_oyxxv")
+VScrollBar/icons/decrement_highlight = SubResource("ImageTexture_oyxxv")
+VScrollBar/icons/decrement_pressed = SubResource("ImageTexture_oyxxv")
+VScrollBar/icons/increment = SubResource("ImageTexture_oyxxv")
+VScrollBar/icons/increment_highlight = SubResource("ImageTexture_oyxxv")
+VScrollBar/icons/increment_pressed = SubResource("ImageTexture_oyxxv")
+VScrollBar/styles/grabber = SubResource("StyleBoxEmpty_ty6b4")
+VScrollBar/styles/grabber_highlight = SubResource("StyleBoxEmpty_3gcg5")
+VScrollBar/styles/grabber_pressed = SubResource("StyleBoxEmpty_ndwwe")
+VScrollBar/styles/scroll = SubResource("StyleBoxEmpty_07mf1")
+VScrollBar/styles/scroll_focus = SubResource("StyleBoxEmpty_21d08")
+
+[node name="Files" type="Node2D"]
+
+[node name="App Notas" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 146.0
+offset_bottom = 289.0
+mouse_filter = 1
+script = ExtResource("1_bfh6m")
+metadata/_edit_use_anchors_ = true
+
+[node name="Fondo" type="Sprite2D" parent="App Notas"]
+z_index = -1
+position = Vector2(74, 147)
+texture = ExtResource("2_um0ql")
+
+[node name="TextureButton" type="TextureButton" parent="App Notas/Fondo"]
+offset_left = 44.0
+offset_top = -110.0
+offset_right = 60.0
+offset_bottom = -96.0
+texture_normal = ExtResource("14_hxxc0")
+texture_pressed = ExtResource("15_5rr71")
+texture_hover = ExtResource("14_hxxc0")
+script = ExtResource("9_u2uxa")
+
+[node name="Botón de Home" type="TextureButton" parent="App Notas/Fondo"]
+z_index = 5
+z_as_relative = false
+offset_left = -16.0
+offset_top = 99.0
+offset_right = 8.0
+offset_bottom = 123.0
+texture_normal = ExtResource("3_ddx3l")
+texture_pressed = ExtResource("4_id01q")
+script = ExtResource("9_u2uxa")
+metadata/_edit_use_anchors_ = true
+
+[node name="listado_de_files" type="RichTextLabel" parent="App Notas" groups=["files_list"]]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 81.0
+offset_right = 133.0
+offset_bottom = 243.0
+theme_override_colors/table_even_row_bg = Color(0.802616, 0.802616, 0.802616, 1)
+theme_override_colors/table_odd_row_bg = Color(0.68101, 0.68101, 0.68101, 1)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 6
+bbcode_enabled = true
+text = "List of files 
+[url]testing style[/url]
+"
+script = ExtResource("6_bihso")
+
+[node name="Autopsia" type="Control" parent="App Notas"]
+visible = false
+z_index = 1
+layout_mode = 3
+anchors_preset = 0
+offset_left = 7.0
+offset_top = 10.0
+offset_right = 142.0
+offset_bottom = 285.0
+script = ExtResource("1_o0f1h")
+
+[node name="Area de autopsia" type="ScrollContainer" parent="App Notas/Autopsia"]
+layout_mode = 0
+offset_left = -1.0
+offset_top = -3.0
+offset_right = 134.0
+offset_bottom = 274.0
+theme = SubResource("Theme_mwl8e")
+horizontal_scroll_mode = 0
+
+[node name="listado_de_fotos" type="VBoxContainer" parent="App Notas/Autopsia/Area de autopsia"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="App Notas/Autopsia/Area de autopsia/listado_de_fotos"]
+layout_mode = 2
+texture = ExtResource("5_2txiq")
+
+[node name="Label" type="Label" parent="App Notas/Autopsia/Area de autopsia/listado_de_fotos/TextureRect"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 74.0
+offset_right = 53.0
+offset_bottom = 80.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("13_2lrg8")
+theme_override_font_sizes/font_size = 6
+text = "John Doe"
+
+[node name="Label2" type="Label" parent="App Notas/Autopsia/Area de autopsia/listado_de_fotos/TextureRect"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 84.0
+offset_right = 82.0
+offset_bottom = 90.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 6
+text = "Autopsy Report"
+
+[node name="Label3" type="Label" parent="App Notas/Autopsia/Area de autopsia/listado_de_fotos/TextureRect"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 179.0
+offset_right = 82.0
+offset_bottom = 197.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 4
+text = "Jan 16
+La Paz Hospital
+Madrid, 2024"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="App Notas/Autopsia/Area de autopsia/listado_de_fotos/TextureRect"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 214.0
+offset_right = 128.0
+offset_bottom = 1310.0
+mouse_filter = 1
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_constants/line_separation = 3
+theme_override_font_sizes/normal_font_size = 5
+theme_override_font_sizes/bold_font_size = 5
+bbcode_enabled = true
+text = "DECEDENT: 
+[b]John Doe[/b]
+
+AGE: 40 years
+SEX: Male
+DATE OF BIRTH: Unknown
+DATE OF DEATH: Jan 15, 2024
+DATE OF AUTOPSY: Jan 15, 2024
+PATHOLOGIST: Michele Aretusi
+CASE NUMBER: 18734GH
+
+[b]EXTERNAL EXAMINATION:[/b]
+The body is that of a well-developed, well-nourished Caucasian male, measuring 180 cm in length and weighing 80 kg. The head is bald, and the body is unremarkable with no distinguishing scars, tattoos, or markings. Postmortem changes are consistent with the reported time of death.
+
+
+[b]INTERNAL EXAMINATION:[/b]
+Cardiovascular System: The heart weighs 350 grams and exhibits no significant abnormalities. Coronary arteries are patent, and there is no evidence of atherosclerosis.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[b]Respiratory System:[/b] The lungs are congested and edematous, with a combined weight of 1,200 grams. No focal lesions are identified.
+[b]Gastrointestinal System:[/b] The stomach contains approximately 200 mL of partially digested food and pill fragments. The mucosa is unremarkable.
+[b]Hepatobiliary System:[/b] The liver weighs 1,500 grams and appears normal in size and consistency.
+[b]Genitourinary System:[/b] The kidneys are unremarkable, each weighing 150 grams.
+[/b]Central Nervous System:[/b] The brain weighs 1,350 grams and shows no gross abnormalities.
+
+
+[b]TOXICOLOGY:[/b]
+Comprehensive toxicological analysis reveals the presence of multiple substances:
+Opioids: Fentanyl (15 ng/mL), Heroin metabolites (6-Monoacetylmorphine: 0.5 ng/mL)
+Benzodiazepines: Diazepam (200 ng/mL), Alprazolam (150 ng/mL)
+Stimulants: Cocaine (500 ng/mL), Methamphetamine (300 ng/mL)
+Alcohol: Ethanol (0.12 g/dL)
+The concentrations of these substances are significantly elevated, with several exceeding known lethal thresholds.
+
+
+
+[b]CAUSE OF DEATH:[/b]
+Acute multi-drug toxicity.
+
+[b]MANNER OF DEATH:[/b]
+Given the excessive quantities of various drugs present in the decedent's system, the manner of death is best classified as suicide.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[b]COMMENTS:[/b]
+The decedent's history and the toxicological findings suggest intentional self-administration of multiple substances in amounts sufficient to cause death. The combination of central nervous system depressants (opioids, benzodiazepines, alcohol) with stimulants (cocaine, methamphetamine) likely led to respiratory depression and cardiac arrest."
+scroll_active = false
+
+[node name="TextureButton" type="TextureButton" parent="App Notas/Autopsia/Area de autopsia/listado_de_fotos/TextureRect"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 470.0
+offset_right = 126.0
+offset_bottom = 557.0
+script = ExtResource("10_e85jx")
+
+[node name="Control2" type="Control" parent="App Notas/Autopsia"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="back_button" type="TextureButton" parent="App Notas/Autopsia/Control2"]
+z_index = 5
+layout_mode = 2
+offset_left = 51.0
+offset_top = 236.0
+offset_right = 80.0
+offset_bottom = 264.0
+texture_normal = ExtResource("4_np0qe")
+texture_pressed = ExtResource("5_xi28p")
+
+[node name="About" type="Control" parent="App Notas"]
+visible = false
+z_index = 1
+layout_mode = 3
+anchors_preset = 0
+offset_left = 7.0
+offset_top = 10.0
+offset_right = 142.0
+offset_bottom = 285.0
+script = ExtResource("1_o0f1h")
+
+[node name="Area de autopsia" type="ScrollContainer" parent="App Notas/About"]
+layout_mode = 0
+offset_left = -1.0
+offset_top = -3.0
+offset_right = 134.0
+offset_bottom = 274.0
+theme = SubResource("Theme_mwl8e")
+horizontal_scroll_mode = 0
+
+[node name="listado_de_fotos" type="VBoxContainer" parent="App Notas/About/Area de autopsia"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="App Notas/About/Area de autopsia/listado_de_fotos"]
+layout_mode = 2
+texture = ExtResource("13_6a5b2")
+
+[node name="Label" type="Label" parent="App Notas/About/Area de autopsia/listado_de_fotos/TextureRect"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 177.0
+offset_right = 53.0
+offset_bottom = 183.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("13_2lrg8")
+theme_override_font_sizes/font_size = 6
+text = "About"
+
+[node name="Label2" type="Label" parent="App Notas/About/Area de autopsia/listado_de_fotos/TextureRect"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 187.0
+offset_right = 117.0
+offset_bottom = 193.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 6
+text = "and Credits"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="App Notas/About/Area de autopsia/listado_de_fotos/TextureRect"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 214.0
+offset_right = 128.0
+offset_bottom = 1310.0
+mouse_filter = 1
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_constants/line_separation = 3
+theme_override_font_sizes/italics_font_size = 5
+theme_override_font_sizes/normal_font_size = 5
+theme_override_font_sizes/bold_font_size = 5
+bbcode_enabled = true
+text = "[b]Credits[/b]
+Hi there! I'm Keko and I made this game pretty much alone.
+The main theme of the game is an interpretation and production of Handel's Pasacaglia that I made myself.
+The game also features songs by me and reinterpretantions of various Handel pieces.
+The art is both a mixture of various AI models and myself
+
+[b]Copyright Notice:[/b]
+Hey there, intrepid gamer! Just a friendly reminder that [i]The Resonance of Time[/i] is a precious brainchild of Keko Ponte.
+
+
+
+
+[b]What You Can’t Do:[/b]
+Please Don’t pirate it. I've worked hard on this game, and your mom would be disappointed. I would give a copy for free to anybody who can't afford the couple of bucks it costs
+Don’t try to crack open the code. Trust me, there's nothing valuable in there, just long nights of debugging and tears.
+
+[b]What You Can Do:[/b]
+Enjoy the game! Play it. Tell your friends to buy it. Stream it, but please don’t be that person who spoils the ending in the thumbnail.
+
+
+
+
+[b]Final Note:[/b]
+I've made this game with love, sweat, and a slightly alarming amount of coffee. Protecting it helps me keep making stuff for you to enjoy. Please be cool.
+
+If you’ve got questions, licensing ideas, or just want to send me hate mail, hit me up at: keko@kekoponte.com"
+scroll_active = false
+
+[node name="Control2" type="Control" parent="App Notas/About"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="back_button" type="TextureButton" parent="App Notas/About/Control2"]
+z_index = 5
+layout_mode = 2
+offset_left = 51.0
+offset_top = 236.0
+offset_right = 80.0
+offset_bottom = 264.0
+texture_normal = ExtResource("4_np0qe")
+texture_pressed = ExtResource("5_xi28p")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 13.0
+offset_top = 54.0
+offset_right = 93.0
+offset_bottom = 64.0
+theme_override_colors/font_color = Color(0.878431, 0.823529, 0.705882, 1)
+theme_override_fonts/font = ExtResource("14_wojs4")
+theme_override_font_sizes/font_size = 9
+text = "Disk:"
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 35.0
+offset_top = 54.0
+offset_right = 115.0
+offset_bottom = 64.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("14_wojs4")
+theme_override_font_sizes/font_size = 9
+text = "2GB / 16GB Free"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 13.0
+offset_top = 63.0
+offset_right = 93.0
+offset_bottom = 73.0
+theme_override_colors/font_color = Color(0.878431, 0.823529, 0.705882, 1)
+theme_override_fonts/font = ExtResource("14_wojs4")
+theme_override_font_sizes/font_size = 9
+text = "PATH:"
+
+[node name="Label5" type="Label" parent="."]
+offset_left = 13.0
+offset_top = 40.0
+offset_right = 93.0
+offset_bottom = 47.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("13_2lrg8")
+theme_override_font_sizes/font_size = 8
+text = "FILES"
+
+[node name="Label4" type="Label" parent="."]
+offset_left = 35.0
+offset_top = 63.0
+offset_right = 115.0
+offset_bottom = 73.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("14_wojs4")
+theme_override_font_sizes/font_size = 9
+text = "USR/ESTHER/DOCS"
+
+[connection signal="mouse_entered" from="App Notas" to="App Notas" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="App Notas" to="App Notas" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="App Notas/Fondo/TextureButton" to="App Notas/Fondo/TextureButton" method="_on_mouse_entered"]
+[connection signal="pressed" from="App Notas/Fondo/TextureButton" to="App Notas/Fondo/TextureButton" method="_on_pressed"]
+[connection signal="mouse_entered" from="App Notas/Fondo/Botón de Home" to="App Notas/Fondo/Botón de Home" method="_on_mouse_entered"]
+[connection signal="meta_clicked" from="App Notas/listado_de_files" to="App Notas" method="_on_listado_de_files_meta_clicked"]
+[connection signal="meta_clicked" from="App Notas/listado_de_files" to="App Notas/listado_de_files" method="_on_meta_clicked"]
+[connection signal="meta_hover_started" from="App Notas/listado_de_files" to="App Notas/listado_de_files" method="_on_meta_hover_started"]
+[connection signal="mouse_entered" from="App Notas/listado_de_files" to="App Notas/listado_de_files" method="_on_mouse_entered"]
+[connection signal="mouse_entered" from="App Notas/Autopsia/Area de autopsia/listado_de_fotos/TextureRect/TextureButton" to="App Notas/Autopsia/Area de autopsia/listado_de_fotos/TextureRect/TextureButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="App Notas/Autopsia/Area de autopsia/listado_de_fotos/TextureRect/TextureButton" to="App Notas/Autopsia/Area de autopsia/listado_de_fotos/TextureRect/TextureButton" method="_on_mouse_exited"]
+[connection signal="button_up" from="App Notas/Autopsia/Control2/back_button" to="App Notas/listado_de_files" method="_on_back_button_button_up"]
+[connection signal="button_up" from="App Notas/Autopsia/Control2/back_button" to="App Notas/Autopsia" method="_on_back_button_button_up"]
+[connection signal="button_up" from="App Notas/About/Control2/back_button" to="App Notas/listado_de_files" method="_on_back_button_button_up"]
+[connection signal="button_up" from="App Notas/About/Control2/back_button" to="App Notas/About" method="_on_back_button_button_up"]

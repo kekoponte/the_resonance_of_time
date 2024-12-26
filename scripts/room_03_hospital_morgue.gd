@@ -1,7 +1,7 @@
 extends Node2D
 
 func _ready() -> void:
-	Global.Location = "Morgue"
+	Global.Location = "La Paz Hospital"
 	if Global.contador_morgue == "Primera vez":
 		$fondo.play("fondo_morgue")
 		Dialogic.start("morgue")

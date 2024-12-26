@@ -6,6 +6,8 @@ func _on_button_down() -> void:
 		Dialogic.start("05_Laura_Office_01")
 		Dialogic.signal_event.connect(_on_dialogic_signal)
 		Global.activar_parla = 1
+		Global.listado_de_files.append("Autopsy Report")
+		Global.notificacion_files = 1
 
 	elif Global.contador_laura_office == 2:
 		self.hide()

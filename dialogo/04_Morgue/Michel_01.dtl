@@ -19,7 +19,7 @@ Michel: You shouldn't be here. This is an autopsy room.
 	jump victim
 Michel: If lieutenant Laura told you to meet her at the Police Station, I think you should do exactly that.
 Michel: I'm sure she wants to know every piece of information you might have.
-Michel: My name is Michel by the way.
+Michel: My name is Michele by the way.
 [background arg="res://assets/interface/back.png" fade="0.0"]
 leave Michel [animation="Fade Out" wait="true"]
 [signal arg="track_room"]

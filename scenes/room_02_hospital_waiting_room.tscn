@@ -127,6 +127,7 @@ script = ExtResource("9_slj7b")
 
 [node name="Label" type="Label" parent="Entrada/09HospitalEntrance/TextureButton"]
 visible = false
+layout_mode = 0
 offset_left = 79.0
 offset_top = 14.0
 offset_right = 121.0

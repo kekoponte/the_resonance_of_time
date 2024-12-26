@@ -28,3 +28,9 @@ func save_notes_in_global() -> void:
 func load_notes_in_global() -> void:
 	var listado = get_tree().get_nodes_in_group("notas")
 	listado[0].text = Global.bloc_de_notas
+
+func add_files_to_list() -> void:
+	var listado = get_tree().get_nodes_in_group("files_list")
+	listado[0].text = ""
+	for i in Global.listado_de_files:
+		listado[0].append_text("[p][img]res://assets/phone/folder.png[/img][url=" + i + "]" + i + "[/url][/p]")

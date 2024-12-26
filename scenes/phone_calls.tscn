@@ -1,6 +1,6 @@
 [gd_scene load_steps=14 format=3 uid="uid://bsfy47goajeds"]
 
-[ext_resource type="Script" path="res://scripts/botón_de_home_Llamadas.gd" id="5_xv1ho"]
+[ext_resource type="Script" path="res://scripts/phone/botón_de_home_Contactos.gd" id="6_702te"]
 [ext_resource type="Theme" uid="uid://ctd2o4vigmhrn" path="res://styles/nombres_llamada_hover.tres" id="6_by500"]
 [ext_resource type="Script" path="res://scripts/lista de contactos.gd" id="6_hov1i"]
 [ext_resource type="FontFile" uid="uid://cyoe0lu3ghnvg" path="res://assets/fonts/dogicapixelbold.ttf" id="8_86fdn"]
@@ -62,7 +62,7 @@ offset_right = 82.0
 offset_bottom = 270.0
 texture_normal = ExtResource("18_bsvk2")
 texture_pressed = ExtResource("19_2ih00")
-script = ExtResource("5_xv1ho")
+script = ExtResource("6_702te")
 
 [node name="Llamadas" parent="." instance=ExtResource("8_j87ud")]
 z_index = -1
@@ -75,5 +75,8 @@ offset_right = 161.0
 offset_bottom = 43.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("8_86fdn")
-theme_override_font_sizes/font_size = 8
+theme_override_font_sizes/font_size = 6
 text = "Contact List"
+
+[connection signal="mouse_entered" from="Botón de Home" to="Botón de Home" method="_on_mouse_entered"]
+[connection signal="pressed" from="Botón de Home" to="Botón de Home" method="_on_pressed"]

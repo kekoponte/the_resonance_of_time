@@ -59,8 +59,8 @@ load("res://assets/phone/old_photos/18.png"),
 load("res://assets/phone/old_photos/19.png"),
 load("res://assets/phone/old_photos/20.png"),
 load("res://assets/phone/old_photos/21.png")]
-
-
+var listado_de_files:Array = ["About"]
+var notificacion_files:int = 0
 
 
 var listado_de_sitios:Array = ["Home","La Paz Hospital"]

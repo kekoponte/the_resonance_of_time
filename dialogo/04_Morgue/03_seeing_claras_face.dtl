@@ -1,5 +1,6 @@
 [style name="personajes_en_habitacion"]
 [background arg="res://assets/locations/03_Morgue/Clara.png" fade="0.0"]
+join Esther right
 if {clara_face} == "first_time":
 	Esther: There you are
 	Esther: My sweet child
@@ -8,11 +9,14 @@ if {clara_face} == "first_time":
 	[signal arg="phone"]
 	set {clara_face} = "after_first_time"
 	set {Morgue} += 1
+	[clear time="0.0"]
 elif {clara_face} == "after_first_time":
 	Esther: It's Marcos. There's no doubt.
 	[signal arg="phone"]
+	[clear time="0.0" step="false"]
 if {Morgue} == 2:
 	[background arg="res://assets/interface/back.png" fade="0.0"]
 	set {Morgue} = 3
 	[signal arg="phone_off"]
 	jump Michel_01/
+[clear time="0.0"]

@@ -65,10 +65,10 @@ directories/dtl_directory={
 "Call_Keko": "res://dialogo/Llamadas/Call_Keko.dtl",
 "Michel_01": "res://dialogo/04_Morgue/Michel_01.dtl",
 "Parla_02": "res://dialogo/06_Parla/Parla_02.dtl",
-"alan": "res://dialogo/alan.dtl",
 "banner_bank": "res://dialogo/banner_bank.dtl",
 "comunicando": "res://dialogo/comunicando.dtl",
 "foto_morgue": "res://dialogo/camara/foto_morgue.dtl",
+"imhere": "res://dialogo/imhere.dtl",
 "mapa_no": "res://dialogo/mapa_no.dtl",
 "monologo_inicial": "res://dialogo/monologo_inicial.dtl",
 "morgue": "res://dialogo/morgue.dtl",
@@ -110,6 +110,7 @@ variables={
 "alan": 1.0,
 "clara_face": "first_time",
 "clara_hand": "first_time",
+"direccion ": "aqui",
 "where": "start"
 }
 extensions_folder="res://addons/dialogic_additions"
@@ -173,6 +174,7 @@ sitios=""
 things=""
 diario=""
 notas=""
+files_list=""
 
 [gui]
 

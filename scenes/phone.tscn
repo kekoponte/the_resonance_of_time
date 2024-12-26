@@ -1,9 +1,10 @@
-[gd_scene load_steps=67 format=3 uid="uid://vn8ay56opuf"]
+[gd_scene load_steps=70 format=3 uid="uid://vn8ay56opuf"]
 
 [ext_resource type="Texture2D" uid="uid://beks6fnb6rl84" path="res://assets/phone/phone_border.png" id="1_j61vq"]
 [ext_resource type="Texture2D" uid="uid://bjkxa8hgkpa7k" path="res://assets/phone/back_02.png" id="2_okc1m"]
 [ext_resource type="Script" path="res://scripts/raton_phone.gd" id="2_ol1mx"]
 [ext_resource type="Texture2D" uid="uid://djfoh71fik2qq" path="res://assets/phone/but_01_call_norm.png" id="3_a0jf0"]
+[ext_resource type="Texture2D" uid="uid://dfxw2x55wswng" path="res://assets/phone/notification.png" id="3_s867m"]
 [ext_resource type="Script" path="res://scripts/mano_en_botones.gd" id="4_k73dl"]
 [ext_resource type="Texture2D" uid="uid://bn8amj4hx2ol1" path="res://assets/phone/but_01_call_press.png" id="5_taa3r"]
 [ext_resource type="Texture2D" uid="uid://27y00r4qj5q4" path="res://assets/phone/but_02_internet_norm.png" id="11_nq73h"]
@@ -63,6 +64,8 @@
 [ext_resource type="PackedScene" uid="uid://b8hu06gjd2ysq" path="res://scenes/to_dos_app.tscn" id="51_ol0jk"]
 [ext_resource type="Script" path="res://scripts/phone/to_dos_app.gd" id="52_8cyry"]
 [ext_resource type="Texture2D" uid="uid://o3njaqjw563f" path="res://assets/phone/print.png" id="53_avwt2"]
+[ext_resource type="PackedScene" uid="uid://dhbfxgra5qbwk" path="res://scenes/appfiles.tscn" id="57_s3ycd"]
+[ext_resource type="Script" path="res://scripts/phone/appfiles.gd" id="58_0v066"]
 
 [sub_resource type="Animation" id="Animation_iow3e"]
 length = 0.001
@@ -133,6 +136,22 @@ z_index = 10
 position = Vector2(74, 146)
 texture = ExtResource("1_j61vq")
 script = ExtResource("2_ol1mx")
+
+[node name="notif_back" type="Sprite2D" parent="PhoneBorder"]
+visible = false
+z_index = -9
+position = Vector2(-5, -74)
+texture = ExtResource("3_s867m")
+
+[node name="num_notif" type="Label" parent="PhoneBorder/notif_back"]
+offset_left = -3.0
+offset_top = -4.0
+offset_right = 4.0
+offset_bottom = 3.0
+scale = Vector2(0.898804, 1.07298)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 8
+text = "1"
 
 [node name="Control" type="Control" parent="PhoneBorder"]
 z_index = 10
@@ -476,6 +495,12 @@ z_index = -1
 position = Vector2(-1, 0)
 script = ExtResource("50_dri5x")
 
+[node name="Files" parent="." instance=ExtResource("57_s3ycd")]
+visible = false
+z_index = -1
+position = Vector2(0, -1)
+script = ExtResource("58_0v066")
+
 [node name="Espera2" type="Sprite2D" parent="."]
 visible = false
 z_index = 8
@@ -548,6 +573,7 @@ texture = ExtResource("53_avwt2")
 [connection signal="mouse_entered" from="Botones/Botón de Notas" to="Botones" method="_on_botón_de_notas_mouse_entered"]
 [connection signal="button_up" from="Botones/Botón de Cámara" to="Botones/Botón de Cámara" method="_on_button_up"]
 [connection signal="mouse_entered" from="Botones/Botón de Cámara" to="Botones" method="_on_botón_de_cámara_mouse_entered"]
+[connection signal="button_up" from="Botones/Botón de Files" to="Files" method="_on_botón_de_files_button_up"]
 [connection signal="mouse_entered" from="Botones/Botón de Files" to="Botones" method="_on_botón_de_files_mouse_entered"]
 [connection signal="button_up" from="Botones/Botón de News" to="News" method="_on_botón_de_news_button_up"]
 [connection signal="mouse_entered" from="Botones/Botón de News" to="Botones" method="_on_botón_de_news_mouse_entered"]

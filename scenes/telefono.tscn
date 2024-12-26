@@ -48,6 +48,7 @@ texture = ExtResource("1_ermon")
 
 [node name="Botón de Home" type="TextureButton" parent="App Llamada"]
 z_index = 1
+layout_mode = 0
 offset_left = 58.0
 offset_top = 246.0
 offset_right = 82.0
@@ -61,6 +62,7 @@ z_index = -1
 position = Vector2(0, -1)
 
 [node name="but1" type="TextureButton" parent="App Llamada"]
+layout_mode = 0
 offset_left = 22.0
 offset_top = 82.0
 offset_right = 51.0
@@ -70,6 +72,7 @@ texture_pressed = ExtResource("7_sstcl")
 script = ExtResource("9_uy30k")
 
 [node name="but2" type="TextureButton" parent="App Llamada"]
+layout_mode = 0
 offset_left = 56.0
 offset_top = 82.0
 offset_right = 85.0
@@ -79,6 +82,7 @@ texture_pressed = ExtResource("9_fl241")
 script = ExtResource("9_uy30k")
 
 [node name="but3" type="TextureButton" parent="App Llamada"]
+layout_mode = 0
 offset_left = 90.0
 offset_top = 82.0
 offset_right = 119.0
@@ -88,6 +92,7 @@ texture_pressed = ExtResource("11_ekhv0")
 script = ExtResource("9_uy30k")
 
 [node name="but4" type="TextureButton" parent="App Llamada"]
+layout_mode = 0
 offset_left = 22.0
 offset_top = 115.0
 offset_right = 51.0
@@ -97,6 +102,7 @@ texture_pressed = ExtResource("13_bcmn0")
 script = ExtResource("9_uy30k")
 
 [node name="but5" type="TextureButton" parent="App Llamada"]
+layout_mode = 0
 offset_left = 56.0
 offset_top = 115.0
 offset_right = 85.0
@@ -106,6 +112,7 @@ texture_pressed = ExtResource("15_btlfb")
 script = ExtResource("9_uy30k")
 
 [node name="but6" type="TextureButton" parent="App Llamada"]
+layout_mode = 0
 offset_left = 90.0
 offset_top = 115.0
 offset_right = 119.0
@@ -115,6 +122,7 @@ texture_pressed = ExtResource("17_7308i")
 script = ExtResource("9_uy30k")
 
 [node name="but7" type="TextureButton" parent="App Llamada"]
+layout_mode = 0
 offset_left = 22.0
 offset_top = 148.0
 offset_right = 51.0
@@ -124,6 +132,7 @@ texture_pressed = ExtResource("19_pid86")
 script = ExtResource("9_uy30k")
 
 [node name="but8" type="TextureButton" parent="App Llamada"]
+layout_mode = 0
 offset_left = 56.0
 offset_top = 148.0
 offset_right = 85.0
@@ -133,6 +142,7 @@ texture_pressed = ExtResource("21_6e0a2")
 script = ExtResource("9_uy30k")
 
 [node name="but9" type="TextureButton" parent="App Llamada"]
+layout_mode = 0
 offset_left = 90.0
 offset_top = 148.0
 offset_right = 119.0
@@ -142,6 +152,7 @@ texture_pressed = ExtResource("23_cqjyc")
 script = ExtResource("9_uy30k")
 
 [node name="but0" type="TextureButton" parent="App Llamada"]
+layout_mode = 0
 offset_left = 90.0
 offset_top = 181.0
 offset_right = 119.0
@@ -151,6 +162,7 @@ texture_pressed = ExtResource("25_cotdd")
 script = ExtResource("9_uy30k")
 
 [node name="butcall" type="TextureButton" parent="App Llamada"]
+layout_mode = 0
 offset_left = 22.0
 offset_top = 181.0
 offset_right = 68.0
@@ -160,6 +172,7 @@ texture_pressed = ExtResource("27_hnaiq")
 script = ExtResource("9_uy30k")
 
 [node name="numeromarcado" type="Label" parent="App Llamada"]
+layout_mode = 0
 offset_left = 19.0
 offset_top = 41.0
 offset_right = 124.0

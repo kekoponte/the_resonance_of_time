@@ -3,8 +3,13 @@ extends TextureButton
 #busqueda_del_mapa.gd tiene el listado de direcciones y sus nombres de búsqueda
 
 func _on_button_down() -> void:
-	if Global.Direccion == Vector2(190,90) and Global.contador_morgue_2 == "Primera vez":
+
+	if Global.Direccion == Vector2(150,100) and Global.Location == "La Paz Hospital":
+		Dialogic.start("imhere")
+
+	elif Global.contador_morgue_2 == "Primera vez":
 		Dialogic.start("02_Hospital_morguefirst")
+
 	elif Global.Direccion == Vector2(190,90) and Global.contador_morgue_2 == "Despues de identificar a Marcos" and Global.Location != "Police Station":
 		$transicion_entre_escenas.play("transicion")
 		PassTime.pass_time(185)

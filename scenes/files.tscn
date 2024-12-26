@@ -5,30 +5,30 @@
 [ext_resource type="Texture2D" uid="uid://cbyl7p77epic7" path="res://assets/phone/home_button_pressed.png" id="3_cua4c"]
 [ext_resource type="Script" path="res://scripts/phone/botón_de_home_fotos.gd" id="3_hhhxn"]
 
-[sub_resource type="ImageTexture" id="ImageTexture_oyxxv"]
+[sub_resource type="ImageTexture" id="ImageTexture_8qgso"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ty6b4"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s1ip6"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3gcg5"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fnqn4"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ndwwe"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b8d57"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_07mf1"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7vdp4"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_21d08"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cbe4m"]
 
 [sub_resource type="Theme" id="Theme_7jc3n"]
-VScrollBar/icons/decrement = SubResource("ImageTexture_oyxxv")
-VScrollBar/icons/decrement_highlight = SubResource("ImageTexture_oyxxv")
-VScrollBar/icons/decrement_pressed = SubResource("ImageTexture_oyxxv")
-VScrollBar/icons/increment = SubResource("ImageTexture_oyxxv")
-VScrollBar/icons/increment_highlight = SubResource("ImageTexture_oyxxv")
-VScrollBar/icons/increment_pressed = SubResource("ImageTexture_oyxxv")
-VScrollBar/styles/grabber = SubResource("StyleBoxEmpty_ty6b4")
-VScrollBar/styles/grabber_highlight = SubResource("StyleBoxEmpty_3gcg5")
-VScrollBar/styles/grabber_pressed = SubResource("StyleBoxEmpty_ndwwe")
-VScrollBar/styles/scroll = SubResource("StyleBoxEmpty_07mf1")
-VScrollBar/styles/scroll_focus = SubResource("StyleBoxEmpty_21d08")
+VScrollBar/icons/decrement = SubResource("ImageTexture_8qgso")
+VScrollBar/icons/decrement_highlight = SubResource("ImageTexture_8qgso")
+VScrollBar/icons/decrement_pressed = SubResource("ImageTexture_8qgso")
+VScrollBar/icons/increment = SubResource("ImageTexture_8qgso")
+VScrollBar/icons/increment_highlight = SubResource("ImageTexture_8qgso")
+VScrollBar/icons/increment_pressed = SubResource("ImageTexture_8qgso")
+VScrollBar/styles/grabber = SubResource("StyleBoxEmpty_s1ip6")
+VScrollBar/styles/grabber_highlight = SubResource("StyleBoxEmpty_fnqn4")
+VScrollBar/styles/grabber_pressed = SubResource("StyleBoxEmpty_b8d57")
+VScrollBar/styles/scroll = SubResource("StyleBoxEmpty_7vdp4")
+VScrollBar/styles/scroll_focus = SubResource("StyleBoxEmpty_cbe4m")
 
 [node name="Files" type="Node2D"]
 

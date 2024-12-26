@@ -1,5 +1,0 @@
-[style name="Llamada_de_teléfono"]
-if {alan} == 1:
-	[music path="res://assets/sounds/llamando.mp3" fade="0.0" volume="0.0"]
-	[wait time="2.5"]
-	The mobile phone you are calling is switched off. Please try again later.
