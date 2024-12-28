@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bprty2xlupha8"
-path="res://.godot/imported/esther_05.png-688141990b2c0f2317fa2c7021232c32.ctex"
+uid="uid://c8vhnhsv2ck34"
+path="res://.godot/imported/cosas_mesa.png-1837571692f056ed2557228d4b73d8fa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/esther_05.png"
-dest_files=["res://.godot/imported/esther_05.png-688141990b2c0f2317fa2c7021232c32.ctex"]
+source_file="res://assets/locations/05_Laura_Office/cosas_mesa.png"
+dest_files=["res://.godot/imported/cosas_mesa.png-1837571692f056ed2557228d4b73d8fa.ctex"]
 
 [params]
 

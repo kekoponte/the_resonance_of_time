@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cgrvlfdd4ji6u"
-path="res://.godot/imported/esther_01.png-d083d6de9689cb8ebdc5bf799134f311.ctex"
+uid="uid://cxgdifpoccjpv"
+path="res://.godot/imported/esther_05.png-13dc6329aa6f36991acd8a2e55d64a14.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/esther_01.png"
-dest_files=["res://.godot/imported/esther_01.png-d083d6de9689cb8ebdc5bf799134f311.ctex"]
+source_file="res://assets/characters/01_Esther/esther_05.png"
+dest_files=["res://.godot/imported/esther_05.png-13dc6329aa6f36991acd8a2e55d64a14.ctex"]
 
 [params]
 

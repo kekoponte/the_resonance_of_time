@@ -60,7 +60,8 @@ script = ExtResource("1_bjalq")
 
 [node name="02Bedroom" type="Sprite2D" parent="."]
 z_index = -10
-position = Vector2(320, 180)
+position = Vector2(320.111, 180.062)
+scale = Vector2(0.999653, 0.999653)
 texture = ExtResource("2_2lyj3")
 
 [node name="Phone" parent="." instance=ExtResource("3_jq66x")]

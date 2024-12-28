@@ -12,5 +12,3 @@ func _on_meta_clicked(_meta: Variant) -> void:
 
 func _on_back_button_button_up() -> void:
 	self.show()
-
-#["About", "Autopsy Report"]

@@ -9,7 +9,9 @@ if {Waiting_room.tracking} == "1":
 		set {Waiting_room.Laura_01} = "0"
 		laura (Idle): 12 years? What happened?
 		leave laura [animation="Fade Out" length="0.1"]
+		join Esther right
 		Esther: He just disappeared. There was an investigation, but nobody was able to find him.
+		leave Esther
 		join laura (Idle) left [animation="Fade In"]
 		laura: Do you think you can handle an identification?
 		jump pregunta 1

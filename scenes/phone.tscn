@@ -1,4 +1,4 @@
-[gd_scene load_steps=70 format=3 uid="uid://vn8ay56opuf"]
+[gd_scene load_steps=74 format=3 uid="uid://vn8ay56opuf"]
 
 [ext_resource type="Texture2D" uid="uid://beks6fnb6rl84" path="res://assets/phone/phone_border.png" id="1_j61vq"]
 [ext_resource type="Texture2D" uid="uid://bjkxa8hgkpa7k" path="res://assets/phone/back_02.png" id="2_okc1m"]
@@ -52,7 +52,9 @@
 [ext_resource type="Texture2D" uid="uid://dp05vvp1jxe2" path="res://assets/phone/but_14_contact_norm.png" id="33_nlpya"]
 [ext_resource type="Script" path="res://scripts/phone/fotos.gd" id="33_vvtej"]
 [ext_resource type="Texture2D" uid="uid://dstkq3rtfcddw" path="res://assets/phone/but_14_contact_press.png" id="34_hakcl"]
+[ext_resource type="Texture2D" uid="uid://dekiewc2y6m2s" path="res://assets/phone/but_17_bbdd_norm.png" id="38_m44as"]
 [ext_resource type="PackedScene" uid="uid://cgscrc8il1sho" path="res://scenes/your_diary.tscn" id="39_doev2"]
+[ext_resource type="Texture2D" uid="uid://ci7mjbo5qr4np" path="res://assets/phone/but_17_bbdd_hover.png" id="39_ldm65"]
 [ext_resource type="Script" path="res://scripts/phone/your_diary.gd" id="40_ysfq0"]
 [ext_resource type="Script" path="res://scripts/phone/news.gd" id="42_i5e7a"]
 [ext_resource type="PackedScene" uid="uid://c604awremhbr7" path="res://scenes/bank.tscn" id="43_glvrw"]
@@ -66,6 +68,8 @@
 [ext_resource type="Texture2D" uid="uid://o3njaqjw563f" path="res://assets/phone/print.png" id="53_avwt2"]
 [ext_resource type="PackedScene" uid="uid://dhbfxgra5qbwk" path="res://scenes/appfiles.tscn" id="57_s3ycd"]
 [ext_resource type="Script" path="res://scripts/phone/appfiles.gd" id="58_0v066"]
+[ext_resource type="PackedScene" uid="uid://f3lj58xe5g12" path="res://scenes/police_db.tscn" id="62_ymwwk"]
+[ext_resource type="Script" path="res://scripts/phone/police_db_listado_de_apps.gd" id="63_fcphb"]
 
 [sub_resource type="Animation" id="Animation_iow3e"]
 length = 0.001
@@ -442,6 +446,27 @@ theme_override_font_sizes/font_size = 8
 text = "Your diary"
 horizontal_alignment = 1
 
+[node name="Boton de DB" type="TextureButton" parent="Botones"]
+layout_mode = 0
+offset_left = 107.0
+offset_top = 109.0
+offset_right = 136.0
+offset_bottom = 137.0
+texture_normal = ExtResource("38_m44as")
+texture_pressed = ExtResource("39_ldm65")
+texture_hover = ExtResource("38_m44as")
+
+[node name="Label6" type="Label" parent="Botones/Boton de DB"]
+layout_mode = 0
+offset_top = 29.0
+offset_right = 29.0
+offset_bottom = 37.0
+theme_override_colors/font_color = Color(0, 0, 0, 0.760784)
+theme_override_fonts/font = ExtResource("15_xxusd")
+theme_override_font_sizes/font_size = 8
+text = "Police DB"
+horizontal_alignment = 1
+
 [node name="ToDos_App" parent="." instance=ExtResource("51_ol0jk")]
 visible = false
 z_index = -1
@@ -500,6 +525,12 @@ visible = false
 z_index = -1
 position = Vector2(0, -1)
 script = ExtResource("58_0v066")
+
+[node name="police_DB" parent="." instance=ExtResource("62_ymwwk")]
+visible = false
+z_index = -1
+position = Vector2(0, -1)
+script = ExtResource("63_fcphb")
 
 [node name="Espera2" type="Sprite2D" parent="."]
 visible = false
@@ -585,3 +616,5 @@ texture = ExtResource("53_avwt2")
 [connection signal="mouse_entered" from="Botones/Botón de Contactos" to="Botones" method="_on_botón_de_contactos_mouse_entered"]
 [connection signal="button_up" from="Botones/Botón de Story" to="Your Diary" method="_on_botón_de_story_button_up"]
 [connection signal="mouse_entered" from="Botones/Botón de Story" to="Botones" method="_on_botón_de_story_mouse_entered"]
+[connection signal="button_up" from="Botones/Boton de DB" to="police_DB" method="_on_boton_de_db_button_up"]
+[connection signal="mouse_entered" from="Botones/Boton de DB" to="Botones" method="_on_boton_de_db_mouse_entered"]

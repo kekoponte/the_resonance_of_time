@@ -85,11 +85,11 @@ RichTextLabel/constants/shadow_offset_y = 1
 RichTextLabel/styles/normal = SubResource("StyleBoxFlat_834nt")
 VScrollBar/styles/scroll = SubResource("StyleBoxFlat_a3jb1")
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ssxss"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p8vtj"]
 
 [sub_resource type="Theme" id="Theme_sp4rt"]
 LineEdit/constants/outline_size = 0
-LineEdit/styles/focus = SubResource("StyleBoxEmpty_ssxss")
+LineEdit/styles/focus = SubResource("StyleBoxEmpty_p8vtj")
 
 [node name="Maps" type="Node2D"]
 
@@ -117,7 +117,7 @@ script = ExtResource("3_1jcqm")
 
 [node name="Mascara_Mapa" type="ScrollContainer" parent="."]
 offset_left = 4.0
-offset_top = 6.0
+offset_top = 7.0
 offset_right = 141.0
 offset_bottom = 282.0
 mouse_filter = 2
@@ -241,6 +241,7 @@ offset_top = -1.0
 offset_right = 105.0
 offset_bottom = 13.0
 texture_normal = ExtResource("16_r0dwe")
+metadata/_edit_use_anchors_ = true
 
 [connection signal="mouse_entered" from="App Mapas" to="App Mapas" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="App Mapas" to="App Mapas" method="_on_mouse_exited"]

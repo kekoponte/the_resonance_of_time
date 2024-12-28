@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c7nspijksf051"
-path="res://.godot/imported/esther_04.png-3d5c6e34336b1411de1d611690a098dd.ctex"
+uid="uid://8xkic80bulvi"
+path="res://.godot/imported/esther_sad_eyes_closed.png-1e52350a41f6829d440649d0c9238950.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/esther_04.png"
-dest_files=["res://.godot/imported/esther_04.png-3d5c6e34336b1411de1d611690a098dd.ctex"]
+source_file="res://assets/characters/01_Esther/esther_sad_eyes_closed.png"
+dest_files=["res://.godot/imported/esther_sad_eyes_closed.png-1e52350a41f6829d440649d0c9238950.ctex"]
 
 [params]
 

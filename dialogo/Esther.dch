@@ -17,9 +17,72 @@
 "nicknames": [""],
 "offset": Vector2(0, 0),
 "portraits": {
+"angry": {
+"export_overrides": {
+"image": "\"res://assets/characters/01_Esther/esther_angry.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"dialog": {
+"export_overrides": {
+"image": "\"res://assets/characters/01_Esther/esther_dialog.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"happy": {
+"export_overrides": {
+"image": "\"res://assets/characters/01_Esther/esther_happy.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
 "idle": {
 "export_overrides": {
-"image": "\"res://assets/characters/esther_dialog.png\""
+"image": "\"res://assets/characters/01_Esther/esther_dialog.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"sad": {
+"export_overrides": {
+"image": "\"res://assets/characters/01_Esther/esther_sad.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"sad_2": {
+"export_overrides": {
+"image": "\"res://assets/characters/01_Esther/esther_sad_2.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"sad_2_eyes_closed": {
+"export_overrides": {
+"image": "\"res://assets/characters/01_Esther/esther_sad_2_eyes_closed.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"sad_eyes_closed": {
+"export_overrides": {
+"image": "\"res://assets/characters/01_Esther/esther_sad_eyes_closed.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

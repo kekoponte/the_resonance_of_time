@@ -17,30 +17,30 @@
 [ext_resource type="FontFile" uid="uid://b2rl6owflbu8i" path="res://assets/fonts/runescape_uf.ttf" id="14_wojs4"]
 [ext_resource type="Texture2D" uid="uid://b0v0ecdecufjy" path="res://assets/phone/files/close_hover.png" id="15_5rr71"]
 
-[sub_resource type="ImageTexture" id="ImageTexture_oyxxv"]
+[sub_resource type="ImageTexture" id="ImageTexture_acap1"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ty6b4"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8ue7u"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3gcg5"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ve5it"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ndwwe"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6qf7k"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_07mf1"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e8pkq"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_21d08"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jyhcl"]
 
 [sub_resource type="Theme" id="Theme_mwl8e"]
-VScrollBar/icons/decrement = SubResource("ImageTexture_oyxxv")
-VScrollBar/icons/decrement_highlight = SubResource("ImageTexture_oyxxv")
-VScrollBar/icons/decrement_pressed = SubResource("ImageTexture_oyxxv")
-VScrollBar/icons/increment = SubResource("ImageTexture_oyxxv")
-VScrollBar/icons/increment_highlight = SubResource("ImageTexture_oyxxv")
-VScrollBar/icons/increment_pressed = SubResource("ImageTexture_oyxxv")
-VScrollBar/styles/grabber = SubResource("StyleBoxEmpty_ty6b4")
-VScrollBar/styles/grabber_highlight = SubResource("StyleBoxEmpty_3gcg5")
-VScrollBar/styles/grabber_pressed = SubResource("StyleBoxEmpty_ndwwe")
-VScrollBar/styles/scroll = SubResource("StyleBoxEmpty_07mf1")
-VScrollBar/styles/scroll_focus = SubResource("StyleBoxEmpty_21d08")
+VScrollBar/icons/decrement = SubResource("ImageTexture_acap1")
+VScrollBar/icons/decrement_highlight = SubResource("ImageTexture_acap1")
+VScrollBar/icons/decrement_pressed = SubResource("ImageTexture_acap1")
+VScrollBar/icons/increment = SubResource("ImageTexture_acap1")
+VScrollBar/icons/increment_highlight = SubResource("ImageTexture_acap1")
+VScrollBar/icons/increment_pressed = SubResource("ImageTexture_acap1")
+VScrollBar/styles/grabber = SubResource("StyleBoxEmpty_8ue7u")
+VScrollBar/styles/grabber_highlight = SubResource("StyleBoxEmpty_ve5it")
+VScrollBar/styles/grabber_pressed = SubResource("StyleBoxEmpty_6qf7k")
+VScrollBar/styles/scroll = SubResource("StyleBoxEmpty_e8pkq")
+VScrollBar/styles/scroll_focus = SubResource("StyleBoxEmpty_jyhcl")
 
 [node name="Files" type="Node2D"]
 

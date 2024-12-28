@@ -9,3 +9,4 @@ func _input_event(_viewport, event, _shape_idx):
 
 func on_click():
 	self.get_parent().get_parent().stop()
+	self.get_parent().get_parent().play("tiempo")

@@ -1,0 +1,706 @@
+[gd_scene load_steps=32 format=3 uid="uid://f3lj58xe5g12"]
+
+[ext_resource type="Script" path="res://scripts/phone/app_db.gd" id="1_848gk"]
+[ext_resource type="Texture2D" uid="uid://cxy38ml7i6var" path="res://assets/phone/home_button.png" id="2_c8len"]
+[ext_resource type="Texture2D" uid="uid://cfm1st0jmiffh" path="res://assets/phone/back_db.png" id="2_lym3o"]
+[ext_resource type="Texture2D" uid="uid://cbyl7p77epic7" path="res://assets/phone/home_button_pressed.png" id="3_kdkmd"]
+[ext_resource type="Script" path="res://scripts/botón_de_home_Mapa.gd" id="4_3iqc0"]
+[ext_resource type="Texture2D" uid="uid://b2rnmbi4e43py" path="res://assets/interface/map_search.png" id="6_ygrtg"]
+[ext_resource type="FontFile" uid="uid://cebjma2udbg7" path="res://assets/fonts/dogicapixel.ttf" id="7_u51sh"]
+[ext_resource type="Script" path="res://scripts/phone/input_police_DB.gd" id="8_4ovr3"]
+[ext_resource type="Script" path="res://scripts/phone/input_police_DB_2.gd" id="9_v6ts5"]
+[ext_resource type="Texture2D" uid="uid://bgdwxeqy83mwd" path="res://assets/phone/police_DB/but_search_norm.png" id="10_y2hj4"]
+[ext_resource type="Texture2D" uid="uid://c73rafr7phdjr" path="res://assets/phone/police_DB/but_search_press.png" id="11_qf0f6"]
+[ext_resource type="Script" path="res://scripts/phone/search_DB.gd" id="11_weyu3"]
+[ext_resource type="Texture2D" uid="uid://c0hir482jqnfp" path="res://assets/phone/police_DB/loading.png" id="13_pyafv"]
+[ext_resource type="Texture2D" uid="uid://bspqhudi10rd4" path="res://assets/phone/police_DB/loading_ball.png" id="14_3fboe"]
+[ext_resource type="Script" path="res://scripts/phone/ficha_michele.gd" id="15_vqkc5"]
+[ext_resource type="Texture2D" uid="uid://cpnqtp2wm3weu" path="res://assets/phone/police_DB/michele.png" id="16_yglpn"]
+[ext_resource type="FontFile" uid="uid://cyoe0lu3ghnvg" path="res://assets/fonts/dogicapixelbold.ttf" id="17_rfam5"]
+[ext_resource type="Texture2D" uid="uid://eyit1p82l8w" path="res://assets/phone/back_button.png" id="18_fxxkl"]
+[ext_resource type="Texture2D" uid="uid://bwbsxddk3ydsk" path="res://assets/phone/back_button_pressed.png" id="19_ktpqq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ssxss"]
+
+[sub_resource type="Theme" id="Theme_jlvdl"]
+LineEdit/constants/outline_size = 0
+LineEdit/styles/focus = SubResource("StyleBoxEmpty_ssxss")
+
+[sub_resource type="Animation" id="Animation_cs77w"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureButton/loading/Control/LoadingBall:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TextureButton/loading/Control/LoadingBall2:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TextureButton/loading/Control/LoadingBall3:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("TextureButton/loading/Control/LoadingBall4:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("TextureButton/loading/Control/LoadingBall5:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("TextureButton/loading/Control/LoadingBall6:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("TextureButton/loading/Control/LoadingBall7:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("TextureButton/loading/Control/LoadingBall8:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("TextureButton/loading/Control/LoadingBall9:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("TextureButton/loading/Control/LoadingBall10:visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("TextureButton/loading/Control/LoadingBall11:visible")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("TextureButton/loading/Control/LoadingBall12:visible")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("TextureButton/loading/Control/LoadingBall13:visible")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("TextureButton/loading/Control/Loading:visible")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_0digs"]
+resource_name = "loading"
+length = 1.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureButton/loading/Control/LoadingBall:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TextureButton/loading/Control/LoadingBall2:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TextureButton/loading/Control/LoadingBall3:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.266667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("TextureButton/loading/Control/LoadingBall4:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.433333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("TextureButton/loading/Control/LoadingBall5:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("TextureButton/loading/Control/LoadingBall6:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("TextureButton/loading/Control/LoadingBall7:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("TextureButton/loading/Control/LoadingBall8:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("TextureButton/loading/Control/LoadingBall9:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("TextureButton/loading/Control/LoadingBall10:visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("TextureButton/loading/Control/LoadingBall11:visible")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("TextureButton/loading/Control/LoadingBall12:visible")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0, 1.03333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("TextureButton/loading/Control/LoadingBall13:visible")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 1.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("TextureButton/loading/Control/Loading:visible")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0, 0.0333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wi4k1"]
+_data = {
+"RESET": SubResource("Animation_cs77w"),
+"loading": SubResource("Animation_0digs")
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_oyxxv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ty6b4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3gcg5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ndwwe"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_07mf1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_21d08"]
+
+[sub_resource type="Theme" id="Theme_0kxbv"]
+VScrollBar/icons/decrement = SubResource("ImageTexture_oyxxv")
+VScrollBar/icons/decrement_highlight = SubResource("ImageTexture_oyxxv")
+VScrollBar/icons/decrement_pressed = SubResource("ImageTexture_oyxxv")
+VScrollBar/icons/increment = SubResource("ImageTexture_oyxxv")
+VScrollBar/icons/increment_highlight = SubResource("ImageTexture_oyxxv")
+VScrollBar/icons/increment_pressed = SubResource("ImageTexture_oyxxv")
+VScrollBar/styles/grabber = SubResource("StyleBoxEmpty_ty6b4")
+VScrollBar/styles/grabber_highlight = SubResource("StyleBoxEmpty_3gcg5")
+VScrollBar/styles/grabber_pressed = SubResource("StyleBoxEmpty_ndwwe")
+VScrollBar/styles/scroll = SubResource("StyleBoxEmpty_07mf1")
+VScrollBar/styles/scroll_focus = SubResource("StyleBoxEmpty_21d08")
+
+[node name="police_DB" type="Node2D"]
+
+[node name="App DB" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 146.0
+offset_bottom = 290.0
+mouse_filter = 1
+script = ExtResource("1_848gk")
+
+[node name="Fondo" type="Sprite2D" parent="App DB"]
+z_index = -1
+position = Vector2(74, 147)
+texture = ExtResource("2_lym3o")
+
+[node name="Botón de Home" type="TextureButton" parent="App DB/Fondo"]
+z_index = 5
+offset_left = -16.0
+offset_top = 99.0
+offset_right = 8.0
+offset_bottom = 123.0
+texture_normal = ExtResource("2_c8len")
+texture_pressed = ExtResource("3_kdkmd")
+script = ExtResource("4_3iqc0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(72, 85)
+texture = ExtResource("6_ygrtg")
+
+[node name="TextEdit" type="LineEdit" parent="Sprite2D"]
+offset_left = -52.0
+offset_top = -7.0
+offset_right = 33.0
+offset_bottom = 6.0
+theme = SubResource("Theme_jlvdl")
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.65834, 0.65834, 0.65834, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/caret_width = 1
+theme_override_fonts/font = ExtResource("7_u51sh")
+theme_override_font_sizes/font_size = 6
+placeholder_text = "Name..."
+max_length = 20
+flat = true
+caret_blink = true
+script = ExtResource("8_4ovr3")
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(72, 113)
+texture = ExtResource("6_ygrtg")
+
+[node name="TextEdit" type="LineEdit" parent="Sprite2D2"]
+offset_left = -52.0
+offset_top = -7.0
+offset_right = 33.0
+offset_bottom = 7.0
+theme = SubResource("Theme_jlvdl")
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.65834, 0.65834, 0.65834, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/caret_width = 1
+theme_override_fonts/font = ExtResource("7_u51sh")
+theme_override_font_sizes/font_size = 6
+placeholder_text = "Surname..."
+max_length = 20
+flat = true
+caret_blink = true
+script = ExtResource("9_v6ts5")
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = 46.0
+offset_top = 138.0
+offset_right = 96.0
+offset_bottom = 159.0
+texture_normal = ExtResource("10_y2hj4")
+texture_pressed = ExtResource("11_qf0f6")
+script = ExtResource("11_weyu3")
+
+[node name="Label" type="Label" parent="TextureButton"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 43.0
+offset_bottom = 14.0
+theme_override_font_sizes/font_size = 7
+text = "Search"
+
+[node name="loading" type="AnimationPlayer" parent="TextureButton"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_wi4k1")
+}
+
+[node name="Control" type="Control" parent="TextureButton/loading"]
+z_index = 1
+clip_contents = true
+layout_mode = 3
+anchors_preset = 0
+offset_left = 481.0
+offset_top = 61.0
+offset_right = 599.0
+offset_bottom = 94.0
+mouse_filter = 2
+
+[node name="Loading" type="Sprite2D" parent="TextureButton/loading/Control"]
+visible = false
+position = Vector2(59.8629, 26.25)
+scale = Vector2(0.403226, 0.403226)
+texture = ExtResource("13_pyafv")
+
+[node name="LoadingBall" type="Sprite2D" parent="TextureButton/loading/Control"]
+visible = false
+position = Vector2(36.4749, 26.25)
+scale = Vector2(0.403, 0.403)
+texture = ExtResource("14_3fboe")
+
+[node name="LoadingBall2" type="Sprite2D" parent="TextureButton/loading/Control"]
+visible = false
+position = Vector2(40.4749, 26.25)
+scale = Vector2(0.403, 0.403)
+texture = ExtResource("14_3fboe")
+
+[node name="LoadingBall3" type="Sprite2D" parent="TextureButton/loading/Control"]
+visible = false
+position = Vector2(44.4749, 26.25)
+scale = Vector2(0.403, 0.403)
+texture = ExtResource("14_3fboe")
+
+[node name="LoadingBall4" type="Sprite2D" parent="TextureButton/loading/Control"]
+visible = false
+position = Vector2(48.4749, 26.25)
+scale = Vector2(0.403, 0.403)
+texture = ExtResource("14_3fboe")
+
+[node name="LoadingBall5" type="Sprite2D" parent="TextureButton/loading/Control"]
+visible = false
+position = Vector2(52.4749, 26.25)
+scale = Vector2(0.403, 0.403)
+texture = ExtResource("14_3fboe")
+
+[node name="LoadingBall6" type="Sprite2D" parent="TextureButton/loading/Control"]
+visible = false
+position = Vector2(56.4749, 26.25)
+scale = Vector2(0.403, 0.403)
+texture = ExtResource("14_3fboe")
+
+[node name="LoadingBall7" type="Sprite2D" parent="TextureButton/loading/Control"]
+visible = false
+position = Vector2(60.4749, 26.25)
+scale = Vector2(0.403, 0.403)
+texture = ExtResource("14_3fboe")
+
+[node name="LoadingBall8" type="Sprite2D" parent="TextureButton/loading/Control"]
+visible = false
+position = Vector2(64.4749, 26.25)
+scale = Vector2(0.403, 0.403)
+texture = ExtResource("14_3fboe")
+
+[node name="LoadingBall9" type="Sprite2D" parent="TextureButton/loading/Control"]
+visible = false
+position = Vector2(68.4749, 26.25)
+scale = Vector2(0.403, 0.403)
+texture = ExtResource("14_3fboe")
+
+[node name="LoadingBall10" type="Sprite2D" parent="TextureButton/loading/Control"]
+visible = false
+position = Vector2(72.4749, 26.25)
+scale = Vector2(0.403, 0.403)
+texture = ExtResource("14_3fboe")
+
+[node name="LoadingBall11" type="Sprite2D" parent="TextureButton/loading/Control"]
+visible = false
+position = Vector2(76.4749, 26.25)
+scale = Vector2(0.403, 0.403)
+texture = ExtResource("14_3fboe")
+
+[node name="LoadingBall12" type="Sprite2D" parent="TextureButton/loading/Control"]
+visible = false
+position = Vector2(80.4749, 26.25)
+scale = Vector2(0.403, 0.403)
+texture = ExtResource("14_3fboe")
+
+[node name="LoadingBall13" type="Sprite2D" parent="TextureButton/loading/Control"]
+visible = false
+position = Vector2(84.4749, 26.25)
+scale = Vector2(0.403, 0.403)
+texture = ExtResource("14_3fboe")
+
+[node name="Ficha_Michele" type="Control" parent="."]
+visible = false
+z_index = 1
+layout_mode = 3
+anchors_preset = 0
+offset_left = 7.0
+offset_top = 10.0
+offset_right = 142.0
+offset_bottom = 285.0
+script = ExtResource("15_vqkc5")
+
+[node name="Area de autopsia" type="ScrollContainer" parent="Ficha_Michele"]
+layout_mode = 0
+offset_left = -1.0
+offset_top = -3.0
+offset_right = 134.0
+offset_bottom = 274.0
+theme = SubResource("Theme_0kxbv")
+horizontal_scroll_mode = 0
+
+[node name="listado_de_fotos" type="VBoxContainer" parent="Ficha_Michele/Area de autopsia"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Ficha_Michele/Area de autopsia/listado_de_fotos"]
+layout_mode = 2
+texture = ExtResource("16_yglpn")
+
+[node name="Label" type="Label" parent="Ficha_Michele/Area de autopsia/listado_de_fotos/TextureRect"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 154.0
+offset_right = 118.0
+offset_bottom = 160.0
+theme_override_colors/font_color = Color(0.834537, 0.454278, 0.0733105, 1)
+theme_override_fonts/font = ExtResource("17_rfam5")
+theme_override_font_sizes/font_size = 6
+text = "Police File nº 234145"
+
+[node name="Label2" type="Label" parent="Ficha_Michele/Area de autopsia/listado_de_fotos/TextureRect"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 164.0
+offset_right = 110.0
+offset_bottom = 170.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 6
+text = "Michele Carro
+Italian Citizen"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Ficha_Michele/Area de autopsia/listado_de_fotos/TextureRect"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 214.0
+offset_right = 128.0
+offset_bottom = 1310.0
+mouse_filter = 1
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_constants/line_separation = 3
+theme_override_font_sizes/italics_font_size = 5
+theme_override_font_sizes/normal_font_size = 5
+theme_override_font_sizes/bold_font_size = 5
+bbcode_enabled = true
+text = "[b]Convictions[/b]
+No
+
+[b]Migration history:[/b]
+1999, Dec - Spain
+2021, Feb - Italy
+2022, Jan - USA
+2022, Feb - Spain
+
+
+
+[b]What You Can’t Do:[/b]
+Please Don’t pirate it. I've worked hard on this game, and your mom would be disappointed. I would give a copy for free to anybody who can't afford the couple of bucks it costs
+Don’t try to crack open the code. Trust me, there's nothing valuable in there, just long nights of debugging and tears.
+
+[b]What You Can Do:[/b]
+Enjoy the game! Play it. Tell your friends to buy it. Stream it, but please don’t be that person who spoils the ending in the thumbnail.
+
+
+
+
+[b]Final Note:[/b]
+I've made this game with love, sweat, and a slightly alarming amount of coffee. Protecting it helps me keep making stuff for you to enjoy. Please be cool.
+
+If you’ve got questions, licensing ideas, or just want to send me hate mail, hit me up at: keko@kekoponte.com"
+scroll_active = false
+
+[node name="Control2" type="Control" parent="Ficha_Michele"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="back_button" type="TextureButton" parent="Ficha_Michele/Control2"]
+z_index = 5
+layout_mode = 2
+offset_left = 51.0
+offset_top = 236.0
+offset_right = 80.0
+offset_bottom = 264.0
+texture_normal = ExtResource("18_fxxkl")
+texture_pressed = ExtResource("19_ktpqq")
+
+[connection signal="mouse_entered" from="App DB" to="App DB" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="App DB" to="App DB" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="App DB/Fondo/Botón de Home" to="App DB/Fondo/Botón de Home" method="_on_mouse_entered"]
+[connection signal="text_submitted" from="Sprite2D/TextEdit" to="Sprite2D/TextEdit" method="_on_text_submitted"]
+[connection signal="text_submitted" from="Sprite2D2/TextEdit" to="Sprite2D2/TextEdit" method="_on_text_submitted"]
+[connection signal="button_down" from="TextureButton" to="Sprite2D/TextEdit" method="_on_texture_button_button_down"]
+[connection signal="button_down" from="TextureButton" to="Sprite2D2/TextEdit" method="_on_texture_button_button_down"]
+[connection signal="button_down" from="TextureButton" to="TextureButton" method="_on_button_down"]
+[connection signal="button_up" from="Ficha_Michele/Control2/back_button" to="Ficha_Michele" method="_on_back_button_button_up"]

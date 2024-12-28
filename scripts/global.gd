@@ -61,7 +61,8 @@ load("res://assets/phone/old_photos/20.png"),
 load("res://assets/phone/old_photos/21.png")]
 var listado_de_files:Array = ["About"]
 var notificacion_files:int = 0
-
+var Search_name:String = ""
+var Search_surname:String = ""
 
 var listado_de_sitios:Array = ["Home","La Paz Hospital"]
 var listado_de_things:Array = ["Go to the morgue"]

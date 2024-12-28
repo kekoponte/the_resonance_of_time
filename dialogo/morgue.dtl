@@ -1,18 +1,18 @@
 [style name="personajes_en_habitacion"]
-Esther: I don't know if I can do this.
+join Esther right
+Esther (sad_2_eyes_closed): I don't know if I can do this.
 [signal arg="musica"]
 Esther: Oh my god. My legs are shaking.
-Esther: Oh god. There he is.
+Esther (sad): Oh god. There he is.
 [signal arg="fade_in"]
 Esther: My poor brother Marcos. Where were you?
 Esther: How could this happen, Marcos. My little baby.
 [signal arg="fade_out"]
-Esther: I can't look
+Esther (sad_2_eyes_closed): I can't look
 Esther: ...
 Esther: Oh god. This has to be a dream.
-- How could this happen?
-- I just can't
 [signal arg="fade_in"]
-Esther: My dear Marcos, my little bird
-Esther: There's no time. Let's do this
+Esther (sad): My dear Marcos, my little bird
+Esther (sad_2): There's no time. Let's do this
+[clear time="0.0"]
 [signal arg="phone"]
