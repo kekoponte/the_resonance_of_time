@@ -34,3 +34,4 @@ func _on_dialogic_signal(argument:String):
 		Global.contador_laura_office = 2
 		Global.contador_police_station = "Después de hablar con Laura la primera vez"
 		Dialogic.end_timeline()
+		

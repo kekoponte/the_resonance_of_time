@@ -15,6 +15,7 @@ var Contactos = {
 	"Marcos de la Fuente" :0,
 	"Marta Mendez" : 0,
 	"Patricia Mata" : 0,
+	"Pedro Martín-Calero" : 0,
 	"Ramón Olivares" : 0,
 	"Roi Villamarín" :0,
 	"Tito Calas" :0,
@@ -76,6 +77,7 @@ var matricula_in_photos:int = 0
 
 # Variables por habitaciones
 var Location:String = "" #Variable que guarda la localización actual. Relevante para la cámara
+var subLocation:String = ""
 var contador_hospital:String = "Primera vez"
 var contador_waiting_room:int = 1
 var contador_morgue:String = "Primera vez"

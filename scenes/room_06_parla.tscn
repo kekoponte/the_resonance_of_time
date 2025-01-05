@@ -367,7 +367,6 @@ position = Vector2(353, 31)
 texture = ExtResource("8_kejvg")
 
 [node name="Phone" parent="." instance=ExtResource("8_jhe3v")]
-visible = false
 z_index = 5
 
 [node name="06RedCar" type="Sprite2D" parent="."]

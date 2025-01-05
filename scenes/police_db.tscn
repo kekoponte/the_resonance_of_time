@@ -1,10 +1,11 @@
-[gd_scene load_steps=32 format=3 uid="uid://f3lj58xe5g12"]
+[gd_scene load_steps=33 format=3 uid="uid://f3lj58xe5g12"]
 
 [ext_resource type="Script" path="res://scripts/phone/app_db.gd" id="1_848gk"]
 [ext_resource type="Texture2D" uid="uid://cxy38ml7i6var" path="res://assets/phone/home_button.png" id="2_c8len"]
 [ext_resource type="Texture2D" uid="uid://cfm1st0jmiffh" path="res://assets/phone/back_db.png" id="2_lym3o"]
 [ext_resource type="Texture2D" uid="uid://cbyl7p77epic7" path="res://assets/phone/home_button_pressed.png" id="3_kdkmd"]
 [ext_resource type="Script" path="res://scripts/botón_de_home_Mapa.gd" id="4_3iqc0"]
+[ext_resource type="FontFile" uid="uid://b2rl6owflbu8i" path="res://assets/fonts/runescape_uf.ttf" id="6_fsk2h"]
 [ext_resource type="Texture2D" uid="uid://b2rnmbi4e43py" path="res://assets/interface/map_search.png" id="6_ygrtg"]
 [ext_resource type="FontFile" uid="uid://cebjma2udbg7" path="res://assets/fonts/dogicapixel.ttf" id="7_u51sh"]
 [ext_resource type="Script" path="res://scripts/phone/input_police_DB.gd" id="8_4ovr3"]
@@ -425,9 +426,18 @@ texture_normal = ExtResource("2_c8len")
 texture_pressed = ExtResource("3_kdkmd")
 script = ExtResource("4_3iqc0")
 
+[node name="Label" type="Label" parent="App DB/Fondo"]
+offset_left = -48.0
+offset_top = -73.0
+offset_right = 43.0
+offset_bottom = -57.0
+theme_override_colors/font_color = Color(1, 0.886275, 0.152941, 1)
+theme_override_fonts/font = ExtResource("6_fsk2h")
+text = "Police Database"
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = 1
-position = Vector2(72, 85)
+position = Vector2(72, 107)
 texture = ExtResource("6_ygrtg")
 
 [node name="TextEdit" type="LineEdit" parent="Sprite2D"]
@@ -451,7 +461,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 z_index = 1
-position = Vector2(72, 113)
+position = Vector2(72, 135)
 texture = ExtResource("6_ygrtg")
 
 [node name="TextEdit" type="LineEdit" parent="Sprite2D2"]
@@ -475,9 +485,9 @@ metadata/_edit_use_anchors_ = true
 
 [node name="TextureButton" type="TextureButton" parent="."]
 offset_left = 46.0
-offset_top = 138.0
+offset_top = 154.0
 offset_right = 96.0
-offset_bottom = 159.0
+offset_bottom = 175.0
 texture_normal = ExtResource("10_y2hj4")
 texture_pressed = ExtResource("11_qf0f6")
 script = ExtResource("11_weyu3")
@@ -498,7 +508,7 @@ libraries = {
 }
 
 [node name="Control" type="Control" parent="TextureButton/loading"]
-z_index = 1
+z_index = 100
 clip_contents = true
 layout_mode = 3
 anchors_preset = 0
@@ -592,6 +602,18 @@ position = Vector2(84.4749, 26.25)
 scale = Vector2(0.403, 0.403)
 texture = ExtResource("14_3fboe")
 
+[node name="notfound" type="Label" parent="TextureButton"]
+visible = false
+layout_mode = 0
+offset_left = -32.0
+offset_top = -116.0
+offset_right = 86.0
+offset_bottom = -102.0
+theme_override_font_sizes/font_size = 7
+text = "Not found
+Try another search"
+horizontal_alignment = 1
+
 [node name="Ficha_Michele" type="Control" parent="."]
 visible = false
 z_index = 1
@@ -663,22 +685,43 @@ No
 2022, Jan - USA
 2022, Feb - Spain
 
+[b]Date of Birth:[/b] July 15, 1978
+[b]Place of Birth:[/b] Palermo, Sicily, Italy
+[b]Occupation:[/b] Medical Doctor (Surgeon)
+[b]Current Address:[/b] Calle Olivar 4
+
+[b]Background and Education[/b]
+Michele Carro graduated in medicine from the University of Palermo in 2000. He specialized in trauma surgery.
 
 
-[b]What You Can’t Do:[/b]
-Please Don’t pirate it. I've worked hard on this game, and your mom would be disappointed. I would give a copy for free to anybody who can't afford the couple of bucks it costs
-Don’t try to crack open the code. Trust me, there's nothing valuable in there, just long nights of debugging and tears.
+His proficiency earned him contracts with private clinics and underground medical practices.
 
-[b]What You Can Do:[/b]
-Enjoy the game! Play it. Tell your friends to buy it. Stream it, but please don’t be that person who spoils the ending in the thumbnail.
+[b]Suspected Criminal Activities[/b]
+Evidence suggests that Dr. Carro operated as a \"cleaner\" for the Sicilian Mafia during the mid-2000s. His  expertise reportedly made him a key figure in providing medical care to wounded operatives and disposing of forensic evidence from crime scenes. Several intercepted communications reference a \"Doctor Michele\" attending to high-ranking members of the organization after violent incidents.
 
 
+[b]Key Allegations:[/b]
+Illegal Surgeries: Performed unregistered surgeries to remove bullet fragments and other evidence linking individuals to crimes.
+Evasion of Law Enforcement: Used his knowledge of medical records and hospital systems to create false documentation and cover identities for wanted criminals.
+Money Laundering: Facilitated laundering operations by running cash-heavy private clinics.
+
+[b]Current Status[/b]
+Michele Carro currently operates a legitimate private practice in Florence, catering to high-profile clients. 
 
 
-[b]Final Note:[/b]
-I've made this game with love, sweat, and a slightly alarming amount of coffee. Protecting it helps me keep making stuff for you to enjoy. Please be cool.
+His business has been audited multiple times, but no substantial evidence linking him to organized crime has surfaced in recent years. Despite this, intelligence reports indicate that he remains an asset to the Mafia’s network, potentially serving in an advisory capacity.
 
-If you’ve got questions, licensing ideas, or just want to send me hate mail, hit me up at: keko@kekoponte.com"
+[b]Psychological Profile[/b]
+Carro is described as calm, meticulous, and highly intelligent. Witnesses have characterized him as a man who avoids direct confrontation but thrives in high-stress situations, making him an invaluable resource to his criminal 
+
+affiliates. His lack of visible personal relationships suggests a preference for maintaining secrecy.
+
+[b]Operational Notes[/b]
+Risk Level: High. Approach with caution; likely to be protected by criminal elements.
+Recommendations: Increased surveillance on known associates and financial transactions. Leverage recent medical advancements to analyze patient data for anomalies tied to Carro’s activities.
+Compiled by: Lieutenant Pedro Domingo
+Date: January 3, 2023
+Classification: Confidential"
 scroll_active = false
 
 [node name="Control2" type="Control" parent="Ficha_Michele"]

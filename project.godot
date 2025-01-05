@@ -30,6 +30,7 @@ directories/dch_directory={
 "Esther": "res://dialogo/Esther.dch",
 "Michel": "res://dialogo/Characters/Michel.dch",
 "Miguel": "res://dialogo/Characters/Miguel.dch",
+"Pedrito": "res://dialogo/Characters/Pedrito.dch",
 "jake": "res://dialogo/jake.dch",
 "laura": "res://dialogo/laura.dch",
 "lucas_traffic": "res://dialogo/Characters/lucas_traffic.dch"
@@ -74,6 +75,7 @@ directories/dtl_directory={
 "morgue": "res://dialogo/morgue.dtl",
 "no_foto": "res://dialogo/camara/no_foto.dtl",
 "no_more_foto": "res://dialogo/no_more_foto.dtl",
+"pedrito": "res://dialogo/Llamadas/pedrito.dtl",
 "primer_dia": "res://dialogo/primer_dia.dtl"
 }
 layout/style_list=["res://styles/personajes_en_habitacion.tres", "res://styles/Llamada_de_teléfono.tres", "res://styles/Intro.tres", "res://styles/clear_screen.tres"]
@@ -84,6 +86,7 @@ variables={
 "02": "1",
 "03": "1"
 },
+"Michele_stress": 0,
 "Morgue": 0,
 "Parla": {
 "interior_car": 1,
@@ -158,6 +161,7 @@ data_directory="res://dialogue"
 
 window/size/viewport_width=640
 window/size/viewport_height=360
+window/size/mode=4
 window/stretch/mode="canvas_items"
 mouse_cursor/custom_image="res://assets/interface/mouse_arrow.png"
 window/canvas_textures/default_texture_filter=1

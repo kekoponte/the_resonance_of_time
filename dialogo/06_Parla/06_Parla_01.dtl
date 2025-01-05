@@ -1,10 +1,12 @@
 [background arg="res://assets/interface/back.png" fade="0.0"]
 [style name="personajes_en_habitacion"]
 [wait time="3.8"]
+join Esther right
 Esther: The junkyard in Parla is way bigger than I thought
 Esther: There are trashed cars everywhere
 Esther: I cross the big metal gate and see the manager working by a big crane.
 Esther: He's a giant guy, but he also seems nice
+leave Esther
 join Miguel left
 Miguel: Hi there!
 Miguel: How can I help you?

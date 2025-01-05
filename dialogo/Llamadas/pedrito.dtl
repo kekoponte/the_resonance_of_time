@@ -1,0 +1,19 @@
+[clear time="0.0"]
+[music path="res://assets/sounds/llamando.mp3" fade="0.0" volume="0.0" loop="false"]
+[wait time="2.5"]
+[style name="Llamada_de_teléfono"]
+Pedrito: Sí?
+[style name="personajes_en_habitacion"]
+join Esther left
+Esther: Hi, Pedro, my brother died yesterday
+leave Esther
+[style name="Llamada_de_teléfono"]
+Pedrito: Sabes quién más ha muerto?
+[style name="personajes_en_habitacion"]
+join Esther left
+Esther: Who?
+leave Esther
+[style name="Llamada_de_teléfono"]
+Pedrito: Mi polla en tu careto.
+[signal arg="end"]
+[end_timeline]

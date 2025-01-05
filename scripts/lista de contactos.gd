@@ -70,6 +70,11 @@ func _button_pressed(i):
 		Dialogic.start("comunicando")
 		Global.Nombre_en_llamada = "Patricia Mata"
 
+	if Global.Contactos["Pedro Martín-Calero"] == 1:
+		Global.Contactos["Pedro Martín-Calero"] -= 1
+		Dialogic.start("pedrito")
+		Global.Nombre_en_llamada = "Pedro Martín-Calero"
+
 	if Global.Contactos["Ramón Olivares"] == 1:
 		Global.Contactos["Ramón Olivares"] -= 1
 		Dialogic.start("comunicando")

@@ -28,6 +28,13 @@ func _on_dialogic_signal(argument:String):
 	if argument == "diego_to_agenda":
 		Global.Contactos.get_or_add("Diego Lopez", 0)
 
+	if argument == "actualizar timez":
+		Global.listado_de_things.append("Check traffic cameras")
+		Global.listado_de_things.append("BDF Logistics?")
+		Global.listado_de_things.append("Claicorp?")
+		Global.listado_de_things.append("Who is Diego?")
+		Global.listado_de_things.erase("Visit Parla's junkyard")
+		
 	if argument == "end":
 		Global.contador_Parla_office = 2
 		Dialogic.end_timeline()

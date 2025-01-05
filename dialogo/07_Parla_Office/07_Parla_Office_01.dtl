@@ -32,5 +32,6 @@ label pregunta_1
 	Miguel: He was wearing good shoes, new jeans... there was also a fancy portfolio with the name [color=#a17602] "Claicorp"[/color] on it.
 Miguel: I need to ask you to leave now, I'm sorry. I've got a lot of work to do.
 [signal arg="phone_on"]
+[signal arg="actualizar timez"]
 [signal arg="end"]
 [end_timeline]

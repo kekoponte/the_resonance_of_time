@@ -141,22 +141,6 @@ position = Vector2(74, 146)
 texture = ExtResource("1_j61vq")
 script = ExtResource("2_ol1mx")
 
-[node name="notif_back" type="Sprite2D" parent="PhoneBorder"]
-visible = false
-z_index = -9
-position = Vector2(-5, -74)
-texture = ExtResource("3_s867m")
-
-[node name="num_notif" type="Label" parent="PhoneBorder/notif_back"]
-offset_left = -3.0
-offset_top = -4.0
-offset_right = 4.0
-offset_bottom = 3.0
-scale = Vector2(0.898804, 1.07298)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 8
-text = "1"
-
 [node name="Control" type="Control" parent="PhoneBorder"]
 z_index = 10
 layout_mode = 3
@@ -467,9 +451,23 @@ theme_override_font_sizes/font_size = 8
 text = "Police DB"
 horizontal_alignment = 1
 
+[node name="notif_back" type="Sprite2D" parent="Botones"]
+visible = false
+position = Vector2(69, 72)
+texture = ExtResource("3_s867m")
+
+[node name="num_notif" type="Label" parent="Botones/notif_back"]
+offset_left = -3.0
+offset_top = -4.0
+offset_right = 4.0
+offset_bottom = 3.0
+scale = Vector2(0.898804, 1.07298)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 8
+text = "1"
+
 [node name="ToDos_App" parent="." instance=ExtResource("51_ol0jk")]
 visible = false
-z_index = -1
 position = Vector2(-1, -1)
 script = ExtResource("52_8cyry")
 

@@ -2,6 +2,7 @@ extends Node2D
 
 func _ready() -> void:
 	Global.Location = "Police Station"
+	Global.contador_hospital = "Normal"
 	$label.play("intro")
 
 	if Global.contador_police_station == "Primera vez":

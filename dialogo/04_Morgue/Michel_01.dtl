@@ -7,19 +7,25 @@ Michel: You shouldn't be here. This is an autopsy room.
 	label victim
 	Michel: Do you know the victim?
 	- Yes, he's my brother Marcos.
+	- Yes, I'm afraid I think I do.
 	- I do, but it's none of your business
 		[signal arg="stress"]
 		[sound path="res://assets/sounds/fail.mp3" volume="0.0"]
-		Michel (idle/+2): You don't need to talk to me like this.
+		Michel (idle/+2): Hey! You don't need to talk to me like this.
+		set {Michele_stress} = 2
 - I'm a forensic expert, who are you?
 	[signal arg="stress"]
 	[sound path="res://assets/sounds/fail.mp3" volume="0.0"]
+	set {Michele_stress} = 1
 	Michel (idle/+1): I'm afraid I AM the forensic expert here.
 	Michel: I hope you have a better explanation.
 	jump victim
-Michel: If lieutenant Laura told you to meet her at the Police Station, I think you should do exactly that.
-Michel: I'm sure she wants to know every piece of information you might have.
-Michel: My name is Michele by the way.
+if {Michele_stress} < 2:
+	Michel: If lieutenant Laura told you to meet her at the [color=#1eaf18]Police Station[/color], I think you should do exactly that.
+	Michel: I'm sure she wants to know every piece of information you might have.
+	Michel: My name is Michele by the way.
+if {Michele_stress} == 2:
+	Michel: I'm Michele, but I hope I don't need to see you again.
 [background arg="res://assets/interface/back.png" fade="0.0"]
 leave Michel [animation="Fade Out" wait="true"]
 [signal arg="track_room"]

@@ -18,10 +18,11 @@ texture = ExtResource("1_wpiiq")
 [node name="Phone" parent="." instance=ExtResource("2_fgceg")]
 
 [node name="TextureButton" type="TextureButton" parent="."]
-offset_left = 224.0
-offset_top = 103.0
-offset_right = 332.0
-offset_bottom = 249.0
+offset_left = 274.0
+offset_top = 142.0
+offset_right = 382.0
+offset_bottom = 288.0
+scale = Vector2(0.732138, 0.732138)
 texture_normal = ExtResource("3_b06w1")
 script = ExtResource("4_p0f3v")
 
@@ -33,6 +34,7 @@ offset_left = -5.0
 offset_top = 101.0
 offset_right = 75.0
 offset_bottom = 113.0
+scale = Vector2(1.54872, 1.54872)
 theme_override_font_sizes/font_size = 8
 text = "Talk to Laura"
 
@@ -54,7 +56,7 @@ theme_override_font_sizes/font_size = 9
 text = "Back to Lobby"
 
 [node name="CosasMesa" type="Sprite2D" parent="."]
-position = Vector2(355, 235)
+position = Vector2(318, 235)
 texture = ExtResource("7_ujp57")
 
 [connection signal="button_down" from="TextureButton" to="TextureButton" method="_on_button_down"]

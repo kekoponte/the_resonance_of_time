@@ -176,7 +176,7 @@ SEX: Male
 DATE OF BIRTH: Unknown
 DATE OF DEATH: Jan 15, 2024
 DATE OF AUTOPSY: Jan 15, 2024
-PATHOLOGIST: Michele Aretusi
+PATHOLOGIST: Michele Carro
 CASE NUMBER: 18734GH
 
 [b]EXTERNAL EXAMINATION:[/b]
@@ -325,32 +325,29 @@ theme_override_font_sizes/italics_font_size = 5
 theme_override_font_sizes/normal_font_size = 5
 theme_override_font_sizes/bold_font_size = 5
 bbcode_enabled = true
-text = "[b]Credits[/b]
-Hi there! I'm Keko and I made this game pretty much alone.
+text = "
+[b]How to Play[/b]
+This is an investigation game. There's no \"right way\" to play it or a unique path to follow. 
+Feel free to travel to locations, talk to people, search for clues... just take into account that everything you do [b]takes time[/b]
+When you meet the time deadline (you'll know that deadline pretty early in the game), you'll have to answer a series of questions related to the case.
+You win the game if you solve the mistery of your brother's death solving those questions.
+Have fun!
+
+
+
+
+[b]Credits[/b]
+Hi there! I'm Keko and I made this demo pretty much alone. I'm just testing the idea of an interactive detective gameplay based on a phone.
 The main theme of the game is an interpretation and production of Handel's Pasacaglia that I made myself.
-The game also features songs by me and reinterpretantions of various Handel pieces.
-The art is both a mixture of various AI models and myself
+The game also features some songs by me and reinterpretantions of various Handel pieces.
+The art is both a mixture of various AI models and my terrible drawing skills.
 
-[b]Copyright Notice:[/b]
-Hey there, intrepid gamer! Just a friendly reminder that [i]The Resonance of Time[/i] is a precious brainchild of Keko Ponte.
-
+I'd love to get your feedback on itch.io or If you’ve got 
 
 
+questions, or just want to send me hate mail, hit me up at: keko@kekoponte.com
 
-[b]What You Can’t Do:[/b]
-Please Don’t pirate it. I've worked hard on this game, and your mom would be disappointed. I would give a copy for free to anybody who can't afford the couple of bucks it costs
-Don’t try to crack open the code. Trust me, there's nothing valuable in there, just long nights of debugging and tears.
-
-[b]What You Can Do:[/b]
-Enjoy the game! Play it. Tell your friends to buy it. Stream it, but please don’t be that person who spoils the ending in the thumbnail.
-
-
-
-
-[b]Final Note:[/b]
-I've made this game with love, sweat, and a slightly alarming amount of coffee. Protecting it helps me keep making stuff for you to enjoy. Please be cool.
-
-If you’ve got questions, licensing ideas, or just want to send me hate mail, hit me up at: keko@kekoponte.com"
+These are my cats: Blanche and Macarrón."
 scroll_active = false
 
 [node name="Control2" type="Control" parent="App Notas/About"]
