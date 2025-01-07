@@ -1,0 +1,81 @@
+[gd_scene load_steps=10 format=3 uid="uid://bfteev6amp7a"]
+
+[ext_resource type="Script" path="res://scripts/10_Plaza_Olavide/plaza_olavide.gd" id="1_uanu0"]
+[ext_resource type="Texture2D" uid="uid://cmtlifjrdhpvv" path="res://assets/locations/10_Olavide/10_Olavide_Plaza.png" id="2_qegrj"]
+[ext_resource type="PackedScene" uid="uid://vn8ay56opuf" path="res://scenes/phone.tscn" id="30_bqv4x"]
+[ext_resource type="FontFile" uid="uid://cyoe0lu3ghnvg" path="res://assets/fonts/dogicapixelbold.ttf" id="31_i8iq4"]
+[ext_resource type="Script" path="res://scripts/labels/label_hospital.gd" id="32_ct3pf"]
+
+[sub_resource type="Animation" id="Animation_1skx1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-169, 311)]
+}
+
+[sub_resource type="Animation" id="Animation_kjfum"]
+resource_name = "intro"
+length = 6.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.7, 5.46667, 5.96667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(645, 9), Vector2(445, 9), Vector2(445, 9), Vector2(645, 9)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_pgeh0"]
+_data = {
+"RESET": SubResource("Animation_1skx1"),
+"intro": SubResource("Animation_kjfum")
+}
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mf4yj"]
+content_margin_left = 5.0
+content_margin_top = 5.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+bg_color = Color(0, 0, 0, 0.498039)
+
+[node name="room_10_plaza_olavide" type="Node2D"]
+script = ExtResource("1_uanu0")
+
+[node name="10OlavidePlaza" type="Sprite2D" parent="."]
+position = Vector2(320, 107)
+texture = ExtResource("2_qegrj")
+
+[node name="Phone" parent="." instance=ExtResource("30_bqv4x")]
+
+[node name="label" type="AnimationPlayer" parent="."]
+root_node = NodePath("label")
+libraries = {
+"": SubResource("AnimationLibrary_pgeh0")
+}
+
+[node name="label" type="RichTextLabel" parent="label"]
+clip_contents = false
+offset_left = -169.0
+offset_top = 311.0
+offset_right = 29.0
+offset_bottom = 331.0
+theme_override_fonts/normal_font = ExtResource("31_i8iq4")
+theme_override_font_sizes/normal_font_size = 9
+theme_override_styles/normal = SubResource("StyleBoxFlat_mf4yj")
+bbcode_enabled = true
+text = "Parla Junkyard"
+scroll_active = false
+script = ExtResource("32_ct3pf")
+metadata/_edit_use_anchors_ = true
