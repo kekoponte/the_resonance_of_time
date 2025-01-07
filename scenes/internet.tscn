@@ -1,0 +1,164 @@
+[gd_scene load_steps=25 format=3 uid="uid://t4tv2awe6u2t"]
+
+[ext_resource type="Script" path="res://scripts/phone/app_internet.gd" id="1_kndry"]
+[ext_resource type="Texture2D" uid="uid://ptdaety0o3n2" path="res://assets/phone/back_04_internet.png" id="2_def5s"]
+[ext_resource type="Texture2D" uid="uid://cxy38ml7i6var" path="res://assets/phone/home_button.png" id="3_d7s0u"]
+[ext_resource type="Texture2D" uid="uid://cbyl7p77epic7" path="res://assets/phone/home_button_pressed.png" id="4_kvkg1"]
+[ext_resource type="Script" path="res://scripts/phone/botón_de_home_internet.gd" id="5_y0xvc"]
+[ext_resource type="Texture2D" uid="uid://b2rnmbi4e43py" path="res://assets/interface/map_search.png" id="7_3uhqa"]
+[ext_resource type="Script" path="res://scripts/phone/search_internet.gd" id="8_q5stv"]
+[ext_resource type="FontFile" uid="uid://cebjma2udbg7" path="res://assets/fonts/dogicapixel.ttf" id="8_rqgdi"]
+[ext_resource type="Script" path="res://scripts/phone/search_internet_button.gd" id="11_037gp"]
+[ext_resource type="Texture2D" uid="uid://bgdwxeqy83mwd" path="res://assets/phone/police_DB/but_search_norm.png" id="11_833e6"]
+[ext_resource type="Script" path="res://scripts/phone/resultados_busqueda.gd" id="12_grjsw"]
+[ext_resource type="Texture2D" uid="uid://c73rafr7phdjr" path="res://assets/phone/police_DB/but_search_press.png" id="12_i3xtw"]
+[ext_resource type="Texture2D" uid="uid://bf17kjobyxcgg" path="res://assets/phone/internet/search_results.png" id="13_1daao"]
+[ext_resource type="Texture2D" uid="uid://eyit1p82l8w" path="res://assets/phone/back_button.png" id="19_0vi1c"]
+[ext_resource type="Texture2D" uid="uid://bwbsxddk3ydsk" path="res://assets/phone/back_button_pressed.png" id="20_bk72r"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ssxss"]
+
+[sub_resource type="Theme" id="Theme_jlvdl"]
+LineEdit/constants/outline_size = 0
+LineEdit/styles/focus = SubResource("StyleBoxEmpty_ssxss")
+
+[sub_resource type="ImageTexture" id="ImageTexture_oyxxv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ty6b4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3gcg5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ndwwe"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_07mf1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_21d08"]
+
+[sub_resource type="Theme" id="Theme_0kxbv"]
+VScrollBar/icons/decrement = SubResource("ImageTexture_oyxxv")
+VScrollBar/icons/decrement_highlight = SubResource("ImageTexture_oyxxv")
+VScrollBar/icons/decrement_pressed = SubResource("ImageTexture_oyxxv")
+VScrollBar/icons/increment = SubResource("ImageTexture_oyxxv")
+VScrollBar/icons/increment_highlight = SubResource("ImageTexture_oyxxv")
+VScrollBar/icons/increment_pressed = SubResource("ImageTexture_oyxxv")
+VScrollBar/styles/grabber = SubResource("StyleBoxEmpty_ty6b4")
+VScrollBar/styles/grabber_highlight = SubResource("StyleBoxEmpty_3gcg5")
+VScrollBar/styles/grabber_pressed = SubResource("StyleBoxEmpty_ndwwe")
+VScrollBar/styles/scroll = SubResource("StyleBoxEmpty_07mf1")
+VScrollBar/styles/scroll_focus = SubResource("StyleBoxEmpty_21d08")
+
+[node name="internet" type="Node2D"]
+
+[node name="App DB" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 146.0
+offset_bottom = 290.0
+mouse_filter = 1
+script = ExtResource("1_kndry")
+
+[node name="Fondo" type="Sprite2D" parent="App DB"]
+z_index = -1
+position = Vector2(74, 147)
+texture = ExtResource("2_def5s")
+
+[node name="Botón de Home" type="TextureButton" parent="App DB/Fondo"]
+z_index = 5
+offset_left = -16.0
+offset_top = 99.0
+offset_right = 8.0
+offset_bottom = 123.0
+texture_normal = ExtResource("3_d7s0u")
+texture_pressed = ExtResource("4_kvkg1")
+script = ExtResource("5_y0xvc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(72, 107)
+texture = ExtResource("7_3uhqa")
+
+[node name="TextEdit" type="LineEdit" parent="Sprite2D"]
+offset_left = -52.0
+offset_top = -7.0
+offset_right = 33.0
+offset_bottom = 6.0
+theme = SubResource("Theme_jlvdl")
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.65834, 0.65834, 0.65834, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/caret_width = 1
+theme_override_fonts/font = ExtResource("8_rqgdi")
+theme_override_font_sizes/font_size = 6
+placeholder_text = "Search in Foudle..."
+max_length = 20
+flat = true
+caret_blink = true
+script = ExtResource("8_q5stv")
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = 46.0
+offset_top = 128.0
+offset_right = 96.0
+offset_bottom = 149.0
+texture_normal = ExtResource("11_833e6")
+texture_pressed = ExtResource("12_i3xtw")
+script = ExtResource("11_037gp")
+
+[node name="Label" type="Label" parent="TextureButton"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 43.0
+offset_bottom = 14.0
+theme_override_font_sizes/font_size = 7
+text = "Search"
+
+[node name="resultados" type="Control" parent="."]
+visible = false
+z_index = 1
+layout_mode = 3
+anchors_preset = 0
+offset_left = 7.0
+offset_top = 10.0
+offset_right = 142.0
+offset_bottom = 285.0
+script = ExtResource("12_grjsw")
+
+[node name="resultado_generico" type="ScrollContainer" parent="resultados"]
+layout_mode = 0
+offset_left = -1.0
+offset_top = -3.0
+offset_right = 134.0
+offset_bottom = 274.0
+theme = SubResource("Theme_0kxbv")
+horizontal_scroll_mode = 0
+
+[node name="listado_de_fotos" type="VBoxContainer" parent="resultados/resultado_generico"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="resultados/resultado_generico/listado_de_fotos"]
+layout_mode = 2
+texture = ExtResource("13_1daao")
+
+[node name="Control2" type="Control" parent="resultados"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="back_button" type="TextureButton" parent="resultados/Control2"]
+z_index = 5
+layout_mode = 2
+offset_left = 51.0
+offset_top = 236.0
+offset_right = 80.0
+offset_bottom = 264.0
+texture_normal = ExtResource("19_0vi1c")
+texture_pressed = ExtResource("20_bk72r")
+
+[connection signal="mouse_entered" from="App DB" to="App DB" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="App DB" to="App DB" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="App DB/Fondo/Botón de Home" to="App DB/Fondo/Botón de Home" method="_on_mouse_entered"]
+[connection signal="text_submitted" from="Sprite2D/TextEdit" to="Sprite2D/TextEdit" method="_on_text_submitted"]
+[connection signal="button_down" from="TextureButton" to="Sprite2D/TextEdit" method="_on_texture_button_button_down"]
+[connection signal="button_down" from="TextureButton" to="TextureButton" method="_on_button_down"]
+[connection signal="button_up" from="resultados/Control2/back_button" to="resultados" method="_on_back_button_button_up"]

@@ -1,0 +1,78 @@
+[gd_scene load_steps=8 format=3 uid="uid://7ya8s3ey1l7v"]
+
+[ext_resource type="Script" path="res://scripts/phone/app_settings.gd" id="1_q56nj"]
+[ext_resource type="Texture2D" uid="uid://bjkxa8hgkpa7k" path="res://assets/phone/back_02.png" id="2_0ocyg"]
+[ext_resource type="Texture2D" uid="uid://cxy38ml7i6var" path="res://assets/phone/home_button.png" id="3_i7bi5"]
+[ext_resource type="Texture2D" uid="uid://cbyl7p77epic7" path="res://assets/phone/home_button_pressed.png" id="4_w6ndb"]
+[ext_resource type="Script" path="res://scripts/phone/botón_de_home_settings.gd" id="5_jhvmy"]
+[ext_resource type="Texture2D" uid="uid://bgdwxeqy83mwd" path="res://assets/phone/police_DB/but_search_norm.png" id="9_c8byb"]
+[ext_resource type="Texture2D" uid="uid://c73rafr7phdjr" path="res://assets/phone/police_DB/but_search_press.png" id="10_wshx5"]
+
+[node name="settings" type="Node2D"]
+
+[node name="App DB" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 146.0
+offset_bottom = 290.0
+mouse_filter = 1
+script = ExtResource("1_q56nj")
+
+[node name="Fondo" type="Sprite2D" parent="App DB"]
+z_index = -1
+position = Vector2(74, 147)
+texture = ExtResource("2_0ocyg")
+
+[node name="Botón de Home" type="TextureButton" parent="App DB/Fondo"]
+z_index = 5
+offset_left = -16.0
+offset_top = 99.0
+offset_right = 8.0
+offset_bottom = 123.0
+texture_normal = ExtResource("3_i7bi5")
+texture_pressed = ExtResource("4_w6ndb")
+script = ExtResource("5_jhvmy")
+
+[node name="Save" type="TextureButton" parent="App DB"]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 43.0
+offset_right = 97.0
+offset_bottom = 64.0
+texture_normal = ExtResource("9_c8byb")
+texture_pressed = ExtResource("10_wshx5")
+
+[node name="Label" type="Label" parent="App DB/Save"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 46.0
+offset_bottom = 17.0
+theme_override_font_sizes/font_size = 8
+text = "Save"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Load" type="TextureButton" parent="App DB"]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 70.0
+offset_right = 97.0
+offset_bottom = 91.0
+texture_normal = ExtResource("9_c8byb")
+texture_pressed = ExtResource("10_wshx5")
+
+[node name="Label" type="Label" parent="App DB/Load"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 46.0
+offset_bottom = 17.0
+theme_override_font_sizes/font_size = 8
+text = "Load"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="mouse_entered" from="App DB" to="App DB" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="App DB" to="App DB" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="App DB/Fondo/Botón de Home" to="App DB/Fondo/Botón de Home" method="_on_mouse_entered"]

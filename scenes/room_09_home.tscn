@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://5tlmxktjpb0p"]
+
+[ext_resource type="Script" path="res://scripts/09_Home/room_09_home.gd" id="1_b6467"]
+[ext_resource type="Texture2D" uid="uid://bpkbjdl6pb63u" path="res://assets/locations/01_bedroom_day.png" id="1_m4mgf"]
+[ext_resource type="Texture2D" uid="uid://dviwcpe7v2kau" path="res://assets/locations/01_bedroom_night.png" id="2_w5fqs"]
+[ext_resource type="PackedScene" uid="uid://vn8ay56opuf" path="res://scenes/phone.tscn" id="4_nonkc"]
+
+[node name="room_09_home" type="Node2D"]
+script = ExtResource("1_b6467")
+
+[node name="01BedroomDay" type="Sprite2D" parent="."]
+position = Vector2(320, 180)
+texture = ExtResource("1_m4mgf")
+
+[node name="01BedroomNight" type="Sprite2D" parent="."]
+position = Vector2(320, 180)
+texture = ExtResource("2_w5fqs")
+
+[node name="Phone" parent="." instance=ExtResource("4_nonkc")]

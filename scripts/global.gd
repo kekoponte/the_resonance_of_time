@@ -69,6 +69,7 @@ var listado_de_sitios:Array = ["Home","La Paz Hospital"]
 var listado_de_things:Array = ["Go to the morgue"]
 var listado_de_diario:Array = ["Liutenant Laura call me this morning, looks like a corpse was found and it might be my brother."]
 var stress:int = 3
+var termino_de_busqueda:String = ""
 
 # Variables para guardar el estado de las fotos
 var contador_fotos = 0

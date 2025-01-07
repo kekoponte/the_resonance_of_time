@@ -20,16 +20,28 @@ func _on_button_down() -> void:
 		PassTime.pass_time(185)
 		await $transicion_entre_escenas.animation_finished
 		SceneSwitcher.switch_scene("res://scenes/room_06_parla.tscn")
-	elif Global.Direccion == Vector2(150,100) and Global.Location != "La Paz Hospital":
+	elif Global.Direccion == Vector2(150,100) and Global.Location != "La Paz Hospital" and Global.Hora < 20:
 		$transicion_entre_escenas.play("transicion")
 		PassTime.pass_time(185)
 		await $transicion_entre_escenas.animation_finished
 		SceneSwitcher.switch_scene("res://scenes/room_02_hospital_waiting_room.tscn")
+
+	elif Global.Direccion == Vector2(150,100) and Global.Location != "La Paz Hospital" and Global.Hora > 20:
+		Dialogic.start("hora")
+
 	elif Global.Direccion == Vector2(100,300) and Global.activar_traffic == true:
 		$transicion_entre_escenas.play("transicion")
 		PassTime.pass_time(185)
 		await $transicion_entre_escenas.animation_finished
 		SceneSwitcher.switch_scene("res://scenes/room_08_traffic_control.tscn")
+
+	elif Global.Direccion == Vector2(135,0):
+		$transicion_entre_escenas.play("transicion")
+		PassTime.pass_time(185)
+		await $transicion_entre_escenas.animation_finished
+		SceneSwitcher.switch_scene("res://scenes/room_09_home.tscn")
+
+
 	else:
 		Dialogic.start("mapa_no")
 

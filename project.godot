@@ -69,6 +69,7 @@ directories/dtl_directory={
 "banner_bank": "res://dialogo/banner_bank.dtl",
 "comunicando": "res://dialogo/comunicando.dtl",
 "foto_morgue": "res://dialogo/camara/foto_morgue.dtl",
+"hora": "res://dialogo/hora.dtl",
 "imhere": "res://dialogo/imhere.dtl",
 "mapa_no": "res://dialogo/mapa_no.dtl",
 "monologo_inicial": "res://dialogo/monologo_inicial.dtl",
@@ -76,7 +77,8 @@ directories/dtl_directory={
 "no_foto": "res://dialogo/camara/no_foto.dtl",
 "no_more_foto": "res://dialogo/no_more_foto.dtl",
 "pedrito": "res://dialogo/Llamadas/pedrito.dtl",
-"primer_dia": "res://dialogo/primer_dia.dtl"
+"primer_dia": "res://dialogo/primer_dia.dtl",
+"resultados_internet": "res://dialogo/resultados_internet.dtl"
 }
 layout/style_list=["res://styles/personajes_en_habitacion.tres", "res://styles/Llamada_de_teléfono.tres", "res://styles/Intro.tres", "res://styles/clear_screen.tres"]
 layout/default_style=""
@@ -161,7 +163,6 @@ data_directory="res://dialogue"
 
 window/size/viewport_width=640
 window/size/viewport_height=360
-window/size/mode=4
 window/stretch/mode="canvas_items"
 mouse_cursor/custom_image="res://assets/interface/mouse_arrow.png"
 window/canvas_textures/default_texture_filter=1

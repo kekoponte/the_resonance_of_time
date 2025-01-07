@@ -1,0 +1,5 @@
+[clear time="0.0"]
+[style name="personajes_en_habitacion"]
+join Esther left
+Esther: I think there won't be anyone there at this time.
+[clear time="0.0"]
