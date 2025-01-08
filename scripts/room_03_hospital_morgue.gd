@@ -51,5 +51,6 @@ func _on_dialogic_signal(argument:String):
 		Global.listado_de_diario.append("I went to the morgue and my brother Marcos was there")
 		Global.listado_de_things.erase("Go to the morgue")
 		Global.listado_de_things.append("Go to the Police Station")
+		PassTime.pass_time(30)
 		Global.contador_hospital = "Despues de identificar a Marcos"
 		Global.contador_morgue_2 = "Despues de identificar a Marcos"

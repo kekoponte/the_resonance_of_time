@@ -38,10 +38,10 @@ tracks/1/path = NodePath("Estatico/Sprite2D/RichTextLabel:text")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(2.03262, 2.56595, 3.03262, 3.53262, 3.99929, 5.96666, 6.43333, 6.96666, 7.46666, 7.96666),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 1.8, 2.06667, 2.33333, 2.56667, 2.8, 3.06667, 3.3, 3.53333, 3.79929, 4, 4.4, 4.8, 5.3, 5.8, 6.3, 6.8, 7.3, 7.76667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": ["07:15", "07 15", "07:15", "07 15", "07:15", "07 15", "07:15", "07 16", "07:16", "07 16"]
+"values": ["18:15", "18:15", "19:15", "20 15", "21 15", "22:15", "23:15", "00 15", "01 15", "02:15", "03:15", "03 15", "04:15", "04 15", "04:15", "04 15", "04:15", "04 15", "04:15"]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -62,7 +62,7 @@ tracks/3/path = NodePath("Estatico/Sprite2D:position")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(2.03262, 7.04049),
+"times": PackedFloat32Array(0.433333, 3.53333),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(751, 179), Vector2(539, 179)]
@@ -74,7 +74,7 @@ tracks/4/path = NodePath("Estatico/Bedroom_day:modulate")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(0, 6),
+"times": PackedFloat32Array(2.46667, 3.3),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]

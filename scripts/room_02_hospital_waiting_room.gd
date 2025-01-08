@@ -2,7 +2,11 @@ extends Node2D
 
 func _ready() -> void:
 	Global.Location = "La Paz Hospital"
-	Global.subLocation == "" 
+	Global.subLocation == ""
+	if Global.Hora > 20 or Global.Hora < 7:
+		$"02HospitalNight".show()
+	if Global.Hora < 20 and Global.Hora >= 7:
+		$"02HospitalNight".hide()
 
 	if Global.contador_hospital == "Primera vez":
 		$label.play("intro")

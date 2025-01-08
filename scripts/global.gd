@@ -25,8 +25,8 @@ var Contactos = {
 
 var Nombre_en_llamada:String = "init" #Variable que muestra el nombre en el teléfono cuando hay llamadas
 var Nombre_en_mensajes:String = "" #Variable que muestra el nombre en el teléfono cuando hay mensajes
-var Hora:int = 7 #Horas en el móvil y en el juego
-var Minutos:int = 16 #Minutos en el móvil y en el juego
+var Hora:int = 6 #Horas en el móvil y en el juego
+var Minutos:int = 12 #Minutos en el móvil y en el juego
 var dia:String = "[center]Monday[/center]"
 var marcado_telefono:String = ""
 var Direccion = Vector2(0,0) #Variable para mostrar un lugar en el mapa

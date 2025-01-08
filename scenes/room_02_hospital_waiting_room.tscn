@@ -1,8 +1,9 @@
-[gd_scene load_steps=15 format=3 uid="uid://cqd37qby15op2"]
+[gd_scene load_steps=16 format=3 uid="uid://cqd37qby15op2"]
 
 [ext_resource type="Script" path="res://scripts/room_02_hospital_waiting_room.gd" id="1_bjalq"]
 [ext_resource type="Texture2D" uid="uid://d0ku00257pyn6" path="res://assets/locations/02_bedroom.png" id="2_2lyj3"]
 [ext_resource type="Texture2D" uid="uid://dpkfa7tpn8lwu" path="res://assets/locations/09_Hospital/09_Hospital_Entrance.png" id="3_8blx4"]
+[ext_resource type="Texture2D" uid="uid://bif58b3uy67ot" path="res://assets/locations/02_hospital_night.png" id="3_d42x5"]
 [ext_resource type="PackedScene" uid="uid://vn8ay56opuf" path="res://scenes/phone.tscn" id="3_jq66x"]
 [ext_resource type="FontFile" uid="uid://cyoe0lu3ghnvg" path="res://assets/fonts/dogicapixelbold.ttf" id="4_o0ni1"]
 [ext_resource type="Script" path="res://scripts/labels/label_hospital.gd" id="5_wxo1e"]
@@ -63,6 +64,10 @@ z_index = -10
 position = Vector2(320.111, 180.062)
 scale = Vector2(0.999653, 0.999653)
 texture = ExtResource("2_2lyj3")
+
+[node name="02HospitalNight" type="Sprite2D" parent="."]
+position = Vector2(320, 180)
+texture = ExtResource("3_d42x5")
 
 [node name="Phone" parent="." instance=ExtResource("3_jq66x")]
 
