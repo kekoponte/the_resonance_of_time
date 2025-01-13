@@ -1,0 +1,8 @@
+[clear time="0.0"]
+[style name="personajes_en_habitacion"]
+Olavide Plaza is full of small bars and restaurants.
+As you walk around it, you have the feeling that you don't know what you're doing here.
+There's indeed a parking near the plaza, but there's nothing there but cars 
+[signal arg="phone_on"]
+[clear time="0.0"]
+[end_timeline]

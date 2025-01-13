@@ -1,13 +1,11 @@
-[gd_scene load_steps=26 format=3 uid="uid://c6qjxx1uno1h5"]
+[gd_scene load_steps=24 format=3 uid="uid://c6qjxx1uno1h5"]
 
 [ext_resource type="Script" path="res://scripts/room_03_hospital_morgue.gd" id="1_rbq7p"]
 [ext_resource type="PackedScene" uid="uid://vn8ay56opuf" path="res://scenes/phone.tscn" id="2_3ns8o"]
-[ext_resource type="Texture2D" uid="uid://b1ec53v131xcp" path="res://assets/locations/03_Morgue/03_hospital_bed_him.png" id="2_simo8"]
-[ext_resource type="Texture2D" uid="uid://c47bkkmje58hl" path="res://assets/locations/03_Morgue/03_hospital_bed_him2.png" id="3_njlyr"]
-[ext_resource type="Texture2D" uid="uid://d2uomend6bf0o" path="res://assets/locations/03_Morgue/03_hospital_bed_him1.png" id="4_5hi57"]
+[ext_resource type="Texture2D" uid="uid://bb8fv4ywi8v83" path="res://assets/locations/03_Morgue/03_hospital_bed_him.png" id="2_simo8"]
+[ext_resource type="Texture2D" uid="uid://boxqkdqt6wexp" path="res://assets/locations/03_Morgue/03_hospital_bed_him1.png" id="4_5hi57"]
 [ext_resource type="AudioStream" uid="uid://rijy674jr0xh" path="res://assets/sounds/ Sibelius - Pelleas & Melisande.mp3" id="4_ohf8l"]
 [ext_resource type="Script" path="res://scripts/03_Morgue/mouse_clara_face.gd" id="5_cwhgt"]
-[ext_resource type="Texture2D" uid="uid://doverg8kk3jai" path="res://assets/locations/03_Morgue/03_hospital_bed_him3.png" id="5_htajq"]
 [ext_resource type="Script" path="res://scripts/03_Morgue/phone.gd" id="7_a2d6a"]
 [ext_resource type="FontFile" uid="uid://cebjma2udbg7" path="res://assets/fonts/dogicapixel.ttf" id="7_istrr"]
 [ext_resource type="Script" path="res://scripts/03_Morgue/mouse_clara_hands.gd" id="8_klaee"]
@@ -73,43 +71,42 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath(".:texture")
+tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("2_simo8")]
+"update": 0,
+"values": [Vector2(320, 180)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath(".:position")
+tracks/1/path = NodePath(".:modulate")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(320, 180)]
+"values": [Color(1, 1, 1, 1)]
 }
 
-[sub_resource type="Animation" id="Animation_eq5ca"]
-resource_name = "fondo_morgue"
-length = 15.0
-loop_mode = 1
+[sub_resource type="Animation" id="Animation_vi3ia"]
+resource_name = "background"
+length = 30.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath(".:texture")
+tracks/0/path = NodePath(".:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0.666667, 0.733333, 0.8, 1.9, 2.06667, 2.26667, 3.03333, 3.2, 3.43333, 4.03333, 4.13333, 4.3, 4.93333, 5.1, 5.26667, 6, 6.1, 6.26667, 7.66667, 7.9, 8.16667, 9.56667, 9.8, 10.0333, 12, 12.2333, 12.4333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [ExtResource("2_simo8"), ExtResource("3_njlyr"), ExtResource("4_5hi57"), ExtResource("2_simo8"), ExtResource("3_njlyr"), ExtResource("4_5hi57"), ExtResource("2_simo8"), ExtResource("3_njlyr"), ExtResource("4_5hi57"), ExtResource("2_simo8"), ExtResource("3_njlyr"), ExtResource("4_5hi57"), ExtResource("4_5hi57"), ExtResource("5_htajq"), ExtResource("2_simo8"), ExtResource("2_simo8"), ExtResource("3_njlyr"), ExtResource("4_5hi57"), ExtResource("2_simo8"), ExtResource("3_njlyr"), ExtResource("4_5hi57"), ExtResource("2_simo8"), ExtResource("3_njlyr"), ExtResource("4_5hi57"), ExtResource("2_simo8"), ExtResource("3_njlyr"), ExtResource("4_5hi57")]
+"times": PackedFloat32Array(18.5667, 29.8333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_ol0dn"]
@@ -131,7 +128,7 @@ tracks/0/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_a2u01"]
 _data = {
 "RESET": SubResource("Animation_5sj3q"),
-"fondo_morgue": SubResource("Animation_eq5ca"),
+"background": SubResource("Animation_vi3ia"),
 "stress": SubResource("Animation_ol0dn")
 }
 
@@ -214,7 +211,11 @@ root_node = NodePath("03HospitalBed")
 libraries = {
 "": SubResource("AnimationLibrary_a2u01")
 }
-autoplay = "fondo_morgue"
+
+[node name="03HospitalBedHim1" type="Sprite2D" parent="fondo"]
+z_index = -1
+position = Vector2(320, 180)
+texture = ExtResource("4_5hi57")
 
 [node name="03HospitalBed" type="Sprite2D" parent="fondo"]
 z_index = -1
@@ -239,20 +240,20 @@ autoplay = true
 
 [node name="face" type="TextureButton" parent="."]
 z_index = 1
-offset_left = 139.0
-offset_top = 116.0
-offset_right = 232.0
-offset_bottom = 197.0
+offset_left = 106.0
+offset_top = 184.0
+offset_right = 158.0
+offset_bottom = 220.0
 focus_mode = 0
 texture_hover = ExtResource("9_lki8b")
 script = ExtResource("5_cwhgt")
 
 [node name="hands" type="TextureButton" parent="."]
 z_index = 1
-offset_left = 234.0
-offset_top = 174.0
-offset_right = 340.0
-offset_bottom = 238.0
+offset_left = 143.0
+offset_top = 228.0
+offset_right = 227.0
+offset_bottom = 251.0
 focus_mode = 0
 texture_hover = ExtResource("10_srpq2")
 script = ExtResource("8_klaee")
@@ -277,10 +278,10 @@ theme_override_font_sizes/font_size = 10
 text = "Back to the Waiting Room"
 
 [node name="TextureButton2" type="TextureButton" parent="."]
-offset_left = 1.0
-offset_top = -2.0
-offset_right = 62.0
-offset_bottom = 361.0
+offset_left = 324.0
+offset_top = 72.0
+offset_right = 409.0
+offset_bottom = 268.0
 script = ExtResource("10_crn31")
 
 [node name="Label" type="Label" parent="TextureButton2"]

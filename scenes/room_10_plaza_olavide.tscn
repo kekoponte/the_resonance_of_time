@@ -1,10 +1,47 @@
-[gd_scene load_steps=10 format=3 uid="uid://bfteev6amp7a"]
+[gd_scene load_steps=13 format=3 uid="uid://bfteev6amp7a"]
 
 [ext_resource type="Script" path="res://scripts/10_Plaza_Olavide/plaza_olavide.gd" id="1_uanu0"]
 [ext_resource type="Texture2D" uid="uid://cmtlifjrdhpvv" path="res://assets/locations/10_Olavide/10_Olavide_Plaza.png" id="2_qegrj"]
 [ext_resource type="PackedScene" uid="uid://vn8ay56opuf" path="res://scenes/phone.tscn" id="30_bqv4x"]
 [ext_resource type="FontFile" uid="uid://cyoe0lu3ghnvg" path="res://assets/fonts/dogicapixelbold.ttf" id="31_i8iq4"]
 [ext_resource type="Script" path="res://scripts/labels/label_hospital.gd" id="32_ct3pf"]
+
+[sub_resource type="Animation" id="Animation_abt5b"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("back/10OlavidePlaza:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(320, 251)]
+}
+
+[sub_resource type="Animation" id="Animation_7gw5r"]
+resource_name = "back"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("back/10OlavidePlaza:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(320, 251), Vector2(320, 108)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_g58vm"]
+_data = {
+"RESET": SubResource("Animation_abt5b"),
+"back": SubResource("Animation_7gw5r")
+}
 
 [sub_resource type="Animation" id="Animation_1skx1"]
 length = 0.001
@@ -19,6 +56,18 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Vector2(-169, 311)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../back/10OlavidePlaza:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(320, 252)]
 }
 
 [sub_resource type="Animation" id="Animation_kjfum"]
@@ -53,8 +102,14 @@ bg_color = Color(0, 0, 0, 0.498039)
 [node name="room_10_plaza_olavide" type="Node2D"]
 script = ExtResource("1_uanu0")
 
-[node name="10OlavidePlaza" type="Sprite2D" parent="."]
-position = Vector2(320, 107)
+[node name="back" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_g58vm")
+}
+
+[node name="10OlavidePlaza" type="Sprite2D" parent="back"]
+z_index = -1
+position = Vector2(320, 252)
 texture = ExtResource("2_qegrj")
 
 [node name="Phone" parent="." instance=ExtResource("30_bqv4x")]

@@ -77,6 +77,7 @@ directories/dtl_directory={
 "no_foto": "res://dialogo/camara/no_foto.dtl",
 "no_more_foto": "res://dialogo/no_more_foto.dtl",
 "pedrito": "res://dialogo/Llamadas/pedrito.dtl",
+"plz_olavide": "res://dialogo/10_Plz_Olavide/plz_olavide.dtl",
 "primer_dia": "res://dialogo/primer_dia.dtl",
 "resultados_internet": "res://dialogo/resultados_internet.dtl"
 }

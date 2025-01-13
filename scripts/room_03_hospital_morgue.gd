@@ -4,7 +4,7 @@ func _ready() -> void:
 	Global.Location = "La Paz Hospital"
 	Global.subLocation = "Morgue"
 	if Global.contador_morgue == "Primera vez":
-		$fondo.play("fondo_morgue")
+		$fondo.play("background")
 		Dialogic.start("morgue")
 		$Phone.set_process(false)
 		$Phone.hide()
