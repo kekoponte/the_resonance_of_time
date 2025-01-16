@@ -41,7 +41,15 @@ func _on_button_down() -> void:
 		await $transicion_entre_escenas.animation_finished
 		SceneSwitcher.switch_scene("res://scenes/room_09_home.tscn")
 
-
+	elif Global.Direccion == Vector2(200,200) and Global.Location != "Olavide Plaza":
+		$transicion_entre_escenas.play("transicion")
+		PassTime.pass_time(185)
+		await $transicion_entre_escenas.animation_finished
+		SceneSwitcher.switch_scene("res://scenes/room_10_plaza_olavide.tscn")
+	
+	elif Global.Direccion == Vector2(200,200) and Global.Location == "Olavide Plaza":
+		Dialogic.start("imhere")
+	
 	else:
 		Dialogic.start("mapa_no")
 
