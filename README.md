@@ -1,6 +1,6 @@
 ## The Resonance of Time
 
-An early stage solo dev indie game with a Lynch vibe. About a forensic expert that it's not that good in her work.
+An early stage solo dev indie game with a Lynch vibe about a forensic expert that it's not that good in her work.
 
 - Developed with Godot 4.4
 - Music by Haendel 
