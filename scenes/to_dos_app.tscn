@@ -1,10 +1,10 @@
 [gd_scene load_steps=9 format=3 uid="uid://b8hu06gjd2ysq"]
 
-[ext_resource type="Script" path="res://scripts/phone/raton en apps.gd" id="1_35205"]
+[ext_resource type="Script" uid="uid://cc08heisg1ubw" path="res://scripts/phone/raton en apps.gd" id="1_35205"]
 [ext_resource type="Texture2D" uid="uid://codigbfy65jvw" path="res://assets/phone/back_03.png" id="1_ntmfd"]
 [ext_resource type="Texture2D" uid="uid://cxy38ml7i6var" path="res://assets/phone/home_button.png" id="2_6q7mh"]
 [ext_resource type="Texture2D" uid="uid://cbyl7p77epic7" path="res://assets/phone/home_button_pressed.png" id="3_ng2cn"]
-[ext_resource type="Script" path="res://scripts/botón_de_home_notepad.gd" id="4_1s82n"]
+[ext_resource type="Script" uid="uid://bui4barfbx4om" path="res://scripts/botón_de_home_notepad.gd" id="4_1s82n"]
 [ext_resource type="Theme" uid="uid://ckn84k327sxon" path="res://styles/to_dos_app.tres" id="5_6fggb"]
 [ext_resource type="FontFile" uid="uid://cyoe0lu3ghnvg" path="res://assets/fonts/dogicapixelbold.ttf" id="5_n8jk4"]
 [ext_resource type="FontFile" uid="uid://cebjma2udbg7" path="res://assets/fonts/dogicapixel.ttf" id="6_gfmpa"]

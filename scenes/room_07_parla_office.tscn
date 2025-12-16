@@ -1,14 +1,14 @@
 [gd_scene load_steps=13 format=3 uid="uid://08ckl4yo368g"]
 
 [ext_resource type="Texture2D" uid="uid://2aqu7ltpxaow" path="res://assets/locations/07_Parla_Office/06_office.png" id="1_b6ly2"]
-[ext_resource type="Script" path="res://scripts/07_Parla_Office/room_07_parla_office.gd" id="1_mg8hg"]
+[ext_resource type="Script" uid="uid://b22smkgx7w0c8" path="res://scripts/07_Parla_Office/room_07_parla_office.gd" id="1_mg8hg"]
 [ext_resource type="PackedScene" uid="uid://vn8ay56opuf" path="res://scenes/phone.tscn" id="2_ew44c"]
 [ext_resource type="Texture2D" uid="uid://duyso7xfljeek" path="res://assets/locations/07_Parla_Office/06_office_blink2.png" id="2_pqajj"]
 [ext_resource type="Texture2D" uid="uid://d4akqhah32h4o" path="res://assets/locations/07_Parla_Office/06_office_breath_01.png" id="5_e2njl"]
 [ext_resource type="Texture2D" uid="uid://bx2hlh50ktrmt" path="res://assets/locations/07_Parla_Office/06_office_breath_02.png" id="6_r3kt1"]
 [ext_resource type="Texture2D" uid="uid://bbdmrfnhrcjhg" path="res://assets/locations/07_Parla_Office/06_office_rasca.png" id="7_b4e4g"]
-[ext_resource type="Script" path="res://scripts/07_Parla_Office/talk_with_miguel.gd" id="8_mam8n"]
-[ext_resource type="Script" path="res://scripts/07_Parla_Office/07_parla_office_exit.gd" id="9_oi4sj"]
+[ext_resource type="Script" uid="uid://dx470gu8pq8uk" path="res://scripts/07_Parla_Office/talk_with_miguel.gd" id="8_mam8n"]
+[ext_resource type="Script" uid="uid://bfbggc88vbr0v" path="res://scripts/07_Parla_Office/07_parla_office_exit.gd" id="9_oi4sj"]
 
 [sub_resource type="Animation" id="Animation_8f3qj"]
 length = 0.001
@@ -44,8 +44,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_m8w10"]
 _data = {
-"RESET": SubResource("Animation_8f3qj"),
-"blink": SubResource("Animation_ntowb")
+&"RESET": SubResource("Animation_8f3qj"),
+&"blink": SubResource("Animation_ntowb")
 }
 
 [node name="07_Parla_office" type="Node2D"]

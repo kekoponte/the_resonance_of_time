@@ -1,10 +1,10 @@
 [gd_scene load_steps=8 format=3 uid="uid://7ya8s3ey1l7v"]
 
-[ext_resource type="Script" path="res://scripts/phone/app_settings.gd" id="1_q56nj"]
+[ext_resource type="Script" uid="uid://bh805wugl3l6b" path="res://scripts/phone/app_settings.gd" id="1_q56nj"]
 [ext_resource type="Texture2D" uid="uid://bjkxa8hgkpa7k" path="res://assets/phone/back_02.png" id="2_0ocyg"]
 [ext_resource type="Texture2D" uid="uid://cxy38ml7i6var" path="res://assets/phone/home_button.png" id="3_i7bi5"]
 [ext_resource type="Texture2D" uid="uid://cbyl7p77epic7" path="res://assets/phone/home_button_pressed.png" id="4_w6ndb"]
-[ext_resource type="Script" path="res://scripts/phone/botón_de_home_settings.gd" id="5_jhvmy"]
+[ext_resource type="Script" uid="uid://dsm6fwm875xf6" path="res://scripts/phone/botón_de_home_settings.gd" id="5_jhvmy"]
 [ext_resource type="Texture2D" uid="uid://bgdwxeqy83mwd" path="res://assets/phone/police_DB/but_search_norm.png" id="9_c8byb"]
 [ext_resource type="Texture2D" uid="uid://c73rafr7phdjr" path="res://assets/phone/police_DB/but_search_press.png" id="10_wshx5"]
 

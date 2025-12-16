@@ -3,9 +3,9 @@
 [ext_resource type="Texture2D" uid="uid://dvx7johpakm6x" path="res://assets/phone/back_llamadas.png" id="1_x7l7j"]
 [ext_resource type="Texture2D" uid="uid://cxy38ml7i6var" path="res://assets/phone/home_button.png" id="2_yj3wl"]
 [ext_resource type="Texture2D" uid="uid://cbyl7p77epic7" path="res://assets/phone/home_button_pressed.png" id="3_opghb"]
-[ext_resource type="Script" path="res://scripts/botón_de_home_mensajes.gd" id="4_5whrv"]
+[ext_resource type="Script" uid="uid://nftlawo6826k" path="res://scripts/botón_de_home_mensajes.gd" id="4_5whrv"]
 [ext_resource type="Theme" uid="uid://ctd2o4vigmhrn" path="res://styles/nombres_llamada_hover.tres" id="5_i8kmd"]
-[ext_resource type="Script" path="res://scripts/Listado de mensajes.gd" id="6_5k806"]
+[ext_resource type="Script" uid="uid://cbywq60274fo1" path="res://scripts/Listado de mensajes.gd" id="6_5k806"]
 [ext_resource type="PackedScene" uid="uid://has2fh7mfotj" path="res://scenes/conversacion.tscn" id="7_08lm6"]
 
 [node name="Mensajes" type="Node2D"]

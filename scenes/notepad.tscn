@@ -3,9 +3,9 @@
 [ext_resource type="Texture2D" uid="uid://cxy38ml7i6var" path="res://assets/phone/home_button.png" id="2_knmye"]
 [ext_resource type="Texture2D" uid="uid://cbyl7p77epic7" path="res://assets/phone/home_button_pressed.png" id="3_vihki"]
 [ext_resource type="FontFile" uid="uid://cebjma2udbg7" path="res://assets/fonts/dogicapixel.ttf" id="5_hyeih"]
-[ext_resource type="Script" path="res://scripts/botón_de_home_notepad.gd" id="5_uac22"]
+[ext_resource type="Script" uid="uid://bui4barfbx4om" path="res://scripts/botón_de_home_notepad.gd" id="5_uac22"]
 [ext_resource type="Texture2D" uid="uid://dcy2savn4otty" path="res://assets/phone/back_notes.png" id="6_bfq2m"]
-[ext_resource type="Script" path="res://scripts/phone/bloc_de_notas.gd" id="6_tsgjb"]
+[ext_resource type="Script" uid="uid://chxlsx0v6rnii" path="res://scripts/phone/bloc_de_notas.gd" id="6_tsgjb"]
 
 [node name="Maps" type="Node2D"]
 

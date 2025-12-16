@@ -1,13 +1,13 @@
 [gd_scene load_steps=13 format=3 uid="uid://fvqfj4ckswna"]
 
-[ext_resource type="Script" path="res://scripts/04_Police_Station/room_04_police_station.gd" id="1_640jl"]
+[ext_resource type="Script" uid="uid://2loygaqmbewc" path="res://scripts/04_Police_Station/room_04_police_station.gd" id="1_640jl"]
 [ext_resource type="Texture2D" uid="uid://dm12do0wxpvpx" path="res://assets/locations/04_police_station.png" id="1_sgiuh"]
 [ext_resource type="PackedScene" uid="uid://vn8ay56opuf" path="res://scenes/phone.tscn" id="2_5ui1g"]
 [ext_resource type="FontFile" uid="uid://cyoe0lu3ghnvg" path="res://assets/fonts/dogicapixelbold.ttf" id="4_ggftr"]
-[ext_resource type="Script" path="res://scripts/04_Police_Station/despacho_laura.gd" id="6_jtfv0"]
+[ext_resource type="Script" uid="uid://bn1xpgquur0ro" path="res://scripts/04_Police_Station/despacho_laura.gd" id="6_jtfv0"]
 [ext_resource type="FontFile" uid="uid://cebjma2udbg7" path="res://assets/fonts/dogicapixel.ttf" id="7_iqx0c"]
-[ext_resource type="Script" path="res://scripts/labels/label_hospital.gd" id="8_k55jl"]
-[ext_resource type="Script" path="res://scripts/04_Police_Station/evidence_room.gd" id="8_s7sfe"]
+[ext_resource type="Script" uid="uid://bebg81513xype" path="res://scripts/labels/label_hospital.gd" id="8_k55jl"]
+[ext_resource type="Script" uid="uid://ck3kmcop0lvem" path="res://scripts/04_Police_Station/evidence_room.gd" id="8_s7sfe"]
 
 [sub_resource type="Animation" id="Animation_1skx1"]
 length = 0.001
@@ -42,8 +42,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_pgeh0"]
 _data = {
-"RESET": SubResource("Animation_1skx1"),
-"intro": SubResource("Animation_kjfum")
+&"RESET": SubResource("Animation_1skx1"),
+&"intro": SubResource("Animation_kjfum")
 }
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_06ktw"]

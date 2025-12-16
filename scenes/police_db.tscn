@@ -1,21 +1,21 @@
 [gd_scene load_steps=33 format=3 uid="uid://f3lj58xe5g12"]
 
-[ext_resource type="Script" path="res://scripts/phone/app_db.gd" id="1_848gk"]
+[ext_resource type="Script" uid="uid://c2o8x7jkvpyo2" path="res://scripts/phone/app_db.gd" id="1_848gk"]
 [ext_resource type="Texture2D" uid="uid://cxy38ml7i6var" path="res://assets/phone/home_button.png" id="2_c8len"]
 [ext_resource type="Texture2D" uid="uid://cfm1st0jmiffh" path="res://assets/phone/back_db.png" id="2_lym3o"]
 [ext_resource type="Texture2D" uid="uid://cbyl7p77epic7" path="res://assets/phone/home_button_pressed.png" id="3_kdkmd"]
-[ext_resource type="Script" path="res://scripts/botón_de_home_Mapa.gd" id="4_3iqc0"]
+[ext_resource type="Script" uid="uid://c7x6xd7c3u3r8" path="res://scripts/botón_de_home_Mapa.gd" id="4_3iqc0"]
 [ext_resource type="FontFile" uid="uid://b2rl6owflbu8i" path="res://assets/fonts/runescape_uf.ttf" id="6_fsk2h"]
 [ext_resource type="Texture2D" uid="uid://b2rnmbi4e43py" path="res://assets/interface/map_search.png" id="6_ygrtg"]
 [ext_resource type="FontFile" uid="uid://cebjma2udbg7" path="res://assets/fonts/dogicapixel.ttf" id="7_u51sh"]
-[ext_resource type="Script" path="res://scripts/phone/input_police_DB.gd" id="8_4ovr3"]
-[ext_resource type="Script" path="res://scripts/phone/input_police_DB_2.gd" id="9_v6ts5"]
+[ext_resource type="Script" uid="uid://dd7fohofx7gkq" path="res://scripts/phone/input_police_DB.gd" id="8_4ovr3"]
+[ext_resource type="Script" uid="uid://1aey4o3r6dt0" path="res://scripts/phone/input_police_DB_2.gd" id="9_v6ts5"]
 [ext_resource type="Texture2D" uid="uid://bgdwxeqy83mwd" path="res://assets/phone/police_DB/but_search_norm.png" id="10_y2hj4"]
 [ext_resource type="Texture2D" uid="uid://c73rafr7phdjr" path="res://assets/phone/police_DB/but_search_press.png" id="11_qf0f6"]
-[ext_resource type="Script" path="res://scripts/phone/search_DB.gd" id="11_weyu3"]
+[ext_resource type="Script" uid="uid://ccgyrjybv3nub" path="res://scripts/phone/search_DB.gd" id="11_weyu3"]
 [ext_resource type="Texture2D" uid="uid://c0hir482jqnfp" path="res://assets/phone/police_DB/loading.png" id="13_pyafv"]
 [ext_resource type="Texture2D" uid="uid://bspqhudi10rd4" path="res://assets/phone/police_DB/loading_ball.png" id="14_3fboe"]
-[ext_resource type="Script" path="res://scripts/phone/ficha_michele.gd" id="15_vqkc5"]
+[ext_resource type="Script" uid="uid://bdkb54pibt260" path="res://scripts/phone/ficha_michele.gd" id="15_vqkc5"]
 [ext_resource type="Texture2D" uid="uid://cpnqtp2wm3weu" path="res://assets/phone/police_DB/michele.png" id="16_yglpn"]
 [ext_resource type="FontFile" uid="uid://cyoe0lu3ghnvg" path="res://assets/fonts/dogicapixelbold.ttf" id="17_rfam5"]
 [ext_resource type="Texture2D" uid="uid://eyit1p82l8w" path="res://assets/phone/back_button.png" id="18_fxxkl"]
@@ -372,8 +372,8 @@ tracks/13/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_wi4k1"]
 _data = {
-"RESET": SubResource("Animation_cs77w"),
-"loading": SubResource("Animation_0digs")
+&"RESET": SubResource("Animation_cs77w"),
+&"loading": SubResource("Animation_0digs")
 }
 
 [sub_resource type="ImageTexture" id="ImageTexture_oyxxv"]

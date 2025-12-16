@@ -1,6 +1,6 @@
 [gd_scene load_steps=27 format=3 uid="uid://c5stp2q7mpdhu"]
 
-[ext_resource type="Script" path="res://scripts/room_01_bedroom.gd" id="1_x2rt7"]
+[ext_resource type="Script" uid="uid://cx6tpv1txfnqx" path="res://scripts/room_01_bedroom.gd" id="1_x2rt7"]
 [ext_resource type="Texture2D" uid="uid://dviwcpe7v2kau" path="res://assets/locations/01_bedroom_night.png" id="2_ni7oo"]
 [ext_resource type="Texture2D" uid="uid://cxi0xnat0fxdw" path="res://assets/phone/phone_restf.png" id="3_uhp85"]
 [ext_resource type="Texture2D" uid="uid://dd6jv25r48ykh" path="res://assets/phone/call.png" id="4_tjgpa"]
@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://cp8aawn3pqbsm" path="res://assets/phone/button_ok.png" id="5_1ikob"]
 [ext_resource type="FontFile" uid="uid://cyoe0lu3ghnvg" path="res://assets/fonts/dogicapixelbold.ttf" id="5_34l62"]
 [ext_resource type="AudioStream" uid="uid://dy7lvg8tj5epv" path="res://assets/sounds/vibration.mp3" id="5_mxqic"]
-[ext_resource type="Script" path="res://scripts/but_ok.gd" id="6_a55dc"]
+[ext_resource type="Script" uid="uid://cn5j4ipmxnjmd" path="res://scripts/but_ok.gd" id="6_a55dc"]
 [ext_resource type="Texture2D" uid="uid://ckf4tbqgfuc8o" path="res://assets/phone/button_no.png" id="6_x4fu3"]
 [ext_resource type="FontFile" uid="uid://cebjma2udbg7" path="res://assets/fonts/dogicapixel.ttf" id="11_rcqju"]
 [ext_resource type="Texture2D" uid="uid://dlatndqkfob4k" path="res://assets/phone/phone_off.png" id="11_s0wh6"]
@@ -145,8 +145,8 @@ tracks/4/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_jprx0"]
 _data = {
-"Idle": SubResource("Animation_phq41"),
-"RESET": SubResource("Animation_msrcg")
+&"Idle": SubResource("Animation_phq41"),
+&"RESET": SubResource("Animation_msrcg")
 }
 
 [sub_resource type="Animation" id="Animation_mgsqb"]
@@ -294,9 +294,9 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_8yfam"]
 _data = {
-"RESET": SubResource("Animation_mgsqb"),
-"tiempo": SubResource("Animation_n2w11"),
-"vibracion": SubResource("Animation_rpgst")
+&"RESET": SubResource("Animation_mgsqb"),
+&"tiempo": SubResource("Animation_n2w11"),
+&"vibracion": SubResource("Animation_rpgst")
 }
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_cy6l5"]
@@ -479,8 +479,8 @@ tracks/6/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_xsd4k"]
 _data = {
-"RESET": SubResource("Animation_ih4yf"),
-"new_animation": SubResource("Animation_y0ffq")
+&"RESET": SubResource("Animation_ih4yf"),
+&"new_animation": SubResource("Animation_y0ffq")
 }
 
 [node name="Room_01_Bedroom" type="Node"]

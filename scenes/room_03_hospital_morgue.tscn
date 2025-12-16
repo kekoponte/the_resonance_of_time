@@ -1,16 +1,16 @@
 [gd_scene load_steps=24 format=3 uid="uid://c6qjxx1uno1h5"]
 
-[ext_resource type="Script" path="res://scripts/room_03_hospital_morgue.gd" id="1_rbq7p"]
+[ext_resource type="Script" uid="uid://bpjgs8qfijwnp" path="res://scripts/room_03_hospital_morgue.gd" id="1_rbq7p"]
 [ext_resource type="PackedScene" uid="uid://vn8ay56opuf" path="res://scenes/phone.tscn" id="2_3ns8o"]
 [ext_resource type="Texture2D" uid="uid://bb8fv4ywi8v83" path="res://assets/locations/03_Morgue/03_hospital_bed_him.png" id="2_simo8"]
 [ext_resource type="Texture2D" uid="uid://boxqkdqt6wexp" path="res://assets/locations/03_Morgue/03_hospital_bed_him1.png" id="4_5hi57"]
 [ext_resource type="AudioStream" uid="uid://rijy674jr0xh" path="res://assets/sounds/ Sibelius - Pelleas & Melisande.mp3" id="4_ohf8l"]
-[ext_resource type="Script" path="res://scripts/03_Morgue/mouse_clara_face.gd" id="5_cwhgt"]
-[ext_resource type="Script" path="res://scripts/03_Morgue/phone.gd" id="7_a2d6a"]
+[ext_resource type="Script" uid="uid://briewqw8niqxo" path="res://scripts/03_Morgue/mouse_clara_face.gd" id="5_cwhgt"]
+[ext_resource type="Script" uid="uid://e0cutl1fls2i" path="res://scripts/03_Morgue/phone.gd" id="7_a2d6a"]
 [ext_resource type="FontFile" uid="uid://cebjma2udbg7" path="res://assets/fonts/dogicapixel.ttf" id="7_istrr"]
-[ext_resource type="Script" path="res://scripts/03_Morgue/mouse_clara_hands.gd" id="8_klaee"]
+[ext_resource type="Script" uid="uid://b1eimadwg1tlk" path="res://scripts/03_Morgue/mouse_clara_hands.gd" id="8_klaee"]
 [ext_resource type="Texture2D" uid="uid://dirkyh67lowop" path="res://assets/locations/03_Morgue/03_hospital_head_over.png" id="9_lki8b"]
-[ext_resource type="Script" path="res://scripts/boton_vuelta_a_waiting.gd" id="10_crn31"]
+[ext_resource type="Script" uid="uid://cwb37b8ctigje" path="res://scripts/boton_vuelta_a_waiting.gd" id="10_crn31"]
 [ext_resource type="Texture2D" uid="uid://gpawuqamsdjc" path="res://assets/locations/03_Morgue/03_hospital_hand_over.png" id="10_srpq2"]
 
 [sub_resource type="Animation" id="Animation_5nhyf"]
@@ -61,9 +61,9 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_nbome"]
 _data = {
-"RESET": SubResource("Animation_5nhyf"),
-"out": SubResource("Animation_7cmil"),
-"start": SubResource("Animation_lmnte")
+&"RESET": SubResource("Animation_5nhyf"),
+&"out": SubResource("Animation_7cmil"),
+&"start": SubResource("Animation_lmnte")
 }
 
 [sub_resource type="Animation" id="Animation_5sj3q"]
@@ -127,9 +127,9 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_a2u01"]
 _data = {
-"RESET": SubResource("Animation_5sj3q"),
-"background": SubResource("Animation_vi3ia"),
-"stress": SubResource("Animation_ol0dn")
+&"RESET": SubResource("Animation_5sj3q"),
+&"background": SubResource("Animation_vi3ia"),
+&"stress": SubResource("Animation_ol0dn")
 }
 
 [sub_resource type="Animation" id="Animation_4br3p"]
@@ -189,8 +189,8 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ce5pj"]
 _data = {
-"RESET": SubResource("Animation_4br3p"),
-"song": SubResource("Animation_g8iat")
+&"RESET": SubResource("Animation_4br3p"),
+&"song": SubResource("Animation_g8iat")
 }
 
 [node name="Morgue" type="Node2D"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=30 format=3 uid="uid://ceoi31a7rbke5"]
 
-[ext_resource type="Script" path="res://scripts/room_00_bathroom.gd" id="1_kxa1b"]
+[ext_resource type="Script" uid="uid://ce58kjbqrhx1m" path="res://scripts/room_00_bathroom.gd" id="1_kxa1b"]
 [ext_resource type="Texture2D" uid="uid://bxr5rjkuhs8f7" path="res://assets/locations/00_bathroom.png" id="2_yxdm8"]
 [ext_resource type="FontFile" uid="uid://cebjma2udbg7" path="res://assets/fonts/dogicapixel.ttf" id="4_45mro"]
 [ext_resource type="Texture2D" uid="uid://ctaa3qj524lnb" path="res://assets/interface/anim_home/0.png" id="4_dd6ym"]
@@ -714,10 +714,10 @@ tracks/17/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_hsrnx"]
 _data = {
-"Presentacion": SubResource("Animation_7ac4f"),
-"RESET": SubResource("Animation_c4ryn"),
-"blink": SubResource("Animation_ocj7n"),
-"fade_out": SubResource("Animation_noedu")
+&"Presentacion": SubResource("Animation_7ac4f"),
+&"RESET": SubResource("Animation_c4ryn"),
+&"blink": SubResource("Animation_ocj7n"),
+&"fade_out": SubResource("Animation_noedu")
 }
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fbuxe"]

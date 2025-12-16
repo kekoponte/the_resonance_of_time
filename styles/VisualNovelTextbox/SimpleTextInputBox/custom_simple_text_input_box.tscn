@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://c6bhldcn3x3q4"]
 
-[ext_resource type="Script" path="res://styles/VisualNovelTextbox/SimpleTextInputBox/text_input_layer.gd" id="1_7ahrn"]
-[ext_resource type="Script" path="res://addons/dialogic/Modules/TextInput/node_text_input.gd" id="1_mxdep"]
+[ext_resource type="Script" uid="uid://5i3om3nshgln" path="res://styles/VisualNovelTextbox/SimpleTextInputBox/text_input_layer.gd" id="1_7ahrn"]
+[ext_resource type="Script" uid="uid://b2rwxk1wvhu8y" path="res://addons/dialogic/Modules/TextInput/node_text_input.gd" id="1_mxdep"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3dpjm"]
 content_margin_left = 15.0

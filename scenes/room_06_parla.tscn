@@ -1,6 +1,6 @@
 [gd_scene load_steps=31 format=3 uid="uid://blemrgpq3ttb0"]
 
-[ext_resource type="Script" path="res://scripts/06_Parla/room_06_parla.gd" id="1_0wym5"]
+[ext_resource type="Script" uid="uid://1dyrwm3jqoc4" path="res://scripts/06_Parla/room_06_parla.gd" id="1_0wym5"]
 [ext_resource type="Texture2D" uid="uid://fgnt7q0t7wh4" path="res://assets/locations/06_parla.png" id="1_fgqw3"]
 [ext_resource type="Texture2D" uid="uid://bt8yyhfyxl0d" path="res://assets/locations/06_Parla/06_parla-towers.png" id="3_ne7bh"]
 [ext_resource type="Texture2D" uid="uid://7tat653m77it" path="res://assets/locations/06_Parla/06_grua_1.png" id="4_a8dxg"]
@@ -11,16 +11,16 @@
 [ext_resource type="Texture2D" uid="uid://s3utxkf14qjf" path="res://assets/locations/06_Parla/06_grua_3.png" id="8_kejvg"]
 [ext_resource type="Texture2D" uid="uid://h2srqkovnmbl" path="res://assets/locations/06_Parla/06_red_car.png" id="10_s3dk4"]
 [ext_resource type="Texture2D" uid="uid://bgmqi2y4jonl8" path="res://assets/locations/06_Parla/06_red_car-matricula.png" id="11_hm4nb"]
-[ext_resource type="Script" path="res://scripts/06_Parla/matricula.gd" id="11_i2vj5"]
-[ext_resource type="Script" path="res://scripts/06_Parla/interior.gd" id="12_0nf5w"]
-[ext_resource type="Script" path="res://scripts/06_Parla/plate_but.gd" id="12_0ybl1"]
+[ext_resource type="Script" uid="uid://xavax5liumft" path="res://scripts/06_Parla/matricula.gd" id="11_i2vj5"]
+[ext_resource type="Script" uid="uid://bfjor1taahgfk" path="res://scripts/06_Parla/interior.gd" id="12_0nf5w"]
+[ext_resource type="Script" uid="uid://gj5a2pt5wrme" path="res://scripts/06_Parla/plate_but.gd" id="12_0ybl1"]
 [ext_resource type="Texture2D" uid="uid://cc4g8i4nnsmky" path="res://assets/locations/06_Parla/plate.png" id="13_ogxdm"]
-[ext_resource type="Script" path="res://scripts/06_Parla/interior_but.gd" id="15_3bqdr"]
+[ext_resource type="Script" uid="uid://cp57fublk2l7x" path="res://scripts/06_Parla/interior_but.gd" id="15_3bqdr"]
 [ext_resource type="Texture2D" uid="uid://rltybrytygre" path="res://assets/locations/06_Parla/06_interior_car.png" id="15_3qhoo"]
-[ext_resource type="Script" path="res://scripts/06_Parla/to_office.gd" id="15_b2meg"]
+[ext_resource type="Script" uid="uid://j3gkp5ea0j60" path="res://scripts/06_Parla/to_office.gd" id="15_b2meg"]
 [ext_resource type="Texture2D" uid="uid://bqwqixnt1k5mn" path="res://assets/locations/06_Parla/06_red_car-interior.png" id="15_rhjg6"]
 [ext_resource type="FontFile" uid="uid://cyoe0lu3ghnvg" path="res://assets/fonts/dogicapixelbold.ttf" id="18_tkwnc"]
-[ext_resource type="Script" path="res://scripts/labels/label_hospital.gd" id="19_bh8fq"]
+[ext_resource type="Script" uid="uid://bebg81513xype" path="res://scripts/labels/label_hospital.gd" id="19_bh8fq"]
 
 [sub_resource type="Animation" id="Animation_5eery"]
 resource_name = "Parla"
@@ -280,10 +280,10 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_5neou"]
 _data = {
-"Parla": SubResource("Animation_5eery"),
-"Parla_2": SubResource("Animation_f1pyp"),
-"RESET": SubResource("Animation_2lcks"),
-"stress": SubResource("Animation_aucqf")
+&"Parla": SubResource("Animation_5eery"),
+&"Parla_2": SubResource("Animation_f1pyp"),
+&"RESET": SubResource("Animation_2lcks"),
+&"stress": SubResource("Animation_aucqf")
 }
 
 [sub_resource type="Animation" id="Animation_1skx1"]
@@ -319,8 +319,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_pgeh0"]
 _data = {
-"RESET": SubResource("Animation_1skx1"),
-"intro": SubResource("Animation_kjfum")
+&"RESET": SubResource("Animation_1skx1"),
+&"intro": SubResource("Animation_kjfum")
 }
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yp07e"]

@@ -1,10 +1,10 @@
 [gd_scene load_steps=13 format=3 uid="uid://bfteev6amp7a"]
 
-[ext_resource type="Script" path="res://scripts/10_Plaza_Olavide/plaza_olavide.gd" id="1_uanu0"]
+[ext_resource type="Script" uid="uid://8aqysdnrgxp7" path="res://scripts/10_Plaza_Olavide/plaza_olavide.gd" id="1_uanu0"]
 [ext_resource type="Texture2D" uid="uid://cmtlifjrdhpvv" path="res://assets/locations/10_Olavide/10_Olavide_Plaza.png" id="2_qegrj"]
 [ext_resource type="PackedScene" uid="uid://vn8ay56opuf" path="res://scenes/phone.tscn" id="30_bqv4x"]
 [ext_resource type="FontFile" uid="uid://cyoe0lu3ghnvg" path="res://assets/fonts/dogicapixelbold.ttf" id="31_i8iq4"]
-[ext_resource type="Script" path="res://scripts/labels/label_hospital.gd" id="32_ct3pf"]
+[ext_resource type="Script" uid="uid://bebg81513xype" path="res://scripts/labels/label_hospital.gd" id="32_ct3pf"]
 
 [sub_resource type="Animation" id="Animation_abt5b"]
 length = 0.001
@@ -39,8 +39,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_g58vm"]
 _data = {
-"RESET": SubResource("Animation_abt5b"),
-"back": SubResource("Animation_7gw5r")
+&"RESET": SubResource("Animation_abt5b"),
+&"back": SubResource("Animation_7gw5r")
 }
 
 [sub_resource type="Animation" id="Animation_1skx1"]
@@ -88,8 +88,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_pgeh0"]
 _data = {
-"RESET": SubResource("Animation_1skx1"),
-"intro": SubResource("Animation_kjfum")
+&"RESET": SubResource("Animation_1skx1"),
+&"intro": SubResource("Animation_kjfum")
 }
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mf4yj"]

@@ -1,11 +1,11 @@
 [gd_scene load_steps=8 format=3 uid="uid://by21837lveovw"]
 
-[ext_resource type="Script" path="res://scripts/05_Laura_Office/room_05_laura_office.gd" id="1_0waur"]
+[ext_resource type="Script" uid="uid://jkks763m2kl" path="res://scripts/05_Laura_Office/room_05_laura_office.gd" id="1_0waur"]
 [ext_resource type="Texture2D" uid="uid://qj4xkvglwk5k" path="res://assets/locations/05_Laura_office.png" id="1_wpiiq"]
 [ext_resource type="PackedScene" uid="uid://vn8ay56opuf" path="res://scenes/phone.tscn" id="2_fgceg"]
 [ext_resource type="Texture2D" uid="uid://c5wnbt1gt01ox" path="res://assets/locations/05_Laura_Office/Laura_desk.png" id="3_b06w1"]
-[ext_resource type="Script" path="res://scripts/05_Laura_Office/talk_to_laura.gd" id="4_p0f3v"]
-[ext_resource type="Script" path="res://scripts/05_Laura_Office/back_to_lobby.gd" id="5_5gbrn"]
+[ext_resource type="Script" uid="uid://ck1epubqp0goh" path="res://scripts/05_Laura_Office/talk_to_laura.gd" id="4_p0f3v"]
+[ext_resource type="Script" uid="uid://d1ky0s1sq3bnu" path="res://scripts/05_Laura_Office/back_to_lobby.gd" id="5_5gbrn"]
 [ext_resource type="Texture2D" uid="uid://c8vhnhsv2ck34" path="res://assets/locations/05_Laura_Office/cosas_mesa.png" id="7_ujp57"]
 
 [node name="room_05_Laura_office" type="Node2D"]

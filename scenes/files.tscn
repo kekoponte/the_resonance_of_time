@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://vuik681tkgv3" path="res://assets/phone/back_off.png" id="1_yw33p"]
 [ext_resource type="Texture2D" uid="uid://cxy38ml7i6var" path="res://assets/phone/home_button.png" id="2_2y07i"]
 [ext_resource type="Texture2D" uid="uid://cbyl7p77epic7" path="res://assets/phone/home_button_pressed.png" id="3_cua4c"]
-[ext_resource type="Script" path="res://scripts/phone/botón_de_home_fotos.gd" id="3_hhhxn"]
+[ext_resource type="Script" uid="uid://ltjvd7emqibg" path="res://scripts/phone/botón_de_home_fotos.gd" id="3_hhhxn"]
 
 [sub_resource type="ImageTexture" id="ImageTexture_8qgso"]
 

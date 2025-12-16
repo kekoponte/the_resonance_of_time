@@ -1,16 +1,16 @@
 [gd_scene load_steps=16 format=3 uid="uid://cqd37qby15op2"]
 
-[ext_resource type="Script" path="res://scripts/room_02_hospital_waiting_room.gd" id="1_bjalq"]
+[ext_resource type="Script" uid="uid://dibh2hdc4vry1" path="res://scripts/room_02_hospital_waiting_room.gd" id="1_bjalq"]
 [ext_resource type="Texture2D" uid="uid://d0ku00257pyn6" path="res://assets/locations/02_bedroom.png" id="2_2lyj3"]
 [ext_resource type="Texture2D" uid="uid://dpkfa7tpn8lwu" path="res://assets/locations/09_Hospital/09_Hospital_Entrance.png" id="3_8blx4"]
 [ext_resource type="Texture2D" uid="uid://bif58b3uy67ot" path="res://assets/locations/02_hospital_night.png" id="3_d42x5"]
 [ext_resource type="PackedScene" uid="uid://vn8ay56opuf" path="res://scenes/phone.tscn" id="3_jq66x"]
 [ext_resource type="FontFile" uid="uid://cyoe0lu3ghnvg" path="res://assets/fonts/dogicapixelbold.ttf" id="4_o0ni1"]
-[ext_resource type="Script" path="res://scripts/labels/label_hospital.gd" id="5_wxo1e"]
-[ext_resource type="Script" path="res://scripts/go_to_morgue.gd" id="6_dwtxe"]
+[ext_resource type="Script" uid="uid://bebg81513xype" path="res://scripts/labels/label_hospital.gd" id="5_wxo1e"]
+[ext_resource type="Script" uid="uid://c0csnpuq3x5wa" path="res://scripts/go_to_morgue.gd" id="6_dwtxe"]
 [ext_resource type="FontFile" uid="uid://cebjma2udbg7" path="res://assets/fonts/dogicapixel.ttf" id="7_px4o8"]
 [ext_resource type="Texture2D" uid="uid://cchrq137v73nw" path="res://assets/locations/02_Hospital/door_hover.png" id="9_h1mbm"]
-[ext_resource type="Script" path="res://scripts/02_Hospital/entrada principal.gd" id="9_slj7b"]
+[ext_resource type="Script" uid="uid://b5cxw108yp3rd" path="res://scripts/02_Hospital/entrada principal.gd" id="9_slj7b"]
 
 [sub_resource type="Animation" id="Animation_1skx1"]
 length = 0.001
@@ -45,8 +45,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_pgeh0"]
 _data = {
-"RESET": SubResource("Animation_1skx1"),
-"intro": SubResource("Animation_kjfum")
+&"RESET": SubResource("Animation_1skx1"),
+&"intro": SubResource("Animation_kjfum")
 }
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1vksm"]

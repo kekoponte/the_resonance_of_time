@@ -1,6 +1,6 @@
 [gd_scene load_steps=56 format=3 uid="uid://bgka2ss4dc5qh"]
 
-[ext_resource type="Script" path="res://scripts/08_Traffic_Control_room/room_08_traffic.gd" id="1_atne2"]
+[ext_resource type="Script" uid="uid://cjx0o6aprtld8" path="res://scripts/08_Traffic_Control_room/room_08_traffic.gd" id="1_atne2"]
 [ext_resource type="Texture2D" uid="uid://bsc6in0cg1yx3" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_1.png" id="2_te5cc"]
 [ext_resource type="Texture2D" uid="uid://bi85vytdqc23t" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_2.png" id="3_6tgra"]
 [ext_resource type="Texture2D" uid="uid://b57h5aoy1okjr" path="res://assets/locations/08_Traffic_Control_Tower/08_technician.png" id="4_6wyng"]
@@ -28,9 +28,9 @@
 [ext_resource type="Texture2D" uid="uid://b63ewc0arb7df" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_screen_3b.png" id="24_sofp5"]
 [ext_resource type="Texture2D" uid="uid://djqjajy5tt71g" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_screen_3c.png" id="25_40hkq"]
 [ext_resource type="FontFile" uid="uid://cyoe0lu3ghnvg" path="res://assets/fonts/dogicapixelbold.ttf" id="25_a8ukp"]
-[ext_resource type="Script" path="res://scripts/labels/label_hospital.gd" id="26_4tr0a"]
+[ext_resource type="Script" uid="uid://bebg81513xype" path="res://scripts/labels/label_hospital.gd" id="26_4tr0a"]
 [ext_resource type="Texture2D" uid="uid://hhfrs4cgt3f5" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_screen_3d.png" id="26_ucc1s"]
-[ext_resource type="Script" path="res://scripts/08_Traffic_Control_room/tecnico.gd" id="27_ecsp7"]
+[ext_resource type="Script" uid="uid://ph3sn7e30wpj" path="res://scripts/08_Traffic_Control_room/tecnico.gd" id="27_ecsp7"]
 [ext_resource type="Texture2D" uid="uid://djhiw122uw0we" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_screen_3e.png" id="27_spdmc"]
 [ext_resource type="Texture2D" uid="uid://dvgg8enlusxsl" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_screen_3f.png" id="28_tl43i"]
 [ext_resource type="Texture2D" uid="uid://brumg2qc7rwq8" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_screen_3g.png" id="29_hfufa"]
@@ -40,9 +40,9 @@
 [ext_resource type="Texture2D" uid="uid://cnukqjbhyg81b" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_screen_4d.png" id="38_yvh0s"]
 [ext_resource type="Texture2D" uid="uid://dkahh2615r3f0" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_screen_4e.png" id="39_s3s4q"]
 [ext_resource type="Texture2D" uid="uid://u8gnjuqt68s8" path="res://assets/locations/08_Traffic_Control_Tower/08_Traffic_Control_Tower_screen_4f.png" id="40_m4w5n"]
-[ext_resource type="Script" path="res://scripts/08_Traffic_Control_room/boton_monitores.gd" id="41_7bcug"]
+[ext_resource type="Script" uid="uid://p4ayhn3j4j7x" path="res://scripts/08_Traffic_Control_room/boton_monitores.gd" id="41_7bcug"]
 [ext_resource type="Texture2D" uid="uid://c2vtij417i27p" path="res://assets/locations/08_Traffic_Control_Tower/08_van.png" id="42_d3j8c"]
-[ext_resource type="Script" path="res://scripts/08_Traffic_Control_room/boton_cerrar_footage.gd" id="42_urrab"]
+[ext_resource type="Script" uid="uid://dy8lyi8irk40n" path="res://scripts/08_Traffic_Control_room/boton_cerrar_footage.gd" id="42_urrab"]
 
 [sub_resource type="Animation" id="Animation_mtnon"]
 length = 0.001
@@ -150,8 +150,8 @@ tracks/3/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_076ma"]
 _data = {
-"RESET": SubResource("Animation_mtnon"),
-"background": SubResource("Animation_jb2di")
+&"RESET": SubResource("Animation_mtnon"),
+&"background": SubResource("Animation_jb2di")
 }
 
 [sub_resource type="Animation" id="Animation_1skx1"]
@@ -215,9 +215,9 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_pgeh0"]
 _data = {
-"RESET": SubResource("Animation_1skx1"),
-"intro": SubResource("Animation_kjfum"),
-"stress": SubResource("Animation_vlimf")
+&"RESET": SubResource("Animation_1skx1"),
+&"intro": SubResource("Animation_kjfum"),
+&"stress": SubResource("Animation_vlimf")
 }
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mnxwn"]
@@ -599,9 +599,9 @@ tracks/9/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_23r0y"]
 _data = {
-"RESET": SubResource("Animation_bgcmh"),
-"footage": SubResource("Animation_nyhi0"),
-"footage2": SubResource("Animation_jk07c")
+&"RESET": SubResource("Animation_bgcmh"),
+&"footage": SubResource("Animation_nyhi0"),
+&"footage2": SubResource("Animation_jk07c")
 }
 
 [node name="room_08_traffic_control" type="Node2D"]

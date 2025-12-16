@@ -1,12 +1,12 @@
 [gd_scene load_steps=8 format=3 uid="uid://c604awremhbr7"]
 
 [ext_resource type="Texture2D" uid="uid://bnyhghckrfrim" path="res://assets/phone/back_bank.png" id="1_klipx"]
-[ext_resource type="Script" path="res://scripts/phone/bank_mouse.gd" id="1_wqd6w"]
+[ext_resource type="Script" uid="uid://dgx8n8c2y8bw6" path="res://scripts/phone/bank_mouse.gd" id="1_wqd6w"]
 [ext_resource type="Texture2D" uid="uid://cxy38ml7i6var" path="res://assets/phone/home_button.png" id="2_dkkol"]
 [ext_resource type="Texture2D" uid="uid://cbyl7p77epic7" path="res://assets/phone/home_button_pressed.png" id="3_ehqun"]
-[ext_resource type="Script" path="res://scripts/phone/botón_de_home_news.gd" id="4_xpp1d"]
+[ext_resource type="Script" uid="uid://yuw61id4skfw" path="res://scripts/phone/botón_de_home_news.gd" id="4_xpp1d"]
 [ext_resource type="FontFile" uid="uid://ce6w5vlh66kkr" path="res://assets/fonts/BirchLeaf.otf" id="5_bw83t"]
-[ext_resource type="Script" path="res://scripts/phone/bank_banner.gd" id="6_tqqfg"]
+[ext_resource type="Script" uid="uid://dc76eibgbt0mr" path="res://scripts/phone/bank_banner.gd" id="6_tqqfg"]
 
 [node name="Bank" type="Node2D"]
 
